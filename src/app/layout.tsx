@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 
-// 公開URLが決まったら metadataBase・sitemap.ts・robots.ts を揃えて更新する。
-export const SITE_URL = "https://job-world.pages.dev";
+// 公開URL: job.antonbase.com（metadataBase・sitemap.ts・robots.ts に反映）
+export const SITE_URL = "https://job.antonbase.com";
 export const SITE_NAME = "しごと図鑑";
 
 export const metadata: Metadata = {
