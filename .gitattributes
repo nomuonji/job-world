@@ -1,0 +1,8 @@
+# データファイルは scripts/build-data.ts が LF で書き戻す。
+# core.autocrlf の設定に関わらず LF に固定しないと、CI の
+# `git diff --exit-code -- src/data`（生成物のドリフト検出）が
+# 改行コードの差だけで落ちてしまう。
+* text=auto eol=lf
+*.json text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf

@@ -1,0 +1,137 @@
+{
+  "facet": "temperament",
+  "tags": [
+    {
+      "id": "temperament.detail",
+      "facet": "temperament",
+      "slug": "detail",
+      "labelJa": "細部を詰めきる",
+      "aliasesJa": [
+        "几帳面",
+        "緻密",
+        "こだわる"
+      ],
+      "criteriaJa": "わずかな差を放置できないことが仕事の質に直結する場合。"
+    },
+    {
+      "id": "temperament.repeatable",
+      "facet": "temperament",
+      "slug": "repeatable",
+      "labelJa": "同じことを繰り返せる",
+      "aliasesJa": [
+        "反復",
+        "根気",
+        "飽きない"
+      ],
+      "criteriaJa": "同一の作業を長期間続けることが前提の場合。"
+    },
+    {
+      "id": "temperament.solitude",
+      "facet": "temperament",
+      "slug": "solitude",
+      "labelJa": "孤独に強い",
+      "aliasesJa": [
+        "ひとりが平気",
+        "単独行動",
+        "孤独"
+      ],
+      "criteriaJa": "長時間人と話さない状況が続く場合。"
+    },
+    {
+      "id": "temperament.listener",
+      "facet": "temperament",
+      "slug": "listener",
+      "labelJa": "人の話を黙って聞ける",
+      "aliasesJa": [
+        "傾聴",
+        "聞き役",
+        "受け止める"
+      ],
+      "criteriaJa": "相手の話を遮らず受け止めることが職能である場合。"
+    },
+    {
+      "id": "temperament.improvise",
+      "facet": "temperament",
+      "slug": "improvise",
+      "labelJa": "突発対応が得意",
+      "aliasesJa": [
+        "臨機応変",
+        "対応力",
+        "アドリブ"
+      ],
+      "criteriaJa": "予定外の事態が日常的に起き、その場で判断する必要がある場合。"
+    },
+    {
+      "id": "temperament.planner",
+      "facet": "temperament",
+      "slug": "planner",
+      "labelJa": "段取りを組むのが好き",
+      "aliasesJa": [
+        "計画的",
+        "段取り",
+        "逆算"
+      ],
+      "criteriaJa": "工程を先に組み立てることが成果を左右する場合。"
+    },
+    {
+      "id": "temperament.aesthetic",
+      "facet": "temperament",
+      "slug": "aesthetic",
+      "labelJa": "美意識がある",
+      "aliasesJa": [
+        "審美眼",
+        "美的センス",
+        "見た目にこだわる"
+      ],
+      "criteriaJa": "美しさの判断が成果物の価値を決める場合。"
+    },
+    {
+      "id": "temperament.unflinching",
+      "facet": "temperament",
+      "slug": "unflinching",
+      "labelJa": "怖いものを見ても平気",
+      "aliasesJa": [
+        "度胸",
+        "動じない",
+        "肝が据わる"
+      ],
+      "criteriaJa": "多くの人が直視をためらう対象や状況に日常的に向き合う場合。"
+    },
+    {
+      "id": "temperament.quiet-pride",
+      "facet": "temperament",
+      "slug": "quiet-pride",
+      "labelJa": "地味な仕事を誇れる",
+      "aliasesJa": [
+        "黒子",
+        "縁の下",
+        "目立たない"
+      ],
+      "criteriaJa": "成果が他人の名前で世に出る、または誰にも気づかれない仕事である場合。"
+    },
+    {
+      "id": "temperament.physical",
+      "facet": "temperament",
+      "slug": "physical",
+      "labelJa": "体を動かしたい",
+      "aliasesJa": [
+        "アウトドア派",
+        "動きたい",
+        "現場好き"
+      ],
+      "criteriaJa": "座り仕事ではないことがその職業の魅力として語られる場合。"
+    },
+    {
+      "id": "temperament.curious",
+      "facet": "temperament",
+      "slug": "curious",
+      "labelJa": "調べ出すと止まらない",
+      "aliasesJa": [
+        "探究心",
+        "好奇心",
+        "凝り性"
+      ],
+      "criteriaJa": "分からないことを掘り下げ続ける姿勢が職能である場合。"
+    }
+  ]
+}

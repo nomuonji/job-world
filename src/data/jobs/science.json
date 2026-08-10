@@ -1,0 +1,92 @@
+{
+  "industry": "science",
+  "jobs": [
+    {
+      "slug": "taxonomist",
+      "nameJa": "分類学者",
+      "nameEn": "Taxonomist",
+      "aliasesJa": [
+        "生物分類学者",
+        "記載分類学者"
+      ],
+      "kanaJa": "ぶんるいがくしゃ",
+      "emoji": "🔬",
+      "summaryJa": "まだ名前のない生き物に、正式な名前を与える。",
+      "descriptionJa": "生物を観察・比較し、新種を記載して学名を与える研究者。新種と判断するには、既存の全近縁種と比べる必要があり、そのために百年以上前の論文と、各国の博物館に保管された標本を当たる。記載論文には特徴の詳細な記述と、基準となる標本の指定が要る。名前が付いていない生物は保護の対象にすらできないため、記載は保全の前提でもある。",
+      "surpriseJa": "名前が付いていない生物は、法律上も保護の対象にしにくい。分類学者が学名を与えることは、その種が制度の中に存在できるようになることを意味する。",
+      "howToBecomeJa": "大学院で分類学を修め、博物館や大学、研究機関の職に就く経路が主。",
+      "tags": [
+        "setting.laboratory",
+        "setting.museum",
+        "subject.animal",
+        "subject.plant",
+        "subject.text",
+        "action.sort",
+        "action.diagnose",
+        "action.record",
+        "sense.fine-motor",
+        "sense.stillness",
+        "sense.color",
+        "condition.solo",
+        "condition.few-practitioners",
+        "condition.travel",
+        "temperament.detail",
+        "temperament.curious",
+        "temperament.solitude",
+        "industry.science"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "declining",
+      "sources": [
+        {
+          "titleJa": "国立科学博物館",
+          "url": "https://www.kahaku.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "weather-forecaster",
+      "nameJa": "気象予報士",
+      "nameEn": "Weather Forecaster",
+      "aliasesJa": [
+        "予報士",
+        "お天気キャスター"
+      ],
+      "kanaJa": "きしょうよほうし",
+      "emoji": "⛅",
+      "summaryJa": "計算結果を、その土地の地形に合わせて読み直す。",
+      "descriptionJa": "数値予報の計算結果をもとに、地域ごとの天気を判断して伝える国家資格職。予報の土台は気象庁の計算だが、山や海岸線の影響で実際の天気は数キロ単位でずれるため、地形の癖を踏まえた補正が予報士の仕事になる。テレビに出る人が目立つが、多くは電力・鉄道・小売・イベントなど、天候で意思決定が変わる現場を支えている。",
+      "surpriseJa": "気象予報士の多くはテレビには出ておらず、電力会社や鉄道、小売の現場にいる。明日の気温が何度になるかで、発電量も仕入れ量も変わるため。",
+      "howToBecomeJa": "気象予報士試験に合格する。受験資格に制限はない。",
+      "tags": [
+        "setting.desk",
+        "subject.sky-body",
+        "subject.data",
+        "subject.water",
+        "action.diagnose",
+        "action.measure",
+        "action.translate",
+        "sense.stillness",
+        "sense.color",
+        "condition.national-license",
+        "condition.night-shift",
+        "temperament.planner",
+        "temperament.curious",
+        "temperament.detail",
+        "industry.science"
+      ],
+      "rarity": 3,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "気象庁",
+          "url": "https://www.jma.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

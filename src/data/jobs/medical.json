@@ -1,0 +1,176 @@
+{
+  "industry": "medical",
+  "jobs": [
+    {
+      "slug": "braille-transcriber",
+      "nameJa": "点訳者",
+      "nameEn": "Braille Transcriber",
+      "aliasesJa": [
+        "点字翻訳者",
+        "点訳校正者"
+      ],
+      "kanaJa": "てんやくしゃ",
+      "emoji": "⠿",
+      "summaryJa": "図や表を、指でたどれる一本の線に置き換える。",
+      "descriptionJa": "墨字の資料を点字に置き換える仕事。単純な文字変換ではなく、点字には独自の分かち書きの規則があり、漢字の読みも文脈から確定させる必要がある。難しいのは図表やレイアウトで、二次元に配置された情報を、指で順にたどれる一次元の並びに組み替えなければならない。教科書や試験問題では、原本と同じ理解に至れるかが問われる。",
+      "surpriseJa": "点訳で最も難しいのは文字ではなく図表。地図やグラフのように目で一望する情報を、指で順番にたどる形へ組み替える作業は、翻訳というより設計に近い。",
+      "howToBecomeJa": "点訳の講習を受け、ボランティア団体や専門機関で経験を積む。点訳技能師の認定制度がある。",
+      "tags": [
+        "setting.desk",
+        "subject.text",
+        "subject.paper",
+        "action.translate",
+        "action.design",
+        "action.record",
+        "sense.stillness",
+        "sense.fingertip",
+        "condition.certification",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.medical"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "社会福祉法人 日本点字図書館",
+          "url": "https://www.nittento.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "clinical-engineer",
+      "nameJa": "臨床工学技士",
+      "nameEn": "Clinical Engineer",
+      "aliasesJa": [
+        "ME",
+        "医療機器の専門技士"
+      ],
+      "kanaJa": "りんしょうこうがくぎし",
+      "emoji": "🫀",
+      "summaryJa": "手術中、止めた心臓の代わりに機械を回している。",
+      "descriptionJa": "人工心肺・人工透析・人工呼吸器といった生命維持装置を操作し、保守する国家資格職。心臓手術では心臓と肺を止めるため、その間の血液循環と酸素供給を人工心肺装置で肩代わりする。装置の設定と血液の状態を刻々と調整する役目を担い、判断の遅れが直接患者の状態に響く。病院内の医療機器全体の点検も業務範囲に入る。",
+      "surpriseJa": "心臓手術のあいだ、患者の血液を循環させ酸素を送っているのは執刀医ではなく臨床工学技士が操作する機械。手術室の中で、生命そのものを預かる持ち場が別にある。",
+      "howToBecomeJa": "養成校を出て国家試験に合格する必要がある。",
+      "tags": [
+        "setting.hospital",
+        "setting.sterile-room",
+        "subject.machine",
+        "subject.human-body",
+        "subject.data",
+        "action.measure",
+        "action.watch",
+        "action.restore",
+        "sense.stillness",
+        "sense.hearing",
+        "condition.national-license",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.detail",
+        "temperament.improvise",
+        "temperament.quiet-pride",
+        "industry.medical"
+      ],
+      "rarity": 3,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "公益社団法人 日本臨床工学技士会",
+          "url": "https://www.ja-ces.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "medical-illustrator",
+      "nameJa": "メディカルイラストレーター",
+      "nameEn": "Medical Illustrator",
+      "aliasesJa": [
+        "医学イラストレーター",
+        "医療図版制作者"
+      ],
+      "kanaJa": "めでぃかるいらすとれーたー",
+      "emoji": "🫁",
+      "summaryJa": "写真では写らないものを描くために、絵にする。",
+      "descriptionJa": "手術手技や解剖、疾患のしくみを図として描く専門職。写真では血や組織に隠れて見えない構造を、必要な層だけ取り出して示せるのが絵の強みになる。医学的な正確さが前提なので、解剖学の知識を持ち、執刀医と何度もやりとりして構造を確認しながら描き進める。教科書や論文、患者向けの説明資料に使われる。",
+      "surpriseJa": "手術の解説に写真ではなく絵が使われるのは、写真には余計なものが写りすぎるから。見せたい構造だけを残せることが、絵の側の精度になっている。",
+      "howToBecomeJa": "美術と医学の双方を学ぶ経路が必要で、国内では制作会社や医療系出版社に入る例が多い。",
+      "tags": [
+        "setting.desk",
+        "subject.human-body",
+        "subject.light",
+        "subject.text",
+        "action.design",
+        "action.translate",
+        "action.record",
+        "sense.color",
+        "sense.fine-motor",
+        "sense.stillness",
+        "condition.solo",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.curious",
+        "industry.medical"
+      ],
+      "rarity": 5,
+      "familiarity": 1,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本医学図書館協会",
+          "url": "https://jmla.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "prosthetist",
+      "nameJa": "義肢装具士",
+      "nameEn": "Prosthetist and Orthotist",
+      "aliasesJa": [
+        "義肢装具製作者",
+        "PO"
+      ],
+      "kanaJa": "ぎしそうぐし",
+      "emoji": "🦿",
+      "summaryJa": "採型して作り、歩き方を見て、また削る。",
+      "descriptionJa": "義手・義足やコルセットなどの装具を、一人ひとりの体に合わせて採型・製作・適合させる国家資格職。石膏で型を取り、樹脂で成形し、装着して歩いてもらい、当たって痛い箇所を削るという工程を繰り返す。断端の形は使ううちに変わっていくため、作って終わりではなく、長期にわたる調整が仕事として続く。",
+      "surpriseJa": "義足は完成品を渡して終わりにならない。切断した部分の形は装着して歩くうちに変わっていくため、体の変化に合わせて作り直し続けることまでが仕事に含まれる。",
+      "howToBecomeJa": "養成校を出て国家試験に合格する必要がある。",
+      "tags": [
+        "setting.workshop",
+        "setting.hospital",
+        "subject.human-body",
+        "subject.machine",
+        "action.measure",
+        "action.assemble",
+        "action.shave",
+        "sense.fingertip",
+        "sense.tilt",
+        "sense.fine-motor",
+        "condition.national-license",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.listener",
+        "temperament.planner",
+        "industry.medical"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "公益社団法人 日本義肢装具士協会",
+          "url": "https://www.japo.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

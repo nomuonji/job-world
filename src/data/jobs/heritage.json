@@ -1,0 +1,184 @@
+{
+  "industry": "heritage",
+  "jobs": [
+    {
+      "slug": "archaeological-excavator",
+      "nameJa": "発掘調査員",
+      "nameEn": "Archaeological Excavator",
+      "aliasesJa": [
+        "埋蔵文化財調査員",
+        "考古調査員"
+      ],
+      "kanaJa": "はっくつちょうさいん",
+      "emoji": "⛏️",
+      "summaryJa": "土の色のわずかな違いから、消えた建物の柱穴を読む。",
+      "descriptionJa": "工事などで地面を掘る前に、埋蔵文化財が残っていないかを調べ、記録する仕事。移植ごてや刷毛で少しずつ土を削り、色や締まり方の違いから、かつて柱が立っていた穴や溝の跡を見つけていく。掘ってしまえば遺跡は失われるため、図面・写真・記述で徹底的に残すところまでが業務になる。屋外作業で、天候と工期に挟まれる。",
+      "surpriseJa": "遺跡の発掘は、掘った瞬間にその状態を永久に壊す作業でもある。だから発掘調査の本体は掘ることではなく、掘る前の状態をどれだけ正確に記録できるかにある。",
+      "howToBecomeJa": "大学で考古学を学び、自治体の埋蔵文化財センターや調査会社に入る経路が主。",
+      "tags": [
+        "setting.outdoors",
+        "subject.soil",
+        "subject.antique",
+        "action.investigate",
+        "action.record",
+        "action.measure",
+        "sense.color",
+        "sense.stamina",
+        "condition.travel",
+        "condition.team",
+        "condition.public-service",
+        "temperament.detail",
+        "temperament.curious",
+        "temperament.physical",
+        "industry.heritage"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "文化庁 埋蔵文化財",
+          "url": "https://www.bunka.go.jp/seisaku/bunkazai/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "archivist",
+      "nameJa": "アーキビスト",
+      "nameEn": "Archivist",
+      "aliasesJa": [
+        "文書館専門職",
+        "記録管理専門職"
+      ],
+      "kanaJa": "あーきびすと",
+      "emoji": "🗄️",
+      "summaryJa": "何を残し、何を残さないかを決めるのが仕事。",
+      "descriptionJa": "公文書や企業記録、個人の資料を評価し、残すものを選び、後から探せる形に整理して保存する専門職。すべてを残すことはできないため、何を捨てるかの判断が業務の中心にある。資料そのものの保存環境を整えることに加え、どういう経緯で作られ、誰の手を経てきたかという来歴を記録することで、資料の証拠としての価値を保つ。",
+      "surpriseJa": "アーキビストの中心的な仕事は保存ではなく選別で、残す価値のないものを見極めて手放すこと自体が専門技能とされている。",
+      "howToBecomeJa": "大学院などで学び、国立公文書館の認証アーキビスト制度による認証を受ける経路がある。",
+      "tags": [
+        "setting.museum",
+        "setting.desk",
+        "subject.paper",
+        "subject.text",
+        "subject.antique",
+        "action.sort",
+        "action.record",
+        "action.diagnose",
+        "sense.stillness",
+        "condition.certification",
+        "condition.public-service",
+        "temperament.detail",
+        "temperament.planner",
+        "temperament.quiet-pride",
+        "industry.heritage"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "emerging",
+      "sources": [
+        {
+          "titleJa": "国立公文書館 認証アーキビスト",
+          "url": "https://www.archives.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "cultural-property-restorer",
+      "nameJa": "文化財修復家",
+      "nameEn": "Cultural Property Conservator",
+      "aliasesJa": [
+        "修復技術者",
+        "コンサバター"
+      ],
+      "kanaJa": "ぶんかざいしゅうふくか",
+      "emoji": "🏺",
+      "summaryJa": "直しすぎないこと、そして必ず元に戻せることが原則。",
+      "descriptionJa": "絵画・彫刻・出土品などの文化財を、これ以上傷まないよう手当てする専門職。現代の修復では、失われた部分を勝手に作り直さないこと、そして後の時代に別の判断が下されたときのために、加えた処置を取り除けるようにしておくことが原則とされる。作業前後の状態を写真と記述で詳細に残すところまでが仕事に含まれる。",
+      "surpriseJa": "現代の文化財修復では、加えた手当てを後から取り除けることが条件になっている。直した跡を消してしまうと、後の時代の人が判断をやり直せなくなるため。",
+      "howToBecomeJa": "美術系大学の保存修復課程や、修復工房での実務経験を経る経路がある。",
+      "tags": [
+        "setting.workshop",
+        "setting.museum",
+        "subject.antique",
+        "subject.paper",
+        "subject.lacquer",
+        "action.restore",
+        "action.diagnose",
+        "action.record",
+        "sense.fingertip",
+        "sense.color",
+        "sense.fine-motor",
+        "condition.certification",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.curious",
+        "industry.heritage"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "sword-polisher",
+          "kind": "confusable",
+          "noteJa": "どちらも古いものを扱うが、研師は削って現し、修復家は足して留める。手の向きが逆になっている。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "文化庁 文化財の保存・活用",
+          "url": "https://www.bunka.go.jp/seisaku/bunkazai/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "scroll-mounter",
+      "nameJa": "表具師",
+      "nameEn": "Scroll Mounter",
+      "aliasesJa": [
+        "装潢師",
+        "経師"
+      ],
+      "kanaJa": "ひょうぐし",
+      "emoji": "🖼️",
+      "summaryJa": "紙と糊だけで、書画を掛軸や襖に仕立てる。",
+      "descriptionJa": "書や絵を掛軸・屏風・襖に仕立て、傷んだものを直す職人。裏に和紙を何層も貼り重ねて本紙を支え、糊の濃さと乾かし方で紙の伸び縮みを制御する。古い作品を扱うときは、以前の裏打ちを湿らせて剥がすところから始まる。使う糊はあえて弱いものを選び、後の時代にもう一度剥がせるようにしておく。",
+      "surpriseJa": "表具に使う糊は、何十年も置いて意図的に接着力を落としたものが尊ばれる。強すぎる糊で貼ると、次に修理する人が本紙を傷めずに剥がせなくなるため。",
+      "howToBecomeJa": "表具店への弟子入りが基本。技能検定に表装の区分がある。",
+      "tags": [
+        "setting.workshop",
+        "subject.paper",
+        "subject.textile",
+        "subject.antique",
+        "action.restore",
+        "action.assemble",
+        "action.measure",
+        "sense.fingertip",
+        "sense.tilt",
+        "sense.fine-motor",
+        "condition.apprenticeship",
+        "condition.solo",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.quiet-pride",
+        "industry.heritage"
+      ],
+      "rarity": 5,
+      "familiarity": 1,
+      "lifecycle": "traditional",
+      "sources": [
+        {
+          "titleJa": "厚生労働省 技能検定制度",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/gino_kentei/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

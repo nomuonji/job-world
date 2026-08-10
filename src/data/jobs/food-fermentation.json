@@ -1,0 +1,230 @@
+{
+  "industry": "food-fermentation",
+  "jobs": [
+    {
+      "slug": "katsuobushi-maker",
+      "nameJa": "鰹節職人",
+      "nameEn": "Katsuobushi Maker",
+      "aliasesJa": [
+        "節屋",
+        "本枯節職人"
+      ],
+      "kanaJa": "かつおぶししょくにん",
+      "emoji": "🐟",
+      "summaryJa": "魚に何度もカビを付け、半年かけて石のように乾かす。",
+      "descriptionJa": "鰹を煮て骨を抜き、薪で燻し、乾かして鰹節に仕上げる職人。最上級の本枯節では、燻したあとに専用のカビを繰り返し付けて生やし、そのたびに天日に干す工程を数か月続ける。カビが内部の水分と脂を抜いていくことで、香りが澄み、日持ちする。完成した節は木のように硬く、削らなければ食べられない。",
+      "surpriseJa": "本枯節は世界でも有数の硬さの食品とされる。カビを生やす工程は腐敗ではなく、狙ったカビを付けて他の菌を寄せ付けないための管理でもある。",
+      "howToBecomeJa": "産地の製造元に入り、工程ごとに現場で覚えるのが主な経路。",
+      "tags": [
+        "setting.workshop",
+        "subject.food",
+        "subject.microbe",
+        "subject.fire",
+        "action.ferment",
+        "action.sort",
+        "sense.smell",
+        "sense.fingertip",
+        "condition.seasonal",
+        "condition.apprenticeship",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.planner",
+        "industry.food-fermentation"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "sources": [
+        {
+          "titleJa": "農林水産省 水産加工",
+          "url": "https://www.maff.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "koji-maker",
+      "nameJa": "種麹屋",
+      "nameEn": "Koji Starter Producer",
+      "aliasesJa": [
+        "もやし屋",
+        "種麹製造者"
+      ],
+      "kanaJa": "たねこうじや",
+      "emoji": "🦠",
+      "summaryJa": "味噌も醤油も酒も、この店の菌から始まっている。",
+      "descriptionJa": "麹菌そのものを培養し、酒蔵や味噌蔵に供給する専門業。日本の発酵食品はほぼすべて麹菌から作られるため、種麹屋の菌が全国の醸造現場の出発点になっている。用途ごとに性質の違う菌株を長年にわたって選抜・維持し、雑菌が混入しないよう厳格に管理された室で増やす。国内でこの業を営む会社は十社に満たないとされる。",
+      "surpriseJa": "日本の味噌・醤油・酒のほとんどは、全国でも十社に満たない種麹屋が供給する菌から始まっている。業界では「もやし屋」と呼ばれてきた。",
+      "howToBecomeJa": "種麹製造会社に就職し、微生物の扱いを現場で学ぶ。醸造や農芸化学の素養が求められることが多い。",
+      "tags": [
+        "setting.sterile-room",
+        "setting.laboratory",
+        "subject.microbe",
+        "subject.food",
+        "action.nurture",
+        "action.sort",
+        "action.measure",
+        "sense.smell",
+        "sense.color",
+        "condition.few-practitioners",
+        "condition.team",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.curious",
+        "industry.food-fermentation"
+      ],
+      "rarity": 5,
+      "familiarity": 1,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "sake-brewmaster",
+          "kind": "supplies",
+          "noteJa": "表に出るのは酒の名前だが、その味を左右する麹菌そのものを作って蔵へ納めているのが種麹屋。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本醸造協会",
+          "url": "https://www.jozo.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "pastry-chef",
+      "nameJa": "パティシエ",
+      "nameEn": "Pastry Chef",
+      "aliasesJa": [
+        "洋菓子職人",
+        "製菓職人"
+      ],
+      "kanaJa": "ぱてぃしえ",
+      "emoji": "🍰",
+      "summaryJa": "計量と温度を一日中詰めつづける、菓子の職人。",
+      "descriptionJa": "洋菓子の製造を専門とする職人。生地・クリーム・チョコレートはいずれも数度の温度差で状態が変わるため、レシピを守ること以上に「今日の湿度と室温に合わせて配合と工程を微調整すること」が腕の中心になる。朝は仕込み、日中は焼成と組み立て、閉店後に翌日の準備という順で動く店が多い。華やかな見た目の裏側は、計量と温度管理をひたすら繰り返す反復作業でできている。",
+      "surpriseJa": "夏と冬でまったく同じレシピを使う店は少ない。湿度が数パーセント違えばメレンゲの立ち方が変わるため、同じ味を出すには毎日レシピの方を動かすことになる。",
+      "howToBecomeJa": "製菓専門学校を出て店に入るか、直接就職して現場で覚えるのが主な経路。国家資格は必須ではないが、製菓衛生師を取る人が多い。",
+      "tags": [
+        "setting.kitchen",
+        "subject.food",
+        "subject.fire",
+        "action.measure",
+        "action.assemble",
+        "action.blend",
+        "sense.taste",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "condition.peak-season",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.food-fermentation"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "職業情報提供サイト job tag",
+          "url": "https://shigoto.mhlw.go.jp/",
+          "publisherJa": "厚生労働省"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "sake-brewmaster",
+      "nameJa": "杜氏",
+      "nameEn": "Sake Brewmaster (Toji)",
+      "aliasesJa": [
+        "酒造りの親方",
+        "蔵人頭"
+      ],
+      "kanaJa": "とうじ",
+      "emoji": "🍶",
+      "summaryJa": "冬のあいだ蔵に住み込み、目に見えない菌の機嫌をうかがう。",
+      "descriptionJa": "日本酒の製造現場の最高責任者。麹菌と酵母という生き物を相手にするため、温度・湿度・時間の管理がそのまま味になる。仕込みは気温の低い冬に集中し、多くの蔵で杜氏と蔵人は期間中そこに住み込む。麹室では手のひらの感触と匂いで麹の出来を判断する場面が今も残っており、数値化された計測と職人の感覚が同居している珍しい現場でもある。",
+      "surpriseJa": "杜氏はもともと季節労働の親方で、農閑期に同じ郷から蔵へ集団で出稼ぎに行く仕組みだった。南部杜氏・越後杜氏のように、出身地の名前がそのまま流派の名前になっている。",
+      "howToBecomeJa": "蔵人として入り、現場で経験を積んで杜氏になるのが主流。国家資格はないが、技能検定に酒造の区分がある。",
+      "tags": [
+        "setting.workshop",
+        "subject.microbe",
+        "subject.water",
+        "subject.food",
+        "action.ferment",
+        "action.measure",
+        "action.blend",
+        "sense.smell",
+        "sense.taste",
+        "sense.fingertip",
+        "condition.live-in",
+        "condition.seasonal",
+        "condition.apprenticeship",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.planner",
+        "industry.food-fermentation"
+      ],
+      "rarity": 4,
+      "familiarity": 4,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "perfumer",
+          "kind": "confusable",
+          "noteJa": "どちらも鼻で判断する仕事だが、杜氏は生き物の状態を嗅ぎ、調香師は完成形を嗅ぐ。同じ器官で見ているものが違う。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本酒造杜氏組合連合会",
+          "url": "https://www.toji.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "sommelier",
+      "nameJa": "ソムリエ",
+      "nameEn": "Sommelier",
+      "aliasesJa": [
+        "ワイン専門給仕人"
+      ],
+      "kanaJa": "そむりえ",
+      "emoji": "🍷",
+      "summaryJa": "客が言葉にできない好みを、対話から言い当てる。",
+      "descriptionJa": "レストランでワインを選定し、客に合わせて提供する専門職。味を判別する能力はもちろん必要だが、実務の中心はむしろ、予算・料理・その日の気分といった断片から客の望むものを推定して提案することにある。仕入れと在庫の管理、保管温度の管理、開けるタイミングの判断まで含めて、店の利益にも直接関わる。",
+      "surpriseJa": "ソムリエの試験では味を当てる能力だけでなく、サービスの所作や法規、原価計算まで問われる。味覚の職業に見えて、実態はかなりの部分が接客と経営の仕事になっている。",
+      "howToBecomeJa": "飲食店での実務経験を積み、日本ソムリエ協会などの資格認定を受けるのが一般的。",
+      "tags": [
+        "setting.stage",
+        "subject.food",
+        "subject.water",
+        "action.diagnose",
+        "action.negotiate",
+        "action.sort",
+        "sense.taste",
+        "sense.smell",
+        "sense.color",
+        "condition.certification",
+        "condition.night-shift",
+        "temperament.listener",
+        "temperament.improvise",
+        "temperament.curious",
+        "industry.food-fermentation"
+      ],
+      "rarity": 3,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "一般社団法人 日本ソムリエ協会",
+          "url": "https://www.sommelier.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

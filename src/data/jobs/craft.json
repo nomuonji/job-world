@@ -1,0 +1,315 @@
+{
+  "industry": "craft",
+  "jobs": [
+    {
+      "slug": "brush-maker",
+      "nameJa": "筆職人",
+      "nameEn": "Brush Maker",
+      "aliasesJa": [
+        "毛筆職人",
+        "筆司"
+      ],
+      "kanaJa": "ふでしょくにん",
+      "emoji": "🖌️",
+      "summaryJa": "何種類もの獣毛を混ぜ、書き味そのものを設計する。",
+      "descriptionJa": "書道用や画材用の毛筆をつくる職人。羊・馬・鹿・狸など動物ごとに毛の弾力と墨の含みが違うため、用途に合わせて数種類を混ぜ合わせるところから始まる。毛を揃え、寸法を測り、根元を糸で締めて軸に挿すまで、工程は数十に分かれる。同じ材料でも混ぜる比率で書き味がまったく変わるので、配合そのものが職人ごとの技術になっている。",
+      "surpriseJa": "筆の性格を決めているのは軸ではなく毛の配合で、これは各工房の企業秘密にあたる。同じ「羊毛筆」でも作り手が違えば別物として扱われる。",
+      "howToBecomeJa": "産地の工房に入り、工程ごとに数年かけて覚えるのが基本。伝統工芸士の認定制度がある。",
+      "tags": [
+        "setting.workshop",
+        "subject.animal",
+        "subject.wood",
+        "action.blend",
+        "action.assemble",
+        "action.sort",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "condition.apprenticeship",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "industry.craft"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "sources": [
+        {
+          "titleJa": "伝統的工芸品産業振興協会",
+          "url": "https://kougeihin.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "kumihimo-braider",
+      "nameJa": "組紐職人",
+      "nameEn": "Kumihimo Braider",
+      "aliasesJa": [
+        "組紐師",
+        "くみひも職人"
+      ],
+      "kanaJa": "くみひもしょくにん",
+      "emoji": "🧵",
+      "summaryJa": "何十本もの絹糸を、台の上で決まった順に組み続ける。",
+      "descriptionJa": "絹糸を組み合わせて紐をつくる職人。丸台・角台・高台といった専用の台に糸束を垂らし、決められた順序で入れ替えていくことで模様が立ち上がる。帯締めや刀の下緒、袈裟の紐などに使われ、伸び方や締まり方が用途ごとに異なるため、組み方の種類は数百に及ぶ。一度手順を間違えると模様が崩れ、多くの場合ほどいて戻すしかない。",
+      "surpriseJa": "組紐の模様は染めや刺繍ではなく、糸を動かす順番だけで生まれている。図案があるのではなく、手順そのものが図案になっている。",
+      "howToBecomeJa": "産地の工房や教室で学び、職人のもとで経験を積む。伝統工芸士の認定がある。",
+      "tags": [
+        "setting.workshop",
+        "subject.textile",
+        "action.sew",
+        "action.assemble",
+        "sense.fingertip",
+        "sense.color",
+        "sense.stillness",
+        "condition.apprenticeship",
+        "condition.solo",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.craft"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "sources": [
+        {
+          "titleJa": "伝統的工芸品産業振興協会",
+          "url": "https://kougeihin.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "sword-polisher",
+      "nameJa": "刀剣研師",
+      "nameEn": "Japanese Sword Polisher",
+      "aliasesJa": [
+        "研師",
+        "刀研ぎ師"
+      ],
+      "kanaJa": "とうけんとぎし",
+      "emoji": "🗡️",
+      "summaryJa": "何十種類もの砥石で、刀の中に眠っている模様を出す。",
+      "descriptionJa": "日本刀を砥石で研ぎ、刃文や地鉄の模様を見えるようにする職人。切れ味のためだけでなく、刀を美術品として成立させる工程を担う。荒砥から仕上げまで硬さの異なる天然砥石を順に使い、最終工程では米粒ほどに割った砥石を指先に当てて磨いていく。刀の姿を損ねずに地鉄の景色を引き出すには、その刀がどう作られたかを読み取る目が要る。",
+      "surpriseJa": "研ぎを一度誤ると刀の地鉄は二度と元に戻らない。だから重要文化財級の刀を任される研師は、事実上ごく少数に限られている。",
+      "howToBecomeJa": "研師への弟子入りが基本。文化庁の美術刀剣類の研磨等技術保存研修という制度もある。",
+      "tags": [
+        "setting.workshop",
+        "subject.metal",
+        "subject.antique",
+        "subject.stone",
+        "action.polish",
+        "action.restore",
+        "action.diagnose",
+        "sense.fingertip",
+        "sense.color",
+        "sense.fine-motor",
+        "condition.apprenticeship",
+        "condition.solo",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.repeatable",
+        "temperament.solitude",
+        "industry.craft"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "sources": [
+        {
+          "titleJa": "公益財団法人 日本美術刀剣保存協会",
+          "url": "https://www.touken.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "swordsmith",
+      "nameJa": "刀鍛冶",
+      "nameEn": "Japanese Swordsmith",
+      "aliasesJa": [
+        "刀工",
+        "刀匠"
+      ],
+      "kanaJa": "かたなかじ",
+      "emoji": "🔥",
+      "summaryJa": "炎の色だけで鋼の温度を読み、日本刀を打つ。",
+      "descriptionJa": "玉鋼を熱して打ち延ばし、日本刀を鍛える職人。炉の中の鋼は温度計では測らず、炎と鋼の色で判断する。そのため作業場は日中でも暗く保たれている。折り返し鍛錬で不純物を除き、土を置いて焼き入れをすることで刃文が生まれる。刀の製作には登録が必要で、作れる本数も法律で制限されている。",
+      "surpriseJa": "日本刀を作るには文化庁の承認を受けた刀匠である必要があり、さらに一人が作れる本数は月に数振りまでと法律で決まっている。作りたいだけ作れる仕事ではない。",
+      "howToBecomeJa": "刀匠のもとで5年以上修業し、文化庁の研修を経て承認を受ける必要がある。",
+      "tags": [
+        "setting.workshop",
+        "subject.metal",
+        "subject.fire",
+        "action.weld",
+        "action.shave",
+        "action.measure",
+        "sense.color",
+        "sense.night-vision",
+        "sense.stamina",
+        "condition.apprenticeship",
+        "condition.national-license",
+        "condition.danger",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.physical",
+        "industry.craft"
+      ],
+      "rarity": 5,
+      "familiarity": 3,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "sword-polisher",
+          "kind": "supplies",
+          "noteJa": "刀鍛冶が打った刀は、研師の手を通らなければ刃文が見えない。作り手と、見えるようにする人の関係。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "公益財団法人 日本美術刀剣保存協会",
+          "url": "https://www.touken.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "tatami-maker",
+      "nameJa": "畳職人",
+      "nameEn": "Tatami Maker",
+      "aliasesJa": [
+        "畳屋",
+        "畳製作技能士"
+      ],
+      "kanaJa": "たたみしょくにん",
+      "emoji": "🟩",
+      "summaryJa": "部屋の方が歪んでいる前提で、畳の方を合わせて作る。",
+      "descriptionJa": "い草の表と芯材を縫い合わせて畳を作り、部屋に敷き込む職人。古い家では部屋が完全な長方形になっていないことが多く、一枚ごとに寸法を測って台形に近い形へ調整する。畳表を張り替える表替え、芯から作り直す新調など、傷み方に応じて手当ての仕方が変わる。近年は機械縫いが主流だが、寸法取りと納まりの判断は人が行う。",
+      "surpriseJa": "同じ部屋の畳でも一枚ずつ寸法が違う。だから畳には敷く場所が決まっていて、順番を入れ替えると入らなくなる。",
+      "howToBecomeJa": "畳店に入って現場で覚えるのが主。技能検定に畳製作の区分がある。",
+      "tags": [
+        "setting.someones-home",
+        "setting.workshop",
+        "subject.plant",
+        "subject.textile",
+        "action.measure",
+        "action.sew",
+        "action.assemble",
+        "sense.fingertip",
+        "sense.tilt",
+        "sense.stamina",
+        "condition.travel",
+        "condition.apprenticeship",
+        "temperament.planner",
+        "temperament.physical",
+        "industry.craft"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "declining",
+      "sources": [
+        {
+          "titleJa": "厚生労働省 技能検定制度",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/gino_kentei/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "urushi-lacquerer",
+      "nameJa": "漆芸家",
+      "nameEn": "Urushi Lacquer Artisan",
+      "aliasesJa": [
+        "塗師",
+        "漆職人"
+      ],
+      "kanaJa": "しつげいか",
+      "emoji": "🥢",
+      "summaryJa": "湿った部屋に器を寝かせ、漆が乾くのを待ち続ける。",
+      "descriptionJa": "漆を器や家具に塗り重ねて仕上げる職人。漆は乾燥ではなく、適度な湿度の中で硬化していくため、塗ったあとは湿し風呂と呼ばれる湿った戸棚に入れて待つ。下地から仕上げまで十数回から数十回塗り重ね、その都度研ぐ。仕上げの一層は塵一つ付いただけで台無しになるため、作業場の空気の管理まで仕事のうちになる。",
+      "surpriseJa": "漆は乾かすのではなく湿らせて固める。だから塗ったあとは、乾いた場所ではなく湿らせた戸棚にしまわれる。",
+      "howToBecomeJa": "産地の工房への弟子入り、または美術系の学校で学んでから工房に入る経路がある。",
+      "tags": [
+        "setting.workshop",
+        "subject.lacquer",
+        "subject.wood",
+        "action.polish",
+        "action.blend",
+        "action.assemble",
+        "sense.fingertip",
+        "sense.color",
+        "sense.fine-motor",
+        "condition.apprenticeship",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.repeatable",
+        "industry.craft"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "traditional",
+      "sources": [
+        {
+          "titleJa": "伝統的工芸品産業振興協会",
+          "url": "https://kougeihin.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "washi-papermaker",
+      "nameJa": "和紙職人",
+      "nameEn": "Washi Papermaker",
+      "aliasesJa": [
+        "紙漉き職人",
+        "手漉き和紙職人"
+      ],
+      "kanaJa": "わししょくにん",
+      "emoji": "📜",
+      "summaryJa": "冷たい水の中で簀桁を揺すり、繊維を絡ませる。",
+      "descriptionJa": "楮や三椏の樹皮から繊維を取り出し、水に溶かして一枚ずつ紙を漉く職人。簀桁を前後左右に揺することで繊維が絡み合い、機械抄きの紙より強い紙になる。冬に作業が集中するのは、水温が低いほど繊維が均一に分散し、粘剤の効きも安定するため。文化財の修復用紙のように、数十年後の耐久性まで見込んで漉かれる紙もある。",
+      "surpriseJa": "和紙漉きが冬の仕事なのは風情の問題ではなく、水が冷たいほど繊維がよく分散して紙が均一になるという物理的な理由による。",
+      "howToBecomeJa": "産地の工房に入って覚えるのが主。研修制度を持つ自治体もある。",
+      "tags": [
+        "setting.workshop",
+        "subject.paper",
+        "subject.water",
+        "subject.plant",
+        "action.blend",
+        "action.assemble",
+        "sense.fingertip",
+        "sense.balance",
+        "condition.seasonal",
+        "condition.apprenticeship",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.physical",
+        "industry.craft"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "scroll-mounter",
+          "kind": "supplies",
+          "noteJa": "和紙職人が漉いた紙は、表具師の手で掛軸や襖になる。作った紙が誰の手に渡るかまで見えている関係。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "伝統的工芸品産業振興協会",
+          "url": "https://kougeihin.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

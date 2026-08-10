@@ -1,0 +1,141 @@
+{
+  "industry": "ceremony",
+  "jobs": [
+    {
+      "slug": "embalmer",
+      "nameJa": "エンバーマー",
+      "nameEn": "Embalmer",
+      "aliasesJa": [
+        "遺体衛生保全士"
+      ],
+      "kanaJa": "えんばーまー",
+      "emoji": "🕯️",
+      "summaryJa": "遺体の状態を保ち、会いに来る時間をつくる。",
+      "descriptionJa": "遺体に消毒と保全の処置を施し、変化を抑える専門職。血液を防腐液に置換し、必要なら損傷部を修復して、生前に近い外見に整える。遠方の親族が到着するまでの時間を確保できること、感染のリスクを下げられることが目的で、事故や災害で損傷が大きい場合の修復も担う。国内では認定資格として運用されている。",
+      "surpriseJa": "エンバーミングの目的は見た目を整えることだけではない。遺体の変化を止めることで、遠くの家族が到着するまでの時間そのものを作り出している。",
+      "howToBecomeJa": "専門の養成課程を修了し、日本遺体衛生保全協会の認定を受ける経路がある。",
+      "tags": [
+        "setting.sterile-room",
+        "setting.workshop",
+        "subject.deceased",
+        "subject.human-body",
+        "subject.water",
+        "action.restore",
+        "action.measure",
+        "action.clean-up",
+        "sense.fingertip",
+        "sense.color",
+        "sense.fine-motor",
+        "condition.certification",
+        "condition.night-shift",
+        "condition.solo",
+        "temperament.unflinching",
+        "temperament.detail",
+        "temperament.quiet-pride",
+        "industry.ceremony"
+      ],
+      "rarity": 5,
+      "familiarity": 3,
+      "lifecycle": "emerging",
+      "sources": [
+        {
+          "titleJa": "一般社団法人 日本遺体衛生保全協会",
+          "url": "https://www.embalming.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "estate-cleaner",
+      "nameJa": "遺品整理士",
+      "nameEn": "Estate Cleaner",
+      "aliasesJa": [
+        "遺品整理業者",
+        "特殊清掃員"
+      ],
+      "kanaJa": "いひんせいりし",
+      "emoji": "📦",
+      "summaryJa": "捨てるものを決めるのではなく、決めてもらう仕事。",
+      "descriptionJa": "亡くなった方の住居を片づけ、遺品を分類する仕事。作業自体は搬出と清掃だが、実務の難しさは、遺族が何を残したいかを聞き取りながら進める点にある。写真や手紙、通帳や権利証は勝手に処分できない。孤独死の現場では通常の清掃では戻せないため、消臭と原状回復を含む特殊清掃を伴うこともある。",
+      "surpriseJa": "遺品整理で最も時間がかかるのは運び出しではなく、遺族が「これは捨てていい」と決められるまで待つ時間だとされる。作業そのものより、判断に付き添う仕事の比重が大きい。",
+      "howToBecomeJa": "遺品整理の事業者に入り、遺品整理士の認定を受ける経路が一般的。",
+      "tags": [
+        "setting.someones-home",
+        "setting.after-people",
+        "subject.waste",
+        "subject.deceased",
+        "action.clean-up",
+        "action.sort",
+        "action.soothe",
+        "sense.smell",
+        "sense.stamina",
+        "condition.certification",
+        "condition.travel",
+        "condition.team",
+        "temperament.unflinching",
+        "temperament.listener",
+        "temperament.physical",
+        "industry.ceremony"
+      ],
+      "rarity": 4,
+      "familiarity": 4,
+      "lifecycle": "emerging",
+      "sources": [
+        {
+          "titleJa": "一般社団法人 遺品整理士認定協会",
+          "url": "https://www.is-mind.org/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "funeral-director",
+      "nameJa": "葬祭ディレクター",
+      "nameEn": "Funeral Director",
+      "aliasesJa": [
+        "葬儀社スタッフ",
+        "葬祭業従事者"
+      ],
+      "kanaJa": "そうさいでぃれくたー",
+      "emoji": "🏮",
+      "summaryJa": "打ち合わせの時間が数時間しかない進行を組む。",
+      "descriptionJa": "葬儀の準備から進行までを取り仕切る仕事。宗派や地域ごとに作法が異なるうえ、逝去から通夜までの猶予が短く、限られた打ち合わせで内容を決めていく。会場・僧侶・火葬場・返礼品の手配を並行して進め、当日は司会と進行を担う。深い悲しみの中にいる家族から必要な情報を聞き出す、対話の技能が中心にある。",
+      "surpriseJa": "葬儀の準備は多くの場合、逝去から一日か二日しかない。その短い時間で宗派の作法、火葬場の空き、親族の都合をすべて合わせて形にするのがこの仕事の実務になる。",
+      "howToBecomeJa": "葬儀社に就職し、実務経験を経て葬祭ディレクター技能審査を受ける経路がある。",
+      "tags": [
+        "setting.temple",
+        "setting.stage",
+        "subject.deceased",
+        "subject.law",
+        "action.negotiate",
+        "action.soothe",
+        "action.perform",
+        "sense.stamina",
+        "condition.certification",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.listener",
+        "temperament.improvise",
+        "temperament.planner",
+        "industry.ceremony"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "embalmer",
+          "kind": "same-site",
+          "noteJa": "同じ葬儀の現場で、片方は家族と時間を組み立て、片方は遺体の時間を止めている。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "厚生労働省認定 葬祭ディレクター技能審査",
+          "url": "https://www.sousai-director.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

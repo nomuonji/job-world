@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+/*
+ * 配色の考え方:
+ * 職業図鑑は「未知の世界へ潜っていく」体験なので、紙の図鑑の白ではなく
+ * 夜の地図のような深い藍を基調にする。ライトモードはその反転ではなく、
+ * 同じ藍を薄く敷いた「昼の地図」として別に組む。
+ * ファセット7色は探索UIの意味を担う（色だけに依存させず絵文字とテキストも併記する）。
+ */
+:root {
+  --background: #f7f6f2;
+  --surface: #ffffff;
+  --surface-2: #efece5;
+  --border: #ddd8cc;
+  --foreground: #1b1d26;
+  --muted: #5d6070;
+  --accent: #2f4a8c;
+  --accent-soft: #e6ebf7;
+
+  /* ファセット色（軸の意味を持つ。setting→industry の順） */
+  --facet-setting: #2f7d6b;
+  --facet-subject: #a1622a;
+  --facet-action: #b03a5b;
+  --facet-sense: #7a45a8;
+  --facet-condition: #3f6ea8;
+  /* コントラスト比 4.5:1 を満たすため、当初の #8a7320 から少し暗くしている。 */
+  --facet-temperament: #7a6415;
+  --facet-industry: #5a6270;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #12141c;
+    --surface: #1a1d28;
+    --surface-2: #222634;
+    --border: #333849;
+    --foreground: #e8e9ef;
+    --muted: #9aa0b4;
+    --accent: #8fb0ff;
+    --accent-soft: #1e2740;
+
+    --facet-setting: #5ec3a8;
+    --facet-subject: #d99a5b;
+    --facet-action: #e8768f;
+    --facet-sense: #b98ce0;
+    --facet-condition: #7ba7e8;
+    --facet-temperament: #cbb254;
+    --facet-industry: #a3abbd;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* 日本語の本文は行間を広めに取る。欧文フォントの後ろに和文を明示的に置く。 */
+  font-family: ui-sans-serif, system-ui, "Hiragino Kaku Gothic ProN",
+    "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.8;
+}
+
+/*
+ * エゴネットワークのノード。
+ * ホバー時に少し持ち上げて、押せることと今どれを見ているかを示す。
+ * transform-box/transform-origin を指定しないと SVG 内の scale が原点基準になる。
+ */
+.ego-node {
+  cursor: pointer;
+}
+.ego-node circle,
+.ego-node text {
+  transition:
+    transform 160ms ease-out,
+    opacity 160ms ease-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.ego-node:hover circle,
+.ego-node:focus-visible circle {
+  transform: scale(1.12);
+}
+.ego-node:hover text,
+.ego-node:focus-visible text {
+  opacity: 1;
+}
+
+/*
+ * 狭い画面では外リングを消して、中心＋8ノードだけにする。
+ * JS で件数を変えるとサーバーHTMLと食い違うので、CSSで落とすほうが素直。
+ * 図の下のカードリストが主たる操作面なので、情報は失われない。
+ */
+@media (max-width: 640px) {
+  .ego-outer {
+    display: none;
+  }
+  .ego-pill {
+    display: none;
+  }
+  .ego-sector {
+    font-size: 24px;
+  }
+}
+
+/*
+ * 中心の切り替え。クリックしたノードへ寄っていく200msを挟むことで、
+ * ページが差し替わったのではなく「そこへ移動した」感覚になる。
+ */
+.ego-svg {
+  transition: transform 200ms ease-in;
+}
+.ego-svg.is-leaving {
+  transform: scale(1.12);
+}
+.ego-node.is-target circle {
+  transform: scale(1.35);
+}
+.ego-svg.is-leaving .ego-node:not(.is-target) {
+  opacity: 0.35;
+  transition: opacity 200ms ease-in;
+}
+
+/*
+ * 全体マップのノード。
+ * フォーカスは実DOMフォーカスなので、Tabで辿ったときも同じ見た目になる。
+ */
+/*
+ * 当たり判定。SVGの丸の真上に置く透明なボタン。
+ * 見た目はSVG、操作と読み上げはこのボタン、と役割を分けている。
+ */
+/*
+ * 狭い画面では地図の中だけを横スクロールさせる。
+ * 375px に53件を収めると、ノードの間隔が13pxしかなくタップ領域が重なり、
+ * 隣の仕事を誤って選んでしまう。ページ自体は横スクロールさせない。
+ */
+.world-scroll {
+  overflow-x: auto;
+}
+@media (max-width: 640px) {
+  .world-canvas {
+    min-width: 640px;
+  }
+}
+
+.world-hit {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 3.2%;
+  height: 3.2%;
+  min-width: 18px;
+  min-height: 18px;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+.world-hit:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.world-node circle,
+.world-node text {
+  transition:
+    opacity 160ms ease-out,
+    transform 160ms ease-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+/* 選択中でも隣人でもないノードは沈める。線を追いやすくするため。 */
+.world-node.is-dim {
+  opacity: 0.28;
+}
+
+/* 動きを減らす設定を尊重する。探索の遷移アニメは全部ここで止まる。 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

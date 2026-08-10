@@ -1,0 +1,31 @@
+{
+  "jobCount": 53,
+  "tagCount": 132,
+  "averageDegree": 10.19,
+  "orphanSlugs": [],
+  "entrySlugs": [
+    "air-traffic-controller",
+    "astronaut",
+    "kimono-dresser",
+    "perfumer",
+    "estate-cleaner",
+    "funeral-director",
+    "tatami-maker",
+    "stage-lighting-designer",
+    "pastry-chef",
+    "sake-brewmaster",
+    "sommelier",
+    "airline-pilot",
+    "train-driver",
+    "beekeeper",
+    "zookeeper",
+    "ama-diver",
+    "forester",
+    "proofreader",
+    "weather-forecaster"
+  ],
+  "reachabilityRatio": 1,
+  "unreachableSlugs": [],
+  "averageHopsToRare": 1,
+  "entriesWithoutRareWithin3": []
+}

@@ -1,0 +1,135 @@
+{
+  "industry": "primary",
+  "jobs": [
+    {
+      "slug": "ama-diver",
+      "nameJa": "海女",
+      "nameEn": "Ama Diver",
+      "aliasesJa": [
+        "海士",
+        "素潜り漁師"
+      ],
+      "kanaJa": "あま",
+      "emoji": "🤿",
+      "summaryJa": "空気の器具を使わず、素潜りで海底の貝を獲る。",
+      "descriptionJa": "潜水器具を使わず、素潜りでアワビやサザエ、海藻を採る漁。一回の潜水は数十秒から一分ほどで、それを一日に何百回も繰り返す。獲りすぎを防ぐため、操業できる時間や解禁期間、獲ってよい大きさが地域の取り決めで厳しく定められている。潜る場所の地形と潮を知っていることが安全と漁獲の両方を左右する。",
+      "surpriseJa": "海女漁で酸素ボンベを使わないのは伝統の維持だけが理由ではない。潜れる時間を人の息の長さに制限することが、そのまま獲りすぎを防ぐ資源管理の仕組みとして働いている。",
+      "howToBecomeJa": "漁協に所属し、地域の海女から潜り方と漁場を学ぶ。地域外からの新規参入を支援する自治体もある。",
+      "tags": [
+        "setting.underwater",
+        "setting.sea",
+        "subject.animal",
+        "subject.water",
+        "action.dive",
+        "action.catch",
+        "action.sort",
+        "sense.stamina",
+        "sense.balance",
+        "sense.night-vision",
+        "condition.seasonal",
+        "condition.danger",
+        "condition.few-practitioners",
+        "temperament.physical",
+        "temperament.unflinching",
+        "industry.primary"
+      ],
+      "rarity": 5,
+      "familiarity": 4,
+      "lifecycle": "declining",
+      "sources": [
+        {
+          "titleJa": "水産庁",
+          "url": "https://www.jfa.maff.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "forester",
+      "nameJa": "林業作業士",
+      "nameEn": "Forester",
+      "aliasesJa": [
+        "きこり",
+        "森林作業員",
+        "フォレストワーカー"
+      ],
+      "kanaJa": "りんぎょうさぎょうし",
+      "emoji": "🪵",
+      "summaryJa": "自分が植えた木を、自分では伐らずに次の代へ渡す。",
+      "descriptionJa": "山で木を植え、育て、伐り出す仕事。植栽・下刈り・間伐・伐採と工程が分かれ、一本の木が使えるようになるまで数十年かかる。斜面での作業に加え、チェーンソーと重機を扱うため労働災害の危険が高い職種でもある。近年は高性能林業機械の導入が進み、機械の操作技能が求められる場面が増えている。",
+      "surpriseJa": "植えた人と伐る人が同じであることはまずない。今の伐採現場で倒れている木は、祖父の世代が植えたもので、今日植える木を伐るのは孫の世代になる。",
+      "howToBecomeJa": "森林組合や林業事業体に就職し、緑の雇用などの研修制度で技能を身につける経路がある。",
+      "tags": [
+        "setting.mountain",
+        "setting.outdoors",
+        "subject.wood",
+        "subject.plant",
+        "subject.machine",
+        "action.catch",
+        "action.nurture",
+        "action.operate-vehicle",
+        "sense.stamina",
+        "sense.balance",
+        "condition.danger",
+        "condition.team",
+        "condition.seasonal",
+        "temperament.physical",
+        "temperament.planner",
+        "industry.primary"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "林野庁",
+          "url": "https://www.rinya.maff.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "pearl-culturist",
+      "nameJa": "真珠養殖の核入れ職人",
+      "nameEn": "Pearl Nucleus Inserter",
+      "aliasesJa": [
+        "挿核技術者",
+        "核入れ師"
+      ],
+      "kanaJa": "しんじゅようしょくのかくいれしょくにん",
+      "emoji": "🦪",
+      "summaryJa": "生きた貝を開き、数十秒で核と外套膜を差し込む。",
+      "descriptionJa": "アコヤ貝の体内に真珠の核と外套膜の小片を挿入する専門技術者。貝をわずかに開いて器具で生殖巣に切開を入れ、核を正確な位置に置く。処置が長引くほど貝が弱るため、一個あたり数十秒で終える速さが要る。挿入位置がずれると真珠が歪んだり、貝が核を吐き出したりするため、養殖の成否がこの数十秒に集約される。",
+      "surpriseJa": "真珠は貝が偶然作るものではなく、人が核を埋め込んで作らせている。一年以上かけて育つ真珠の質は、最初の数十秒の手つきでほぼ決まってしまう。",
+      "howToBecomeJa": "養殖業者のもとで技術を習得する。熟練までに数年を要するとされる。",
+      "tags": [
+        "setting.sea",
+        "setting.workshop",
+        "subject.animal",
+        "subject.water",
+        "action.assemble",
+        "action.measure",
+        "action.sort",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "sense.stillness",
+        "condition.seasonal",
+        "condition.few-practitioners",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "industry.primary"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "sources": [
+        {
+          "titleJa": "水産庁 真珠養殖",
+          "url": "https://www.jfa.maff.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

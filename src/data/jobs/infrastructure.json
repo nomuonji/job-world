@@ -1,0 +1,179 @@
+{
+  "industry": "infrastructure",
+  "jobs": [
+    {
+      "slug": "bridge-inspector",
+      "nameJa": "橋梁点検技術者",
+      "nameEn": "Bridge Inspector",
+      "aliasesJa": [
+        "橋梁点検員",
+        "インフラ点検技術者"
+      ],
+      "kanaJa": "きょうりょうてんけんぎじゅつしゃ",
+      "emoji": "🌉",
+      "summaryJa": "橋の裏側に回り込み、ひび割れの幅を測る。",
+      "descriptionJa": "道路橋やトンネルを定期的に調べ、劣化の程度を判定する仕事。日本では橋の近接目視点検が法令で義務づけられており、橋の裏側まで人が近づいて、ひび割れの幅や鉄筋の腐食を確認する。点検車のアームで下に回り込んだり、ロープでぶら下がったりする。判定結果が補修や通行止めの判断に直結するため、記録の正確さが問われる。",
+      "surpriseJa": "橋の点検は写真を撮るだけでは済まない。法令上、人が近づいて自分の目で見ることが求められており、そのために橋の下へ回り込む専用の車両まで存在する。",
+      "howToBecomeJa": "建設コンサルタントや点検会社に入り、土木の知識と点検の資格を積み上げる。",
+      "tags": [
+        "setting.high-place",
+        "setting.outdoors",
+        "setting.confined",
+        "subject.machine",
+        "subject.stone",
+        "action.diagnose",
+        "action.measure",
+        "action.record",
+        "sense.tilt",
+        "sense.balance",
+        "sense.color",
+        "condition.danger",
+        "condition.travel",
+        "condition.team",
+        "temperament.detail",
+        "temperament.quiet-pride",
+        "industry.infrastructure"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "emerging",
+      "sources": [
+        {
+          "titleJa": "国土交通省 道路メンテナンス",
+          "url": "https://www.mlit.go.jp/road/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "rope-access-technician",
+      "nameJa": "ロープ高所作業者",
+      "nameEn": "Rope Access Technician",
+      "aliasesJa": [
+        "ブランコ作業員",
+        "ロープアクセス技術者"
+      ],
+      "kanaJa": "ろーぷこうしょさぎょうしゃ",
+      "emoji": "🧗",
+      "summaryJa": "屋上から一本のロープで降りて、外壁を直す。",
+      "descriptionJa": "足場を組めない建物の外壁で、ロープで吊り下がって作業する仕事。清掃、塗装、シーリングの打ち替え、外壁の調査などを行う。作業用のロープとは別に、万一に備えた命綱を必ず併用することが法令で定められている。風の強い日は中止になり、ビルの形状ごとに支点の取り方を組み立て直すため、段取りが安全そのものになる。",
+      "surpriseJa": "ロープでの高所作業では、体を支えるロープとは別に命綱をもう一本使うことが法令で義務づけられている。二本目は使わないことが前提の、落ちたときのためだけのロープ。",
+      "howToBecomeJa": "専門業者に入り、ロープ高所作業の特別教育を受けて現場で経験を積む。",
+      "tags": [
+        "setting.high-place",
+        "setting.outdoors",
+        "subject.stone",
+        "subject.machine",
+        "action.climb",
+        "action.clean-up",
+        "action.restore",
+        "sense.balance",
+        "sense.stamina",
+        "condition.danger",
+        "condition.travel",
+        "condition.team",
+        "temperament.unflinching",
+        "temperament.physical",
+        "temperament.planner",
+        "industry.infrastructure"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "厚生労働省 ロープ高所作業",
+          "url": "https://www.mhlw.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "sewer-pipe-inspector",
+      "nameJa": "下水道管路管理技士",
+      "nameEn": "Sewer Pipe Inspector",
+      "aliasesJa": [
+        "下水道管路管理者",
+        "管きょ調査員"
+      ],
+      "kanaJa": "げすいどうかんろかんりぎし",
+      "emoji": "🕳️",
+      "summaryJa": "街の下に張りめぐらされた管の中を、映像で歩く。",
+      "descriptionJa": "地下に埋設された下水管の状態を調べ、詰まりや破損を見つける仕事。人が入れる大きさの管では実際に潜り、細い管では自走式カメラを流して映像で判定する。管内は酸素が薄くなったり有毒ガスが溜まったりするため、入る前のガス測定と換気が必須になる。道路の陥没は下水管の破損から始まることが多く、点検はその予防にあたる。",
+      "surpriseJa": "道路が突然陥没する事故の多くは、地下の下水管が壊れて土が流れ出すことから始まっている。地上に何も見えないうちに、その兆候を見つけるのがこの仕事。",
+      "howToBecomeJa": "管路管理業者に入り、下水道管路管理技士の資格を取得する経路がある。",
+      "tags": [
+        "setting.underground",
+        "setting.confined",
+        "subject.water",
+        "subject.waste",
+        "subject.machine",
+        "action.investigate",
+        "action.diagnose",
+        "action.record",
+        "sense.smell",
+        "sense.night-vision",
+        "condition.danger",
+        "condition.certification",
+        "condition.night-shift",
+        "temperament.unflinching",
+        "temperament.quiet-pride",
+        "industry.infrastructure"
+      ],
+      "rarity": 4,
+      "familiarity": 1,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "公益社団法人 日本下水道管路管理業協会",
+          "url": "https://www.jascoma.com/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "underwater-welder",
+      "nameJa": "水中溶接士",
+      "nameEn": "Underwater Welder",
+      "aliasesJa": [
+        "潜水溶接士",
+        "水中作業員"
+      ],
+      "kanaJa": "すいちゅうようせつし",
+      "emoji": "⚡",
+      "summaryJa": "水の中で、電気を使って鉄を溶かしてつなぐ。",
+      "descriptionJa": "港湾構造物や船体、水中の鋼構造物を、潜水しながら溶接・切断する仕事。水中では視界が濁って手元がほとんど見えないことが多く、触った感覚で溶接線をたどる場面がある。感電と減圧症という二種類の危険が重なるため、潜水士免許に加えて溶接の技能が要り、作業時間も水深に応じて厳格に管理される。",
+      "surpriseJa": "水中でも電気溶接ができるのは、アーク周辺に発生する気泡が水を押しのけて、そこだけ空間を作るため。作業者は自分で作った小さな泡の中で溶接していることになる。",
+      "howToBecomeJa": "潜水士免許を取得したうえで、海洋土木や潜水工事の会社で溶接技能を積む。",
+      "tags": [
+        "setting.underwater",
+        "setting.sea",
+        "subject.metal",
+        "subject.water",
+        "subject.fire",
+        "action.weld",
+        "action.dive",
+        "action.restore",
+        "sense.fingertip",
+        "sense.night-vision",
+        "sense.balance",
+        "condition.national-license",
+        "condition.danger",
+        "condition.team",
+        "temperament.unflinching",
+        "temperament.physical",
+        "industry.infrastructure"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "厚生労働省 潜水士免許",
+          "url": "https://www.mhlw.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

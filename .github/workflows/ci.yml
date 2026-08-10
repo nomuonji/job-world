@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: 派生データを生成
+        run: npm run data:build
+
+      - name: 生成物が最新か（ドリフト検出）
+        run: git diff --exit-code -- src/data
+
+      - name: データを検証（孤立ノード・到達性を含む）
+        run: npm run data:validate
+
+      - run: npm run lint
+
+      - name: 静的エクスポートが通るか
+        run: npm run build
+
+      - name: データ健全性をサマリに出す
+        if: always()
+        run: |
+          if [ -f src/data/generated/graph-health.json ]; then
+            echo '### データ健全性' >> "$GITHUB_STEP_SUMMARY"
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat src/data/generated/graph-health.json >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi

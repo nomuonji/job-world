@@ -1,0 +1,65 @@
+[
+  {
+    "id": "setting",
+    "labelJa": "舞台",
+    "questionJa": "どこで働くか",
+    "emoji": "🗺️",
+    "weight": 1.0,
+    "required": true,
+    "order": 1
+  },
+  {
+    "id": "subject",
+    "labelJa": "扱うもの",
+    "questionJa": "何に触れるか",
+    "emoji": "🧱",
+    "weight": 1.1,
+    "required": true,
+    "order": 2
+  },
+  {
+    "id": "action",
+    "labelJa": "動作",
+    "questionJa": "何をするか",
+    "emoji": "✋",
+    "weight": 1.4,
+    "required": true,
+    "order": 3
+  },
+  {
+    "id": "sense",
+    "labelJa": "感覚",
+    "questionJa": "体のどこを使うか",
+    "emoji": "👃",
+    "weight": 1.6,
+    "required": false,
+    "order": 4
+  },
+  {
+    "id": "condition",
+    "labelJa": "働き方",
+    "questionJa": "どんな条件か",
+    "emoji": "📋",
+    "weight": 0.9,
+    "required": false,
+    "order": 5
+  },
+  {
+    "id": "temperament",
+    "labelJa": "気質",
+    "questionJa": "どんな人が向くか",
+    "emoji": "🧭",
+    "weight": 0.8,
+    "required": false,
+    "order": 6
+  },
+  {
+    "id": "industry",
+    "labelJa": "業界",
+    "questionJa": "どの産業か",
+    "emoji": "🏭",
+    "weight": 0.5,
+    "required": true,
+    "order": 7
+  }
+]

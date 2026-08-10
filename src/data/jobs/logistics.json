@@ -1,0 +1,135 @@
+{
+  "industry": "logistics",
+  "jobs": [
+    {
+      "slug": "airline-pilot",
+      "nameJa": "旅客機パイロット",
+      "nameEn": "Airline Pilot",
+      "aliasesJa": [
+        "操縦士",
+        "機長"
+      ],
+      "kanaJa": "りょかくきぱいろっと",
+      "emoji": "✈️",
+      "summaryJa": "操縦そのものより、決断の手順を覚える時間が長い。",
+      "descriptionJa": "旅客機を操縦する国家資格職。実際の飛行では自動操縦を使う時間が長く、乗員の主な仕事は経路と燃料の管理、天候の判断、異常時の手順の実行になる。定期的に模擬装置での訓練と技能審査を受け続けなければ資格を保てない。身体検査の基準も厳しく、健康状態が資格の維持条件に組み込まれている珍しい職業でもある。",
+      "surpriseJa": "パイロットは資格を取れば終わりではなく、定期的な技能審査と身体検査に通り続けなければ乗務できない。体調そのものが資格の一部になっている。",
+      "howToBecomeJa": "航空会社の自社養成、航空大学校、私費でのライセンス取得という複数の経路がある。",
+      "tags": [
+        "setting.sky",
+        "subject.machine",
+        "subject.sky-body",
+        "subject.data",
+        "action.operate-vehicle",
+        "action.watch",
+        "action.measure",
+        "sense.balance",
+        "sense.hearing",
+        "sense.stillness",
+        "condition.national-license",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.planner",
+        "temperament.improvise",
+        "industry.logistics"
+      ],
+      "rarity": 3,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "国土交通省 航空従事者",
+          "url": "https://www.mlit.go.jp/koku/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "harbor-pilot",
+      "nameJa": "水先人",
+      "nameEn": "Harbor Pilot",
+      "aliasesJa": [
+        "パイロット（船舶）",
+        "水先案内人"
+      ],
+      "kanaJa": "みずさきにん",
+      "emoji": "🚢",
+      "summaryJa": "沖で大型船に乗り移り、港まで操船を引き受ける。",
+      "descriptionJa": "港や海峡で、大型船に乗り込んで操船を指揮する専門職。海底地形や潮流、他船の動きを熟知した人でなければ巨大船を安全に着ける。沖合で本船に接舷した小型艇から、縄梯子を伝って動いている船へ乗り移るところから仕事が始まる。日本では一定の海域で水先人の乗船が法律で義務づけられている。",
+      "surpriseJa": "水先人はまず、走っている大型船の舷側に垂らされた縄梯子を登って乗り込む。操船を始める前に、その乗り移り自体が高い危険を伴う工程になっている。",
+      "howToBecomeJa": "船長としての乗船経験を積んだうえで、水先人養成課程を経て国家試験に合格する。",
+      "tags": [
+        "setting.ship",
+        "setting.sea",
+        "subject.machine",
+        "subject.water",
+        "action.operate-vehicle",
+        "action.negotiate",
+        "action.measure",
+        "sense.balance",
+        "sense.tilt",
+        "sense.night-vision",
+        "condition.national-license",
+        "condition.danger",
+        "condition.night-shift",
+        "condition.few-practitioners",
+        "temperament.improvise",
+        "temperament.unflinching",
+        "industry.logistics"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本水先人会連合会",
+          "url": "https://www.pilot.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "train-driver",
+      "nameJa": "鉄道運転士",
+      "nameEn": "Train Driver",
+      "aliasesJa": [
+        "電車運転士",
+        "動力車操縦者"
+      ],
+      "kanaJa": "てつどううんてんし",
+      "emoji": "🚃",
+      "summaryJa": "秒単位の遅れを、加速と減速だけで取り戻す。",
+      "descriptionJa": "鉄道車両を運転する国家資格職。ダイヤは秒単位で組まれており、駅間の走行時間と停止位置をその範囲に収めることが業務の中心になる。天候や乗客の乗り降りで生じたわずかなずれを、次の駅までの加減速で調整していく。信号や制限速度を声と指差しで確認する所作は、思い込みによる見落としを防ぐために手順化されたもの。",
+      "surpriseJa": "運転士の指差し確認は形式ではなく、目で見たことを声と手で二重に確かめることで見落としを減らす方法として採用されている。確認の動作そのものが安全装置になっている。",
+      "howToBecomeJa": "鉄道会社に入社し、駅員・車掌を経て社内選抜を受け、動力車操縦者運転免許を取得する。",
+      "tags": [
+        "setting.desk",
+        "subject.machine",
+        "subject.data",
+        "action.operate-vehicle",
+        "action.watch",
+        "action.measure",
+        "sense.stillness",
+        "sense.hearing",
+        "sense.tilt",
+        "condition.national-license",
+        "condition.night-shift",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.logistics"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "国土交通省 動力車操縦者",
+          "url": "https://www.mlit.go.jp/tetudo/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

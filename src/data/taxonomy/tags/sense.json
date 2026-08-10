@@ -1,0 +1,137 @@
+{
+  "facet": "sense",
+  "tags": [
+    {
+      "id": "sense.smell",
+      "facet": "sense",
+      "slug": "smell",
+      "labelJa": "嗅ぎ分ける",
+      "aliasesJa": [
+        "嗅覚",
+        "鼻で判断する",
+        "嗅ぎわけ"
+      ],
+      "criteriaJa": "匂いの違いが仕事の成果を左右する場合に付ける。匂いのする環境で働くだけでは付けない。"
+    },
+    {
+      "id": "sense.taste",
+      "facet": "sense",
+      "slug": "taste",
+      "labelJa": "味わい分ける",
+      "aliasesJa": [
+        "味覚",
+        "利き",
+        "官能評価"
+      ],
+      "criteriaJa": "味の判別が業務の判断に直結する場合。調理そのものは action 側に付ける。"
+    },
+    {
+      "id": "sense.hearing",
+      "facet": "sense",
+      "slug": "hearing",
+      "labelJa": "音を聞き分ける",
+      "aliasesJa": [
+        "聴覚",
+        "耳",
+        "聞き分け"
+      ],
+      "criteriaJa": "音のわずかな差を聞き取ることが判断材料になる場合。"
+    },
+    {
+      "id": "sense.fingertip",
+      "facet": "sense",
+      "slug": "fingertip",
+      "labelJa": "指先の感覚",
+      "aliasesJa": [
+        "手先",
+        "触覚",
+        "手の感覚"
+      ],
+      "criteriaJa": "目視では分からない差を触覚で判断する場合。手先の器用さ一般ではない。"
+    },
+    {
+      "id": "sense.color",
+      "facet": "sense",
+      "slug": "color",
+      "labelJa": "色を見分ける",
+      "aliasesJa": [
+        "色覚",
+        "色",
+        "色味"
+      ],
+      "criteriaJa": "微妙な色差の判別が仕事の質を決める場合。"
+    },
+    {
+      "id": "sense.tilt",
+      "facet": "sense",
+      "slug": "tilt",
+      "labelJa": "わずかな傾きを見る",
+      "aliasesJa": [
+        "水平",
+        "垂直",
+        "歪み"
+      ],
+      "criteriaJa": "ミリ単位の傾き・歪みを目で捉えることが要る場合。"
+    },
+    {
+      "id": "sense.balance",
+      "facet": "sense",
+      "slug": "balance",
+      "labelJa": "平衡感覚",
+      "aliasesJa": [
+        "バランス",
+        "三半規管",
+        "揺れ"
+      ],
+      "criteriaJa": "不安定な足場や揺れの中で姿勢を保つ必要がある場合。"
+    },
+    {
+      "id": "sense.stamina",
+      "facet": "sense",
+      "slug": "stamina",
+      "labelJa": "体力・筋力",
+      "aliasesJa": [
+        "持久力",
+        "力仕事",
+        "体力"
+      ],
+      "criteriaJa": "身体の出力そのものが仕事の前提条件になっている場合。"
+    },
+    {
+      "id": "sense.stillness",
+      "facet": "sense",
+      "slug": "stillness",
+      "labelJa": "長時間じっとする",
+      "aliasesJa": [
+        "静止",
+        "座り続ける",
+        "動かない"
+      ],
+      "criteriaJa": "同じ姿勢を保ち続けることが作業条件である場合。"
+    },
+    {
+      "id": "sense.night-vision",
+      "facet": "sense",
+      "slug": "night-vision",
+      "labelJa": "暗さに目が利く",
+      "aliasesJa": [
+        "夜目",
+        "暗所",
+        "薄明かり"
+      ],
+      "criteriaJa": "暗い環境で対象を見分けることが要る場合。"
+    },
+    {
+      "id": "sense.fine-motor",
+      "facet": "sense",
+      "slug": "fine-motor",
+      "labelJa": "手の細かさ",
+      "aliasesJa": [
+        "器用さ",
+        "巧緻性",
+        "細かい手作業"
+      ],
+      "criteriaJa": "ミリ以下の精度で手を動かすことが要る場合。触覚での判断は sense.fingertip に付ける。"
+    }
+  ]
+}

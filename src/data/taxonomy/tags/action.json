@@ -1,0 +1,354 @@
+{
+  "facet": "action",
+  "tags": [
+    {
+      "id": "action.shave",
+      "facet": "action",
+      "slug": "shave",
+      "labelJa": "削る",
+      "aliasesJa": [
+        "けずる",
+        "研ぐ",
+        "削り出す"
+      ],
+      "criteriaJa": "素材を減らして形や状態をつくる場合。"
+    },
+    {
+      "id": "action.polish",
+      "facet": "action",
+      "slug": "polish",
+      "labelJa": "磨く",
+      "aliasesJa": [
+        "みがく",
+        "研磨",
+        "艶を出す"
+      ],
+      "criteriaJa": "表面を整えて見え方や性能を変える場合。",
+      "parentId": "action.shave"
+    },
+    {
+      "id": "action.carve",
+      "facet": "action",
+      "slug": "carve",
+      "labelJa": "彫る",
+      "aliasesJa": [
+        "ほる",
+        "彫刻",
+        "刻む"
+      ],
+      "criteriaJa": "素材に形や模様を刻み込む場合。",
+      "parentId": "action.shave"
+    },
+    {
+      "id": "action.sew",
+      "facet": "action",
+      "slug": "sew",
+      "labelJa": "縫う・編む",
+      "aliasesJa": [
+        "縫製",
+        "編む",
+        "織る"
+      ],
+      "criteriaJa": "糸や紐を通して構造をつくる場合。"
+    },
+    {
+      "id": "action.weld",
+      "facet": "action",
+      "slug": "weld",
+      "labelJa": "接ぐ・溶接する",
+      "aliasesJa": [
+        "溶接",
+        "接合",
+        "つなぐ"
+      ],
+      "criteriaJa": "別々のものを永続的に結合する場合。"
+    },
+    {
+      "id": "action.assemble",
+      "facet": "action",
+      "slug": "assemble",
+      "labelJa": "組み立てる",
+      "aliasesJa": [
+        "組む",
+        "構成する",
+        "仕上げる"
+      ],
+      "criteriaJa": "部品や要素を並べて一つの完成物にする場合。"
+    },
+    {
+      "id": "action.disassemble",
+      "facet": "action",
+      "slug": "disassemble",
+      "labelJa": "分解する",
+      "aliasesJa": [
+        "解体",
+        "ばらす",
+        "取り外す"
+      ],
+      "criteriaJa": "組まれたものをばらして中を見る・取り出す場合。"
+    },
+    {
+      "id": "action.restore",
+      "facet": "action",
+      "slug": "restore",
+      "labelJa": "直す・修復する",
+      "aliasesJa": [
+        "修理",
+        "修復",
+        "繕う"
+      ],
+      "criteriaJa": "壊れた・傷んだものを元の状態に近づける場合。"
+    },
+    {
+      "id": "action.sort",
+      "facet": "action",
+      "slug": "sort",
+      "labelJa": "選り分ける",
+      "aliasesJa": [
+        "仕分け",
+        "選別",
+        "鑑別",
+        "見分ける"
+      ],
+      "criteriaJa": "同じに見えるものを基準で二つ以上に分ける場合。"
+    },
+    {
+      "id": "action.measure",
+      "facet": "action",
+      "slug": "measure",
+      "labelJa": "測る",
+      "aliasesJa": [
+        "計測",
+        "計量",
+        "検査"
+      ],
+      "criteriaJa": "数値として量を確定させることが工程に組み込まれている場合。"
+    },
+    {
+      "id": "action.record",
+      "facet": "action",
+      "slug": "record",
+      "labelJa": "記録する",
+      "aliasesJa": [
+        "記述",
+        "書き残す",
+        "採録"
+      ],
+      "criteriaJa": "後から参照される形で残すことが成果物である場合。"
+    },
+    {
+      "id": "action.translate",
+      "facet": "action",
+      "slug": "translate",
+      "labelJa": "移し替える",
+      "aliasesJa": [
+        "翻訳",
+        "通訳",
+        "変換"
+      ],
+      "criteriaJa": "ある形式の情報を別の形式に置き換える場合。言語に限らない。"
+    },
+    {
+      "id": "action.negotiate",
+      "facet": "action",
+      "slug": "negotiate",
+      "labelJa": "話をまとめる",
+      "aliasesJa": [
+        "交渉",
+        "調整",
+        "仲介"
+      ],
+      "criteriaJa": "立場の違う相手の間で合意をつくる場合。"
+    },
+    {
+      "id": "action.soothe",
+      "facet": "action",
+      "slug": "soothe",
+      "labelJa": "なだめる・寄り添う",
+      "aliasesJa": [
+        "慰める",
+        "ケア",
+        "支える"
+      ],
+      "criteriaJa": "相手の心の状態を落ち着かせることが仕事の一部である場合。"
+    },
+    {
+      "id": "action.teach",
+      "facet": "action",
+      "slug": "teach",
+      "labelJa": "教える",
+      "aliasesJa": [
+        "指導",
+        "伝える",
+        "training"
+      ],
+      "criteriaJa": "他人ができるようになることが成果である場合。"
+    },
+    {
+      "id": "action.diagnose",
+      "facet": "action",
+      "slug": "diagnose",
+      "labelJa": "診る・見立てる",
+      "aliasesJa": [
+        "診断",
+        "鑑定",
+        "査定"
+      ],
+      "criteriaJa": "状態を観察して正体や価値を判定する場合。"
+    },
+    {
+      "id": "action.nurture",
+      "facet": "action",
+      "slug": "nurture",
+      "labelJa": "育てる",
+      "aliasesJa": [
+        "飼育",
+        "栽培",
+        "養う"
+      ],
+      "criteriaJa": "生き物を時間をかけて育成する場合。"
+    },
+    {
+      "id": "action.catch",
+      "facet": "action",
+      "slug": "catch",
+      "labelJa": "捕る・獲る",
+      "aliasesJa": [
+        "捕獲",
+        "漁",
+        "採取"
+      ],
+      "criteriaJa": "自然の中から対象を得る場合。"
+    },
+    {
+      "id": "action.dive",
+      "facet": "action",
+      "slug": "dive",
+      "labelJa": "潜る",
+      "aliasesJa": [
+        "潜水",
+        "もぐる"
+      ],
+      "criteriaJa": "水面下や地中に体ごと入っていく場合。"
+    },
+    {
+      "id": "action.climb",
+      "facet": "action",
+      "slug": "climb",
+      "labelJa": "登る",
+      "aliasesJa": [
+        "昇る",
+        "よじ登る"
+      ],
+      "criteriaJa": "高所へ自力で登ることが作業の前提である場合。"
+    },
+    {
+      "id": "action.carry",
+      "facet": "action",
+      "slug": "carry",
+      "labelJa": "運ぶ",
+      "aliasesJa": [
+        "搬送",
+        "配送",
+        "運搬"
+      ],
+      "criteriaJa": "ものを別の場所へ移すことが仕事の中心にある場合。"
+    },
+    {
+      "id": "action.clean-up",
+      "facet": "action",
+      "slug": "clean-up",
+      "labelJa": "片づける",
+      "aliasesJa": [
+        "清掃",
+        "整理",
+        "撤去"
+      ],
+      "criteriaJa": "散らかった・不要になった状態を収める場合。"
+    },
+    {
+      "id": "action.watch",
+      "facet": "action",
+      "slug": "watch",
+      "labelJa": "見張る",
+      "aliasesJa": [
+        "監視",
+        "警備",
+        "見守る"
+      ],
+      "criteriaJa": "異常が起きないか注意を向け続けることが仕事である場合。"
+    },
+    {
+      "id": "action.perform",
+      "facet": "action",
+      "slug": "perform",
+      "labelJa": "演じる・奏でる",
+      "aliasesJa": [
+        "演技",
+        "演奏",
+        "パフォーマンス"
+      ],
+      "criteriaJa": "その場で表現すること自体が成果である場合。"
+    },
+    {
+      "id": "action.design",
+      "facet": "action",
+      "slug": "design",
+      "labelJa": "設計する",
+      "aliasesJa": [
+        "デザイン",
+        "図面を引く",
+        "企画"
+      ],
+      "criteriaJa": "作る前に形や仕組みを決めることが仕事である場合。"
+    },
+    {
+      "id": "action.ferment",
+      "facet": "action",
+      "slug": "ferment",
+      "labelJa": "醸す・寝かせる",
+      "aliasesJa": [
+        "発酵",
+        "熟成",
+        "仕込む"
+      ],
+      "criteriaJa": "時間の経過そのものを工程として管理する場合。"
+    },
+    {
+      "id": "action.blend",
+      "facet": "action",
+      "slug": "blend",
+      "labelJa": "配合する",
+      "aliasesJa": [
+        "調合",
+        "ブレンド",
+        "混ぜる"
+      ],
+      "criteriaJa": "複数の素材の比率を決めて一つの性質をつくる場合。"
+    },
+    {
+      "id": "action.operate-vehicle",
+      "facet": "action",
+      "slug": "operate-vehicle",
+      "labelJa": "乗り物を動かす",
+      "aliasesJa": [
+        "運転",
+        "操縦",
+        "操船"
+      ],
+      "criteriaJa": "乗り物や重機の操作そのものが仕事である場合。"
+    },
+    {
+      "id": "action.investigate",
+      "facet": "action",
+      "slug": "investigate",
+      "labelJa": "調べ上げる",
+      "aliasesJa": [
+        "調査",
+        "捜索",
+        "リサーチ"
+      ],
+      "criteriaJa": "分からないことを手がかりから明らかにする場合。"
+    }
+  ]
+}

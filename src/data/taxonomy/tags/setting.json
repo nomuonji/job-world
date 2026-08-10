@@ -1,0 +1,306 @@
+{
+  "facet": "setting",
+  "tags": [
+    {
+      "id": "setting.outdoors",
+      "facet": "setting",
+      "slug": "outdoors",
+      "labelJa": "屋外",
+      "aliasesJa": [
+        "外",
+        "野外",
+        "屋外作業"
+      ],
+      "criteriaJa": "天候が仕事の可否や進み方を左右する場合に付ける。移動中に外を通るだけでは付けない。"
+    },
+    {
+      "id": "setting.mountain",
+      "facet": "setting",
+      "slug": "mountain",
+      "labelJa": "山の中",
+      "aliasesJa": [
+        "山",
+        "山林",
+        "森"
+      ],
+      "criteriaJa": "山林が主たる作業場である場合。登山を伴う場合も含む。",
+      "parentId": "setting.outdoors"
+    },
+    {
+      "id": "setting.sea",
+      "facet": "setting",
+      "slug": "sea",
+      "labelJa": "海の上",
+      "aliasesJa": [
+        "海",
+        "洋上",
+        "海上"
+      ],
+      "criteriaJa": "海上または海辺が主たる作業場である場合。",
+      "parentId": "setting.outdoors"
+    },
+    {
+      "id": "setting.underwater",
+      "facet": "setting",
+      "slug": "underwater",
+      "labelJa": "水中",
+      "aliasesJa": [
+        "水の中",
+        "海中",
+        "水底"
+      ],
+      "criteriaJa": "水面下に体を入れて作業する場合。船の上からの作業には付けない。"
+    },
+    {
+      "id": "setting.underground",
+      "facet": "setting",
+      "slug": "underground",
+      "labelJa": "地下",
+      "aliasesJa": [
+        "地中",
+        "坑内",
+        "地下空間"
+      ],
+      "criteriaJa": "地下坑道・下水道・トンネルなど、地表より下が作業場である場合。"
+    },
+    {
+      "id": "setting.high-place",
+      "facet": "setting",
+      "slug": "high-place",
+      "labelJa": "高いところ",
+      "aliasesJa": [
+        "高所",
+        "高所作業",
+        "足場の上"
+      ],
+      "criteriaJa": "墜落防止の装備や資格が要る高さで働く場合。ビルの上階で働くだけでは付けない。"
+    },
+    {
+      "id": "setting.confined",
+      "facet": "setting",
+      "slug": "confined",
+      "labelJa": "狭いところ",
+      "aliasesJa": [
+        "閉所",
+        "狭所",
+        "密閉空間"
+      ],
+      "criteriaJa": "体をねじって入るような狭さが作業条件になっている場合。"
+    },
+    {
+      "id": "setting.sterile-room",
+      "facet": "setting",
+      "slug": "sterile-room",
+      "labelJa": "無菌の部屋",
+      "aliasesJa": [
+        "クリーンルーム",
+        "無菌室",
+        "清浄室"
+      ],
+      "criteriaJa": "塵や菌の管理された空間でしか成立しない仕事に付ける。"
+    },
+    {
+      "id": "setting.kitchen",
+      "facet": "setting",
+      "slug": "kitchen",
+      "labelJa": "厨房",
+      "aliasesJa": [
+        "調理場",
+        "キッチン",
+        "台所"
+      ],
+      "criteriaJa": "食品を扱う調理空間が主たる作業場である場合。"
+    },
+    {
+      "id": "setting.workshop",
+      "facet": "setting",
+      "slug": "workshop",
+      "labelJa": "工房",
+      "aliasesJa": [
+        "アトリエ",
+        "仕事場",
+        "作業場"
+      ],
+      "criteriaJa": "少人数が道具を並べて手仕事をする空間。工場のラインとは区別する。"
+    },
+    {
+      "id": "setting.laboratory",
+      "facet": "setting",
+      "slug": "laboratory",
+      "labelJa": "実験室",
+      "aliasesJa": [
+        "ラボ",
+        "研究室",
+        "試験室"
+      ],
+      "criteriaJa": "測定・分析・実験の設備がある空間で働く場合。"
+    },
+    {
+      "id": "setting.factory-line",
+      "facet": "setting",
+      "slug": "factory-line",
+      "labelJa": "工場のライン",
+      "aliasesJa": [
+        "製造ライン",
+        "工場",
+        "ライン"
+      ],
+      "criteriaJa": "流れてくるものを次々に処理する形式の作業場である場合。"
+    },
+    {
+      "id": "setting.construction-site",
+      "facet": "setting",
+      "slug": "construction-site",
+      "labelJa": "建設現場",
+      "aliasesJa": [
+        "工事現場",
+        "現場"
+      ],
+      "criteriaJa": "建造物をつくる・壊す現場が作業場である場合。"
+    },
+    {
+      "id": "setting.ship",
+      "facet": "setting",
+      "slug": "ship",
+      "labelJa": "船の上",
+      "aliasesJa": [
+        "船内",
+        "船舶",
+        "甲板"
+      ],
+      "criteriaJa": "船が職場である場合。乗船して移動するだけでは付けない。"
+    },
+    {
+      "id": "setting.sky",
+      "facet": "setting",
+      "slug": "sky",
+      "labelJa": "空の上",
+      "aliasesJa": [
+        "上空",
+        "航空機内",
+        "機内"
+      ],
+      "criteriaJa": "飛行中の機体または成層圏以上が職場である場合。"
+    },
+    {
+      "id": "setting.temple",
+      "facet": "setting",
+      "slug": "temple",
+      "labelJa": "寺社",
+      "aliasesJa": [
+        "神社",
+        "寺",
+        "境内"
+      ],
+      "criteriaJa": "寺院・神社の敷地が主たる職場である場合。"
+    },
+    {
+      "id": "setting.backstage",
+      "facet": "setting",
+      "slug": "backstage",
+      "labelJa": "劇場の裏",
+      "aliasesJa": [
+        "舞台裏",
+        "バックステージ",
+        "楽屋"
+      ],
+      "criteriaJa": "観客から見えない側で公演を成立させる持ち場である場合。"
+    },
+    {
+      "id": "setting.stage",
+      "facet": "setting",
+      "slug": "stage",
+      "labelJa": "人前",
+      "aliasesJa": [
+        "舞台",
+        "ステージ",
+        "客前"
+      ],
+      "criteriaJa": "観客・聴衆の前に出ることが仕事の一部である場合。"
+    },
+    {
+      "id": "setting.remote-island",
+      "facet": "setting",
+      "slug": "remote-island",
+      "labelJa": "離島・僻地",
+      "aliasesJa": [
+        "過疎地",
+        "辺境",
+        "島"
+      ],
+      "criteriaJa": "人口が少なく交通が限られる土地に赴くことが前提の場合。"
+    },
+    {
+      "id": "setting.someones-home",
+      "facet": "setting",
+      "slug": "someones-home",
+      "labelJa": "他人の家の中",
+      "aliasesJa": [
+        "訪問先",
+        "個人宅",
+        "居宅"
+      ],
+      "criteriaJa": "他人の生活空間に入って作業する場合。"
+    },
+    {
+      "id": "setting.after-people",
+      "facet": "setting",
+      "slug": "after-people",
+      "labelJa": "人が居なくなった場所",
+      "aliasesJa": [
+        "空き家",
+        "事故現場",
+        "撤去現場"
+      ],
+      "criteriaJa": "住人・利用者が去った後に入る仕事に付ける。"
+    },
+    {
+      "id": "setting.museum",
+      "facet": "setting",
+      "slug": "museum",
+      "labelJa": "美術館・博物館",
+      "aliasesJa": [
+        "博物館",
+        "美術館",
+        "収蔵庫"
+      ],
+      "criteriaJa": "収蔵・展示施設が職場である場合。"
+    },
+    {
+      "id": "setting.hospital",
+      "facet": "setting",
+      "slug": "hospital",
+      "labelJa": "医療の現場",
+      "aliasesJa": [
+        "病院",
+        "診療所",
+        "施術所"
+      ],
+      "criteriaJa": "医療・施術の提供される場が職場である場合。"
+    },
+    {
+      "id": "setting.night-city",
+      "facet": "setting",
+      "slug": "night-city",
+      "labelJa": "深夜の街",
+      "aliasesJa": [
+        "夜の街",
+        "深夜",
+        "夜間"
+      ],
+      "criteriaJa": "人が寝ている時間帯の市街が職場である場合。"
+    },
+    {
+      "id": "setting.desk",
+      "facet": "setting",
+      "slug": "desk",
+      "labelJa": "机の前",
+      "aliasesJa": [
+        "デスク",
+        "オフィス",
+        "室内作業"
+      ],
+      "criteriaJa": "座って手元の紙・画面に向かい続けることが作業の中心である場合。"
+    }
+  ]
+}

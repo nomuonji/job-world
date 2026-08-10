@@ -1,0 +1,318 @@
+{
+  "facet": "subject",
+  "tags": [
+    {
+      "id": "subject.animal",
+      "facet": "subject",
+      "slug": "animal",
+      "labelJa": "生きた動物",
+      "aliasesJa": [
+        "動物",
+        "生き物",
+        "家畜"
+      ],
+      "criteriaJa": "生きている動物に直接触れる・世話をする・判定する場合。"
+    },
+    {
+      "id": "subject.plant",
+      "facet": "subject",
+      "slug": "plant",
+      "labelJa": "植物",
+      "aliasesJa": [
+        "草木",
+        "樹木",
+        "作物"
+      ],
+      "criteriaJa": "生きた植物を育てる・切る・見立てる場合。"
+    },
+    {
+      "id": "subject.microbe",
+      "facet": "subject",
+      "slug": "microbe",
+      "labelJa": "微生物・菌",
+      "aliasesJa": [
+        "菌",
+        "微生物",
+        "酵母",
+        "麹"
+      ],
+      "criteriaJa": "目に見えない生き物の働きを管理することが仕事の中心にある場合。"
+    },
+    {
+      "id": "subject.human-body",
+      "facet": "subject",
+      "slug": "human-body",
+      "labelJa": "人の体",
+      "aliasesJa": [
+        "身体",
+        "人体",
+        "からだ"
+      ],
+      "criteriaJa": "生きている人の体に触れる・測る・手を入れる場合。"
+    },
+    {
+      "id": "subject.deceased",
+      "facet": "subject",
+      "slug": "deceased",
+      "labelJa": "亡くなった人",
+      "aliasesJa": [
+        "遺体",
+        "ご遺体",
+        "故人"
+      ],
+      "criteriaJa": "亡くなった方の体や遺されたものを直接扱う場合。"
+    },
+    {
+      "id": "subject.metal",
+      "facet": "subject",
+      "slug": "metal",
+      "labelJa": "金属",
+      "aliasesJa": [
+        "鉄",
+        "金物",
+        "鋼"
+      ],
+      "criteriaJa": "金属を加工・接合・研磨する場合。"
+    },
+    {
+      "id": "subject.wood",
+      "facet": "subject",
+      "slug": "wood",
+      "labelJa": "木",
+      "aliasesJa": [
+        "木材",
+        "材木",
+        "樹"
+      ],
+      "criteriaJa": "木材を材料として加工する場合。生きた樹木は subject.plant に付ける。"
+    },
+    {
+      "id": "subject.stone",
+      "facet": "subject",
+      "slug": "stone",
+      "labelJa": "石",
+      "aliasesJa": [
+        "岩",
+        "石材"
+      ],
+      "criteriaJa": "石材を切る・積む・彫る場合。"
+    },
+    {
+      "id": "subject.soil",
+      "facet": "subject",
+      "slug": "soil",
+      "labelJa": "土",
+      "aliasesJa": [
+        "泥",
+        "土壌",
+        "地面"
+      ],
+      "criteriaJa": "土そのものの状態を見る・掘る・調える場合。"
+    },
+    {
+      "id": "subject.textile",
+      "facet": "subject",
+      "slug": "textile",
+      "labelJa": "糸と布",
+      "aliasesJa": [
+        "繊維",
+        "布",
+        "織物",
+        "糸"
+      ],
+      "criteriaJa": "糸・布を織る・縫う・染める・繕う場合。"
+    },
+    {
+      "id": "subject.paper",
+      "facet": "subject",
+      "slug": "paper",
+      "labelJa": "紙",
+      "aliasesJa": [
+        "和紙",
+        "書物",
+        "文書"
+      ],
+      "criteriaJa": "紙そのものを漉く・貼る・繕う場合。書かれた内容を扱うなら subject.text に付ける。"
+    },
+    {
+      "id": "subject.lacquer",
+      "facet": "subject",
+      "slug": "lacquer",
+      "labelJa": "漆・膠",
+      "aliasesJa": [
+        "漆",
+        "にかわ",
+        "接着材"
+      ],
+      "criteriaJa": "天然の塗料・接着材を扱う場合。"
+    },
+    {
+      "id": "subject.sound",
+      "facet": "subject",
+      "slug": "sound",
+      "labelJa": "音",
+      "aliasesJa": [
+        "音響",
+        "声",
+        "楽器の音"
+      ],
+      "criteriaJa": "音の質そのものが成果物や判断対象である場合。"
+    },
+    {
+      "id": "subject.light",
+      "facet": "subject",
+      "slug": "light",
+      "labelJa": "光",
+      "aliasesJa": [
+        "照明",
+        "灯り",
+        "採光"
+      ],
+      "criteriaJa": "光の当て方・見え方をつくることが仕事である場合。"
+    },
+    {
+      "id": "subject.smell-matter",
+      "facet": "subject",
+      "slug": "smell-matter",
+      "labelJa": "匂い",
+      "aliasesJa": [
+        "香料",
+        "香り物",
+        "芳香"
+      ],
+      "criteriaJa": "匂いそのものが商品や成果物である場合。匂いで判断するだけなら sense.smell に付ける。"
+    },
+    {
+      "id": "subject.food",
+      "facet": "subject",
+      "slug": "food",
+      "labelJa": "食べもの",
+      "aliasesJa": [
+        "食品",
+        "料理",
+        "食材"
+      ],
+      "criteriaJa": "人が口にするものを作る・選ぶ・評価する場合。"
+    },
+    {
+      "id": "subject.fire",
+      "facet": "subject",
+      "slug": "fire",
+      "labelJa": "火",
+      "aliasesJa": [
+        "炎",
+        "熱",
+        "窯"
+      ],
+      "criteriaJa": "火や高熱の加減が成果を左右する場合。"
+    },
+    {
+      "id": "subject.water",
+      "facet": "subject",
+      "slug": "water",
+      "labelJa": "水",
+      "aliasesJa": [
+        "水質",
+        "液体"
+      ],
+      "criteriaJa": "水の質・量・流れを扱うことが仕事の中心にある場合。"
+    },
+    {
+      "id": "subject.machine",
+      "facet": "subject",
+      "slug": "machine",
+      "labelJa": "機械",
+      "aliasesJa": [
+        "装置",
+        "機器",
+        "エンジン"
+      ],
+      "criteriaJa": "機械を組む・直す・調整する場合。機械を操作するだけでは付けない。"
+    },
+    {
+      "id": "subject.data",
+      "facet": "subject",
+      "slug": "data",
+      "labelJa": "数字とデータ",
+      "aliasesJa": [
+        "データ",
+        "統計",
+        "数値"
+      ],
+      "criteriaJa": "数値の集まりを読み解くことが仕事の中心にある場合。"
+    },
+    {
+      "id": "subject.text",
+      "facet": "subject",
+      "slug": "text",
+      "labelJa": "ことば",
+      "aliasesJa": [
+        "言語",
+        "文章",
+        "テキスト"
+      ],
+      "criteriaJa": "書かれた・話された言葉そのものを扱う場合。"
+    },
+    {
+      "id": "subject.law",
+      "facet": "subject",
+      "slug": "law",
+      "labelJa": "法と手続き",
+      "aliasesJa": [
+        "法律",
+        "制度",
+        "申請"
+      ],
+      "criteriaJa": "法令や公的手続きの適用が仕事の中心にある場合。"
+    },
+    {
+      "id": "subject.antique",
+      "facet": "subject",
+      "slug": "antique",
+      "labelJa": "古いもの・文化財",
+      "aliasesJa": [
+        "文化財",
+        "骨董",
+        "古美術",
+        "遺物"
+      ],
+      "criteriaJa": "過去に作られたものを、壊さずに扱うことが前提の場合。"
+    },
+    {
+      "id": "subject.waste",
+      "facet": "subject",
+      "slug": "waste",
+      "labelJa": "捨てられたもの",
+      "aliasesJa": [
+        "廃棄物",
+        "ごみ",
+        "残置物"
+      ],
+      "criteriaJa": "不要になったものを引き取る・分ける・処理する場合。"
+    },
+    {
+      "id": "subject.money",
+      "facet": "subject",
+      "slug": "money",
+      "labelJa": "お金",
+      "aliasesJa": [
+        "金銭",
+        "資産",
+        "会計"
+      ],
+      "criteriaJa": "金銭・資産の流れを扱うことが仕事の中心にある場合。"
+    },
+    {
+      "id": "subject.sky-body",
+      "facet": "subject",
+      "slug": "sky-body",
+      "labelJa": "空と宇宙",
+      "aliasesJa": [
+        "天体",
+        "気象",
+        "大気"
+      ],
+      "criteriaJa": "大気圏や天体の状態を観測・予測・利用する場合。"
+    }
+  ]
+}

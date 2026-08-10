@@ -1,0 +1,205 @@
+{
+  "facet": "industry",
+  "tags": [
+    {
+      "id": "industry.craft",
+      "facet": "industry",
+      "slug": "craft",
+      "labelJa": "伝統工芸",
+      "aliasesJa": [
+        "工芸",
+        "手仕事",
+        "職人仕事"
+      ],
+      "criteriaJa": "地域や流派に受け継がれた技法で工芸品を作る産業。"
+    },
+    {
+      "id": "industry.primary",
+      "facet": "industry",
+      "slug": "primary",
+      "labelJa": "一次産業",
+      "aliasesJa": [
+        "農林水産",
+        "農業",
+        "漁業",
+        "林業"
+      ],
+      "criteriaJa": "自然から直接、資源や食料を得る産業。"
+    },
+    {
+      "id": "industry.food-fermentation",
+      "facet": "industry",
+      "slug": "food-fermentation",
+      "labelJa": "食品・醸造",
+      "aliasesJa": [
+        "醸造",
+        "飲食",
+        "食品産業"
+      ],
+      "criteriaJa": "食品や飲料を作る・提供する産業。"
+    },
+    {
+      "id": "industry.medical",
+      "facet": "industry",
+      "slug": "medical",
+      "labelJa": "医療・福祉",
+      "aliasesJa": [
+        "医療",
+        "福祉",
+        "介護",
+        "ヘルスケア"
+      ],
+      "criteriaJa": "人の健康と生活を支える産業。"
+    },
+    {
+      "id": "industry.infrastructure",
+      "facet": "industry",
+      "slug": "infrastructure",
+      "labelJa": "建設・インフラ",
+      "aliasesJa": [
+        "建設",
+        "土木",
+        "設備",
+        "インフラ"
+      ],
+      "criteriaJa": "建物や社会基盤をつくり保つ産業。"
+    },
+    {
+      "id": "industry.logistics",
+      "facet": "industry",
+      "slug": "logistics",
+      "labelJa": "物流・運輸",
+      "aliasesJa": [
+        "物流",
+        "運輸",
+        "交通",
+        "輸送"
+      ],
+      "criteriaJa": "人やものを運ぶ産業。"
+    },
+    {
+      "id": "industry.entertainment",
+      "facet": "industry",
+      "slug": "entertainment",
+      "labelJa": "エンターテイメント",
+      "aliasesJa": [
+        "興行",
+        "芸能",
+        "娯楽",
+        "興行界"
+      ],
+      "criteriaJa": "観客に体験を届ける産業。"
+    },
+    {
+      "id": "industry.publishing",
+      "facet": "industry",
+      "slug": "publishing",
+      "labelJa": "出版・メディア",
+      "aliasesJa": [
+        "出版",
+        "メディア",
+        "報道",
+        "印刷"
+      ],
+      "criteriaJa": "文章や情報を編み、世に出す産業。"
+    },
+    {
+      "id": "industry.ceremony",
+      "facet": "industry",
+      "slug": "ceremony",
+      "labelJa": "冠婚葬祭",
+      "aliasesJa": [
+        "葬祭",
+        "婚礼",
+        "儀礼"
+      ],
+      "criteriaJa": "人生の節目の儀式を執り行う産業。"
+    },
+    {
+      "id": "industry.aerospace",
+      "facet": "industry",
+      "slug": "aerospace",
+      "labelJa": "宇宙・航空",
+      "aliasesJa": [
+        "航空",
+        "宇宙",
+        "エアライン"
+      ],
+      "criteriaJa": "空と宇宙に関わる産業。"
+    },
+    {
+      "id": "industry.science",
+      "facet": "industry",
+      "slug": "science",
+      "labelJa": "科学・研究",
+      "aliasesJa": [
+        "研究",
+        "学術",
+        "調査研究"
+      ],
+      "criteriaJa": "知見を生み出すこと自体が成果である産業。"
+    },
+    {
+      "id": "industry.public",
+      "facet": "industry",
+      "slug": "public",
+      "labelJa": "公共・行政",
+      "aliasesJa": [
+        "行政",
+        "自治体",
+        "公共"
+      ],
+      "criteriaJa": "公的な制度の運用を担う産業。"
+    },
+    {
+      "id": "industry.nature",
+      "facet": "industry",
+      "slug": "nature",
+      "labelJa": "動物・自然",
+      "aliasesJa": [
+        "自然",
+        "環境",
+        "生物",
+        "生き物の産業"
+      ],
+      "criteriaJa": "生き物や自然環境を対象とする産業。"
+    },
+    {
+      "id": "industry.it",
+      "facet": "industry",
+      "slug": "it",
+      "labelJa": "IT・データ",
+      "aliasesJa": [
+        "IT",
+        "情報",
+        "ソフトウェア",
+        "デジタル"
+      ],
+      "criteriaJa": "情報技術を用いて価値をつくる産業。ソフトウェア・データ処理を含む。"
+    },
+    {
+      "id": "industry.beauty",
+      "facet": "industry",
+      "slug": "beauty",
+      "labelJa": "美容・ファッション",
+      "aliasesJa": [
+        "美容",
+        "ファッション",
+        "服飾"
+      ],
+      "criteriaJa": "人の装いと見た目を扱う産業。"
+    },
+    {
+      "id": "industry.heritage",
+      "facet": "industry",
+      "slug": "heritage",
+      "labelJa": "文化財・アーカイブ",
+      "aliasesJa": [
+        "保存",
+        "アーカイブ",
+        "文化財の保存"
+      ],
+      "criteriaJa": "過去のものを残し伝えることを目的とする産業。"
+    }
+  ]
+}

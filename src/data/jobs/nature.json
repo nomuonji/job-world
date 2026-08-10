@@ -1,0 +1,214 @@
+{
+  "industry": "nature",
+  "jobs": [
+    {
+      "slug": "beekeeper",
+      "nameJa": "養蜂家",
+      "nameEn": "Beekeeper",
+      "aliasesJa": [
+        "蜂飼い",
+        "はちみつ生産者"
+      ],
+      "kanaJa": "ようほうか",
+      "emoji": "🐝",
+      "summaryJa": "花を追って巣箱ごと日本列島を北上していく。",
+      "descriptionJa": "ミツバチの群れを管理し、蜂蜜や蜜蝋を採取する仕事。花の咲く時期は地域によってずれるため、巣箱をトラックに積んで南から北へ移動しながら採蜜する転飼という方法がある。群れの健康状態、女王蜂の産卵、病害虫の発生を巣板を一枚ずつ抜いて確認する。刺されることは日常で、防護服を着ていても完全には防げない。",
+      "surpriseJa": "蜂蜜の名前が「れんげ」「アカシア」と分かれているのは、その花が咲いている場所へ巣箱ごと移動して採るから。養蜂家は花の開花前線を追って移動していることになる。",
+      "howToBecomeJa": "既存の養蜂家に弟子入りするか、農業法人に入る。飼育には都道府県への届出が必要。",
+      "tags": [
+        "setting.outdoors",
+        "subject.animal",
+        "subject.plant",
+        "subject.food",
+        "action.nurture",
+        "action.diagnose",
+        "action.carry",
+        "sense.stamina",
+        "sense.hearing",
+        "condition.seasonal",
+        "condition.travel",
+        "condition.danger",
+        "temperament.improvise",
+        "temperament.physical",
+        "industry.nature"
+      ],
+      "rarity": 4,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "農林水産省 養蜂をめぐる情勢",
+          "url": "https://www.maff.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "chick-sexer",
+      "nameJa": "ひよこ鑑別師",
+      "nameEn": "Chick Sexer",
+      "aliasesJa": [
+        "初生雛鑑別師",
+        "初生ひな鑑別師"
+      ],
+      "kanaJa": "ひよこかんべつし",
+      "emoji": "🐤",
+      "summaryJa": "生まれて一日のひよこの雌雄を、一羽一秒足らずで見分ける。",
+      "descriptionJa": "孵化した直後のひよこの雌雄を判別する専門職。採卵用の養鶏では雌だけを育てるため、この判別が経営の前提になっている。外見にはほとんど差がなく、指先で総排泄腔を開いて内部の微細な形状を見るという方法が用いられる。速さと正確さの両方が求められ、一定の水準に達しなければ資格が出ない。一日に数千羽を同じ姿勢で扱い続ける、極端な反復の仕事でもある。",
+      "surpriseJa": "この判別技術は日本で確立され、そのまま「Chick Sexer」という職業として世界へ輸出された。かつては欧州の養鶏場で日本人鑑別師が引く手あまただった時期がある。",
+      "howToBecomeJa": "養成所で訓練を受け、資格試験に合格する必要がある。訓練期間中はひたすら手の感覚と速度を作り込む。",
+      "tags": [
+        "setting.factory-line",
+        "subject.animal",
+        "action.sort",
+        "action.diagnose",
+        "sense.fingertip",
+        "sense.color",
+        "sense.fine-motor",
+        "sense.stillness",
+        "condition.certification",
+        "condition.travel",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.nature"
+      ],
+      "rarity": 5,
+      "familiarity": 3,
+      "lifecycle": "declining",
+      "sources": [
+        {
+          "titleJa": "公益社団法人 畜産技術協会",
+          "url": "https://jlta.lin.gr.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "nature-conservation-officer",
+      "nameJa": "自然保護官",
+      "nameEn": "Nature Conservation Officer",
+      "aliasesJa": [
+        "レンジャー",
+        "国立公園管理官"
+      ],
+      "kanaJa": "しぜんほごかん",
+      "emoji": "🏔️",
+      "summaryJa": "国立公園の中で、開発と保護の線引きを実際に引く。",
+      "descriptionJa": "環境省に所属し、国立公園の管理や野生生物の保護にあたる職員。自然の中を歩いて状況を把握する業務がある一方、実務の多くは、施設をどこまで建ててよいかの許認可、地元との調整、外来種対策の計画づくりといった事務と交渉で占められる。担当地域は広く、数人で県をまたぐ範囲を受け持つこともある。",
+      "surpriseJa": "レンジャーという呼び名から自然の中を歩く仕事と思われがちだが、実際の時間の多くは開発の許認可と地元との調整に使われる。保護は現場ではなく書類と会議で決まる場面が多い。",
+      "howToBecomeJa": "国家公務員試験を経て環境省に採用される経路が主。",
+      "tags": [
+        "setting.mountain",
+        "setting.outdoors",
+        "subject.animal",
+        "subject.plant",
+        "subject.law",
+        "action.watch",
+        "action.negotiate",
+        "action.record",
+        "sense.stamina",
+        "condition.public-service",
+        "condition.travel",
+        "condition.national-license",
+        "temperament.planner",
+        "temperament.physical",
+        "industry.nature"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "環境省 自然保護官",
+          "url": "https://www.env.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "tree-doctor",
+      "nameJa": "樹木医",
+      "nameEn": "Tree Doctor",
+      "aliasesJa": [
+        "樹医"
+      ],
+      "kanaJa": "じゅもくい",
+      "emoji": "🌳",
+      "summaryJa": "木を叩いた音で、幹の中の空洞を探り当てる。",
+      "descriptionJa": "弱った樹木を診断し、治療や環境改善を行う専門職。外から見えない幹内部の腐朽を調べるため、打診して音の違いを聞き分けたり、専用の機器で内部の密度を測ったりする。原因が土壌の締め固めや排水にあることも多く、処置は木そのものより根の周りの環境に及ぶ。天然記念物の巨木を扱う場合、判断の重みが大きい。",
+      "surpriseJa": "樹木の不調の原因は、幹や枝ではなく足元の土にあることが多い。人が根の上を踏み固めたせいで木が弱っている、という診断は珍しくない。",
+      "howToBecomeJa": "樹木の管理業務の実務経験を積んだうえで、樹木医の研修と審査を受ける。",
+      "tags": [
+        "setting.outdoors",
+        "subject.plant",
+        "subject.soil",
+        "action.diagnose",
+        "action.measure",
+        "action.restore",
+        "sense.hearing",
+        "sense.fingertip",
+        "sense.color",
+        "condition.certification",
+        "condition.travel",
+        "condition.solo",
+        "temperament.curious",
+        "temperament.detail",
+        "industry.nature"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "一般財団法人 日本緑化センター",
+          "url": "https://www.jpgreen.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "zookeeper",
+      "nameJa": "動物園飼育員",
+      "nameEn": "Zookeeper",
+      "aliasesJa": [
+        "飼育係",
+        "動物飼育員"
+      ],
+      "kanaJa": "どうぶつえんしいくいん",
+      "emoji": "🦁",
+      "summaryJa": "餌やりより、糞の状態を見ている時間の方が長い。",
+      "descriptionJa": "動物園で動物の飼育・健康管理・展示を担当する職員。来園者から見えるのは餌やりや解説だが、実際の業務の多くは清掃と観察に費やされる。糞や食べ残しの状態は動物が体調を言葉で伝えられない中での主要な情報源になる。近年は退屈による異常行動を防ぐため、餌を隠して探させるなど、環境そのものを設計する仕事の比重が増えている。",
+      "surpriseJa": "飼育員の重要な仕事のひとつは、動物をあえて退屈させない工夫を考えること。餌を隠す、匂いを付ける、遊具を変えるといった環境づくりが、健康管理の一部として扱われている。",
+      "howToBecomeJa": "畜産・獣医・動物系の学校を経て、動物園や運営団体の採用試験を受けるのが主な経路。",
+      "tags": [
+        "setting.outdoors",
+        "subject.animal",
+        "subject.waste",
+        "action.nurture",
+        "action.clean-up",
+        "action.watch",
+        "action.teach",
+        "sense.smell",
+        "sense.stamina",
+        "condition.team",
+        "condition.danger",
+        "temperament.improvise",
+        "temperament.physical",
+        "temperament.curious",
+        "industry.nature"
+      ],
+      "rarity": 3,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "公益社団法人 日本動物園水族館協会",
+          "url": "https://www.jaza.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

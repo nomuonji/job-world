@@ -1,0 +1,1103 @@
+{
+  "setting.desk": [
+    "air-traffic-controller",
+    "archivist",
+    "braille-transcriber",
+    "medical-illustrator",
+    "proofreader",
+    "train-driver",
+    "typeface-designer",
+    "weather-forecaster"
+  ],
+  "setting.sky": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "astronaut"
+  ],
+  "subject.data": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "astronaut",
+    "clinical-engineer",
+    "train-driver",
+    "typeface-designer",
+    "weather-forecaster"
+  ],
+  "subject.machine": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "astronaut",
+    "bridge-inspector",
+    "clinical-engineer",
+    "fire-investigator",
+    "foley-artist",
+    "forester",
+    "harbor-pilot",
+    "prosthetist",
+    "rope-access-technician",
+    "sewer-pipe-inspector",
+    "stage-lighting-designer",
+    "stagehand",
+    "train-driver"
+  ],
+  "subject.sky-body": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "astronaut",
+    "weather-forecaster"
+  ],
+  "action.watch": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "clinical-engineer",
+    "nature-conservation-officer",
+    "train-driver",
+    "zookeeper"
+  ],
+  "action.negotiate": [
+    "air-traffic-controller",
+    "funeral-director",
+    "harbor-pilot",
+    "nature-conservation-officer",
+    "sommelier"
+  ],
+  "action.measure": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "archaeological-excavator",
+    "astronaut",
+    "bridge-inspector",
+    "clinical-engineer",
+    "embalmer",
+    "harbor-pilot",
+    "kimono-dresser",
+    "koji-maker",
+    "letterpress-printer",
+    "noh-mask-carver",
+    "pastry-chef",
+    "pearl-culturist",
+    "perfumer",
+    "prosthetist",
+    "sake-brewmaster",
+    "scroll-mounter",
+    "swordsmith",
+    "tatami-maker",
+    "train-driver",
+    "tree-doctor",
+    "typeface-designer",
+    "weather-forecaster",
+    "wig-maker"
+  ],
+  "sense.hearing": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "beekeeper",
+    "clinical-engineer",
+    "foley-artist",
+    "stagehand",
+    "train-driver",
+    "tree-doctor"
+  ],
+  "sense.stillness": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "archivist",
+    "braille-transcriber",
+    "chick-sexer",
+    "clinical-engineer",
+    "kumihimo-braider",
+    "medical-illustrator",
+    "pearl-culturist",
+    "proofreader",
+    "taxonomist",
+    "train-driver",
+    "typeface-designer",
+    "weather-forecaster"
+  ],
+  "condition.national-license": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "clinical-engineer",
+    "harbor-pilot",
+    "nature-conservation-officer",
+    "prosthetist",
+    "swordsmith",
+    "train-driver",
+    "underwater-welder",
+    "weather-forecaster"
+  ],
+  "condition.night-shift": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "clinical-engineer",
+    "embalmer",
+    "fire-investigator",
+    "funeral-director",
+    "harbor-pilot",
+    "sewer-pipe-inspector",
+    "sommelier",
+    "stage-lighting-designer",
+    "stagehand",
+    "train-driver",
+    "weather-forecaster"
+  ],
+  "condition.public-service": [
+    "air-traffic-controller",
+    "archaeological-excavator",
+    "archivist",
+    "fire-investigator",
+    "nature-conservation-officer"
+  ],
+  "condition.team": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "archaeological-excavator",
+    "astronaut",
+    "bridge-inspector",
+    "clinical-engineer",
+    "estate-cleaner",
+    "fire-investigator",
+    "forester",
+    "funeral-director",
+    "koji-maker",
+    "rope-access-technician",
+    "stage-lighting-designer",
+    "stagehand",
+    "underwater-welder",
+    "zookeeper"
+  ],
+  "temperament.improvise": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "astronaut",
+    "beekeeper",
+    "clinical-engineer",
+    "foley-artist",
+    "funeral-director",
+    "harbor-pilot",
+    "kimono-dresser",
+    "sommelier",
+    "stage-lighting-designer",
+    "zookeeper"
+  ],
+  "temperament.planner": [
+    "air-traffic-controller",
+    "airline-pilot",
+    "archivist",
+    "astronaut",
+    "forester",
+    "funeral-director",
+    "katsuobushi-maker",
+    "nature-conservation-officer",
+    "prosthetist",
+    "rope-access-technician",
+    "sake-brewmaster",
+    "stagehand",
+    "tatami-maker",
+    "weather-forecaster"
+  ],
+  "industry.aerospace": [
+    "air-traffic-controller",
+    "astronaut"
+  ],
+  "setting.confined": [
+    "astronaut",
+    "bridge-inspector",
+    "sewer-pipe-inspector"
+  ],
+  "action.restore": [
+    "astronaut",
+    "clinical-engineer",
+    "cultural-property-restorer",
+    "embalmer",
+    "rope-access-technician",
+    "scroll-mounter",
+    "sword-polisher",
+    "tree-doctor",
+    "underwater-welder"
+  ],
+  "action.record": [
+    "archaeological-excavator",
+    "archivist",
+    "astronaut",
+    "braille-transcriber",
+    "bridge-inspector",
+    "cultural-property-restorer",
+    "fire-investigator",
+    "foley-artist",
+    "medical-illustrator",
+    "nature-conservation-officer",
+    "proofreader",
+    "sewer-pipe-inspector",
+    "taxonomist"
+  ],
+  "sense.balance": [
+    "airline-pilot",
+    "ama-diver",
+    "astronaut",
+    "bridge-inspector",
+    "forester",
+    "harbor-pilot",
+    "rope-access-technician",
+    "underwater-welder",
+    "washi-papermaker"
+  ],
+  "sense.stamina": [
+    "ama-diver",
+    "archaeological-excavator",
+    "astronaut",
+    "beekeeper",
+    "estate-cleaner",
+    "forester",
+    "funeral-director",
+    "kimono-dresser",
+    "nature-conservation-officer",
+    "rope-access-technician",
+    "stage-lighting-designer",
+    "stagehand",
+    "swordsmith",
+    "tatami-maker",
+    "zookeeper"
+  ],
+  "sense.fine-motor": [
+    "astronaut",
+    "brush-maker",
+    "chick-sexer",
+    "cultural-property-restorer",
+    "embalmer",
+    "letterpress-printer",
+    "medical-illustrator",
+    "noh-mask-carver",
+    "pastry-chef",
+    "pearl-culturist",
+    "perfumer",
+    "prosthetist",
+    "scroll-mounter",
+    "sword-polisher",
+    "taxonomist",
+    "urushi-lacquerer",
+    "wig-maker"
+  ],
+  "condition.danger": [
+    "ama-diver",
+    "astronaut",
+    "beekeeper",
+    "bridge-inspector",
+    "forester",
+    "harbor-pilot",
+    "rope-access-technician",
+    "sewer-pipe-inspector",
+    "swordsmith",
+    "underwater-welder",
+    "zookeeper"
+  ],
+  "condition.few-practitioners": [
+    "ama-diver",
+    "astronaut",
+    "foley-artist",
+    "harbor-pilot",
+    "katsuobushi-maker",
+    "koji-maker",
+    "kumihimo-braider",
+    "letterpress-printer",
+    "medical-illustrator",
+    "noh-mask-carver",
+    "pearl-culturist",
+    "scroll-mounter",
+    "sword-polisher",
+    "swordsmith",
+    "taxonomist",
+    "typeface-designer",
+    "washi-papermaker",
+    "wig-maker"
+  ],
+  "condition.live-in": [
+    "astronaut",
+    "sake-brewmaster"
+  ],
+  "temperament.curious": [
+    "archaeological-excavator",
+    "astronaut",
+    "cultural-property-restorer",
+    "fire-investigator",
+    "foley-artist",
+    "koji-maker",
+    "medical-illustrator",
+    "perfumer",
+    "proofreader",
+    "sommelier",
+    "taxonomist",
+    "tree-doctor",
+    "weather-forecaster",
+    "zookeeper"
+  ],
+  "setting.workshop": [
+    "brush-maker",
+    "cultural-property-restorer",
+    "embalmer",
+    "foley-artist",
+    "katsuobushi-maker",
+    "kimono-dresser",
+    "kumihimo-braider",
+    "letterpress-printer",
+    "noh-mask-carver",
+    "pearl-culturist",
+    "prosthetist",
+    "sake-brewmaster",
+    "scroll-mounter",
+    "sword-polisher",
+    "swordsmith",
+    "tatami-maker",
+    "urushi-lacquerer",
+    "washi-papermaker",
+    "wig-maker"
+  ],
+  "setting.stage": [
+    "funeral-director",
+    "kimono-dresser",
+    "sommelier"
+  ],
+  "subject.textile": [
+    "kimono-dresser",
+    "kumihimo-braider",
+    "scroll-mounter",
+    "tatami-maker",
+    "wig-maker"
+  ],
+  "subject.human-body": [
+    "clinical-engineer",
+    "embalmer",
+    "kimono-dresser",
+    "medical-illustrator",
+    "prosthetist",
+    "wig-maker"
+  ],
+  "action.assemble": [
+    "brush-maker",
+    "kimono-dresser",
+    "kumihimo-braider",
+    "letterpress-printer",
+    "pastry-chef",
+    "pearl-culturist",
+    "prosthetist",
+    "scroll-mounter",
+    "stage-lighting-designer",
+    "stagehand",
+    "tatami-maker",
+    "urushi-lacquerer",
+    "washi-papermaker",
+    "wig-maker"
+  ],
+  "action.soothe": [
+    "estate-cleaner",
+    "funeral-director",
+    "kimono-dresser"
+  ],
+  "sense.fingertip": [
+    "braille-transcriber",
+    "brush-maker",
+    "chick-sexer",
+    "cultural-property-restorer",
+    "embalmer",
+    "fire-investigator",
+    "foley-artist",
+    "katsuobushi-maker",
+    "kimono-dresser",
+    "kumihimo-braider",
+    "letterpress-printer",
+    "noh-mask-carver",
+    "pastry-chef",
+    "pearl-culturist",
+    "prosthetist",
+    "sake-brewmaster",
+    "scroll-mounter",
+    "sword-polisher",
+    "tatami-maker",
+    "tree-doctor",
+    "underwater-welder",
+    "urushi-lacquerer",
+    "washi-papermaker",
+    "wig-maker"
+  ],
+  "sense.tilt": [
+    "bridge-inspector",
+    "harbor-pilot",
+    "kimono-dresser",
+    "prosthetist",
+    "scroll-mounter",
+    "stage-lighting-designer",
+    "tatami-maker",
+    "train-driver",
+    "typeface-designer",
+    "wig-maker"
+  ],
+  "condition.certification": [
+    "archivist",
+    "braille-transcriber",
+    "chick-sexer",
+    "cultural-property-restorer",
+    "embalmer",
+    "estate-cleaner",
+    "funeral-director",
+    "kimono-dresser",
+    "perfumer",
+    "sewer-pipe-inspector",
+    "sommelier",
+    "tree-doctor"
+  ],
+  "condition.peak-season": [
+    "foley-artist",
+    "kimono-dresser",
+    "pastry-chef",
+    "proofreader"
+  ],
+  "condition.seasonal": [
+    "ama-diver",
+    "beekeeper",
+    "forester",
+    "katsuobushi-maker",
+    "kimono-dresser",
+    "pearl-culturist",
+    "sake-brewmaster",
+    "washi-papermaker"
+  ],
+  "temperament.detail": [
+    "archaeological-excavator",
+    "archivist",
+    "braille-transcriber",
+    "bridge-inspector",
+    "brush-maker",
+    "chick-sexer",
+    "clinical-engineer",
+    "cultural-property-restorer",
+    "embalmer",
+    "fire-investigator",
+    "katsuobushi-maker",
+    "kimono-dresser",
+    "koji-maker",
+    "kumihimo-braider",
+    "letterpress-printer",
+    "medical-illustrator",
+    "noh-mask-carver",
+    "pastry-chef",
+    "pearl-culturist",
+    "perfumer",
+    "proofreader",
+    "prosthetist",
+    "sake-brewmaster",
+    "scroll-mounter",
+    "sword-polisher",
+    "swordsmith",
+    "taxonomist",
+    "train-driver",
+    "tree-doctor",
+    "typeface-designer",
+    "urushi-lacquerer",
+    "washi-papermaker",
+    "weather-forecaster",
+    "wig-maker"
+  ],
+  "temperament.aesthetic": [
+    "cultural-property-restorer",
+    "kimono-dresser",
+    "kumihimo-braider",
+    "letterpress-printer",
+    "medical-illustrator",
+    "noh-mask-carver",
+    "pastry-chef",
+    "perfumer",
+    "scroll-mounter",
+    "stage-lighting-designer",
+    "sword-polisher",
+    "swordsmith",
+    "typeface-designer",
+    "urushi-lacquerer",
+    "wig-maker"
+  ],
+  "industry.beauty": [
+    "kimono-dresser",
+    "perfumer",
+    "wig-maker"
+  ],
+  "setting.laboratory": [
+    "koji-maker",
+    "perfumer",
+    "taxonomist"
+  ],
+  "subject.smell-matter": [
+    "perfumer"
+  ],
+  "subject.water": [
+    "ama-diver",
+    "embalmer",
+    "harbor-pilot",
+    "pearl-culturist",
+    "perfumer",
+    "sake-brewmaster",
+    "sewer-pipe-inspector",
+    "sommelier",
+    "underwater-welder",
+    "washi-papermaker",
+    "weather-forecaster"
+  ],
+  "action.blend": [
+    "brush-maker",
+    "foley-artist",
+    "pastry-chef",
+    "perfumer",
+    "sake-brewmaster",
+    "urushi-lacquerer",
+    "washi-papermaker"
+  ],
+  "action.design": [
+    "braille-transcriber",
+    "medical-illustrator",
+    "perfumer",
+    "stage-lighting-designer",
+    "typeface-designer"
+  ],
+  "sense.smell": [
+    "estate-cleaner",
+    "fire-investigator",
+    "katsuobushi-maker",
+    "koji-maker",
+    "perfumer",
+    "sake-brewmaster",
+    "sewer-pipe-inspector",
+    "sommelier",
+    "zookeeper"
+  ],
+  "condition.solo": [
+    "braille-transcriber",
+    "brush-maker",
+    "chick-sexer",
+    "cultural-property-restorer",
+    "embalmer",
+    "foley-artist",
+    "kumihimo-braider",
+    "letterpress-printer",
+    "medical-illustrator",
+    "noh-mask-carver",
+    "pearl-culturist",
+    "perfumer",
+    "proofreader",
+    "prosthetist",
+    "scroll-mounter",
+    "sword-polisher",
+    "taxonomist",
+    "train-driver",
+    "tree-doctor",
+    "typeface-designer",
+    "urushi-lacquerer"
+  ],
+  "setting.backstage": [
+    "foley-artist",
+    "stage-lighting-designer",
+    "stagehand",
+    "wig-maker"
+  ],
+  "subject.metal": [
+    "letterpress-printer",
+    "sword-polisher",
+    "swordsmith",
+    "underwater-welder",
+    "wig-maker"
+  ],
+  "action.sew": [
+    "kumihimo-braider",
+    "tatami-maker",
+    "wig-maker"
+  ],
+  "condition.apprenticeship": [
+    "brush-maker",
+    "katsuobushi-maker",
+    "kumihimo-braider",
+    "letterpress-printer",
+    "noh-mask-carver",
+    "sake-brewmaster",
+    "scroll-mounter",
+    "sword-polisher",
+    "swordsmith",
+    "tatami-maker",
+    "urushi-lacquerer",
+    "washi-papermaker",
+    "wig-maker"
+  ],
+  "condition.travel": [
+    "archaeological-excavator",
+    "beekeeper",
+    "bridge-inspector",
+    "chick-sexer",
+    "estate-cleaner",
+    "nature-conservation-officer",
+    "rope-access-technician",
+    "stage-lighting-designer",
+    "stagehand",
+    "tatami-maker",
+    "taxonomist",
+    "tree-doctor",
+    "wig-maker"
+  ],
+  "temperament.quiet-pride": [
+    "archivist",
+    "braille-transcriber",
+    "bridge-inspector",
+    "chick-sexer",
+    "clinical-engineer",
+    "embalmer",
+    "foley-artist",
+    "proofreader",
+    "scroll-mounter",
+    "sewer-pipe-inspector",
+    "stage-lighting-designer",
+    "stagehand",
+    "train-driver",
+    "wig-maker"
+  ],
+  "setting.sterile-room": [
+    "clinical-engineer",
+    "embalmer",
+    "koji-maker"
+  ],
+  "subject.deceased": [
+    "embalmer",
+    "estate-cleaner",
+    "funeral-director"
+  ],
+  "action.clean-up": [
+    "embalmer",
+    "estate-cleaner",
+    "rope-access-technician",
+    "zookeeper"
+  ],
+  "sense.color": [
+    "archaeological-excavator",
+    "bridge-inspector",
+    "chick-sexer",
+    "cultural-property-restorer",
+    "embalmer",
+    "fire-investigator",
+    "koji-maker",
+    "kumihimo-braider",
+    "letterpress-printer",
+    "medical-illustrator",
+    "noh-mask-carver",
+    "proofreader",
+    "sommelier",
+    "stage-lighting-designer",
+    "sword-polisher",
+    "swordsmith",
+    "taxonomist",
+    "tree-doctor",
+    "typeface-designer",
+    "urushi-lacquerer",
+    "weather-forecaster"
+  ],
+  "temperament.unflinching": [
+    "ama-diver",
+    "embalmer",
+    "estate-cleaner",
+    "fire-investigator",
+    "harbor-pilot",
+    "rope-access-technician",
+    "sewer-pipe-inspector",
+    "underwater-welder"
+  ],
+  "industry.ceremony": [
+    "embalmer",
+    "estate-cleaner",
+    "funeral-director"
+  ],
+  "setting.someones-home": [
+    "estate-cleaner",
+    "tatami-maker"
+  ],
+  "setting.after-people": [
+    "estate-cleaner",
+    "fire-investigator"
+  ],
+  "subject.waste": [
+    "estate-cleaner",
+    "fire-investigator",
+    "sewer-pipe-inspector",
+    "zookeeper"
+  ],
+  "action.sort": [
+    "ama-diver",
+    "archivist",
+    "brush-maker",
+    "chick-sexer",
+    "estate-cleaner",
+    "katsuobushi-maker",
+    "koji-maker",
+    "letterpress-printer",
+    "pearl-culturist",
+    "proofreader",
+    "sommelier",
+    "taxonomist"
+  ],
+  "temperament.listener": [
+    "estate-cleaner",
+    "funeral-director",
+    "prosthetist",
+    "sommelier"
+  ],
+  "temperament.physical": [
+    "ama-diver",
+    "archaeological-excavator",
+    "beekeeper",
+    "estate-cleaner",
+    "forester",
+    "nature-conservation-officer",
+    "rope-access-technician",
+    "stagehand",
+    "swordsmith",
+    "tatami-maker",
+    "underwater-welder",
+    "washi-papermaker",
+    "zookeeper"
+  ],
+  "setting.temple": [
+    "funeral-director"
+  ],
+  "subject.law": [
+    "funeral-director",
+    "nature-conservation-officer"
+  ],
+  "action.perform": [
+    "foley-artist",
+    "funeral-director",
+    "stage-lighting-designer"
+  ],
+  "subject.animal": [
+    "ama-diver",
+    "beekeeper",
+    "brush-maker",
+    "chick-sexer",
+    "nature-conservation-officer",
+    "pearl-culturist",
+    "taxonomist",
+    "zookeeper"
+  ],
+  "subject.wood": [
+    "brush-maker",
+    "forester",
+    "noh-mask-carver",
+    "stagehand",
+    "urushi-lacquerer"
+  ],
+  "temperament.repeatable": [
+    "braille-transcriber",
+    "brush-maker",
+    "chick-sexer",
+    "katsuobushi-maker",
+    "koji-maker",
+    "kumihimo-braider",
+    "letterpress-printer",
+    "noh-mask-carver",
+    "pastry-chef",
+    "pearl-culturist",
+    "proofreader",
+    "sake-brewmaster",
+    "sword-polisher",
+    "train-driver",
+    "typeface-designer",
+    "urushi-lacquerer",
+    "washi-papermaker"
+  ],
+  "industry.craft": [
+    "brush-maker",
+    "kumihimo-braider",
+    "sword-polisher",
+    "swordsmith",
+    "tatami-maker",
+    "urushi-lacquerer",
+    "washi-papermaker"
+  ],
+  "subject.antique": [
+    "archaeological-excavator",
+    "archivist",
+    "cultural-property-restorer",
+    "noh-mask-carver",
+    "scroll-mounter",
+    "sword-polisher"
+  ],
+  "subject.stone": [
+    "bridge-inspector",
+    "rope-access-technician",
+    "sword-polisher"
+  ],
+  "action.polish": [
+    "noh-mask-carver",
+    "sword-polisher",
+    "typeface-designer",
+    "urushi-lacquerer"
+  ],
+  "action.diagnose": [
+    "archivist",
+    "beekeeper",
+    "bridge-inspector",
+    "chick-sexer",
+    "cultural-property-restorer",
+    "fire-investigator",
+    "sewer-pipe-inspector",
+    "sommelier",
+    "sword-polisher",
+    "taxonomist",
+    "tree-doctor",
+    "weather-forecaster"
+  ],
+  "temperament.solitude": [
+    "sword-polisher",
+    "taxonomist"
+  ],
+  "subject.fire": [
+    "fire-investigator",
+    "katsuobushi-maker",
+    "pastry-chef",
+    "swordsmith",
+    "underwater-welder"
+  ],
+  "action.weld": [
+    "swordsmith",
+    "underwater-welder"
+  ],
+  "action.shave": [
+    "prosthetist",
+    "swordsmith"
+  ],
+  "sense.night-vision": [
+    "ama-diver",
+    "harbor-pilot",
+    "sewer-pipe-inspector",
+    "stagehand",
+    "swordsmith",
+    "underwater-welder"
+  ],
+  "subject.plant": [
+    "beekeeper",
+    "forester",
+    "nature-conservation-officer",
+    "tatami-maker",
+    "taxonomist",
+    "tree-doctor",
+    "washi-papermaker"
+  ],
+  "subject.lacquer": [
+    "cultural-property-restorer",
+    "urushi-lacquerer"
+  ],
+  "subject.paper": [
+    "archivist",
+    "braille-transcriber",
+    "cultural-property-restorer",
+    "letterpress-printer",
+    "proofreader",
+    "scroll-mounter",
+    "washi-papermaker"
+  ],
+  "subject.sound": [
+    "foley-artist"
+  ],
+  "industry.entertainment": [
+    "foley-artist",
+    "noh-mask-carver",
+    "stage-lighting-designer",
+    "stagehand"
+  ],
+  "subject.light": [
+    "medical-illustrator",
+    "noh-mask-carver",
+    "stage-lighting-designer"
+  ],
+  "action.carve": [
+    "noh-mask-carver"
+  ],
+  "setting.high-place": [
+    "bridge-inspector",
+    "rope-access-technician",
+    "stage-lighting-designer"
+  ],
+  "setting.night-city": [
+    "stagehand"
+  ],
+  "action.carry": [
+    "beekeeper",
+    "stagehand"
+  ],
+  "action.disassemble": [
+    "stagehand"
+  ],
+  "subject.food": [
+    "beekeeper",
+    "katsuobushi-maker",
+    "koji-maker",
+    "pastry-chef",
+    "sake-brewmaster",
+    "sommelier"
+  ],
+  "subject.microbe": [
+    "katsuobushi-maker",
+    "koji-maker",
+    "sake-brewmaster"
+  ],
+  "action.ferment": [
+    "katsuobushi-maker",
+    "sake-brewmaster"
+  ],
+  "industry.food-fermentation": [
+    "katsuobushi-maker",
+    "koji-maker",
+    "pastry-chef",
+    "sake-brewmaster",
+    "sommelier"
+  ],
+  "action.nurture": [
+    "beekeeper",
+    "forester",
+    "koji-maker",
+    "zookeeper"
+  ],
+  "setting.kitchen": [
+    "pastry-chef"
+  ],
+  "sense.taste": [
+    "pastry-chef",
+    "sake-brewmaster",
+    "sommelier"
+  ],
+  "setting.outdoors": [
+    "archaeological-excavator",
+    "beekeeper",
+    "bridge-inspector",
+    "fire-investigator",
+    "forester",
+    "nature-conservation-officer",
+    "rope-access-technician",
+    "tree-doctor",
+    "zookeeper"
+  ],
+  "subject.soil": [
+    "archaeological-excavator",
+    "tree-doctor"
+  ],
+  "action.investigate": [
+    "archaeological-excavator",
+    "fire-investigator",
+    "proofreader",
+    "sewer-pipe-inspector"
+  ],
+  "industry.heritage": [
+    "archaeological-excavator",
+    "archivist",
+    "cultural-property-restorer",
+    "scroll-mounter"
+  ],
+  "setting.museum": [
+    "archivist",
+    "cultural-property-restorer",
+    "taxonomist"
+  ],
+  "subject.text": [
+    "archivist",
+    "braille-transcriber",
+    "letterpress-printer",
+    "medical-illustrator",
+    "proofreader",
+    "taxonomist",
+    "typeface-designer"
+  ],
+  "industry.infrastructure": [
+    "bridge-inspector",
+    "rope-access-technician",
+    "sewer-pipe-inspector",
+    "underwater-welder"
+  ],
+  "action.climb": [
+    "rope-access-technician"
+  ],
+  "setting.underground": [
+    "sewer-pipe-inspector"
+  ],
+  "setting.underwater": [
+    "ama-diver",
+    "underwater-welder"
+  ],
+  "setting.sea": [
+    "ama-diver",
+    "harbor-pilot",
+    "pearl-culturist",
+    "underwater-welder"
+  ],
+  "action.dive": [
+    "ama-diver",
+    "underwater-welder"
+  ],
+  "action.operate-vehicle": [
+    "airline-pilot",
+    "forester",
+    "harbor-pilot",
+    "train-driver"
+  ],
+  "industry.logistics": [
+    "airline-pilot",
+    "harbor-pilot",
+    "train-driver"
+  ],
+  "setting.ship": [
+    "harbor-pilot"
+  ],
+  "action.translate": [
+    "braille-transcriber",
+    "medical-illustrator",
+    "weather-forecaster"
+  ],
+  "industry.medical": [
+    "braille-transcriber",
+    "clinical-engineer",
+    "medical-illustrator",
+    "prosthetist"
+  ],
+  "setting.hospital": [
+    "clinical-engineer",
+    "prosthetist"
+  ],
+  "industry.nature": [
+    "beekeeper",
+    "chick-sexer",
+    "nature-conservation-officer",
+    "tree-doctor",
+    "zookeeper"
+  ],
+  "setting.factory-line": [
+    "chick-sexer"
+  ],
+  "setting.mountain": [
+    "forester",
+    "nature-conservation-officer"
+  ],
+  "action.teach": [
+    "zookeeper"
+  ],
+  "action.catch": [
+    "ama-diver",
+    "forester"
+  ],
+  "industry.primary": [
+    "ama-diver",
+    "forester",
+    "pearl-culturist"
+  ],
+  "industry.public": [
+    "fire-investigator"
+  ],
+  "industry.publishing": [
+    "letterpress-printer",
+    "proofreader",
+    "typeface-designer"
+  ],
+  "industry.science": [
+    "taxonomist",
+    "weather-forecaster"
+  ]
+}

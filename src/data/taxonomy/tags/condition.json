@@ -1,0 +1,173 @@
+{
+  "facet": "condition",
+  "tags": [
+    {
+      "id": "condition.national-license",
+      "facet": "condition",
+      "slug": "national-license",
+      "labelJa": "国家資格が要る",
+      "aliasesJa": [
+        "国家資格",
+        "免許制",
+        "業務独占"
+      ],
+      "criteriaJa": "法令上、資格がなければその業務を行えない場合。"
+    },
+    {
+      "id": "condition.certification",
+      "facet": "condition",
+      "slug": "certification",
+      "labelJa": "民間資格・認定が要る",
+      "aliasesJa": [
+        "民間資格",
+        "認定",
+        "検定"
+      ],
+      "criteriaJa": "業界団体などの認定が実質的な参入条件になっている場合。"
+    },
+    {
+      "id": "condition.apprenticeship",
+      "facet": "condition",
+      "slug": "apprenticeship",
+      "labelJa": "弟子入りして覚える",
+      "aliasesJa": [
+        "徒弟制",
+        "師弟",
+        "修業"
+      ],
+      "criteriaJa": "学校ではなく現場の師匠につくことが主な習得経路である場合。"
+    },
+    {
+      "id": "condition.live-in",
+      "facet": "condition",
+      "slug": "live-in",
+      "labelJa": "住み込み",
+      "aliasesJa": [
+        "泊まり込み",
+        "寮生活",
+        "住込み"
+      ],
+      "criteriaJa": "期間中その場所に住むことが仕事の形式に組み込まれている場合。"
+    },
+    {
+      "id": "condition.seasonal",
+      "facet": "condition",
+      "slug": "seasonal",
+      "labelJa": "季節で働く",
+      "aliasesJa": [
+        "季節労働",
+        "期間限定",
+        "農閑期"
+      ],
+      "criteriaJa": "働く時期が季節で区切られている場合。"
+    },
+    {
+      "id": "condition.night-shift",
+      "facet": "condition",
+      "slug": "night-shift",
+      "labelJa": "夜に働く",
+      "aliasesJa": [
+        "夜勤",
+        "深夜勤務",
+        "当直"
+      ],
+      "criteriaJa": "夜間の勤務が常態である場合。"
+    },
+    {
+      "id": "condition.travel",
+      "facet": "condition",
+      "slug": "travel",
+      "labelJa": "現場を渡り歩く",
+      "aliasesJa": [
+        "出張",
+        "巡回",
+        "移動が多い"
+      ],
+      "criteriaJa": "決まった職場を持たず、現場から現場へ移る形式の場合。"
+    },
+    {
+      "id": "condition.solo",
+      "facet": "condition",
+      "slug": "solo",
+      "labelJa": "一人で完結する",
+      "aliasesJa": [
+        "単独作業",
+        "個人作業",
+        "ひとり"
+      ],
+      "criteriaJa": "一件の仕事を最初から最後まで一人で担う形式が基本の場合。"
+    },
+    {
+      "id": "condition.team",
+      "facet": "condition",
+      "slug": "team",
+      "labelJa": "チームで動く",
+      "aliasesJa": [
+        "班",
+        "分業",
+        "協働"
+      ],
+      "criteriaJa": "複数人の連携がなければ成立しない場合。"
+    },
+    {
+      "id": "condition.danger",
+      "facet": "condition",
+      "slug": "danger",
+      "labelJa": "危険と隣り合わせ",
+      "aliasesJa": [
+        "危険作業",
+        "労災リスク",
+        "命がけ"
+      ],
+      "criteriaJa": "事故が起きれば重篤な結果になる作業を日常的に行う場合。"
+    },
+    {
+      "id": "condition.peak-season",
+      "facet": "condition",
+      "slug": "peak-season",
+      "labelJa": "繁忙期が極端",
+      "aliasesJa": [
+        "繁閑差",
+        "書き入れ時",
+        "山がある"
+      ],
+      "criteriaJa": "年間の一部に業務が極端に集中する場合。"
+    },
+    {
+      "id": "condition.vehicle-license",
+      "facet": "condition",
+      "slug": "vehicle-license",
+      "labelJa": "特殊な免許が要る",
+      "aliasesJa": [
+        "大型免許",
+        "船舶免許",
+        "潜水士免許"
+      ],
+      "criteriaJa": "運転・操縦・潜水などの専門免許が業務の前提である場合。"
+    },
+    {
+      "id": "condition.few-practitioners",
+      "facet": "condition",
+      "slug": "few-practitioners",
+      "labelJa": "全国に数十人",
+      "aliasesJa": [
+        "希少職",
+        "後継者不足",
+        "担い手が少ない"
+      ],
+      "criteriaJa": "従事者が全国で数十人規模、または後継者難が公に語られている場合。"
+    },
+    {
+      "id": "condition.public-service",
+      "facet": "condition",
+      "slug": "public-service",
+      "labelJa": "公的な立場で働く",
+      "aliasesJa": [
+        "公務員",
+        "公職",
+        "官公庁勤務"
+      ],
+      "criteriaJa": "国・自治体・公的機関に属して働く形式が主である場合。"
+    }
+  ]
+}

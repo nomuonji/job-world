@@ -1,0 +1,100 @@
+{
+  "industry": "aerospace",
+  "jobs": [
+    {
+      "slug": "air-traffic-controller",
+      "nameJa": "航空管制官",
+      "nameEn": "Air Traffic Controller",
+      "aliasesJa": [
+        "管制官"
+      ],
+      "kanaJa": "こうくうかんせいかん",
+      "emoji": "🗼",
+      "summaryJa": "見えない空に道を引き、機体同士を離しておく。",
+      "descriptionJa": "航空機の離着陸と航路を無線で指示する国家公務員。画面上の光点と高度の数字だけを見て、機体同士の間隔を保ち続ける。指示は決められた言い回しで行われ、復唱によって聞き間違いを検出する仕組みになっている。天候の急変や緊急事態が起きれば、進行中の全機の順番を組み直す判断がその場で求められる。",
+      "surpriseJa": "管制の交信で使う言葉は世界共通の決まった言い回しに限定されている。自由な表現を禁じることで、聞き間違いと解釈の食い違いを構造的に減らしている。",
+      "howToBecomeJa": "航空管制官採用試験に合格し、航空保安大学校で訓練を受ける。",
+      "tags": [
+        "setting.desk",
+        "setting.sky",
+        "subject.data",
+        "subject.machine",
+        "subject.sky-body",
+        "action.watch",
+        "action.negotiate",
+        "action.measure",
+        "sense.hearing",
+        "sense.stillness",
+        "condition.national-license",
+        "condition.night-shift",
+        "condition.public-service",
+        "condition.team",
+        "temperament.improvise",
+        "temperament.planner",
+        "industry.aerospace"
+      ],
+      "rarity": 4,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "airline-pilot",
+          "kind": "front-and-back",
+          "noteJa": "同じ一機の飛行を、片方は操縦席から、片方は地上の画面から見ている。互いの声しか知らないまま毎日組んでいる。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "国土交通省 航空管制官",
+          "url": "https://www.mlit.go.jp/koku/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "astronaut",
+      "nameJa": "宇宙飛行士",
+      "nameEn": "Astronaut",
+      "aliasesJa": [
+        "飛行士"
+      ],
+      "kanaJa": "うちゅうひこうし",
+      "emoji": "🧑‍🚀",
+      "summaryJa": "選ばれてから飛ぶまで、何年も地上で訓練し続ける。",
+      "descriptionJa": "宇宙機に搭乗し、船外活動や実験、機体の保守を行う職業。選抜されてから初飛行までに何年もかかり、その間はロボットアーム操作、船外活動の水中訓練、ロシア語や英語、緊急時手順の習得に費やされる。軌道上での業務の多くは、地上の研究者が組んだ実験の実行と、装置の修理という地味な作業で占められている。",
+      "surpriseJa": "宇宙飛行士の仕事の大半は地上にある。選ばれてから飛ぶまでに何年も訓練が続き、飛行そのものより待つ時間と練習の時間の方が圧倒的に長い。",
+      "howToBecomeJa": "宇宙機関の選抜試験に合格する必要がある。理工系や医学系の実務経験が問われることが多い。",
+      "tags": [
+        "setting.sky",
+        "setting.confined",
+        "subject.machine",
+        "subject.sky-body",
+        "subject.data",
+        "action.measure",
+        "action.restore",
+        "action.record",
+        "sense.balance",
+        "sense.stamina",
+        "sense.fine-motor",
+        "condition.danger",
+        "condition.team",
+        "condition.few-practitioners",
+        "condition.live-in",
+        "temperament.planner",
+        "temperament.improvise",
+        "temperament.curious",
+        "industry.aerospace"
+      ],
+      "rarity": 5,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "JAXA 宇宙飛行士",
+          "url": "https://www.jaxa.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

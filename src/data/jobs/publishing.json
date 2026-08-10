@@ -1,0 +1,140 @@
+{
+  "industry": "publishing",
+  "jobs": [
+    {
+      "slug": "letterpress-printer",
+      "nameJa": "活版印刷職人",
+      "nameEn": "Letterpress Printer",
+      "aliasesJa": [
+        "活版工",
+        "文選工"
+      ],
+      "kanaJa": "かっぱんいんさつしょくにん",
+      "emoji": "🔠",
+      "summaryJa": "文章を、金属の活字を一本ずつ拾って組み立てる。",
+      "descriptionJa": "鉛合金の活字を並べて版を組み、圧力をかけて紙に刷る印刷。原稿の文字を活字棚から一本ずつ拾う文選と、それを行に組む植字という工程がある。日本語は活字の種類が数千に及ぶため、棚の配置を体で覚えていることが速さになる。写植とデジタル組版に置き換えられて一度ほぼ消えたが、紙にへこみが残る質感を求めて小規模に残っている。",
+      "surpriseJa": "日本語の活版印刷では、職人が数千種類の活字の位置を体で覚え、原稿を読みながら棚を歩いて一本ずつ拾っていた。文章を組む前に、まず文字を集める工程があった。",
+      "howToBecomeJa": "現存する活版印刷所に入って覚える。工房が開く講座から関わる例もある。",
+      "tags": [
+        "setting.workshop",
+        "subject.metal",
+        "subject.paper",
+        "subject.text",
+        "action.sort",
+        "action.assemble",
+        "action.measure",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "sense.color",
+        "condition.apprenticeship",
+        "condition.few-practitioners",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.publishing"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "declining",
+      "edges": [
+        {
+          "to": "typeface-designer",
+          "kind": "modern-successor",
+          "noteJa": "金属を彫って作られていた文字は、いま画面の上で描かれている。扱うものが鉛からデータに変わっただけで、字の形を決める仕事は続いている。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "印刷博物館",
+          "url": "https://www.printing-museum.org/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "proofreader",
+      "nameJa": "校正者",
+      "nameEn": "Proofreader",
+      "aliasesJa": [
+        "校閲者",
+        "こうせいしゃ"
+      ],
+      "kanaJa": "こうせいしゃ",
+      "emoji": "🔍",
+      "summaryJa": "意味を読まずに、文字の形だけを見る読み方をする。",
+      "descriptionJa": "原稿と組み上がった紙面を照らし合わせ、誤字や表記の揺れ、事実の誤りを見つける仕事。普通に読むと脳が文章を補完してしまうため、意味を追わずに文字を一つずつ見る読み方や、後ろから読む方法が使われる。人名・地名・数字・引用は資料に当たって裏を取る。直すのではなく、疑問として示して判断を書き手に返すのが基本姿勢になる。",
+      "surpriseJa": "校正では、文章を意味として読むと誤字が見えなくなる。だから意味を追わずに文字の形だけを見る、普通とは違う読み方を意識的に身につける。",
+      "howToBecomeJa": "出版社や校正専門会社に入るほか、講座を経てフリーランスとして受注する経路もある。",
+      "tags": [
+        "setting.desk",
+        "subject.text",
+        "subject.paper",
+        "action.sort",
+        "action.investigate",
+        "action.record",
+        "sense.stillness",
+        "sense.color",
+        "condition.solo",
+        "condition.peak-season",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "temperament.curious",
+        "industry.publishing"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本エディタースクール",
+          "url": "https://www.editor.co.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "typeface-designer",
+      "nameJa": "書体デザイナー",
+      "nameEn": "Typeface Designer",
+      "aliasesJa": [
+        "フォントデザイナー",
+        "書体設計士"
+      ],
+      "kanaJa": "しょたいでざいなー",
+      "emoji": "🅰️",
+      "summaryJa": "一書体を出すのに、二万字近くを同じ調子で描く。",
+      "descriptionJa": "文字の形そのものを設計する仕事。日本語の書体は漢字・かな・記号を含めて一万数千字が必要で、全体を通して太さや重心が揃っていなければならない。部首を使い回して効率化しても、同じ部品が字によって窮屈に見えるため、一字ずつ調整が入る。読みやすさは意識されないことが成功なので、成果が目に留まらない仕事でもある。",
+      "surpriseJa": "日本語の書体を一つ完成させるには一万数千字を描く必要があり、一書体に数年かかることも珍しくない。欧文の百字前後とは桁が違う。",
+      "howToBecomeJa": "フォントメーカーやデザイン事務所に入る経路が主。",
+      "tags": [
+        "setting.desk",
+        "subject.text",
+        "subject.data",
+        "action.design",
+        "action.measure",
+        "action.polish",
+        "sense.color",
+        "sense.tilt",
+        "sense.stillness",
+        "condition.solo",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.publishing"
+      ],
+      "rarity": 5,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "印刷博物館",
+          "url": "https://www.printing-museum.org/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

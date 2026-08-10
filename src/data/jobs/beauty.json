@@ -1,0 +1,135 @@
+{
+  "industry": "beauty",
+  "jobs": [
+    {
+      "slug": "kimono-dresser",
+      "nameJa": "着付師",
+      "nameEn": "Kimono Dresser",
+      "aliasesJa": [
+        "着付け師",
+        "着付講師"
+      ],
+      "kanaJa": "きつけし",
+      "emoji": "👘",
+      "summaryJa": "体の凹凸を埋めて、あえて筒に近い形をつくる。",
+      "descriptionJa": "着物を人に着せる仕事。洋服が体の線に沿わせるのに対し、着物は寸胴に近い形のほうが美しく着崩れない。そのため腰やみぞおちにタオルを詰め、体の凹凸をならしてから着せていく。婚礼や成人式では早朝から数十人を続けて着せることもあり、一人あたりの時間が決まっている中で、一日中立ったまま作業が続く。",
+      "surpriseJa": "着物を美しく着せるには、体の凹凸を消して寸胴に近づける必要がある。洋服とは逆に、体の線を出さないことが仕立ての良さになる。",
+      "howToBecomeJa": "着付け教室で学び、美容室や写真スタジオ、着付け専門会社に所属する経路が一般的。",
+      "tags": [
+        "setting.workshop",
+        "setting.stage",
+        "subject.textile",
+        "subject.human-body",
+        "action.assemble",
+        "action.measure",
+        "action.soothe",
+        "sense.fingertip",
+        "sense.tilt",
+        "sense.stamina",
+        "condition.certification",
+        "condition.peak-season",
+        "condition.seasonal",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.improvise",
+        "industry.beauty"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "厚生労働省 技能検定 着付け",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/gino_kentei/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "perfumer",
+      "nameJa": "調香師",
+      "nameEn": "Perfumer",
+      "aliasesJa": [
+        "パフューマー",
+        "香料調合師"
+      ],
+      "kanaJa": "ちょうこうし",
+      "emoji": "🌸",
+      "summaryJa": "何百種類もの香料の名前と匂いを、頭の中で対応づけている。",
+      "descriptionJa": "香水や化粧品、食品や日用品に使う香りを設計し、原料を配合してつくる専門職。手元にある香料は天然・合成あわせて数百から数千種類にのぼり、そのひとつひとつの匂いと、混ぜたときにどう変わるかを記憶していることが仕事の前提になる。処方は数十種類の配合比を書いた一枚の表として残り、時間が経つにつれ香りが変化していく設計まで含めて考える。",
+      "surpriseJa": "香水は時間とともに香りが変わるように設計されている。つけた直後・数十分後・数時間後で立ち上がる香料を変えてあり、調香師は一枚の処方の中に「時間の経過」を書き込んでいることになる。",
+      "howToBecomeJa": "香料会社に入り、社内で長い訓練を受けるのが主な経路。匂いの記憶を作る訓練に数年かかる。",
+      "tags": [
+        "setting.laboratory",
+        "subject.smell-matter",
+        "subject.water",
+        "action.blend",
+        "action.design",
+        "action.measure",
+        "sense.smell",
+        "sense.fine-motor",
+        "condition.certification",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.curious",
+        "industry.beauty"
+      ],
+      "rarity": 4,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本香料工業会",
+          "url": "https://www.jffma-jp.org/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "wig-maker",
+      "nameJa": "かつら師",
+      "nameEn": "Wig Maker",
+      "aliasesJa": [
+        "結髪師",
+        "床山"
+      ],
+      "kanaJa": "かつらし",
+      "emoji": "💈",
+      "summaryJa": "頭の形を写し取った金具に、髪を一本ずつ植える。",
+      "descriptionJa": "舞台や時代劇で使うかつらを作り、結い上げる職人。演者ごとに頭の形を測って土台の金具を打ち出し、そこに人毛を少しずつ植えていく。役柄と時代によって髪型が細かく決まっており、同じ「町人髷」でも身分や年齢で結い方が変わる。公演中は毎日結い直す必要があるため、劇場に常駐して支度に付き添う仕事でもある。",
+      "surpriseJa": "舞台のかつらは演者の頭の形に合わせて金具から打ち出して作られる。かぶり物ではなく、その人の頭に合わせた一点物として仕立てられている。",
+      "howToBecomeJa": "かつら製作会社や劇場の床山に弟子入りして覚えるのが基本。",
+      "tags": [
+        "setting.backstage",
+        "setting.workshop",
+        "subject.metal",
+        "subject.textile",
+        "subject.human-body",
+        "action.assemble",
+        "action.measure",
+        "action.sew",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "sense.tilt",
+        "condition.apprenticeship",
+        "condition.few-practitioners",
+        "condition.travel",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.quiet-pride",
+        "industry.beauty"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "sources": [
+        {
+          "titleJa": "独立行政法人 日本芸術文化振興会",
+          "url": "https://www.ntj.jac.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "industry": "public",
+  "jobs": [
+    {
+      "slug": "fire-investigator",
+      "nameJa": "火災調査官",
+      "nameEn": "Fire Investigator",
+      "aliasesJa": [
+        "火災原因調査員",
+        "火災調査員"
+      ],
+      "kanaJa": "かさいちょうさかん",
+      "emoji": "🚒",
+      "summaryJa": "焼け跡の焦げ方の差から、火が出た一点を割り出す。",
+      "descriptionJa": "火が消えた後の現場に入り、出火の原因と場所を特定する消防の職務。炎は上と横に広がるため、焼け方の深さや炭化の向きをたどっていくと、燃え始めた地点に収束する。焼け残った配線やコンセントを持ち帰って調べ、関係者から出火直前の状況を聞き取る。結果は再発防止の統計や、火災保険・刑事事件の判断にも使われる。",
+      "surpriseJa": "火は上と外に向かって広がるため、焼け方の深さをたどっていくと出火点に行き着く。全部燃えてしまったように見える現場でも、焦げ方の差が原因を指している。",
+      "howToBecomeJa": "消防吏員として採用され、火災調査の専門研修を受ける経路が主。",
+      "tags": [
+        "setting.after-people",
+        "setting.outdoors",
+        "subject.fire",
+        "subject.waste",
+        "subject.machine",
+        "action.investigate",
+        "action.diagnose",
+        "action.record",
+        "sense.smell",
+        "sense.color",
+        "sense.fingertip",
+        "condition.public-service",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.unflinching",
+        "temperament.curious",
+        "temperament.detail",
+        "industry.public"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "総務省消防庁",
+          "url": "https://www.fdma.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}

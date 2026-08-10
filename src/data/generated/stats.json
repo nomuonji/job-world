@@ -1,0 +1,35 @@
+{
+  "jobCount": 53,
+  "tagCount": 132,
+  "tagsByFacet": {
+    "setting": 25,
+    "subject": 26,
+    "action": 29,
+    "sense": 11,
+    "condition": 14,
+    "temperament": 11,
+    "industry": 16
+  },
+  "rarityDistribution": [
+    0,
+    2,
+    13,
+    18,
+    20
+  ],
+  "familiarityDistribution": [
+    4,
+    17,
+    13,
+    12,
+    7
+  ],
+  "lifecycleCounts": {
+    "traditional": 13,
+    "established": 31,
+    "emerging": 4,
+    "declining": 5
+  },
+  "typedEdgeCount": 9,
+  "generatedAt": "2026-08-06"
+}

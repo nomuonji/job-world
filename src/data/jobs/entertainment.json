@@ -1,0 +1,188 @@
+{
+  "industry": "entertainment",
+  "jobs": [
+    {
+      "slug": "foley-artist",
+      "nameJa": "フォーリーアーティスト",
+      "nameEn": "Foley Artist",
+      "aliasesJa": [
+        "音響効果技師",
+        "生音効果マン"
+      ],
+      "kanaJa": "ふぉーりーあーてぃすと",
+      "emoji": "👣",
+      "summaryJa": "映像に合う足音を、まったく別のもので作る。",
+      "descriptionJa": "映画やドラマの効果音を、スタジオで実際に音を出して録る仕事。撮影現場で録った音は台詞と雑音が混ざるため、足音や衣擦れ、物を置く音は後から作り直される。素材は本物である必要がなく、雪を踏む音に片栗粉、骨の折れる音にセロリといった置き換えが使われる。映像を見ながら、動きに合わせてその場で音を出す。",
+      "surpriseJa": "映画の足音のほとんどは撮影現場の音ではなく、後日スタジオで人が歩いて録り直したもの。雪を踏む音には片栗粉が使われることが知られている。",
+      "howToBecomeJa": "音響制作会社やポストプロダクションに入り、現場で技術を身につける。",
+      "tags": [
+        "setting.backstage",
+        "setting.workshop",
+        "subject.sound",
+        "subject.machine",
+        "action.perform",
+        "action.record",
+        "action.blend",
+        "sense.hearing",
+        "sense.fingertip",
+        "condition.solo",
+        "condition.peak-season",
+        "condition.few-practitioners",
+        "temperament.improvise",
+        "temperament.curious",
+        "temperament.quiet-pride",
+        "industry.entertainment"
+      ],
+      "rarity": 5,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本映画テレビ技術協会",
+          "url": "https://www.mpte.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "noh-mask-carver",
+      "nameJa": "能面師",
+      "nameEn": "Noh Mask Carver",
+      "aliasesJa": [
+        "面打",
+        "能面打ち"
+      ],
+      "kanaJa": "のうめんし",
+      "emoji": "🎭",
+      "summaryJa": "角度でうつむいたり微笑んだりする顔を彫る。",
+      "descriptionJa": "能楽で使う面を檜から彫り出し、胡粉で塗り重ねて仕上げる職人。能面は正面からは無表情に見えるよう作られており、少し俯けると悲しげに、上向ければ明るく見える。これは偶然ではなく、眉や口元の面の傾きを計算して彫った結果として生じる。古い名品を写す作業が修業の中心になり、独創よりも再現の精度が問われる。",
+      "surpriseJa": "能面の表情が角度で変わるのは、光の当たり方が変わるように面の傾きを彫り分けてあるため。演者が首を少し動かすだけで、面が笑ったり泣いたりして見える。",
+      "howToBecomeJa": "能面師に師事するか、専門の教室で学び、古面の写しを重ねて技術を身につける。",
+      "tags": [
+        "setting.workshop",
+        "subject.wood",
+        "subject.light",
+        "subject.antique",
+        "action.carve",
+        "action.polish",
+        "action.measure",
+        "sense.fingertip",
+        "sense.color",
+        "sense.fine-motor",
+        "condition.apprenticeship",
+        "condition.solo",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.repeatable",
+        "industry.entertainment"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "sources": [
+        {
+          "titleJa": "公益社団法人 能楽協会",
+          "url": "https://www.nohgaku.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "stage-lighting-designer",
+      "nameJa": "舞台照明家",
+      "nameEn": "Stage Lighting Designer",
+      "aliasesJa": [
+        "照明デザイナー",
+        "照明オペレーター"
+      ],
+      "kanaJa": "ぶたいしょうめいか",
+      "emoji": "💡",
+      "summaryJa": "見せる場所ではなく、見せない場所を決めている。",
+      "descriptionJa": "舞台や公演の照明を設計し、本番で操作する仕事。明るくする作業に見えて、実際には観客の視線をどこへ向けるかを決める仕事で、暗くする判断のほうが多い場面もある。仕込みでは重い機材を吊り、位置と角度を追い込む肉体労働が続く。本番中は台本と音楽に合わせて、秒単位で明かりを切り替えていく。",
+      "surpriseJa": "舞台照明の仕事は明かりを当てることより、どこを暗いままにしておくかを決めることに近い。観客が見る場所は、照らされた範囲によって指定されている。",
+      "howToBecomeJa": "照明会社や劇場に入り、仕込みの現場から経験を積む。舞台照明の技能認定制度がある。",
+      "tags": [
+        "setting.backstage",
+        "setting.high-place",
+        "subject.light",
+        "subject.machine",
+        "action.design",
+        "action.assemble",
+        "action.perform",
+        "sense.color",
+        "sense.stamina",
+        "sense.tilt",
+        "condition.night-shift",
+        "condition.team",
+        "condition.travel",
+        "temperament.aesthetic",
+        "temperament.improvise",
+        "temperament.quiet-pride",
+        "industry.entertainment"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "公益社団法人 日本照明家協会",
+          "url": "https://www.jald.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "stagehand",
+      "nameJa": "舞台道具方",
+      "nameEn": "Stagehand",
+      "aliasesJa": [
+        "大道具",
+        "舞台転換スタッフ",
+        "黒衣"
+      ],
+      "kanaJa": "ぶたいどうぐかた",
+      "emoji": "🎬",
+      "summaryJa": "暗転の数十秒で、舞台の上の世界を入れ替える。",
+      "descriptionJa": "舞台の大道具を仕込み、公演中の場面転換を担当する仕事。暗転や幕の裏で、数十秒のうちに大きな装置を動かし、次の場面の配置に組み替える。手順は秒単位で決められ、暗い中でも迷わないよう床に目印が貼られる。観客に見えないことが前提の持ち場だが、転換が遅れれば芝居そのものが止まってしまう。",
+      "surpriseJa": "舞台の床には、暗転の中で位置を合わせるための目印が貼られている。観客からは見えない印を頼りに、真っ暗な数十秒で舞台がまるごと入れ替わっている。",
+      "howToBecomeJa": "舞台美術・舞台制作の会社や劇場に入り、現場で覚える。",
+      "tags": [
+        "setting.backstage",
+        "setting.night-city",
+        "subject.wood",
+        "subject.machine",
+        "action.assemble",
+        "action.carry",
+        "action.disassemble",
+        "sense.stamina",
+        "sense.night-vision",
+        "sense.hearing",
+        "condition.team",
+        "condition.night-shift",
+        "condition.travel",
+        "temperament.quiet-pride",
+        "temperament.physical",
+        "temperament.planner",
+        "industry.entertainment"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "stage-lighting-designer",
+          "kind": "same-site",
+          "noteJa": "同じ暗転の数十秒を、片方は物を動かして、片方は明かりを切り替えて使っている。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "公益社団法人 日本劇場技術者連盟",
+          "url": "https://www.jatet.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    }
+  ]
+}
