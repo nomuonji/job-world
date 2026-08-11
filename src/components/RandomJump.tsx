@@ -17,7 +17,7 @@ export function RandomJump({ slugs }: { slugs: string[] }) {
         const slug = slugs[Math.floor(Math.random() * slugs.length)];
         router.push(`/jobs/${slug}`);
       }}
-      className="mt-6 rounded-full bg-[var(--accent)] px-6 py-2.5 font-semibold text-white transition-opacity hover:opacity-85"
+      className="mt-6 rounded-full bg-[var(--accent)] px-6 py-2.5 font-semibold text-[var(--background)] transition-opacity hover:opacity-85"
     >
       知らない仕事にとびこむ →
     </button>
