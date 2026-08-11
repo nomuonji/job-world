@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
 
 // 公開URL: job.antonbase.com（metadataBase・sitemap.ts・robots.ts に反映）
@@ -22,6 +23,20 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className="min-h-screen">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-CW8JV3NBHZ"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            if (location.hostname === "job.antonbase.com") {
+              gtag("js", new Date());
+              gtag("config", "G-CW8JV3NBHZ");
+            }
+          `}
+        </Script>
         <header className="border-b border-[var(--border)] bg-[var(--surface)]">
           <div className="mx-auto flex max-w-5xl items-center gap-6 px-4 py-3">
             <Link href="/" className="font-bold tracking-tight">
