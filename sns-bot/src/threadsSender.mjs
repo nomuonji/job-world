@@ -33,13 +33,13 @@ async function main() {
       return;
     }
 
+    const creds = await credStore.loadCredentials();
     if (isDryRun()) {
       console.log('[DRY_RUN] Would post to Threads with text:');
       console.log(text);
       return; // 状態を進めない
     }
 
-    const creds = await credStore.loadCredentials();
     const { userId, accessToken } = await getThreadsCredentials(creds, credStore, false);
     const res = await postText(accessToken, userId, text);
     console.log(`Threads post success: ${JSON.stringify(res)}`);

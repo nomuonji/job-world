@@ -32,13 +32,13 @@ async function main() {
       return;
     }
 
+    const creds = await credStore.loadCredentials();
     if (isDryRun()) {
       console.log('[DRY_RUN] Would tweet with text:');
       console.log(text);
       return; // 状態を進めない
     }
 
-    const creds = await credStore.loadCredentials();
     const id = await postToX(text, creds);
     console.log(`Tweet sent successfully: ${id}`);
     console.log(text);
