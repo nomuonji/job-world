@@ -4,15 +4,22 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run og && next build",
     "start": "next start",
+    "og": "tsx scripts/generate-og.tsx",
     "lint": "eslint",
     "data:build": "tsx scripts/build-data.ts",
     "data:validate": "tsx scripts/validate.ts",
     "data:check": "npm run data:build && git diff --exit-code -- src/data && npm run data:validate",
+    "og:check": "npm run og && git diff --exit-code -- public/og",
     "data:new": "tsx scripts/new-job.ts",
     "tag:new": "tsx scripts/new-tag.ts",
-    "verify": "npm run data:check && npm run lint && npm run build"
+    "bot:queue": "node sns-bot/src/generateQueue.mjs",
+    "bot:draft": "node sns-bot/src/tweetSender.mjs --dry-run",
+    "bot:post": "node sns-bot/src/tweetSender.mjs && node sns-bot/src/threadsSender.mjs",
+    "bot:threads-draft": "node sns-bot/src/threadsSender.mjs --dry-run",
+    "bot:threads-refresh": "node sns-bot/src/threads-refresh.mjs",
+    "verify": "npm run data:check && npm run og:check && npm run lint && npm run build"
   },
   "dependencies": {
     "next": "16.3.0",

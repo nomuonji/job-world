@@ -5,3 +5,8 @@ next-env.d.ts
 *.tsbuildinfo
 .DS_Store
 .env*.local
+
+# SNS bot の認証情報（コミット禁止。Gist経由で管理）
+sns-bot/.env
+sns-bot/*.local.json
+sns-bot/.credentials.local.json

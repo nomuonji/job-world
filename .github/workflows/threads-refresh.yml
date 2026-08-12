@@ -1,0 +1,36 @@
+name: Threads Token Refresh
+
+# Threads の長期トークンをリフレッシュして Secret Gist に書き戻す。
+# 通常は送信時に自動リフレッシュされるが、毎月1回の確実なリフレッシュで失効を防ぐ。
+
+on:
+  schedule:
+    - cron: '0 3 1 * *' # UTC 毎月1日 03:00（JST 12:00）
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sns-bot
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Force refresh Threads token
+        working-directory: sns-bot
+        env:
+          GH_GIST_TOKEN: ${{ secrets.GH_GIST_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+          REFRESH_BEFORE_DAYS: "60"
+        run: node src/threads-refresh.mjs
