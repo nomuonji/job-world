@@ -16,6 +16,7 @@ import { EgoNetwork } from "@/components/EgoNetwork";
 import { FromNote } from "@/components/FromNote";
 import { Trail } from "@/components/Trail";
 import { RARITY_LABEL, FAMILIARITY_LABEL } from "@/lib/labels";
+import { shikakuLinkForJob } from "@/lib/shikaku";
 
 export function generateStaticParams() {
   return getAllJobs().map((job) => ({ slug: job.slug }));
@@ -33,6 +34,20 @@ export async function generateMetadata({
     title: job.nameJa,
     description: `${job.summaryJa} ${job.surpriseJa}`.slice(0, 120),
     alternates: { canonical: `/jobs/${job.slug}` },
+    openGraph: {
+      type: "article",
+      title: job.nameJa,
+      description: job.summaryJa,
+      images: [
+        { url: `/og/${job.slug}.png`, width: 1200, height: 630, alt: job.nameJa },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: job.nameJa,
+      description: job.summaryJa,
+      images: [`/og/${job.slug}.png`],
+    },
   };
 }
 
@@ -50,6 +65,7 @@ export default async function JobPage({
   const tagGroups = getJobTagsByFacet(job);
   const health = getGraphHealth();
   const isEntry = health.entrySlugs.includes(job.slug);
+  const shikaku = shikakuLinkForJob(job);
 
   // クライアントへ渡すのは表示用の最小データだけ（全職業の本文を送らない）。
   const egoCenter = toEgoCenter(job);
@@ -193,6 +209,25 @@ export default async function JobPage({
           <p className="mt-3">最終更新: {job.updatedAt}</p>
         </section>
       )}
+
+      {/* 資格カタログへの導線。資格と仕事を行き来できるようにする。 */}
+      <section className="mt-10 rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5">
+        <h2 className="text-sm font-bold text-[var(--accent)]">
+          🎓 この仕事の資格・試験を調べる
+        </h2>
+        <p className="mt-2 text-sm text-[var(--muted)]">
+          資格カタログ（shikaku.antonbase.com）で、この仕事に活きる資格の
+          難易度・合格率・勉強法を調べられます。
+        </p>
+        <a
+          href={shikaku.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-block rounded-full border border-[var(--border)] px-4 py-2 text-sm font-bold hover:border-[var(--accent)] hover:text-[var(--accent)]"
+        >
+          資格カタログ「{shikaku.label}」で調べる →
+        </a>
+      </section>
 
       <Trail current={egoCenter} />
     </article>

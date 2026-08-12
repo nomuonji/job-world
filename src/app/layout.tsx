@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   },
   description:
     "世の中にある仕事を、舞台・扱うもの・動作・感覚など7つの角度でつなげた図鑑。知っている仕事から辿っていくと、名前も知らなかった仕事に行き着きます。",
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    locale: "ja_JP",
+    images: [{ url: "/og/default.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@shikaku_catalog",
+    creator: "@shikaku_catalog",
+    images: ["/og/default.png"],
+  },
 };
 
 export default function RootLayout({
@@ -52,6 +64,14 @@ export default function RootLayout({
               <Link href="/about" className="hover:text-[var(--accent)]">
                 この図鑑について
               </Link>
+              <a
+                href="https://shikaku.antonbase.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[var(--accent)]"
+              >
+                🎓 資格カタログ
+              </a>
             </nav>
           </div>
         </header>
@@ -59,7 +79,33 @@ export default function RootLayout({
         <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
 
         <footer className="mt-16 border-t border-[var(--border)] px-4 py-8 text-center text-sm text-[var(--muted)]">
-          {SITE_NAME}
+          <p>{SITE_NAME} — 資格と仕事の図鑑</p>
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            <a
+              href="https://shikaku.antonbase.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-[var(--accent)]"
+            >
+              🎓 資格カタログ（資格を調べる）
+            </a>
+            <a
+              href="https://x.com/shikaku_catalog"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-[var(--accent)]"
+            >
+              X (Twitter)
+            </a>
+            <a
+              href="https://www.threads.com/@certifications_catalog"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-[var(--accent)]"
+            >
+              Threads
+            </a>
+          </div>
         </footer>
       </body>
     </html>
