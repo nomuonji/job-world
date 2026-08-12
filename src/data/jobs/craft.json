@@ -2,6 +2,103 @@
   "industry": "craft",
   "jobs": [
     {
+      "slug": "bamboo-artisan",
+      "nameJa": "竹細工職人",
+      "nameEn": "Bamboo Artisan",
+      "aliasesJa": [
+        "竹工芸家",
+        "竹職人"
+      ],
+      "kanaJa": "たけざいくしょくにん",
+      "emoji": "🎋",
+      "summaryJa": "切った竹を、道具にするために裂いて曲げて編む。",
+      "descriptionJa": "竹を素材に籠や道具を作る職。竹は真っ直ぐ切るだけでなく、割ってひごにして編むことで強度が出る。竹の節の位置や太さは一本ずつ違うため、使う部分に合わせて切り分ける。収穫した竹はすぐに加工せず、乾燥や油抜きの工程を経てから使われる。編み方には幾何学的な模様が多く、一本のひごの太さが均一でないと模様が乱れる。材料の竹を自分で山から採りに行く産地もあり、季節ごとの竹の状態を知ることが仕事の土台になる。",
+      "surpriseJa": "竹は切ったあと放置すると割れる。収穫から加工までのタイミングと乾燥の工程が竹細工の半分を占め、編み始める前の準備が作品の強度を決める。",
+      "howToBecomeJa": "竹細工の産地の工房に弟子入りし、材料の扱いから学ぶ。",
+      "tags": [
+        "setting.workshop",
+        "setting.mountain",
+        "subject.wood",
+        "subject.plant",
+        "action.shave",
+        "action.assemble",
+        "action.sort",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "condition.apprenticeship",
+        "condition.seasonal",
+        "condition.few-practitioners",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.craft"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "sources": [
+        {
+          "titleJa": "全国竹工芸組合連合会",
+          "url": "https://www.takezaiku.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "barrel-maker",
+      "nameJa": "桶職人",
+      "nameEn": "Barrel Maker",
+      "aliasesJa": [
+        "樽職人",
+        "桶屋"
+      ],
+      "kanaJa": "おけしょくにん",
+      "emoji": "🛢️",
+      "summaryJa": "水を漏らさない器を、木の板を削って円に組んで作る。",
+      "descriptionJa": "桶や樽を作る職。木の板を鉋で削って角度を付け、円形に組み合わせて箍で締める。木と木の接合をすべて加工精度で行い、接着剤や釘に頼らない。水を入れて漏れない状態に仕上げるため、板の削り方と締めの強さの調整が職人の技術になる。木の板は気候によって膨張と収縮を繰り返すため、組み上げてからも手直しが続く。酒蔵や醤油蔵では、中の液体と木が馴染むまでの管理を任されることもある。",
+      "surpriseJa": "桶職人は板を「わずかに弧が合う」ように削って円に組む。接合部はすべて鉋で作られ、箍で締めると水が漏れない。木の厚さが微妙に違うだけで円が歪むため、最後は水を入れて確かめる。",
+      "howToBecomeJa": "桶工房に弟子入りし、鉋の技術と板の見方を学ぶ。",
+      "tags": [
+        "setting.workshop",
+        "subject.wood",
+        "subject.water",
+        "subject.metal",
+        "action.shave",
+        "action.assemble",
+        "action.measure",
+        "sense.fingertip",
+        "sense.tilt",
+        "sense.hearing",
+        "condition.apprenticeship",
+        "condition.solo",
+        "condition.few-practitioners",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.craft"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "declining",
+      "edges": [
+        {
+          "to": "forester",
+          "kind": "supplies",
+          "noteJa": "酒や醤油を熟成させる樽の材料は、林業が山から運び出す木材だ。"
+        },
+        {
+          "to": "winemaker",
+          "kind": "supplies",
+          "noteJa": "ワインの熟成に使う樽は、桶職人が作ったものを使う蔵が多い。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "全国桶商工業組合",
+          "url": "https://www.oke.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "brush-maker",
       "nameJa": "筆職人",
       "nameEn": "Brush Maker",
@@ -42,6 +139,150 @@
       "updatedAt": "2026-08-06"
     },
     {
+      "slug": "ceramicist",
+      "nameJa": "陶芸家",
+      "nameEn": "Ceramicist",
+      "aliasesJa": [
+        "陶磁器作家",
+        "陶工"
+      ],
+      "kanaJa": "とうげいか",
+      "emoji": "🏺",
+      "summaryJa": "土が火に耐えて器になるまで、形と熱を操る。",
+      "descriptionJa": "粘土を成形し、窯で焼いて陶磁器を作る職。土の性質は産地や季節で変わり、同じ作陶でも毎回水分量を調整し直す。成形が終わったあとの焼成では、窯の中の温度と酸素の量で仕上がりの色が変わる。作るものは食器からオブジェまで幅広く、独自の作品を作り続ける作家もいれば、量産品を作る職人もいる。",
+      "surpriseJa": "陶芸の失敗の多くは成形ではなく焼成で起きる。窯の温度が数度違うだけで釉薬の色が変わり、割れることもあるため、窯を開けるまで結果がわからない。",
+      "howToBecomeJa": "陶芸の専門学校や窯元に弟子入りし、成形と焼成の技術を身につける。",
+      "tags": [
+        "setting.workshop",
+        "subject.clay",
+        "subject.fire",
+        "subject.soil",
+        "action.assemble",
+        "action.shave",
+        "action.measure",
+        "sense.temperature",
+        "sense.fingertip",
+        "sense.color",
+        "condition.apprenticeship",
+        "condition.solo",
+        "condition.few-practitioners",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.craft"
+      ],
+      "rarity": 3,
+      "familiarity": 5,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "glassblower",
+          "kind": "confusable",
+          "noteJa": "どちらも高温の火で器を作るが、土を焼くのかガラスを溶かすのかで材料がまったく違う。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本陶磁器工業協同組合連合会",
+          "url": "https://www.ceramic.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "clockmaker",
+      "nameJa": "時計職人",
+      "nameEn": "Clockmaker",
+      "aliasesJa": [
+        "時計修理職人",
+        "ウォッチメーカー"
+      ],
+      "kanaJa": "とけいしょくにん",
+      "emoji": "🕰️",
+      "summaryJa": "歯車の数ミクロンの隙間を、顕微鏡越しに整える。",
+      "descriptionJa": "時計の製造や修理を行う職。機械式時計は無数の歯車が噛み合って動いており、軸受けの隙間がほんのわずか違うだけで進み具合が変わる。作業は拡大鏡を使いながら行い、壊れた部品を交換して精度を測る。高級時計ほど部品が小さく、精密な扱いが求められる。修理では壊れた部品だけを直すのではなく、全体の動きを確認して摩耗が進んだ箇所を見つける。数百年前の時計を扱う場合は、当時の技術に合わせた部品の製作も求められる。",
+      "surpriseJa": "機械式時計の精度を左右するのは、歯車そのものより軸受けの遊び。隙間が広すぎると歩度が乱れ、狭すぎると摩耗する。この遊びの調整が時計職人の腕の見せどころになる。",
+      "howToBecomeJa": "時計学校で基礎を学ぶか、時計店やメーカーに就職して技術を身につける。",
+      "tags": [
+        "setting.workshop",
+        "setting.desk",
+        "subject.machine",
+        "subject.metal",
+        "subject.data",
+        "action.assemble",
+        "action.restore",
+        "action.measure",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "sense.tilt",
+        "condition.apprenticeship",
+        "condition.solo",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.solitude",
+        "industry.craft"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本時計協会",
+          "url": "https://www.jcwaj.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "glassblower",
+      "nameJa": "ガラス職人",
+      "nameEn": "Glassblower",
+      "aliasesJa": [
+        "吹きガラス職人",
+        "ガラス工芸士"
+      ],
+      "kanaJa": "がらすしょくにん",
+      "emoji": "🍶",
+      "summaryJa": "溶けたガラスを一息の間に、決めた形に仕上げる。",
+      "descriptionJa": "高温で溶かしたガラスを吹き竿に付けて、息を吹き込み形を作る職。ガラスは1000度を超える温度で柔らかくなるが、冷えると数秒で固まるため、作業は一瞬の判断の連続になる。一度付けた形は戻せず、回転を続けながら竿の先で形を整える。仕上がりの良し悪しは、その一連の手の動きだけで決まる。",
+      "surpriseJa": "吹きガラスは「やり直しがきかない」仕事の代表。ガラスは冷えると固まるため、作業中に迷う時間がない。形を決める判断の多くが数秒のうちに行われる。",
+      "howToBecomeJa": "ガラス工房に弟子入りし、技術を学ぶ。専門学校や工房の講座から始める場合も多い。",
+      "tags": [
+        "setting.workshop",
+        "subject.glass",
+        "subject.fire",
+        "subject.clay",
+        "action.assemble",
+        "action.shave",
+        "action.measure",
+        "sense.temperature",
+        "sense.fingertip",
+        "sense.color",
+        "condition.apprenticeship",
+        "condition.few-practitioners",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.craft"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "optician",
+          "kind": "supplies",
+          "noteJa": "眼鏡レンズの素材になる光学ガラスは、ガラスを扱う職人が作る。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本ガラス工芸協会",
+          "url": "https://www.jgaa.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "kumihimo-braider",
       "nameJa": "組紐職人",
       "nameEn": "Kumihimo Braider",
@@ -74,6 +315,13 @@
       "rarity": 5,
       "familiarity": 2,
       "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "sericulturist",
+          "kind": "supplies",
+          "noteJa": "組紐の素材になる絹糸は、養蚕家が作った繭から取られる。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "伝統的工芸品産業振興協会",
@@ -81,6 +329,253 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "lantern-maker",
+      "nameJa": "提灯職人",
+      "nameEn": "Paper Lantern Maker",
+      "aliasesJa": [
+        "ちょうちん職人",
+        "提灯屋"
+      ],
+      "kanaJa": "ちょうちんしょくにん",
+      "emoji": "🏮",
+      "summaryJa": "竹の骨を曲げて組んで、薄い和紙を張って火を守る。",
+      "descriptionJa": "提灯を作る職。竹を細く割って骨組みを作り、火が当たる部分に合わせて曲げる。その上に和紙を張り、糊で固定して乾かす。現在では中に電球を入れる提灯が多いが、本来は火を中に入れるための構造で、紙と骨の組み方で燃えにくさを確保している。お祭りの時期が近づくと注文が増え、色紙や家紋を張る装飾の仕事も行う。最近は電球用の提灯も多いが、昔ながらの火を使う提灯の技術も受け継がれている。",
+      "surpriseJa": "提灯は紙でできているのに中で火を焚くために作られた。骨組みの間隔と紙の張り方で空気の流れを作り、燃え上がらずに光を透かす仕組みが古くから使われている。",
+      "howToBecomeJa": "提灯工房に弟子入りして、骨組みの作り方と張り方を学ぶ。",
+      "tags": [
+        "setting.workshop",
+        "subject.paper",
+        "subject.wood",
+        "subject.fire",
+        "subject.light",
+        "action.assemble",
+        "action.sort",
+        "action.clean-up",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "condition.apprenticeship",
+        "condition.few-practitioners",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.craft"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "bamboo-artisan",
+          "kind": "supplies",
+          "noteJa": "提灯の骨組みには竹細工職人が裂いた竹が使われる。"
+        },
+        {
+          "to": "washi-papermaker",
+          "kind": "supplies",
+          "noteJa": "提灯に貼られる薄い和紙は、和紙職人が漉いている。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "全国提灯組合",
+          "url": "https://www.chochin.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "roof-tile-maker",
+      "nameJa": "瓦職人",
+      "nameEn": "Roof Tile Maker",
+      "aliasesJa": [
+        "瓦工",
+        "瓦葺き職人"
+      ],
+      "kanaJa": "かわらしょくにん",
+      "emoji": "🏠",
+      "summaryJa": "土を焼いて瓦にし、それを屋根の上で一枚ずつ重ねる。",
+      "descriptionJa": "粘土を成形し窯で焼いて瓦を作り、屋根に葺き付ける職。瓦は雨を逃がすための凹凸を持ち、屋根の勾配や形に合わせて重ね方を決める。焼成は温度管理が肝心で、色や強度が変わってしまう。近年は新しい屋根材に押されて産地が減る一方、古い建物の葺き替えで技術が求められる。屋根の形に合わせて瓦を割り、軒先や棟の部分を工夫して葺き上げる。古い寺社の葺き替えでは、江戸時代の瓦と同じ型を使って新しく焼き直すこともある。",
+      "surpriseJa": "瓦屋根は一枚の瓦で水を止めているのではなく、瓦と瓦の重なりが水の流れを作っている。下から見るとただの重なりだが、その重ね方の微妙な角度が雨漏りを決める。",
+      "howToBecomeJa": "瓦製造会社や屋根工事会社に就職し、技術を身につける。産地では職人の養成が行われる。",
+      "tags": [
+        "setting.workshop",
+        "setting.construction-site",
+        "setting.high-place",
+        "subject.clay",
+        "subject.fire",
+        "subject.soil",
+        "action.assemble",
+        "action.shave",
+        "action.carry",
+        "sense.balance",
+        "sense.stamina",
+        "sense.temperature",
+        "condition.apprenticeship",
+        "condition.danger",
+        "condition.few-practitioners",
+        "temperament.physical",
+        "temperament.quiet-pride",
+        "industry.craft"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "declining",
+      "edges": [
+        {
+          "to": "ceramicist",
+          "kind": "confusable",
+          "noteJa": "瓦も陶器も同じ土を焼く。瓦職人が焼く粘土は陶芸家が扱う土と近い材料だ。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "全国瓦工事業組合",
+          "url": "https://www.kawara.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "saddler",
+      "nameJa": "馬具職人",
+      "nameEn": "Saddler",
+      "aliasesJa": [
+        "鞍職人",
+        "馬具職"
+      ],
+      "kanaJa": "ばぐしょくにん",
+      "emoji": "🐎",
+      "summaryJa": "馬の背に合うよう、革を削って曲げて作る。",
+      "descriptionJa": "馬に付ける鞍や手綱などの馬具を作る職。馬の背の形は個体差が大きく、鞍が合わないと馬に痛みが生じる。革を湿らせて木型に当て、乾かして形を固定する革細工の技術を中心に作られる。乗馬や競馬、祭りの馬などの需要で、現在も少数の職人が残る。競馬場や乗馬クラブでは馬の背の変化に合わせて鞍の調整も行う。一本の革を選ぶところから始まり、使用される用途に合わせて厚さや強度を変えて仕上げる。",
+      "surpriseJa": "馬具職人の一番の作業は革を「乾かしながら形を作る」こと。湿らせた革は形を自由に変えられるが、乾くと固定される。この性質を利用して馬の背に合わせた鞍が作られる。",
+      "howToBecomeJa": "馬具工房に弟子入りして革の扱いを学ぶ。乗馬クラブや競馬場の整備から関わる場合もある。",
+      "tags": [
+        "setting.workshop",
+        "subject.animal",
+        "subject.textile",
+        "subject.metal",
+        "action.sew",
+        "action.assemble",
+        "action.measure",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "sense.tilt",
+        "condition.apprenticeship",
+        "condition.few-practitioners",
+        "condition.solo",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.craft"
+      ],
+      "rarity": 5,
+      "familiarity": 1,
+      "lifecycle": "declining",
+      "sources": [
+        {
+          "titleJa": "日本馬具研究会",
+          "url": "https://www.japan-bagu.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "shoemaker",
+      "nameJa": "靴職人",
+      "nameEn": "Shoemaker",
+      "aliasesJa": [
+        "シューズマイスター",
+        "革靴職人"
+      ],
+      "kanaJa": "くつしょくにん",
+      "emoji": "👞",
+      "summaryJa": "足の形は人ごとに違うから、靴は型から作る。",
+      "descriptionJa": "革や布から靴を一足一足作る職。靴は足の形に合わせて作らないと痛みや摩耗の原因になるため、まず木型を選び、そこに革を張って形を作る。縫製と底付けの工程があり、それぞれ専用のミシンや工具を使う。修理やオーダーメイドの仕事が中心の職人も多い。量産の靴ではできない足の歪みや高さの差への対応が、オーダーメイドの価値になる。完成後に試し履きをして、当たる部分を調整しながら仕上げる工程が仕事の中核をなす。",
+      "surpriseJa": "靴職人が一番大事にするのは革の厚さと木型の相性。足の形に合っていない靴は、作っても歩くとすぐに痛む。オーダーメイドの靴は人の歩き方を見てから木型を作る。",
+      "howToBecomeJa": "靴工房や靴製造会社に就職し、革の扱いと縫製技術を学ぶ。専門学校もある。",
+      "tags": [
+        "setting.workshop",
+        "setting.factory-line",
+        "subject.textile",
+        "subject.human-body",
+        "subject.metal",
+        "action.sew",
+        "action.assemble",
+        "action.measure",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "condition.apprenticeship",
+        "condition.solo",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.craft"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "saddler",
+          "kind": "confusable",
+          "noteJa": "どちらも革を扱う職人だが、足に履くものを作るのか馬に付けるものを作るのかで技術が異なる。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本靴製造協会",
+          "url": "https://www.jss.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "silversmith",
+      "nameJa": "銀細工職人",
+      "nameEn": "Silversmith",
+      "aliasesJa": [
+        "銀器職人",
+        "彫金師"
+      ],
+      "kanaJa": "ぎんざいくしょくにん",
+      "emoji": "🥈",
+      "summaryJa": "銀の柔らかさを、たたいて磨いて器に変える。",
+      "descriptionJa": "銀を板や棒の状態から加工し、食器や装飾品を作る職。銀は比較的柔らかい金属で、叩くと薄くなり、曲げると形になる。槌の音と触感で厚みを測りながら、器の形を作り出す。完成後は鏡面に磨き上げるが、その表面の質感がそのまま作品の価値になる。素材の銀は柔らかい反面、薄く延ばすと硬くなる性質がある。叩く位置と力の加減で器の曲線を作り出すため、金属の癖を体で覚えることが技術の出発点になる。",
+      "surpriseJa": "銀細工の最終工程は「磨く」ことだが、磨きすぎると表面の鏡面が歪む。鏡に映った姿のゆがみを確認しながら、磨きの方向と圧力を変えていく。",
+      "howToBecomeJa": "銀器工房や彫金教室で技術を学ぶ。工芸の専門学校を経る場合もある。",
+      "tags": [
+        "setting.workshop",
+        "subject.metal",
+        "subject.light",
+        "action.shave",
+        "action.polish",
+        "action.assemble",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "sense.color",
+        "condition.apprenticeship",
+        "condition.solo",
+        "condition.few-practitioners",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.craft"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "swordsmith",
+          "kind": "confusable",
+          "noteJa": "どちらも金属を火で鍛えるが、銀細工職人は銀を器や装飾に、刀鍛冶は鋼を刀に仕上げる。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "全国銀器協会",
+          "url": "https://www.gingin.co.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "sword-polisher",

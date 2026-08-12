@@ -168,6 +168,31 @@
         "官公庁勤務"
       ],
       "criteriaJa": "国・自治体・公的機関に属して働く形式が主である場合。"
+    },
+    {
+      "id": "condition.freelance",
+      "facet": "condition",
+      "slug": "freelance",
+      "labelJa": "自由契約で働く",
+      "aliasesJa": [
+        "フリーランス",
+        "個人事業",
+        "請負"
+      ],
+      "criteriaJa": "企業に雇用されず、案件ごとに契約して働く形式が主である場合。",
+      "parentId": "condition.solo"
+    },
+    {
+      "id": "condition.on-call",
+      "facet": "condition",
+      "slug": "on-call",
+      "labelJa": "いつ呼ばれても出る",
+      "aliasesJa": [
+        "待機",
+        "出動",
+        "オンコール"
+      ],
+      "criteriaJa": "不意の呼び出しにいつでも対応する待機が仕事に組み込まれている場合。"
     }
   ]
 }

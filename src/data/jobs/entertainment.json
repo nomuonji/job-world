@@ -2,6 +2,100 @@
   "industry": "entertainment",
   "jobs": [
     {
+      "slug": "animator",
+      "nameJa": "アニメーター",
+      "nameEn": "Animator",
+      "aliasesJa": [
+        "アニメーション作家",
+        "原画マン"
+      ],
+      "kanaJa": "あにめーたー",
+      "emoji": "✏️",
+      "summaryJa": "一秒二十四枚の静止画に、動きの錯覚を仕込む。",
+      "descriptionJa": "アニメーションの絵を描く職。動きを一コマずつ描いて、それを連続して見せることで物体を動かす。原画と呼ばれる動きの節目を描き、その間を埋める動画を別の担当者が描く分業制が一般的。作画のクオリティは、その動きが自然に見えるかどうかで決まり、物理の知識と観察力が必要になる。",
+      "surpriseJa": "アニメは一秒間に24枚の絵を流しているが、全てを描いているわけではない。動きの変わり目を原画で描き、その間を補間することで、少ない枚数で自然な動きを作る。",
+      "howToBecomeJa": "アニメ制作会社に就職し、動画担当から原画へとステップアップする。専門学校もある。",
+      "tags": [
+        "setting.desk",
+        "setting.studio",
+        "subject.light",
+        "subject.data",
+        "subject.text",
+        "action.design",
+        "action.record",
+        "action.assemble",
+        "sense.color",
+        "sense.fine-motor",
+        "sense.stillness",
+        "condition.peak-season",
+        "condition.freelance",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.entertainment"
+      ],
+      "rarity": 2,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本アニメーション協会",
+          "url": "https://www.aja.gr.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "circus-performer",
+      "nameJa": "サーカス芸人",
+      "nameEn": "Circus Performer",
+      "aliasesJa": [
+        "サーカス団員",
+        "曲芸師"
+      ],
+      "kanaJa": "さーかすげいにん",
+      "emoji": "🎪",
+      "summaryJa": "一日に何度も、命がけの技を観客の前で演じる。",
+      "descriptionJa": "サーカスの団に所属し、空中技や曲芸、動物を使った芸を行う職。技は命に関わるため、本番と同じ条件で毎日練習する。会場を移動して興行を行うスタイルが多く、住み込みで生活しながら団全体の設営や裏方も分担する。技の成功はその日の体調と集中力に左右される。公演以外の時間は道具の点検とトレーニングに充てられる。同じ演目を繰り返す中で、より美しく見える姿勢や動きを研究し続ける。",
+      "surpriseJa": "サーカスの空中技は毎日同じ演目を数回公演するが、そのたびに本気で成功を狙う。怪我を防ぐのは練習の反復で、安全マットの位置決めや機材の点検も演者の仕事に含まれる。",
+      "howToBecomeJa": "サーカス団の養成所に入門し、基礎から鍛錬を積む。",
+      "tags": [
+        "setting.stage",
+        "setting.arena",
+        "setting.outdoors",
+        "subject.human-body",
+        "subject.light",
+        "action.perform",
+        "action.climb",
+        "action.assemble",
+        "sense.balance",
+        "sense.stamina",
+        "condition.live-in",
+        "condition.travel",
+        "condition.danger",
+        "temperament.improvise",
+        "temperament.unflinching",
+        "temperament.physical",
+        "industry.entertainment"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "declining",
+      "edges": [
+        {
+          "to": "stagehand",
+          "kind": "same-site",
+          "noteJa": "演目の幕間で道具を組むのは、サーカス団員自身でもある。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "サーカス連盟",
+          "url": "https://www.circus.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "foley-artist",
       "nameJa": "フォーリーアーティスト",
       "nameEn": "Foley Artist",
@@ -87,6 +181,57 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "puppeteer",
+      "nameJa": "人形遣い",
+      "nameEn": "Puppeteer",
+      "aliasesJa": [
+        "文楽人形遣い",
+        "パペッティア"
+      ],
+      "kanaJa": "にんぎょうつかい",
+      "emoji": "🎭",
+      "summaryJa": "自分の体を消して、人形にだけ演技させる。",
+      "descriptionJa": "人形を操って芝居をする職。日本の文楽では三人が一体の人形を動かし、動きの見えない操作の技術が要求される。人形遣いは自分を目立たせず、人形の仕草だけを観客に見せる。人形の首・胴・手足を自分の指で操るため、手の感覚と長年の訓練が必要になる。人形の動きを正確に見せるために、観客からは見えない位置から操る技術を磨く。動きの合間に人形の息づかいや視線を表現する工夫も積み重ねられる。",
+      "surpriseJa": "文楽の人形は一人ではなく三人で操る。足を動かす人、左手を動かす人、顔と右手を動かす人がおり、三人の呼吸が揃わないと人形が生きて見えない。",
+      "howToBecomeJa": "人形浄瑠璃の劇団に入門し、長年の稽古を積む。",
+      "tags": [
+        "setting.stage",
+        "setting.backstage",
+        "setting.temple",
+        "subject.text",
+        "subject.sound",
+        "subject.textile",
+        "action.perform",
+        "action.assemble",
+        "action.teach",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "condition.apprenticeship",
+        "condition.few-practitioners",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "temperament.aesthetic",
+        "industry.entertainment"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "stagehand",
+          "kind": "same-site",
+          "noteJa": "舞台で人形を動かす遣い手と、仕掛けや転換を支える道具方は同じ公演を裏から作っている。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "国立文楽劇場",
+          "url": "https://www.ntj.jac.go.jp/bunraku.html"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "stage-lighting-designer",
@@ -183,6 +328,107 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "stunt-person",
+      "nameJa": "スタントマン",
+      "nameEn": "Stunt Performer",
+      "aliasesJa": [
+        "スタントパフォーマー",
+        "アクション俳優"
+      ],
+      "kanaJa": "すたんとまん",
+      "emoji": "🤸",
+      "summaryJa": "危険なシーンを、計算と反復で安全に演じる。",
+      "descriptionJa": "映像や舞台で、危険を伴う動きを俳優の代わりに行う職。落下や炎の中を走る、車でぶつかるなど、観客が「危ない」と感じるシーンを担当する。一見無謀に見えるが、実際は安全設備と練習で事故が起きないように組み立てられている。本番までの準備と反復が仕事の大半で、撮影ではカメラの位置とタイミングを合わせる。",
+      "surpriseJa": "スタントの危険さは「見かけの危険さ」であって、本番は計算されたもの。動きそのものより、どれだけ練習して本番を一回で成功させるかが価値になる。",
+      "howToBecomeJa": "アクションクラブや養成所で基礎を学び、映像制作会社に登録する。",
+      "tags": [
+        "setting.stage",
+        "setting.studio",
+        "setting.outdoors",
+        "subject.human-body",
+        "subject.fire",
+        "subject.machine",
+        "action.perform",
+        "action.climb",
+        "action.dive",
+        "action.sort",
+        "sense.balance",
+        "sense.stamina",
+        "condition.danger",
+        "condition.team",
+        "temperament.improvise",
+        "temperament.unflinching",
+        "temperament.speed",
+        "industry.entertainment"
+      ],
+      "rarity": 4,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "スタントマン協会",
+          "url": "https://www.j-stunt.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "voice-actor",
+      "nameJa": "声優",
+      "nameEn": "Voice Actor",
+      "aliasesJa": [
+        "声の俳優",
+        "吹き替え俳優"
+      ],
+      "kanaJa": "せいゆう",
+      "emoji": "🎙️",
+      "summaryJa": "声だけで役を演じ、録音機がその日のベストを逃さない。",
+      "descriptionJa": "アニメや吹き替え、ナレーションで声を演じる職。姿が見えないぶん、声のトーンと間の取り方で感情を伝える。アフレコでは映像に合わせて口の動きを同期させ、数秒の台詞を何度も録り直す。収録は声帯を酷使するため、発声のケアと疲労管理が仕事の維持条件になる。声のトーンや息遣いで感情を表現するため、役の性格を読み取って声を作る。ナレーションでは原稿のリズムを聞き手に伝わる形で読む技術が求められる。",
+      "surpriseJa": "アフレコの収録では、マイクが最高の声を拾うために同じ台詞を何度も録る。最終的な放送に使われるのはその中の一回で、演者はその一回のために声の状態を管理している。",
+      "howToBecomeJa": "声優養成所や専門学校で発声と演技を学び、事務所に所属してオーディションを受ける。",
+      "tags": [
+        "setting.studio",
+        "setting.stage",
+        "subject.voice",
+        "subject.sound",
+        "subject.text",
+        "action.perform",
+        "action.record",
+        "action.translate",
+        "sense.hearing",
+        "sense.stillness",
+        "condition.freelance",
+        "condition.peak-season",
+        "condition.solo",
+        "temperament.improvise",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.entertainment"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "foley-artist",
+          "kind": "same-site",
+          "noteJa": "台詞を録る声優と効果音を作るフォーリーアーティストは、同じ録音スタジオで音の素材を作っている。"
+        },
+        {
+          "to": "animator",
+          "kind": "front-and-back",
+          "noteJa": "アニメの声を当てるのが声優、絵を描くのがアニメーター。一つのキャラクターは声と絵の両方から生まれる。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本俳優連合 声優部門",
+          "url": "https://www.nippairen.com/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     }
   ]
 }

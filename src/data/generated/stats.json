@@ -1,35 +1,35 @@
 {
-  "jobCount": 53,
-  "tagCount": 132,
+  "jobCount": 150,
+  "tagCount": 154,
   "tagsByFacet": {
-    "setting": 25,
-    "subject": 26,
-    "action": 29,
-    "sense": 11,
-    "condition": 14,
-    "temperament": 11,
-    "industry": 16
+    "setting": 29,
+    "subject": 30,
+    "action": 33,
+    "sense": 12,
+    "condition": 16,
+    "temperament": 13,
+    "industry": 21
   },
   "rarityDistribution": [
-    0,
-    2,
-    13,
-    18,
-    20
+    6,
+    20,
+    41,
+    53,
+    30
   ],
   "familiarityDistribution": [
-    4,
-    17,
-    13,
-    12,
-    7
+    10,
+    51,
+    36,
+    29,
+    24
   ],
   "lifecycleCounts": {
-    "traditional": 13,
-    "established": 31,
-    "emerging": 4,
-    "declining": 5
+    "traditional": 22,
+    "established": 105,
+    "emerging": 12,
+    "declining": 11
   },
-  "typedEdgeCount": 9,
-  "generatedAt": "2026-08-06"
+  "typedEdgeCount": 84,
+  "generatedAt": "2026-08-12"
 }

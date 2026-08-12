@@ -37,6 +37,18 @@
       "rarity": 4,
       "familiarity": 2,
       "lifecycle": "emerging",
+      "edges": [
+        {
+          "to": "rope-access-technician",
+          "kind": "same-site",
+          "noteJa": "橋の点検は、点検を計画する橋梁点検技術者と、ロープで現場に近づく作業員の二人組で進む。"
+        },
+        {
+          "to": "elevator-inspector",
+          "kind": "confusable",
+          "noteJa": "どちらも構造物の点検をするが、橋を支えるのかエレベーターを支えるのかで足場が違う。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "国土交通省 道路メンテナンス",
@@ -44,6 +56,262 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "crane-operator",
+      "nameJa": "クレーンオペレーター",
+      "nameEn": "Crane Operator",
+      "aliasesJa": [
+        "移動式クレーン運転士",
+        "タワークレーン運転士"
+      ],
+      "kanaJa": "くれーんおぺれーたー",
+      "emoji": "🏗️",
+      "summaryJa": "何トンもの重さを、指先のレバーで目的の場所に置く。",
+      "descriptionJa": "クレーンを操作して重量物を持ち上げ、指定の場所に置く職。工事現場では鉄骨や部材を数十メートル持ち上げるため、荷の重心と振れを計算しながら操作する。風の強さや視界の悪さが作業に直結し、微妙なレバー操作で荷をゆっくり動かす技術が求められる。作業が始まる前には荷の重さとワイヤーの状態を確認し、無理のない計画を立てる。下ろす場所に人がいないことを合図者と確認してから操作を始める。",
+      "surpriseJa": "クレーンの操作で一番難しいのは荷を下ろす最後の数センチ。見えていない場所に荷を降ろすため、合図者との連携と慣性の計算が必要になる。",
+      "howToBecomeJa": "クレーン運転士の免許を取得し、建設会社やレンタル会社に就職する。",
+      "tags": [
+        "setting.construction-site",
+        "setting.high-place",
+        "setting.outdoors",
+        "subject.machine",
+        "subject.metal",
+        "subject.waste",
+        "action.operate-vehicle",
+        "action.carry",
+        "action.measure",
+        "sense.balance",
+        "sense.tilt",
+        "sense.stillness",
+        "condition.vehicle-license",
+        "condition.danger",
+        "condition.team",
+        "temperament.improvise",
+        "temperament.calm",
+        "temperament.repeatable",
+        "industry.infrastructure"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "electrician",
+          "kind": "same-site",
+          "noteJa": "建設現場でクレーンを上げる運転士と、電気を引く電気工事士は同じ躯体で順番に作業する。"
+        },
+        {
+          "to": "plumber",
+          "kind": "same-site",
+          "noteJa": "クレーンが部材を持ち上げる下で、配管工が設備の配管を進める。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "厚生労働省 クレーン運転士",
+          "url": "https://www.mhlw.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "electrician",
+      "nameJa": "電気工事士",
+      "nameEn": "Electrician",
+      "aliasesJa": [
+        "電気工事技術者",
+        "第一種電気工事士"
+      ],
+      "kanaJa": "でんきこうじし",
+      "emoji": "🔌",
+      "summaryJa": "コンセントの裏から、家全体の電気の流れを組み立てる。",
+      "descriptionJa": "建物や設備の電気配線を設置・修理する国家資格職。コンセントや照明、ブレーカーまで、家の中のすべての電気回路を配線する。作業後は必ず絶縁試験を行い、漏電や短絡が起きないことを確認する。感電事故を防ぐため、配線の色と規格の順守が徹底される。配線の工事が終わった後も、分電盤のチェックやアースの確認など安全面の点検を欠かさない。工事が将来の修理に困らないよう、配線の位置も記録しておく。",
+      "surpriseJa": "電気工事士の作業は、配線が終わったあとの試験で「通電するか」ではなく「漏電していないか」を確かめる。安全の確認が業務の半分を占める。",
+      "howToBecomeJa": "電気工事士の国家資格を取得し、電気工事会社に就職する。",
+      "tags": [
+        "setting.construction-site",
+        "setting.someones-home",
+        "setting.outdoors",
+        "subject.energy",
+        "subject.machine",
+        "subject.metal",
+        "action.assemble",
+        "action.measure",
+        "action.diagnose",
+        "sense.fingertip",
+        "sense.color",
+        "sense.fine-motor",
+        "condition.national-license",
+        "condition.danger",
+        "condition.team",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.infrastructure"
+      ],
+      "rarity": 1,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "plumber",
+          "kind": "same-site",
+          "noteJa": "建物の壁の中と床下で、電気と水の配線・配管が並行して施工される。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "一般財団法人 電気技術者試験センター",
+          "url": "https://www.shiken.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "elevator-inspector",
+      "nameJa": "昇降機検査員",
+      "nameEn": "Elevator Inspector",
+      "aliasesJa": [
+        "エレベーター点検士",
+        "昇降機保守技術者"
+      ],
+      "kanaJa": "しょうこうきけんさいん",
+      "emoji": "🛗",
+      "summaryJa": "昇降路の奥で、ケーブルとブレーキを指先で確かめる。",
+      "descriptionJa": "エレベーターの定期点検を行う職。昇降路の奥や屋上機械室で、ケーブルの摩耗やブレーキの動作を確認する。エレベーターは命を乗せる装置のため、法で定められた検査項目を定期的に通さなければ稼働できない。点検中は昇降機を止めて行うため、建物側との調整も仕事に含まれる。点検は法定の項目に沿って行われ、記録が残る。異常が見つかった場合は修理が必要な範囲を特定し、利用を止める判断も求められる。",
+      "surpriseJa": "エレベーターが止まって点検されるのは、利用者の安全のためだけでなく、法定の検査を通過しないと運行できない制度のため。検査員の記録がそのまま運行許可につながる。",
+      "howToBecomeJa": "昇降機メーカーや保守会社に就職し、国家資格を取得する。",
+      "tags": [
+        "setting.high-place",
+        "setting.confined",
+        "setting.outdoors",
+        "subject.machine",
+        "subject.metal",
+        "subject.data",
+        "action.diagnose",
+        "action.measure",
+        "action.record",
+        "sense.hearing",
+        "sense.tilt",
+        "sense.fingertip",
+        "condition.national-license",
+        "condition.danger",
+        "condition.team",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.infrastructure"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "一般社団法人 日本エレベーター協会",
+          "url": "https://www.jea.gr.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "plumber",
+      "nameJa": "配管工",
+      "nameEn": "Plumber",
+      "aliasesJa": [
+        "給排水設備技術者",
+        "水道工事士"
+      ],
+      "kanaJa": "はいかんこう",
+      "emoji": "🚰",
+      "summaryJa": "水とガスの流れる道を、建物の中に張り巡らせる。",
+      "descriptionJa": "建物の水道やガス、空調の配管を設置・修理する職。床下や壁の中にパイプを配り、水の流れを確保する。配管は目に見えない部分に通るため、詰まりや漏水が起きたときの修理も仕事に含まれる。異なる材料のパイプを接合する技術と、角度を合わせた配管の設計が必要になる。漏水の修理では、どこから水が出ているかを音や湿りで特定する。壁の中の配管を扱うため、建物の構造を見ながら取り回しを決める技術が要る。",
+      "surpriseJa": "配管工の施工の多くは、完成後は壁に隠れて見えなくなる。それでも傾きが数度違うだけで水が流れなくなるため、見えない部分の正確さが家の寿命を決める。",
+      "howToBecomeJa": "配管工事会社に就職し、資格を取得しながら技術を身につける。",
+      "tags": [
+        "setting.construction-site",
+        "setting.confined",
+        "setting.someones-home",
+        "subject.water",
+        "subject.metal",
+        "subject.machine",
+        "action.assemble",
+        "action.weld",
+        "action.restore",
+        "sense.tilt",
+        "sense.fingertip",
+        "sense.stamina",
+        "condition.national-license",
+        "condition.danger",
+        "condition.team",
+        "temperament.improvise",
+        "temperament.physical",
+        "temperament.quiet-pride",
+        "industry.infrastructure"
+      ],
+      "rarity": 1,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "全国管工事業協会",
+          "url": "https://www.kankyo.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "power-line-worker",
+      "nameJa": "送電鉄塔作業員",
+      "nameEn": "Power Line Worker",
+      "aliasesJa": [
+        "送電線工事",
+        "高所作業員"
+      ],
+      "kanaJa": "そうでんてっとうさぎょういん",
+      "emoji": "⚡",
+      "summaryJa": "鉄塔に登り、通電したままの電線を交換する。",
+      "descriptionJa": "送電鉄塔の上で電線の架設や点検を行う職。高圧の電線は送電を止められないことが多く、絶縁工具を使って通電したまま作業する技術がある。鉄塔に登り、命綱を掛けながら作業するため、高所での体の使い方と集中力が求められる。停電を伴う作業は、電力会社と綿密に調整して行う。",
+      "surpriseJa": "送電鉄塔の作業の一部は、送電を止めずに「生きたまま」行われる。絶縁工具で電気を遮断しながら触れる技術があり、そのため作業員は絶縁用の服装を着る。",
+      "howToBecomeJa": "電力会社や送電線工事会社に就職し、高所作業の資格と訓練を受ける。",
+      "tags": [
+        "setting.high-place",
+        "setting.outdoors",
+        "setting.mountain",
+        "subject.energy",
+        "subject.machine",
+        "subject.metal",
+        "action.climb",
+        "action.assemble",
+        "action.restore",
+        "sense.balance",
+        "sense.stamina",
+        "sense.tilt",
+        "condition.vehicle-license",
+        "condition.danger",
+        "condition.team",
+        "temperament.unflinching",
+        "temperament.physical",
+        "temperament.calm",
+        "industry.infrastructure"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "substation-engineer",
+          "kind": "same-site",
+          "noteJa": "送電線を張る鉄塔作業員と、電圧を下げる変電所の技術者は、同じ電力の通り道を分担している。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "電気事業連合会",
+          "url": "https://www.fepc.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "rope-access-technician",
@@ -123,6 +391,13 @@
       "rarity": 4,
       "familiarity": 1,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "plumber",
+          "kind": "confusable",
+          "noteJa": "どちらも管を相手にするが、下水道管路管理技士は点検を、配管工は施工と修理を担う。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "公益社団法人 日本下水道管路管理業協会",

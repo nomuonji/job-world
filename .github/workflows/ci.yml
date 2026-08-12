@@ -25,6 +25,9 @@ jobs:
       - name: データを検証（孤立ノード・到達性を含む）
         run: npm run data:validate
 
+      - name: OGP画像が最新か（ドリフト検出）
+        run: npm run og:check
+
       - run: npm run lint
 
       - name: 静的エクスポートが通るか

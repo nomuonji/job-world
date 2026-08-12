@@ -2,6 +2,183 @@
   "industry": "food-fermentation",
   "jobs": [
     {
+      "slug": "bread-baker",
+      "nameJa": "パン職人",
+      "nameEn": "Bread Baker",
+      "aliasesJa": [
+        "ベーカリー職人",
+        "製パン職人"
+      ],
+      "kanaJa": "ぱんしょくにん",
+      "emoji": "🥖",
+      "summaryJa": "夜のうちに仕込んだ生地が、朝に焼き上がるように組む。",
+      "descriptionJa": "パンを作る職。小麦粉と水と酵母という単純な材料から、発酵と焼成で風味を作り出す。発酵は温度と時間で進み、その状態によって味と形が変わるため、夜のうちに仕込んで朝に焼き上げる逆算のスケジュールで動く。湿度の高い夏と乾燥する冬では、同じレシピでも水の量を調整する。",
+      "surpriseJa": "パン職人の朝は夜の仕込みから始まる。発酵は待てば進むが止められないため、生地が最も美味しい状態で焼くことを逆算して工程を組む。",
+      "howToBecomeJa": "製パン専門学校で学ぶか、ベーカリーに就職して技術を身につける。",
+      "tags": [
+        "setting.kitchen",
+        "setting.factory-line",
+        "subject.food",
+        "subject.fire",
+        "subject.microbe",
+        "action.cook",
+        "action.blend",
+        "action.measure",
+        "sense.temperature",
+        "sense.taste",
+        "sense.fingertip",
+        "condition.night-shift",
+        "condition.peak-season",
+        "temperament.detail",
+        "temperament.planner",
+        "temperament.repeatable",
+        "industry.food-fermentation"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本パン技術研究所",
+          "url": "https://www.pan-k.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "cheese-maker",
+      "nameJa": "チーズ職人",
+      "nameEn": "Cheesemaker",
+      "aliasesJa": [
+        "チーズ製造者",
+        "カードハンドラー"
+      ],
+      "kanaJa": "ちーずしょくにん",
+      "emoji": "🧀",
+      "summaryJa": "牛乳に菌と時間を仕込んで、チーズという別物に変える。",
+      "descriptionJa": "牛乳からチーズを製造する職。牛乳に乳酸菌と酵素を加え、固まったカードを切って水を切り、塩をして熟成させる。熟成中は表面のカビや水分を管理しながら、定期的にひっくり返す。原料の牛乳は季節や牛の状態で変わるため、同じチーズを常に作る方が難しいとされる。熟成の過程で定期的にチーズの水分を測り、必要な手入れを行う。でき上がりの味を確認するため、試食と記録を積み重ねて品質を安定させる。",
+      "surpriseJa": "チーズ職人の仕事は牛乳を固めることより、熟成庫でチーズを「育てる」こと。水分と温度を日々調整し、カビを抑えながら風味を時間で作る。",
+      "howToBecomeJa": "チーズ工房や酪農場で製造の技術を学ぶ。専門の研修や留学もある。",
+      "tags": [
+        "setting.kitchen",
+        "setting.factory-line",
+        "setting.farm",
+        "subject.food",
+        "subject.microbe",
+        "subject.animal",
+        "action.ferment",
+        "action.sort",
+        "action.measure",
+        "sense.smell",
+        "sense.taste",
+        "sense.temperature",
+        "condition.seasonal",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.curious",
+        "industry.food-fermentation"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本チーズ普及協会",
+          "url": "https://www.cheese-japan.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "chocolate-maker",
+      "nameJa": "ショコラティエ",
+      "nameEn": "Chocolatier",
+      "aliasesJa": [
+        "チョコレート職人",
+        "製菓チョコレート職"
+      ],
+      "kanaJa": "しょこらてぃえ",
+      "emoji": "🍫",
+      "summaryJa": "カカオの温度を数度ずつ動かして、艶と歯ごたえを作る。",
+      "descriptionJa": "チョコレート菓子を作る職。カカオ豆のローストから板チョコやボンボンを仕上げるまでを担う。チョコレートは温度管理が極めて重要で、溶かして固める工程で温度を細かく上下させるテンパリングにより、艶と口どけが決まる。作りたての香りを保つため、材料と時間の管理に細心の注意を払う。",
+      "surpriseJa": "チョコレートの艶とパリッとした歯触りは、テンパリングという温度操作で決まる。溶かしたチョコレートの温度を何度も上下させることで、結晶の形を整える。",
+      "howToBecomeJa": "製菓専門学校で学び、ショコラティエの店やチョコレートメーカーに就職する。",
+      "tags": [
+        "setting.kitchen",
+        "setting.workshop",
+        "subject.food",
+        "subject.fire",
+        "subject.smell-matter",
+        "action.cook",
+        "action.blend",
+        "action.measure",
+        "sense.temperature",
+        "sense.taste",
+        "sense.color",
+        "condition.certification",
+        "condition.peak-season",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.repeatable",
+        "industry.food-fermentation"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "全日本洋菓子工業会",
+          "url": "https://www.jca.co.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "coffee-roaster",
+      "nameJa": "コーヒー焙煎士",
+      "nameEn": "Coffee Roaster",
+      "aliasesJa": [
+        "ロースター",
+        "焙煎職人"
+      ],
+      "kanaJa": "こーひーばいせんし",
+      "emoji": "☕",
+      "summaryJa": "生豆の青臭さを、火加減と時間で香りに変える。",
+      "descriptionJa": "コーヒー豆を焙煎する職。生の豆は青臭く、これに熱を加えることで香りと味が作られる。豆の種類や産地、収穫年で最適な焙煎は変わり、その日の気温や湿度によっても調整する。焙煎が進むと豆がはじけて色が変わり、その音と香りを頼りに火を止めるタイミングを決める。焙煎した豆の状態を記録し、同じ豆を再現できるようにする。店では淹れ方の提案や器具のアドバイスまで、豆を買った客に合わせて行う。",
+      "surpriseJa": "コーヒー豆が焙煎されると「はぜる」音がし、その音と香りで火を止めるタイミングが決まる。同じ豆でも焙煎の深さで味がまったく変わる。",
+      "howToBecomeJa": "コーヒー店や焙煎会社に就職し、焙煎機の操作を学ぶ。民間の資格もある。",
+      "tags": [
+        "setting.workshop",
+        "setting.factory-line",
+        "subject.food",
+        "subject.fire",
+        "subject.smell-matter",
+        "action.cook",
+        "action.measure",
+        "action.blend",
+        "sense.smell",
+        "sense.hearing",
+        "sense.temperature",
+        "condition.certification",
+        "condition.solo",
+        "temperament.curious",
+        "temperament.detail",
+        "temperament.repeatable",
+        "industry.food-fermentation"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "全日本コーヒー協会",
+          "url": "https://coffee.ajca.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "katsuobushi-maker",
       "nameJa": "鰹節職人",
       "nameEn": "Katsuobushi Maker",
@@ -35,6 +212,13 @@
       "rarity": 5,
       "familiarity": 2,
       "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "salt-maker",
+          "kind": "supplies",
+          "noteJa": "鰹を煮る工程には塩田職人が作る塩が欠かせない。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "農林水産省 水産加工",
@@ -125,6 +309,18 @@
       "rarity": 2,
       "familiarity": 5,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "beekeeper",
+          "kind": "supplies",
+          "noteJa": "洋菓子に使う蜂蜜は、養蜂家が巣箱から採ったものだ。"
+        },
+        {
+          "to": "chocolate-maker",
+          "kind": "transitions-to",
+          "noteJa": "製菓の経験を活かして、ケーキからチョコレート菓子の専門へ転じる職人は珍しくない。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "職業情報提供サイト job tag",
@@ -175,6 +371,11 @@
           "to": "perfumer",
           "kind": "confusable",
           "noteJa": "どちらも鼻で判断する仕事だが、杜氏は生き物の状態を嗅ぎ、調香師は完成形を嗅ぐ。同じ器官で見ているものが違う。"
+        },
+        {
+          "to": "rice-farmer",
+          "kind": "supplies",
+          "noteJa": "酒造りに使う酒米は、稲作農家が育てて出荷したものだ。"
         }
       ],
       "sources": [
@@ -218,6 +419,13 @@
       "rarity": 3,
       "familiarity": 5,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "winemaker",
+          "kind": "front-and-back",
+          "noteJa": "客の前でワインを選ぶのがソムリエ、蔵でそれを造るのが醸造家。同じワインの表と裏の担い手になる。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "一般社団法人 日本ソムリエ協会",
@@ -225,6 +433,161 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "sushi-chef",
+      "nameJa": "寿司職人",
+      "nameEn": "Sushi Chef",
+      "aliasesJa": [
+        "板前",
+        "すし処の料理人"
+      ],
+      "kanaJa": "すししょくにん",
+      "emoji": "🍣",
+      "summaryJa": "魚の鮮度を見て、今日の仕入れの良し悪しを決める。",
+      "descriptionJa": "寿司を作る職。魚の目利きから、米の炊き方、握り方までを一貫して担う。職人になるとまず魚の下ごしらえを学び、何年もかけて握りや包丁さばきを身につける。カウンターでは客の様子を見ながら、出す順番とタイミングを決める。板場は朝早くから市場で魚を選ぶことから始まる。シャリの温度と握りの強さは、客が口に入れるときの印象を決める。旬の魚の情報を仕入れの段階で仕入れ、握りに出す順番を組み立てる。",
+      "surpriseJa": "寿司職人の修行は、最初に魚を捌くことから始まる。何年も下ごしらえだけを続けたのちに握りを教わるため、一貫して「素材を見る目」を育てることが根幹にある。",
+      "howToBecomeJa": "寿司店に弟子入りし、下ごしらえから段階的に技術を学ぶ。専門学校もある。",
+      "tags": [
+        "setting.kitchen",
+        "setting.stage",
+        "subject.food",
+        "subject.animal",
+        "subject.water",
+        "action.cook",
+        "action.sort",
+        "action.assemble",
+        "sense.taste",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "condition.apprenticeship",
+        "condition.night-shift",
+        "condition.peak-season",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.food-fermentation"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "katsuobushi-maker",
+          "kind": "supplies",
+          "noteJa": "寿司屋のだしには鰹節職人が仕上げた本枯節が使われる。"
+        },
+        {
+          "to": "rice-farmer",
+          "kind": "supplies",
+          "noteJa": "寿司のシャリになる米は、稲作農家が作った米だ。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "全日本すし協会",
+          "url": "https://www.zen-sushi.org/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "tea-master",
+      "nameJa": "茶師",
+      "nameEn": "Tea Master",
+      "aliasesJa": [
+        "お茶の目利き",
+        "製茶技術者"
+      ],
+      "kanaJa": "ちゃし",
+      "emoji": "🍵",
+      "summaryJa": "お茶の味を決める蒸し加減を、葉の色と香りで見極める。",
+      "descriptionJa": "茶葉の生産から製茶加工までを担う職。摘んだ茶葉を蒸して揉み、乾燥させる一連の工程で、蒸し加減や温度が香りと味を決める。仕上がった茶葉の味を確かめる「茶の審査」という作業もあり、煎じたお茶を音を立てて飲み、その香りと渋みを評価する。産地の茶師は品種ごとの特徴を把握している。",
+      "surpriseJa": "茶の審査は音を立てて飲むことで行われ、その吸い込む音と香りで品質を判断する。茶師は味わうためではなく、香りを確かめるためにわざと音を立てて飲む。",
+      "howToBecomeJa": "産地の茶農家や製茶工場に就職し、製造技術と審査の方法を学ぶ。",
+      "tags": [
+        "setting.farm",
+        "setting.workshop",
+        "subject.plant",
+        "subject.food",
+        "subject.fire",
+        "action.cook",
+        "action.sort",
+        "action.measure",
+        "sense.taste",
+        "sense.smell",
+        "sense.temperature",
+        "condition.seasonal",
+        "condition.apprenticeship",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.curious",
+        "industry.food-fermentation"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "sommelier",
+          "kind": "confusable",
+          "noteJa": "どちらも飲み物の目利きだが、茶師は産地の葉から香りを読み、ソムリエはワインを客に合わせて選ぶ。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "静岡県茶業振興協議会",
+          "url": "https://tea-shizuoka.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "winemaker",
+      "nameJa": "ワイン醸造家",
+      "nameEn": "Winemaker",
+      "aliasesJa": [
+        "ブドウ酒醸造家",
+        "ブルゴーニュの醸造家"
+      ],
+      "kanaJa": "わいねじょうぞうか",
+      "emoji": "🍇",
+      "summaryJa": "ぶどうの出来を、その年の気候ごと瓶に閉じ込める。",
+      "descriptionJa": "ぶどうからワインを醸造する職。収穫したぶどうを破砕・圧搾し、酵母で発酵させて熟成させる。ぶどうの糖度や酸度は年によって変わり、その年の気候がそのまま味に反映されるため、毎年新しい酒になる。樽での熟成期間や温度の管理が品質を左右し、瓶詰めまで一貫して担う。発酵が進む間は樽の温度と状態を毎日確認し、酸味と渋みのバランスを見る。瓶詰めのタイミングも味の評価から判断し、ラベルや出荷の管理まで行う。",
+      "surpriseJa": "ワインは毎年味が変わるのが前提。同じ畑のぶどうでも、その年の日照と雨で糖度と酸度が変わり、醸造家はそれを前提に工程を調整する。",
+      "howToBecomeJa": "ワイナリーに就職するか、醸造学を学んで醸造責任者を目指す。海外で学ぶ場合もある。",
+      "tags": [
+        "setting.farm",
+        "setting.workshop",
+        "setting.factory-line",
+        "subject.plant",
+        "subject.microbe",
+        "subject.food",
+        "action.ferment",
+        "action.blend",
+        "action.measure",
+        "sense.taste",
+        "sense.smell",
+        "sense.temperature",
+        "condition.seasonal",
+        "condition.peak-season",
+        "condition.few-practitioners",
+        "temperament.curious",
+        "temperament.detail",
+        "temperament.planner",
+        "industry.food-fermentation"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本ワイナリー協会",
+          "url": "https://www.winery.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     }
   ]
 }

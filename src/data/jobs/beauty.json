@@ -2,6 +2,56 @@
   "industry": "beauty",
   "jobs": [
     {
+      "slug": "hair-stylist",
+      "nameJa": "美容師",
+      "nameEn": "Hair Stylist",
+      "aliasesJa": [
+        "美容師",
+        "理容師",
+        "ヘアスタイリスト"
+      ],
+      "kanaJa": "びようし",
+      "emoji": "💇",
+      "summaryJa": "会話の相手の顔を鏡越しに何時間も観察する仕事。",
+      "descriptionJa": "髪を切る・染める・パーマをかける職で、国家資格を要する。カットはその人の骨格やクセを見て形を決める判断作業で、同じ依頼でも日々違う。施術の間、客の要望を引き出し、仕上がりへの不満を先回りして調整する。立って作業する時間が長く、美容室は土日祝と年末が繁忙期になる。",
+      "surpriseJa": "美容師の国家試験には学科と実技があり、実技はモデルではなくマネキンヘッドで行われる。日々の仕事の反対側に、試験用の決まった手順の世界がある。",
+      "howToBecomeJa": "美容師免許を取得する。専門学校を出て美容室に勤めるのが一般的。",
+      "tags": [
+        "setting.salon",
+        "subject.human-body",
+        "subject.textile",
+        "action.shave",
+        "action.design",
+        "action.assemble",
+        "sense.fine-motor",
+        "sense.fingertip",
+        "sense.color",
+        "condition.national-license",
+        "condition.peak-season",
+        "temperament.listener",
+        "temperament.aesthetic",
+        "temperament.repeatable",
+        "industry.beauty"
+      ],
+      "rarity": 1,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "make-up-artist",
+          "kind": "transitions-to",
+          "noteJa": "美容師として人の顔に触れてきた経験を活かし、ヘアメイクの分野へ移る人がいる。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "厚生労働省 美容師",
+          "url": "https://www.mhlw.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "kimono-dresser",
       "nameJa": "着付師",
       "nameEn": "Kimono Dresser",
@@ -29,7 +79,6 @@
         "condition.certification",
         "condition.peak-season",
         "condition.seasonal",
-        "temperament.detail",
         "temperament.aesthetic",
         "temperament.improvise",
         "industry.beauty"
@@ -37,6 +86,13 @@
       "rarity": 3,
       "familiarity": 4,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "wig-maker",
+          "kind": "same-site",
+          "noteJa": "花嫁の着付けと髪のセットは、着付師とかつら師の二人がそろって初めて完成する。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "厚生労働省 技能検定 着付け",
@@ -44,6 +100,91 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "make-up-artist",
+      "nameJa": "メイクアップアーティスト",
+      "nameEn": "Make-up Artist",
+      "aliasesJa": [
+        "ヘアメイク",
+        "美容部員"
+      ],
+      "kanaJa": "めいくあっぷあーてぃすと",
+      "emoji": "🎨",
+      "summaryJa": "同じ顔に、その日の役割に合わせて別の顔を描き分ける。",
+      "descriptionJa": "人の顔に化粧を施す専門職。結婚式や撮影、舞台、テレビなどで、その人が演じる役割や照明に合わせてメイクを構成する。肌の質感を見極め、照明の下でどう見えるかを考えながら色を重ねる。撮影ではカメラの性能や画角に合わせた調整が必要で、モデルや俳優の肌の状態を管理する役割も持つ。",
+      "surpriseJa": "テレビ用のメイクは実際の肌色とは大きく違う。カメラと照明で色が飛ぶ分を考慮して、濃く・はっきりと塗ることで、画面では自然に見える。",
+      "howToBecomeJa": "美容学校やメイク専門スクールで学び、芸能事務所や撮影現場のアシスタントから経験を積む。",
+      "tags": [
+        "setting.salon",
+        "setting.stage",
+        "setting.studio",
+        "subject.human-body",
+        "subject.light",
+        "action.design",
+        "action.assemble",
+        "action.blend",
+        "sense.color",
+        "sense.fine-motor",
+        "sense.fingertip",
+        "condition.freelance",
+        "condition.peak-season",
+        "temperament.aesthetic",
+        "temperament.improvise",
+        "temperament.listener",
+        "industry.beauty"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本ヘアメイクアップ協会",
+          "url": "https://www.jhma.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "nail-artist",
+      "nameJa": "ネイリスト",
+      "nameEn": "Nail Artist",
+      "aliasesJa": [
+        "ネイルサロン従事者",
+        "ジェルネイリスト"
+      ],
+      "kanaJa": "ねいりすと",
+      "emoji": "💅",
+      "summaryJa": "爪という数ミリの面積に、描くことの全部を詰め込む。",
+      "descriptionJa": "爪にジェルやポリッシュを塗り、デザインを施す職。爪は硬さや形が人それぞれで、その人の手の形や仕事内容に合わせて長さや形を整える。デザインの施術は細かいため、数時間同じ姿勢で続けることもある。ジェルの硬化や耐久性など、材料の扱いにも専門知識が要る。施術の合間には爪の状態や手のクセをチェックし、その人に合った形と素材を提案する。手元の美しさだけでなく、日常の使い勝手まで考えて仕上げるのがこの仕事の深さになっている。",
+      "surpriseJa": "ジェルネイルはすぐに乾くわけではない。硬化には専用のライトを当てるが、その照射時間や爪の厚みによって仕上がりと持ちが変わり、施術者はこの調整を毎回行う。",
+      "howToBecomeJa": "ネイル専門スクールで技術を学び、サロンに就職する。民間資格が複数ある。",
+      "tags": [
+        "setting.salon",
+        "subject.human-body",
+        "subject.light",
+        "action.design",
+        "action.assemble",
+        "action.polish",
+        "sense.fine-motor",
+        "sense.fingertip",
+        "sense.color",
+        "condition.certification",
+        "condition.peak-season",
+        "temperament.aesthetic",
+        "temperament.repeatable",
+        "industry.beauty"
+      ],
+      "rarity": 1,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本ネイリスト協会",
+          "url": "https://www.nail.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "perfumer",
@@ -87,6 +228,49 @@
       "updatedAt": "2026-08-06"
     },
     {
+      "slug": "tattoo-artist",
+      "nameJa": "彫り師",
+      "nameEn": "Tattoo Artist",
+      "aliasesJa": [
+        "タトゥーアーティスト",
+        "入れ墨師"
+      ],
+      "kanaJa": "ほりし",
+      "emoji": "💉",
+      "summaryJa": "針で傷を付けて、その傷に色を落として絵を残す。",
+      "descriptionJa": "人の肌に針で色素を入れて絵や模様を描く職。伝統的な和彫りでは、墨を入れることに意味があり、一度入れたものは消えない。肌は組織なので、線の深さや角度が一定でないと滲んだり、治りが悪くなったりする。衛生管理と、客の健康状態の確認が施術の前提になる。デザインは客の希望を聞いて決めるが、肌の質や部位によって書き込める線の密度が変わる。依頼者と相談しながら一生残る絵の最終的な形を決めていく。",
+      "surpriseJa": "彫り師の技術の中心は針を刺す深さの一定さで、これが滲みや痛みを左右する。絵の上手さより、同じ深さで打ち続けられることが最初に求められる。",
+      "howToBecomeJa": "彫り師に弟子入りするか、タトゥースクールで技術を学ぶ。衛生管理の研修を受けるところが多い。",
+      "tags": [
+        "setting.salon",
+        "setting.workshop",
+        "subject.human-body",
+        "subject.machine",
+        "subject.light",
+        "action.carve",
+        "action.assemble",
+        "action.design",
+        "sense.fine-motor",
+        "sense.fingertip",
+        "condition.certification",
+        "condition.solo",
+        "condition.freelance",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.beauty"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本タトゥー協会",
+          "url": "https://jta-tattoo.org/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "wig-maker",
       "nameJa": "かつら師",
       "nameEn": "Wig Maker",
@@ -115,7 +299,6 @@
         "condition.apprenticeship",
         "condition.few-practitioners",
         "condition.travel",
-        "temperament.detail",
         "temperament.aesthetic",
         "temperament.quiet-pride",
         "industry.beauty"
@@ -123,6 +306,13 @@
       "rarity": 5,
       "familiarity": 2,
       "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "hair-stylist",
+          "kind": "confusable",
+          "noteJa": "どちらも髪を扱うが、かつら師は人工の髪を作り、美容師は生えた髪を切る。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "独立行政法人 日本芸術文化振興会",

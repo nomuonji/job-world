@@ -1,0 +1,151 @@
+{
+  "industry": "sports",
+  "jobs": [
+    {
+      "slug": "golf-greenkeeper",
+      "nameJa": "グリーンキーパー",
+      "nameEn": "Golf Greenkeeper",
+      "aliasesJa": [
+        "ゴルフ場の芝管理",
+        "コース管理"
+      ],
+      "kanaJa": "ぐりーんきーぱー",
+      "emoji": "⛳",
+      "summaryJa": "芝という生き物を、ゴルフの道具になるまで育てる。",
+      "descriptionJa": "ゴルフ場の芝を管理する職。芝の高さや状態はプレーの質を決めるため、毎日カットや水やり、肥料の調整を行う。芝は生き物で、季節や天候によって管理が変わる。グリーンの速さや硬さを一定に保つことが、プレーヤーへのサービスになる。朝早くから芝の状態を確認し、カットや灌水の計画を立てる。病害虫の発生を見つけたら、範囲に合わせて対処する。",
+      "surpriseJa": "ゴルフのグリーンは「速さ」が重要で、その速さは芝のカットの高さで調整される。機械を整備して芝の長さを揃えることで、プレーヤーが安定したパターを打てる。",
+      "howToBecomeJa": "ゴルフ場の管理部門に就職し、芝生の管理技術を学ぶ。",
+      "tags": [
+        "setting.outdoors",
+        "setting.farm",
+        "setting.mountain",
+        "subject.plant",
+        "subject.soil",
+        "subject.machine",
+        "action.nurture",
+        "action.measure",
+        "action.clean-up",
+        "sense.color",
+        "sense.fingertip",
+        "sense.stamina",
+        "condition.seasonal",
+        "condition.team",
+        "temperament.physical",
+        "temperament.repeatable",
+        "industry.sports"
+      ],
+      "rarity": 3,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本グリーンキーパーズ協会",
+          "url": "https://www.jgka.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "jockey",
+      "nameJa": "騎手",
+      "nameEn": "Jockey",
+      "aliasesJa": [
+        "ジョッキー",
+        "競馬の騎乗"
+      ],
+      "kanaJa": "きしゅ",
+      "emoji": "🏇",
+      "summaryJa": "馬の一頭一頭のクセを覚えて、レースの最後まで体力を残す。",
+      "descriptionJa": "競馬で馬に騎乗する職。馬の性格や癖を把握し、レースでは位置取りとタイミングを判断する。体重を厳しく管理する必要があり、稽古や減量が日課になる。騎乗中は手綱の微細な感覚で馬と会話し、ゴール直前まで勝負を残す駆け引きを行う。レース前には当日の馬の状態を確認し、作戦を立てる。騎乗後はレースの内容を振り返り、次につながる反省を記録する。",
+      "surpriseJa": "騎手の仕事は馬の背中で行われるが、それまでの体重管理と馬の癖の把握が成績を決める。馬は毎日同じではないため、騎乗前に馬の様子を確かめる。",
+      "howToBecomeJa": "競馬学校に入り、騎手免許を取得する。減量と騎乗の技術を長年かけて身につける。",
+      "tags": [
+        "setting.arena",
+        "setting.outdoors",
+        "setting.farm",
+        "subject.animal",
+        "subject.human-body",
+        "action.operate-vehicle",
+        "action.train",
+        "action.negotiate",
+        "sense.balance",
+        "sense.fingertip",
+        "sense.stamina",
+        "condition.vehicle-license",
+        "condition.danger",
+        "condition.peak-season",
+        "temperament.physical",
+        "temperament.calm",
+        "temperament.improvise",
+        "industry.sports"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "saddler",
+          "kind": "supplies",
+          "noteJa": "騎手が使う鞍や手綱は、馬具職人が馬の背に合わせて作る。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本中央競馬会",
+          "url": "https://www.jra.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "sumo-referee",
+      "nameJa": "行司",
+      "nameEn": "Sumo Referee",
+      "aliasesJa": [
+        "行司",
+        "土俵の裁き"
+      ],
+      "kanaJa": "ぎょうじ",
+      "emoji": "⚔️",
+      "summaryJa": "土俵の勝敗を、一瞬の目で判断して軍配を上げる。",
+      "descriptionJa": "相撲の勝敗を判定する職。土俵の近くで力士の動きを見て、勝ち負けを判断して軍配を上げる。判定はその場で下され、後から覆ることは原則ない。所作や発声も見せ場で、その正確さと儀式的な立ち振る舞いが伝統として受け継がれる。年功で段位が上がる階級制の世界。所作や掛け声は決められており、土俵の儀式を滞りなく進める。勝敗の判断には、力士の足の位置や反則の有無まで見極める目が要る。",
+      "surpriseJa": "行司の判定は「軍配どおり」の一言で決まる。土俵際の一瞬の勝敗を見逃さない目がなければならず、その判断には反則や際どいラインの見分けも含まれる。",
+      "howToBecomeJa": "相撲部屋に入門し、行司としての修行を積む。",
+      "tags": [
+        "setting.arena",
+        "setting.stage",
+        "setting.temple",
+        "subject.law",
+        "subject.human-body",
+        "action.judge",
+        "action.watch",
+        "action.perform",
+        "sense.hearing",
+        "sense.night-vision",
+        "sense.stillness",
+        "condition.apprenticeship",
+        "condition.few-practitioners",
+        "temperament.quiet-pride",
+        "temperament.unflinching",
+        "industry.sports"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "judge",
+          "kind": "confusable",
+          "noteJa": "どちらも人前で勝敗や正誤を宣告するが、土俵の勝負を裁くのか法律を適用するのかで重みが違う。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本相撲協会",
+          "url": "https://www.sumo.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    }
+  ]
+}

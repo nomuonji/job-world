@@ -76,7 +76,7 @@
         "削り出す"
       ],
       "criteriaJa": "素材を減らして形や状態をつくる場合。",
-      "df": 6
+      "df": 17
     },
     {
       "id": "action.polish",
@@ -90,7 +90,7 @@
       ],
       "criteriaJa": "表面を整えて見え方や性能を変える場合。",
       "parentId": "action.shave",
-      "df": 4
+      "df": 7
     },
     {
       "id": "action.carve",
@@ -104,7 +104,7 @@
       ],
       "criteriaJa": "素材に形や模様を刻み込む場合。",
       "parentId": "action.shave",
-      "df": 1
+      "df": 2
     },
     {
       "id": "action.sew",
@@ -117,7 +117,8 @@
         "織る"
       ],
       "criteriaJa": "糸や紐を通して構造をつくる場合。",
-      "df": 3
+      "parentId": "action.assemble",
+      "df": 6
     },
     {
       "id": "action.weld",
@@ -130,7 +131,8 @@
         "つなぐ"
       ],
       "criteriaJa": "別々のものを永続的に結合する場合。",
-      "df": 2
+      "parentId": "action.assemble",
+      "df": 3
     },
     {
       "id": "action.assemble",
@@ -143,7 +145,7 @@
         "仕上げる"
       ],
       "criteriaJa": "部品や要素を並べて一つの完成物にする場合。",
-      "df": 14
+      "df": 61
     },
     {
       "id": "action.disassemble",
@@ -156,7 +158,7 @@
         "取り外す"
       ],
       "criteriaJa": "組まれたものをばらして中を見る・取り出す場合。",
-      "df": 1
+      "df": 2
     },
     {
       "id": "action.restore",
@@ -169,7 +171,8 @@
         "繕う"
       ],
       "criteriaJa": "壊れた・傷んだものを元の状態に近づける場合。",
-      "df": 9
+      "parentId": "action.assemble",
+      "df": 23
     },
     {
       "id": "action.sort",
@@ -183,7 +186,7 @@
         "見分ける"
       ],
       "criteriaJa": "同じに見えるものを基準で二つ以上に分ける場合。",
-      "df": 12
+      "df": 32
     },
     {
       "id": "action.measure",
@@ -196,7 +199,7 @@
         "検査"
       ],
       "criteriaJa": "数値として量を確定させることが工程に組み込まれている場合。",
-      "df": 25
+      "df": 65
     },
     {
       "id": "action.record",
@@ -209,7 +212,7 @@
         "採録"
       ],
       "criteriaJa": "後から参照される形で残すことが成果物である場合。",
-      "df": 13
+      "df": 49
     },
     {
       "id": "action.translate",
@@ -222,7 +225,7 @@
         "変換"
       ],
       "criteriaJa": "ある形式の情報を別の形式に置き換える場合。言語に限らない。",
-      "df": 3
+      "df": 6
     },
     {
       "id": "action.negotiate",
@@ -235,7 +238,7 @@
         "仲介"
       ],
       "criteriaJa": "立場の違う相手の間で合意をつくる場合。",
-      "df": 5
+      "df": 17
     },
     {
       "id": "action.soothe",
@@ -248,7 +251,7 @@
         "支える"
       ],
       "criteriaJa": "相手の心の状態を落ち着かせることが仕事の一部である場合。",
-      "df": 3
+      "df": 8
     },
     {
       "id": "action.teach",
@@ -261,7 +264,7 @@
         "training"
       ],
       "criteriaJa": "他人ができるようになることが成果である場合。",
-      "df": 1
+      "df": 7
     },
     {
       "id": "action.diagnose",
@@ -274,7 +277,7 @@
         "査定"
       ],
       "criteriaJa": "状態を観察して正体や価値を判定する場合。",
-      "df": 12
+      "df": 34
     },
     {
       "id": "action.nurture",
@@ -287,7 +290,7 @@
         "養う"
       ],
       "criteriaJa": "生き物を時間をかけて育成する場合。",
-      "df": 4
+      "df": 11
     },
     {
       "id": "action.catch",
@@ -300,7 +303,7 @@
         "採取"
       ],
       "criteriaJa": "自然の中から対象を得る場合。",
-      "df": 2
+      "df": 7
     },
     {
       "id": "action.dive",
@@ -312,7 +315,7 @@
         "もぐる"
       ],
       "criteriaJa": "水面下や地中に体ごと入っていく場合。",
-      "df": 2
+      "df": 3
     },
     {
       "id": "action.climb",
@@ -324,7 +327,7 @@
         "よじ登る"
       ],
       "criteriaJa": "高所へ自力で登ることが作業の前提である場合。",
-      "df": 1
+      "df": 6
     },
     {
       "id": "action.carry",
@@ -337,7 +340,7 @@
         "運搬"
       ],
       "criteriaJa": "ものを別の場所へ移すことが仕事の中心にある場合。",
-      "df": 2
+      "df": 9
     },
     {
       "id": "action.clean-up",
@@ -350,7 +353,7 @@
         "撤去"
       ],
       "criteriaJa": "散らかった・不要になった状態を収める場合。",
-      "df": 4
+      "df": 9
     },
     {
       "id": "action.watch",
@@ -363,7 +366,7 @@
         "見守る"
       ],
       "criteriaJa": "異常が起きないか注意を向け続けることが仕事である場合。",
-      "df": 6
+      "df": 15
     },
     {
       "id": "action.perform",
@@ -376,7 +379,7 @@
         "パフォーマンス"
       ],
       "criteriaJa": "その場で表現すること自体が成果である場合。",
-      "df": 3
+      "df": 9
     },
     {
       "id": "action.design",
@@ -389,7 +392,7 @@
         "企画"
       ],
       "criteriaJa": "作る前に形や仕組みを決めることが仕事である場合。",
-      "df": 5
+      "df": 17
     },
     {
       "id": "action.ferment",
@@ -402,7 +405,7 @@
         "仕込む"
       ],
       "criteriaJa": "時間の経過そのものを工程として管理する場合。",
-      "df": 2
+      "df": 4
     },
     {
       "id": "action.blend",
@@ -415,7 +418,7 @@
         "混ぜる"
       ],
       "criteriaJa": "複数の素材の比率を決めて一つの性質をつくる場合。",
-      "df": 7
+      "df": 12
     },
     {
       "id": "action.operate-vehicle",
@@ -428,7 +431,7 @@
         "操船"
       ],
       "criteriaJa": "乗り物や重機の操作そのものが仕事である場合。",
-      "df": 4
+      "df": 11
     },
     {
       "id": "action.investigate",
@@ -441,7 +444,59 @@
         "リサーチ"
       ],
       "criteriaJa": "分からないことを手がかりから明らかにする場合。",
-      "df": 4
+      "df": 17
+    },
+    {
+      "id": "action.cook",
+      "facet": "action",
+      "slug": "cook",
+      "labelJa": "調理する",
+      "aliasesJa": [
+        "加熱調理",
+        "火を通す",
+        "料理を作る"
+      ],
+      "criteriaJa": "食材を加熱・加工して食べられる状態にする場合。",
+      "df": 5
+    },
+    {
+      "id": "action.train",
+      "facet": "action",
+      "slug": "train",
+      "labelJa": "訓練する",
+      "aliasesJa": [
+        "調教",
+        "しつけ",
+        "育成"
+      ],
+      "criteriaJa": "人や動物に特定の行動を反復させて身につけさせる場合。",
+      "df": 3
+    },
+    {
+      "id": "action.serve",
+      "facet": "action",
+      "slug": "serve",
+      "labelJa": "提供する・給仕する",
+      "aliasesJa": [
+        "サービス",
+        "給仕",
+        "案内"
+      ],
+      "criteriaJa": "客・利用者にものを届けたり出したりすることが仕事の中心にある場合。",
+      "df": 3
+    },
+    {
+      "id": "action.judge",
+      "facet": "action",
+      "slug": "judge",
+      "labelJa": "判定する",
+      "aliasesJa": [
+        "審判",
+        "採点",
+        "判定"
+      ],
+      "criteriaJa": "勝敗・正誤・合否を公の場で最終的に決める場合。",
+      "df": 2
     },
     {
       "id": "condition.national-license",
@@ -454,7 +509,7 @@
         "業務独占"
       ],
       "criteriaJa": "法令上、資格がなければその業務を行えない場合。",
-      "df": 10
+      "df": 26
     },
     {
       "id": "condition.certification",
@@ -467,7 +522,7 @@
         "検定"
       ],
       "criteriaJa": "業界団体などの認定が実質的な参入条件になっている場合。",
-      "df": 12
+      "df": 25
     },
     {
       "id": "condition.apprenticeship",
@@ -480,7 +535,7 @@
         "修業"
       ],
       "criteriaJa": "学校ではなく現場の師匠につくことが主な習得経路である場合。",
-      "df": 13
+      "df": 31
     },
     {
       "id": "condition.live-in",
@@ -493,7 +548,7 @@
         "住込み"
       ],
       "criteriaJa": "期間中その場所に住むことが仕事の形式に組み込まれている場合。",
-      "df": 2
+      "df": 3
     },
     {
       "id": "condition.seasonal",
@@ -506,7 +561,7 @@
         "農閑期"
       ],
       "criteriaJa": "働く時期が季節で区切られている場合。",
-      "df": 8
+      "df": 24
     },
     {
       "id": "condition.night-shift",
@@ -519,7 +574,7 @@
         "当直"
       ],
       "criteriaJa": "夜間の勤務が常態である場合。",
-      "df": 13
+      "df": 36
     },
     {
       "id": "condition.travel",
@@ -532,7 +587,7 @@
         "移動が多い"
       ],
       "criteriaJa": "決まった職場を持たず、現場から現場へ移る形式の場合。",
-      "df": 13
+      "df": 20
     },
     {
       "id": "condition.solo",
@@ -545,7 +600,7 @@
         "ひとり"
       ],
       "criteriaJa": "一件の仕事を最初から最後まで一人で担う形式が基本の場合。",
-      "df": 21
+      "df": 54
     },
     {
       "id": "condition.team",
@@ -558,7 +613,7 @@
         "協働"
       ],
       "criteriaJa": "複数人の連携がなければ成立しない場合。",
-      "df": 16
+      "df": 57
     },
     {
       "id": "condition.danger",
@@ -571,7 +626,7 @@
         "命がけ"
       ],
       "criteriaJa": "事故が起きれば重篤な結果になる作業を日常的に行う場合。",
-      "df": 11
+      "df": 27
     },
     {
       "id": "condition.peak-season",
@@ -584,7 +639,7 @@
         "山がある"
       ],
       "criteriaJa": "年間の一部に業務が極端に集中する場合。",
-      "df": 4
+      "df": 21
     },
     {
       "id": "condition.vehicle-license",
@@ -597,7 +652,7 @@
         "潜水士免許"
       ],
       "criteriaJa": "運転・操縦・潜水などの専門免許が業務の前提である場合。",
-      "df": 0
+      "df": 7
     },
     {
       "id": "condition.few-practitioners",
@@ -610,7 +665,7 @@
         "担い手が少ない"
       ],
       "criteriaJa": "従事者が全国で数十人規模、または後継者難が公に語られている場合。",
-      "df": 18
+      "df": 42
     },
     {
       "id": "condition.public-service",
@@ -623,7 +678,34 @@
         "官公庁勤務"
       ],
       "criteriaJa": "国・自治体・公的機関に属して働く形式が主である場合。",
-      "df": 5
+      "df": 15
+    },
+    {
+      "id": "condition.freelance",
+      "facet": "condition",
+      "slug": "freelance",
+      "labelJa": "自由契約で働く",
+      "aliasesJa": [
+        "フリーランス",
+        "個人事業",
+        "請負"
+      ],
+      "criteriaJa": "企業に雇用されず、案件ごとに契約して働く形式が主である場合。",
+      "parentId": "condition.solo",
+      "df": 15
+    },
+    {
+      "id": "condition.on-call",
+      "facet": "condition",
+      "slug": "on-call",
+      "labelJa": "いつ呼ばれても出る",
+      "aliasesJa": [
+        "待機",
+        "出動",
+        "オンコール"
+      ],
+      "criteriaJa": "不意の呼び出しにいつでも対応する待機が仕事に組み込まれている場合。",
+      "df": 7
     },
     {
       "id": "industry.craft",
@@ -636,7 +718,7 @@
         "職人仕事"
       ],
       "criteriaJa": "地域や流派に受け継がれた技法で工芸品を作る産業。",
-      "df": 7
+      "df": 17
     },
     {
       "id": "industry.primary",
@@ -650,7 +732,7 @@
         "林業"
       ],
       "criteriaJa": "自然から直接、資源や食料を得る産業。",
-      "df": 3
+      "df": 8
     },
     {
       "id": "industry.food-fermentation",
@@ -663,7 +745,7 @@
         "食品産業"
       ],
       "criteriaJa": "食品や飲料を作る・提供する産業。",
-      "df": 5
+      "df": 12
     },
     {
       "id": "industry.medical",
@@ -677,7 +759,7 @@
         "ヘルスケア"
       ],
       "criteriaJa": "人の健康と生活を支える産業。",
-      "df": 4
+      "df": 10
     },
     {
       "id": "industry.infrastructure",
@@ -691,7 +773,7 @@
         "インフラ"
       ],
       "criteriaJa": "建物や社会基盤をつくり保つ産業。",
-      "df": 4
+      "df": 9
     },
     {
       "id": "industry.logistics",
@@ -705,7 +787,7 @@
         "輸送"
       ],
       "criteriaJa": "人やものを運ぶ産業。",
-      "df": 3
+      "df": 7
     },
     {
       "id": "industry.entertainment",
@@ -719,7 +801,7 @@
         "興行界"
       ],
       "criteriaJa": "観客に体験を届ける産業。",
-      "df": 4
+      "df": 9
     },
     {
       "id": "industry.publishing",
@@ -733,7 +815,7 @@
         "印刷"
       ],
       "criteriaJa": "文章や情報を編み、世に出す産業。",
-      "df": 3
+      "df": 7
     },
     {
       "id": "industry.ceremony",
@@ -746,7 +828,7 @@
         "儀礼"
       ],
       "criteriaJa": "人生の節目の儀式を執り行う産業。",
-      "df": 3
+      "df": 7
     },
     {
       "id": "industry.aerospace",
@@ -759,7 +841,7 @@
         "エアライン"
       ],
       "criteriaJa": "空と宇宙に関わる産業。",
-      "df": 2
+      "df": 8
     },
     {
       "id": "industry.science",
@@ -772,7 +854,7 @@
         "調査研究"
       ],
       "criteriaJa": "知見を生み出すこと自体が成果である産業。",
-      "df": 2
+      "df": 6
     },
     {
       "id": "industry.public",
@@ -785,7 +867,7 @@
         "公共"
       ],
       "criteriaJa": "公的な制度の運用を担う産業。",
-      "df": 1
+      "df": 5
     },
     {
       "id": "industry.nature",
@@ -799,7 +881,7 @@
         "生き物の産業"
       ],
       "criteriaJa": "生き物や自然環境を対象とする産業。",
-      "df": 5
+      "df": 10
     },
     {
       "id": "industry.it",
@@ -813,7 +895,7 @@
         "デジタル"
       ],
       "criteriaJa": "情報技術を用いて価値をつくる産業。ソフトウェア・データ処理を含む。",
-      "df": 0
+      "df": 5
     },
     {
       "id": "industry.beauty",
@@ -826,7 +908,7 @@
         "服飾"
       ],
       "criteriaJa": "人の装いと見た目を扱う産業。",
-      "df": 3
+      "df": 7
     },
     {
       "id": "industry.heritage",
@@ -839,7 +921,73 @@
         "文化財の保存"
       ],
       "criteriaJa": "過去のものを残し伝えることを目的とする産業。",
-      "df": 4
+      "df": 8
+    },
+    {
+      "id": "industry.finance",
+      "facet": "industry",
+      "slug": "finance",
+      "labelJa": "金融・保険",
+      "aliasesJa": [
+        "金融",
+        "銀行",
+        "保険",
+        "証券"
+      ],
+      "criteriaJa": "金銭や資産の取引・運用・保険を扱う産業。",
+      "df": 3
+    },
+    {
+      "id": "industry.retail",
+      "facet": "industry",
+      "slug": "retail",
+      "labelJa": "小売・商業",
+      "aliasesJa": [
+        "小売",
+        "百貨店",
+        "商業"
+      ],
+      "criteriaJa": "商品を仕入れて消費者に売る産業。",
+      "df": 3
+    },
+    {
+      "id": "industry.energy",
+      "facet": "industry",
+      "slug": "energy",
+      "labelJa": "エネルギー・電力",
+      "aliasesJa": [
+        "エネルギー",
+        "燃料",
+        "電力供給"
+      ],
+      "criteriaJa": "電気・ガス・燃料などエネルギーを生み出し届ける産業。",
+      "df": 3
+    },
+    {
+      "id": "industry.sports",
+      "facet": "industry",
+      "slug": "sports",
+      "labelJa": "スポーツ",
+      "aliasesJa": [
+        "競技",
+        "アスリート",
+        "体育"
+      ],
+      "criteriaJa": "競技の開催・選手の活動・施設運営を支える産業。",
+      "df": 3
+    },
+    {
+      "id": "industry.education",
+      "facet": "industry",
+      "slug": "education",
+      "labelJa": "教育",
+      "aliasesJa": [
+        "学校教育",
+        "学習支援",
+        "研究教育"
+      ],
+      "criteriaJa": "学びや技能の習得を支援する産業。",
+      "df": 3
     },
     {
       "id": "sense.smell",
@@ -852,7 +1000,7 @@
         "嗅ぎわけ"
       ],
       "criteriaJa": "匂いの違いが仕事の成果を左右する場合に付ける。匂いのする環境で働くだけでは付けない。",
-      "df": 9
+      "df": 26
     },
     {
       "id": "sense.taste",
@@ -865,7 +1013,8 @@
         "官能評価"
       ],
       "criteriaJa": "味の判別が業務の判断に直結する場合。調理そのものは action 側に付ける。",
-      "df": 3
+      "parentId": "sense.smell",
+      "df": 10
     },
     {
       "id": "sense.hearing",
@@ -878,7 +1027,7 @@
         "聞き分け"
       ],
       "criteriaJa": "音のわずかな差を聞き取ることが判断材料になる場合。",
-      "df": 8
+      "df": 40
     },
     {
       "id": "sense.fingertip",
@@ -891,7 +1040,7 @@
         "手の感覚"
       ],
       "criteriaJa": "目視では分からない差を触覚で判断する場合。手先の器用さ一般ではない。",
-      "df": 24
+      "df": 87
     },
     {
       "id": "sense.color",
@@ -904,7 +1053,7 @@
         "色味"
       ],
       "criteriaJa": "微妙な色差の判別が仕事の質を決める場合。",
-      "df": 21
+      "df": 54
     },
     {
       "id": "sense.tilt",
@@ -917,7 +1066,7 @@
         "歪み"
       ],
       "criteriaJa": "ミリ単位の傾き・歪みを目で捉えることが要る場合。",
-      "df": 10
+      "df": 28
     },
     {
       "id": "sense.balance",
@@ -930,7 +1079,7 @@
         "揺れ"
       ],
       "criteriaJa": "不安定な足場や揺れの中で姿勢を保つ必要がある場合。",
-      "df": 9
+      "df": 24
     },
     {
       "id": "sense.stamina",
@@ -943,7 +1092,7 @@
         "体力"
       ],
       "criteriaJa": "身体の出力そのものが仕事の前提条件になっている場合。",
-      "df": 15
+      "df": 30
     },
     {
       "id": "sense.stillness",
@@ -956,7 +1105,7 @@
         "動かない"
       ],
       "criteriaJa": "同じ姿勢を保ち続けることが作業条件である場合。",
-      "df": 14
+      "df": 46
     },
     {
       "id": "sense.night-vision",
@@ -969,7 +1118,7 @@
         "薄明かり"
       ],
       "criteriaJa": "暗い環境で対象を見分けることが要る場合。",
-      "df": 6
+      "df": 19
     },
     {
       "id": "sense.fine-motor",
@@ -982,7 +1131,22 @@
         "細かい手作業"
       ],
       "criteriaJa": "ミリ以下の精度で手を動かすことが要る場合。触覚での判断は sense.fingertip に付ける。",
-      "df": 17
+      "parentId": "sense.fingertip",
+      "df": 39
+    },
+    {
+      "id": "sense.temperature",
+      "facet": "sense",
+      "slug": "temperature",
+      "labelJa": "温度を見分ける",
+      "aliasesJa": [
+        "温度感覚",
+        "熱さの判断",
+        "温度差"
+      ],
+      "criteriaJa": "温度のわずかな差を手や見た目で判断することが成果を左右する場合。",
+      "parentId": "sense.fingertip",
+      "df": 14
     },
     {
       "id": "setting.outdoors",
@@ -995,7 +1159,7 @@
         "屋外作業"
       ],
       "criteriaJa": "天候が仕事の可否や進み方を左右する場合に付ける。移動中に外を通るだけでは付けない。",
-      "df": 13
+      "df": 62
     },
     {
       "id": "setting.mountain",
@@ -1009,7 +1173,7 @@
       ],
       "criteriaJa": "山林が主たる作業場である場合。登山を伴う場合も含む。",
       "parentId": "setting.outdoors",
-      "df": 2
+      "df": 9
     },
     {
       "id": "setting.sea",
@@ -1023,7 +1187,7 @@
       ],
       "criteriaJa": "海上または海辺が主たる作業場である場合。",
       "parentId": "setting.outdoors",
-      "df": 4
+      "df": 11
     },
     {
       "id": "setting.underwater",
@@ -1049,7 +1213,8 @@
         "地下空間"
       ],
       "criteriaJa": "地下坑道・下水道・トンネルなど、地表より下が作業場である場合。",
-      "df": 1
+      "parentId": "setting.confined",
+      "df": 2
     },
     {
       "id": "setting.high-place",
@@ -1062,7 +1227,8 @@
         "足場の上"
       ],
       "criteriaJa": "墜落防止の装備や資格が要る高さで働く場合。ビルの上階で働くだけでは付けない。",
-      "df": 3
+      "parentId": "setting.outdoors",
+      "df": 11
     },
     {
       "id": "setting.confined",
@@ -1075,7 +1241,7 @@
         "密閉空間"
       ],
       "criteriaJa": "体をねじって入るような狭さが作業条件になっている場合。",
-      "df": 3
+      "df": 6
     },
     {
       "id": "setting.sterile-room",
@@ -1088,7 +1254,7 @@
         "清浄室"
       ],
       "criteriaJa": "塵や菌の管理された空間でしか成立しない仕事に付ける。",
-      "df": 3
+      "df": 7
     },
     {
       "id": "setting.kitchen",
@@ -1101,7 +1267,8 @@
         "台所"
       ],
       "criteriaJa": "食品を扱う調理空間が主たる作業場である場合。",
-      "df": 1
+      "parentId": "setting.workshop",
+      "df": 5
     },
     {
       "id": "setting.workshop",
@@ -1114,7 +1281,7 @@
         "作業場"
       ],
       "criteriaJa": "少人数が道具を並べて手仕事をする空間。工場のラインとは区別する。",
-      "df": 19
+      "df": 55
     },
     {
       "id": "setting.laboratory",
@@ -1127,7 +1294,7 @@
         "試験室"
       ],
       "criteriaJa": "測定・分析・実験の設備がある空間で働く場合。",
-      "df": 3
+      "df": 17
     },
     {
       "id": "setting.factory-line",
@@ -1140,7 +1307,7 @@
         "ライン"
       ],
       "criteriaJa": "流れてくるものを次々に処理する形式の作業場である場合。",
-      "df": 1
+      "df": 7
     },
     {
       "id": "setting.construction-site",
@@ -1152,7 +1319,7 @@
         "現場"
       ],
       "criteriaJa": "建造物をつくる・壊す現場が作業場である場合。",
-      "df": 0
+      "df": 5
     },
     {
       "id": "setting.ship",
@@ -1165,7 +1332,7 @@
         "甲板"
       ],
       "criteriaJa": "船が職場である場合。乗船して移動するだけでは付けない。",
-      "df": 1
+      "df": 6
     },
     {
       "id": "setting.sky",
@@ -1178,7 +1345,8 @@
         "機内"
       ],
       "criteriaJa": "飛行中の機体または成層圏以上が職場である場合。",
-      "df": 3
+      "parentId": "setting.outdoors",
+      "df": 7
     },
     {
       "id": "setting.temple",
@@ -1191,7 +1359,7 @@
         "境内"
       ],
       "criteriaJa": "寺院・神社の敷地が主たる職場である場合。",
-      "df": 1
+      "df": 5
     },
     {
       "id": "setting.backstage",
@@ -1204,7 +1372,8 @@
         "楽屋"
       ],
       "criteriaJa": "観客から見えない側で公演を成立させる持ち場である場合。",
-      "df": 4
+      "parentId": "setting.stage",
+      "df": 5
     },
     {
       "id": "setting.stage",
@@ -1217,7 +1386,7 @@
         "客前"
       ],
       "criteriaJa": "観客・聴衆の前に出ることが仕事の一部である場合。",
-      "df": 3
+      "df": 22
     },
     {
       "id": "setting.remote-island",
@@ -1230,7 +1399,8 @@
         "島"
       ],
       "criteriaJa": "人口が少なく交通が限られる土地に赴くことが前提の場合。",
-      "df": 0
+      "parentId": "setting.outdoors",
+      "df": 2
     },
     {
       "id": "setting.someones-home",
@@ -1243,7 +1413,7 @@
         "居宅"
       ],
       "criteriaJa": "他人の生活空間に入って作業する場合。",
-      "df": 2
+      "df": 18
     },
     {
       "id": "setting.after-people",
@@ -1256,7 +1426,8 @@
         "撤去現場"
       ],
       "criteriaJa": "住人・利用者が去った後に入る仕事に付ける。",
-      "df": 2
+      "parentId": "setting.someones-home",
+      "df": 5
     },
     {
       "id": "setting.museum",
@@ -1269,7 +1440,7 @@
         "収蔵庫"
       ],
       "criteriaJa": "収蔵・展示施設が職場である場合。",
-      "df": 3
+      "df": 7
     },
     {
       "id": "setting.hospital",
@@ -1282,7 +1453,7 @@
         "施術所"
       ],
       "criteriaJa": "医療・施術の提供される場が職場である場合。",
-      "df": 2
+      "df": 12
     },
     {
       "id": "setting.night-city",
@@ -1295,7 +1466,8 @@
         "夜間"
       ],
       "criteriaJa": "人が寝ている時間帯の市街が職場である場合。",
-      "df": 1
+      "parentId": "setting.outdoors",
+      "df": 5
     },
     {
       "id": "setting.desk",
@@ -1308,7 +1480,64 @@
         "室内作業"
       ],
       "criteriaJa": "座って手元の紙・画面に向かい続けることが作業の中心である場合。",
-      "df": 8
+      "df": 36
+    },
+    {
+      "id": "setting.salon",
+      "facet": "setting",
+      "slug": "salon",
+      "labelJa": "美容院・サロン",
+      "aliasesJa": [
+        "美容室",
+        "理髪店",
+        "施術室"
+      ],
+      "criteriaJa": "美容・理容の施術空間が主たる職場である場合。",
+      "parentId": "setting.workshop",
+      "df": 4
+    },
+    {
+      "id": "setting.studio",
+      "facet": "setting",
+      "slug": "studio",
+      "labelJa": "録音・撮影スタジオ",
+      "aliasesJa": [
+        "録音室",
+        "スタジオ",
+        "撮影所"
+      ],
+      "criteriaJa": "音や映像を収録・編集するための空間が職場である場合。",
+      "parentId": "setting.workshop",
+      "df": 5
+    },
+    {
+      "id": "setting.arena",
+      "facet": "setting",
+      "slug": "arena",
+      "labelJa": "競技場・大規模会場",
+      "aliasesJa": [
+        "スタジアム",
+        "競技場",
+        "ライブ会場"
+      ],
+      "criteriaJa": "競技場・ライブ会場など、大規模な催しが開かれる場所が職場である場合。",
+      "parentId": "setting.stage",
+      "df": 5
+    },
+    {
+      "id": "setting.farm",
+      "facet": "setting",
+      "slug": "farm",
+      "labelJa": "農地・牧場",
+      "aliasesJa": [
+        "畑",
+        "牧場",
+        "農場",
+        "果樹園"
+      ],
+      "criteriaJa": "作物や家畜を育てる農場・牧場が主たる作業場である場合。",
+      "parentId": "setting.outdoors",
+      "df": 10
     },
     {
       "id": "subject.animal",
@@ -1321,7 +1550,7 @@
         "家畜"
       ],
       "criteriaJa": "生きている動物に直接触れる・世話をする・判定する場合。",
-      "df": 8
+      "df": 23
     },
     {
       "id": "subject.plant",
@@ -1334,7 +1563,7 @@
         "作物"
       ],
       "criteriaJa": "生きた植物を育てる・切る・見立てる場合。",
-      "df": 7
+      "df": 47
     },
     {
       "id": "subject.microbe",
@@ -1348,7 +1577,7 @@
         "麹"
       ],
       "criteriaJa": "目に見えない生き物の働きを管理することが仕事の中心にある場合。",
-      "df": 3
+      "df": 8
     },
     {
       "id": "subject.human-body",
@@ -1361,7 +1590,7 @@
         "からだ"
       ],
       "criteriaJa": "生きている人の体に触れる・測る・手を入れる場合。",
-      "df": 6
+      "df": 28
     },
     {
       "id": "subject.deceased",
@@ -1374,7 +1603,7 @@
         "故人"
       ],
       "criteriaJa": "亡くなった方の体や遺されたものを直接扱う場合。",
-      "df": 3
+      "df": 9
     },
     {
       "id": "subject.metal",
@@ -1387,7 +1616,7 @@
         "鋼"
       ],
       "criteriaJa": "金属を加工・接合・研磨する場合。",
-      "df": 5
+      "df": 23
     },
     {
       "id": "subject.wood",
@@ -1400,7 +1629,8 @@
         "樹"
       ],
       "criteriaJa": "木材を材料として加工する場合。生きた樹木は subject.plant に付ける。",
-      "df": 5
+      "parentId": "subject.plant",
+      "df": 8
     },
     {
       "id": "subject.stone",
@@ -1412,7 +1642,7 @@
         "石材"
       ],
       "criteriaJa": "石材を切る・積む・彫る場合。",
-      "df": 3
+      "df": 7
     },
     {
       "id": "subject.soil",
@@ -1425,7 +1655,7 @@
         "地面"
       ],
       "criteriaJa": "土そのものの状態を見る・掘る・調える場合。",
-      "df": 2
+      "df": 8
     },
     {
       "id": "subject.textile",
@@ -1439,7 +1669,8 @@
         "糸"
       ],
       "criteriaJa": "糸・布を織る・縫う・染める・繕う場合。",
-      "df": 5
+      "parentId": "subject.plant",
+      "df": 12
     },
     {
       "id": "subject.paper",
@@ -1452,7 +1683,8 @@
         "文書"
       ],
       "criteriaJa": "紙そのものを漉く・貼る・繕う場合。書かれた内容を扱うなら subject.text に付ける。",
-      "df": 7
+      "parentId": "subject.plant",
+      "df": 16
     },
     {
       "id": "subject.lacquer",
@@ -1465,7 +1697,7 @@
         "接着材"
       ],
       "criteriaJa": "天然の塗料・接着材を扱う場合。",
-      "df": 2
+      "df": 3
     },
     {
       "id": "subject.sound",
@@ -1478,7 +1710,7 @@
         "楽器の音"
       ],
       "criteriaJa": "音の質そのものが成果物や判断対象である場合。",
-      "df": 1
+      "df": 8
     },
     {
       "id": "subject.light",
@@ -1491,7 +1723,7 @@
         "採光"
       ],
       "criteriaJa": "光の当て方・見え方をつくることが仕事である場合。",
-      "df": 3
+      "df": 15
     },
     {
       "id": "subject.smell-matter",
@@ -1504,7 +1736,8 @@
         "芳香"
       ],
       "criteriaJa": "匂いそのものが商品や成果物である場合。匂いで判断するだけなら sense.smell に付ける。",
-      "df": 1
+      "parentId": "subject.plant",
+      "df": 3
     },
     {
       "id": "subject.food",
@@ -1517,7 +1750,7 @@
         "食材"
       ],
       "criteriaJa": "人が口にするものを作る・選ぶ・評価する場合。",
-      "df": 6
+      "df": 21
     },
     {
       "id": "subject.fire",
@@ -1530,7 +1763,7 @@
         "窯"
       ],
       "criteriaJa": "火や高熱の加減が成果を左右する場合。",
-      "df": 5
+      "df": 15
     },
     {
       "id": "subject.water",
@@ -1542,7 +1775,7 @@
         "液体"
       ],
       "criteriaJa": "水の質・量・流れを扱うことが仕事の中心にある場合。",
-      "df": 11
+      "df": 22
     },
     {
       "id": "subject.machine",
@@ -1555,7 +1788,7 @@
         "エンジン"
       ],
       "criteriaJa": "機械を組む・直す・調整する場合。機械を操作するだけでは付けない。",
-      "df": 15
+      "df": 48
     },
     {
       "id": "subject.data",
@@ -1568,7 +1801,7 @@
         "数値"
       ],
       "criteriaJa": "数値の集まりを読み解くことが仕事の中心にある場合。",
-      "df": 7
+      "df": 33
     },
     {
       "id": "subject.text",
@@ -1581,7 +1814,7 @@
         "テキスト"
       ],
       "criteriaJa": "書かれた・話された言葉そのものを扱う場合。",
-      "df": 7
+      "df": 36
     },
     {
       "id": "subject.law",
@@ -1594,7 +1827,8 @@
         "申請"
       ],
       "criteriaJa": "法令や公的手続きの適用が仕事の中心にある場合。",
-      "df": 2
+      "parentId": "subject.text",
+      "df": 10
     },
     {
       "id": "subject.antique",
@@ -1608,7 +1842,7 @@
         "遺物"
       ],
       "criteriaJa": "過去に作られたものを、壊さずに扱うことが前提の場合。",
-      "df": 6
+      "df": 11
     },
     {
       "id": "subject.waste",
@@ -1621,7 +1855,7 @@
         "残置物"
       ],
       "criteriaJa": "不要になったものを引き取る・分ける・処理する場合。",
-      "df": 4
+      "df": 9
     },
     {
       "id": "subject.money",
@@ -1634,7 +1868,7 @@
         "会計"
       ],
       "criteriaJa": "金銭・資産の流れを扱うことが仕事の中心にある場合。",
-      "df": 0
+      "df": 6
     },
     {
       "id": "subject.sky-body",
@@ -1647,7 +1881,62 @@
         "大気"
       ],
       "criteriaJa": "大気圏や天体の状態を観測・予測・利用する場合。",
+      "df": 6
+    },
+    {
+      "id": "subject.voice",
+      "facet": "subject",
+      "slug": "voice",
+      "labelJa": "人の声",
+      "aliasesJa": [
+        "音声",
+        "発声",
+        "喉"
+      ],
+      "criteriaJa": "人の声そのものが成果物や判断対象である場合。",
+      "parentId": "subject.sound",
       "df": 4
+    },
+    {
+      "id": "subject.clay",
+      "facet": "subject",
+      "slug": "clay",
+      "labelJa": "土と陶",
+      "aliasesJa": [
+        "粘土",
+        "土器",
+        "陶磁器"
+      ],
+      "criteriaJa": "粘土を成形・焼成して器物をつくる場合。",
+      "parentId": "subject.soil",
+      "df": 3
+    },
+    {
+      "id": "subject.glass",
+      "facet": "subject",
+      "slug": "glass",
+      "labelJa": "ガラス",
+      "aliasesJa": [
+        "硝子",
+        "窓ガラス",
+        "ガラス製品"
+      ],
+      "criteriaJa": "ガラスを素材として加工・修理・検査する場合。",
+      "parentId": "subject.stone",
+      "df": 2
+    },
+    {
+      "id": "subject.energy",
+      "facet": "subject",
+      "slug": "energy",
+      "labelJa": "電気・エネルギー",
+      "aliasesJa": [
+        "電力",
+        "発電",
+        "電圧"
+      ],
+      "criteriaJa": "電気や動力の流れ・供給そのものを扱うことが仕事の中心にある場合。",
+      "df": 6
     },
     {
       "id": "temperament.detail",
@@ -1660,7 +1949,7 @@
         "こだわる"
       ],
       "criteriaJa": "わずかな差を放置できないことが仕事の質に直結する場合。",
-      "df": 34
+      "df": 61
     },
     {
       "id": "temperament.repeatable",
@@ -1673,7 +1962,7 @@
         "飽きない"
       ],
       "criteriaJa": "同一の作業を長期間続けることが前提の場合。",
-      "df": 17
+      "df": 71
     },
     {
       "id": "temperament.solitude",
@@ -1686,7 +1975,7 @@
         "孤独"
       ],
       "criteriaJa": "長時間人と話さない状況が続く場合。",
-      "df": 2
+      "df": 8
     },
     {
       "id": "temperament.listener",
@@ -1699,7 +1988,7 @@
         "受け止める"
       ],
       "criteriaJa": "相手の話を遮らず受け止めることが職能である場合。",
-      "df": 4
+      "df": 20
     },
     {
       "id": "temperament.improvise",
@@ -1712,7 +2001,7 @@
         "アドリブ"
       ],
       "criteriaJa": "予定外の事態が日常的に起き、その場で判断する必要がある場合。",
-      "df": 12
+      "df": 30
     },
     {
       "id": "temperament.planner",
@@ -1725,7 +2014,7 @@
         "逆算"
       ],
       "criteriaJa": "工程を先に組み立てることが成果を左右する場合。",
-      "df": 14
+      "df": 26
     },
     {
       "id": "temperament.aesthetic",
@@ -1738,7 +2027,7 @@
         "見た目にこだわる"
       ],
       "criteriaJa": "美しさの判断が成果物の価値を決める場合。",
-      "df": 15
+      "df": 32
     },
     {
       "id": "temperament.unflinching",
@@ -1751,7 +2040,7 @@
         "肝が据わる"
       ],
       "criteriaJa": "多くの人が直視をためらう対象や状況に日常的に向き合う場合。",
-      "df": 8
+      "df": 29
     },
     {
       "id": "temperament.quiet-pride",
@@ -1764,7 +2053,7 @@
         "目立たない"
       ],
       "criteriaJa": "成果が他人の名前で世に出る、または誰にも気づかれない仕事である場合。",
-      "df": 14
+      "df": 55
     },
     {
       "id": "temperament.physical",
@@ -1777,7 +2066,7 @@
         "現場好き"
       ],
       "criteriaJa": "座り仕事ではないことがその職業の魅力として語られる場合。",
-      "df": 13
+      "df": 28
     },
     {
       "id": "temperament.curious",
@@ -1790,8 +2079,35 @@
         "凝り性"
       ],
       "criteriaJa": "分からないことを掘り下げ続ける姿勢が職能である場合。",
-      "df": 14
+      "df": 40
+    },
+    {
+      "id": "temperament.speed",
+      "facet": "temperament",
+      "slug": "speed",
+      "labelJa": "速さが身上",
+      "aliasesJa": [
+        "高速",
+        "瞬発力",
+        "素早さ"
+      ],
+      "criteriaJa": "同じ精度を他人より速く出すことがその人の価値になる場合。",
+      "df": 4
+    },
+    {
+      "id": "temperament.calm",
+      "facet": "temperament",
+      "slug": "calm",
+      "labelJa": "平静でいられる",
+      "aliasesJa": [
+        "冷静",
+        "平常心",
+        "動揺しない"
+      ],
+      "criteriaJa": "周囲が慌てる状況でも手順を変えず進められることが必要な場合。",
+      "parentId": "temperament.unflinching",
+      "df": 11
     }
   ],
-  "jobCount": 53
+  "jobCount": 150
 }

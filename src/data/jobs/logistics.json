@@ -45,6 +45,52 @@
       "updatedAt": "2026-08-06"
     },
     {
+      "slug": "cargo-handler",
+      "nameJa": "港湾荷役作業員",
+      "nameEn": "Cargo Handler",
+      "aliasesJa": [
+        "港湾作業員",
+        "沖仲仕"
+      ],
+      "kanaJa": "こうわんにやくさぎょういん",
+      "emoji": "🏭",
+      "summaryJa": "コンテナ船が着くたび、積み荷を時間内に積み替える。",
+      "descriptionJa": "港で船の積み荷を積み降ろしする職。コンテナ船が入港すると、決められた時間内に数千個のコンテナを荷役機械で扱う。フォークリフトやガントリークレーンの操作、船倉での荷の固定など、作業は複雑に分業されている。船のスケジュールに合わせるため、天候にかかわらず働く。船が入港する時間に合わせて人員を手配し、効率よく荷物を動かす。積み下ろしが終わったあとの書類の確認も、仕事の流れの中に含まれる。",
+      "surpriseJa": "港湾の荷役は船が港にいる間だけ集中する。コンテナ船の停泊時間は限られているため、数千個のコンテナを数時間で積み替えるために、昼夜を問わず作業が行われる。",
+      "howToBecomeJa": "港湾運送会社や荷役会社に就職し、資格を取得しながら経験を積む。",
+      "tags": [
+        "setting.outdoors",
+        "setting.sea",
+        "setting.ship",
+        "subject.machine",
+        "subject.metal",
+        "subject.waste",
+        "action.carry",
+        "action.operate-vehicle",
+        "action.sort",
+        "sense.stamina",
+        "sense.balance",
+        "sense.night-vision",
+        "condition.vehicle-license",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.physical",
+        "temperament.improvise",
+        "temperament.repeatable",
+        "industry.logistics"
+      ],
+      "rarity": 3,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本港運協会",
+          "url": "https://www.jhda.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "harbor-pilot",
       "nameJa": "水先人",
       "nameEn": "Harbor Pilot",
@@ -89,6 +135,98 @@
       "updatedAt": "2026-08-06"
     },
     {
+      "slug": "long-haul-truck-driver",
+      "nameJa": "長距離トラック運転手",
+      "nameEn": "Long-haul Truck Driver",
+      "aliasesJa": [
+        "大型トラック運転手",
+        "陸上輸送"
+      ],
+      "kanaJa": "ちょうきょりとらっくうんてんしゅ",
+      "emoji": "🚛",
+      "summaryJa": "夜の高速を走り、朝の市場に荷を届ける。",
+      "descriptionJa": "大型トラックで長距離の輸送を担う職。荷物の積み込みから配送までを担当し、走行中は時間管理と安全運転が求められる。長距離では走行時間と休憩が法律で定められており、ドライブレコーダーで記録される。夜間走行が多く、昼夜逆転した生活と体調管理が仕事の一部になる。走行ルートや休憩場所を事前に確認し、納期に間に合う計画を立てる。荷物の積み込みの状態や密閉の確認も、運搬の安全に直結する。",
+      "surpriseJa": "トラックドライバーの勤務は、走行時間だけでなく休息時間も法令で管理される。何時間走ったかは記録され、違反すれば運行停止になるため、時間の管理が仕事の中心にある。",
+      "howToBecomeJa": "大型自動車免許を取得し、運送会社に就職する。",
+      "tags": [
+        "setting.outdoors",
+        "setting.night-city",
+        "setting.desk",
+        "subject.machine",
+        "subject.metal",
+        "subject.data",
+        "action.operate-vehicle",
+        "action.carry",
+        "action.measure",
+        "sense.stillness",
+        "sense.night-vision",
+        "sense.balance",
+        "condition.vehicle-license",
+        "condition.night-shift",
+        "condition.solo",
+        "temperament.solitude",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.logistics"
+      ],
+      "rarity": 1,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "全日本トラック協会",
+          "url": "https://jta.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "railway-signal-maintainer",
+      "nameJa": "信号保安装置技術者",
+      "nameEn": "Railway Signal Maintainer",
+      "aliasesJa": [
+        "鉄道信号技術者",
+        "信号保安保守"
+      ],
+      "kanaJa": "しんごうほあんそうちぎじゅつしゃ",
+      "emoji": "🚥",
+      "summaryJa": "電車の衝突を防ぐ信号の仕組みを、夜間に保守する。",
+      "descriptionJa": "鉄道の信号や踏切、列車の位置を検知する装置を保守する職。列車の安全は信号機が正しく働くことで成り立っているため、装置の点検は欠かせない。作業の多くは列車が走っていない夜間に行われる。信号の不具合は事故に直結するため、動作確認を繰り返す。点検作業は電車が通らない時間帯に行われるため、計画と段取りが重要になる。交換した装置の動作を確認して、次の列車が安全に走れることを確かめる。",
+      "surpriseJa": "鉄道の信号は「信号機そのもの」より、列車がどこにいるかを検知する装置の保守が重要。列車の位置を正確に把握できないと、同じ線路に別の列車が入って衝突する。",
+      "howToBecomeJa": "鉄道会社に就職し、信号保安装置の技術研修を受ける。",
+      "tags": [
+        "setting.underground",
+        "setting.outdoors",
+        "setting.night-city",
+        "subject.machine",
+        "subject.data",
+        "subject.metal",
+        "action.restore",
+        "action.measure",
+        "action.record",
+        "sense.hearing",
+        "sense.night-vision",
+        "sense.tilt",
+        "condition.night-shift",
+        "condition.national-license",
+        "condition.team",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.logistics"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本鉄道技術協会",
+          "url": "https://www.rtri.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "train-driver",
       "nameJa": "鉄道運転士",
       "nameEn": "Train Driver",
@@ -123,6 +261,13 @@
       "rarity": 2,
       "familiarity": 5,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "railway-signal-maintainer",
+          "kind": "front-and-back",
+          "noteJa": "運転士は信号に従って走り、信号保安装置技術者はその信号を作って保守する。安全は表で見える側と裏で支える側で成立する."
+        }
+      ],
       "sources": [
         {
           "titleJa": "国土交通省 動力車操縦者",
@@ -130,6 +275,59 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "tugboat-captain",
+      "nameJa": "曳船士",
+      "nameEn": "Tugboat Captain",
+      "aliasesJa": [
+        "タグボート船長",
+        "港内曳航"
+      ],
+      "kanaJa": "えいせんし",
+      "emoji": "🚤",
+      "summaryJa": "巨大な船を、押す力と引く力のバランスで港に入れる。",
+      "descriptionJa": "港で大型船の入出港を補助する曳船を操縦する職。大型船は自力では港にうまく着けないため、曳船が押したり引いたりして誘導する。曳船は小さいが馬力が大きく、クレーンやロープを駆使して大型船を動かす。風や潮流の影響を読み、船長の指示に合わせて微妙な操船を行う。大型船が港を離れるときも、曳船が船体を押して方向を変えるのを助ける。無線で船長と連絡を取りながら、動きを合わせて誘導する。",
+      "surpriseJa": "曳船士の仕事は大型船を「押すこと」より、押す力の加減。風と潮流の中で巨大な船体を動かすには、ほんの少しの力の差で方向が変わる感覚が必要になる。",
+      "howToBecomeJa": "航海士や小型船舶の資格を取得し、曳船会社に就職して経験を積む。",
+      "tags": [
+        "setting.ship",
+        "setting.sea",
+        "setting.outdoors",
+        "subject.machine",
+        "subject.water",
+        "action.operate-vehicle",
+        "action.carry",
+        "action.negotiate",
+        "sense.balance",
+        "sense.tilt",
+        "sense.night-vision",
+        "condition.vehicle-license",
+        "condition.danger",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.improvise",
+        "temperament.calm",
+        "temperament.quiet-pride",
+        "industry.logistics"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "harbor-pilot",
+          "kind": "confusable",
+          "noteJa": "どちらも港で大型船に関わるが、曳船士は自船を操り、水先人は本船に乗り込んで指揮する。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本曳船協会",
+          "url": "https://www.ekisen.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     }
   ]
 }

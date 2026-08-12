@@ -78,6 +78,13 @@
       "rarity": 3,
       "familiarity": 2,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "medical-technologist",
+          "kind": "same-site",
+          "noteJa": "病院内で機器を扱う臨床工学技士と、検体を分析する臨床検査技師は同じ診療を支える別の持ち場にいる。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "公益社団法人 日本臨床工学技士会",
@@ -85,6 +92,59 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "medical-examiner",
+      "nameJa": "監察医",
+      "nameEn": "Medical Examiner",
+      "aliasesJa": [
+        "検視医",
+        "法医病理医"
+      ],
+      "kanaJa": "かんさつい",
+      "emoji": "🩺",
+      "summaryJa": "不審な死の原因を、解剖と記録で特定する。",
+      "descriptionJa": "死因が明らかでない死者を解剖し、死因を特定する医師。事件性があるかを判断する役割を担い、行政の要請で動く。解剖所見を記録し、毒物検査や組織の検査と合わせて原因を推定する。死の時間や状況の推定は、刑事事件の捜査にも影響する。解剖の所見は写真と記録で残し、後の調査や裁判で使えるようにする。毒物や薬物の検査の結果と合わせて、死因を総合的に判断する。",
+      "surpriseJa": "監察医の解剖は治療ではなく死因の特定のため。見つけた事実を証拠として残すことが目的で、記録の正確さが裁判にも影響する。",
+      "howToBecomeJa": "医師免許を取得し、法医学を専門に学んで監察医務院などに勤務する。",
+      "tags": [
+        "setting.hospital",
+        "setting.laboratory",
+        "setting.after-people",
+        "subject.deceased",
+        "subject.human-body",
+        "subject.law",
+        "action.diagnose",
+        "action.record",
+        "action.investigate",
+        "sense.smell",
+        "sense.color",
+        "sense.fingertip",
+        "condition.national-license",
+        "condition.public-service",
+        "condition.on-call",
+        "temperament.unflinching",
+        "temperament.curious",
+        "temperament.detail",
+        "industry.medical"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "forensic-scientist",
+          "kind": "confusable",
+          "noteJa": "どちらも死因に関わるが、監察医は解剖で、法科学者は証拠の分析で原因に迫る。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本法医学会",
+          "url": "https://www.jslm.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "medical-illustrator",
@@ -130,6 +190,199 @@
       "updatedAt": "2026-08-06"
     },
     {
+      "slug": "medical-technologist",
+      "nameJa": "臨床検査技師",
+      "nameEn": "Medical Technologist",
+      "aliasesJa": [
+        "検査技師",
+        "臨床検査技術者"
+      ],
+      "kanaJa": "りんしょうけんさぎし",
+      "emoji": "🧪",
+      "summaryJa": "患者の血や尿から、体の中で起きていることを数値にする。",
+      "descriptionJa": "患者の血液や尿などの検体を分析する国家資格職。検査結果は医師の診断の材料になるため、精度管理と記録が厳格に行われる。血液検査だけでなく、心電図や超音波などの生理検査も担当する。機械の操作だけでなく、異常値を見つけて報告する判断力が求められる。検査結果の異常値を見つけた場合は、速やかに医師に報告する。機器の精度を保つため、毎日の管理と校正も担当する。",
+      "surpriseJa": "臨床検査技師は患者に直接接するより、検体と機械に向き合う時間が長い。医療現場にいながら、患者の顔を見ない仕事として治療の裏方を支える。",
+      "howToBecomeJa": "臨床検査技師の養成校で学び、国家試験に合格する。",
+      "tags": [
+        "setting.hospital",
+        "setting.laboratory",
+        "setting.sterile-room",
+        "subject.human-body",
+        "subject.microbe",
+        "subject.data",
+        "action.measure",
+        "action.diagnose",
+        "action.record",
+        "sense.color",
+        "sense.fine-motor",
+        "sense.stillness",
+        "condition.national-license",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.medical"
+      ],
+      "rarity": 3,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "forensic-scientist",
+          "kind": "confusable",
+          "noteJa": "どちらも検体や試料を分析するが、臨床検査技師は患者の治療のため、法科学者は事件の証拠のために調べる."
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本臨床衛生検査技師会",
+          "url": "https://www.jamt.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "midwife",
+      "nameJa": "助産師",
+      "nameEn": "Midwife",
+      "aliasesJa": [
+        "助産婦",
+        "サジタル"
+      ],
+      "kanaJa": "じょさんし",
+      "emoji": "🤱",
+      "summaryJa": "命が生まれる現場で、産婦と赤ちゃんの安全を見張る。",
+      "descriptionJa": "出産の介助と妊産婦のケアを担う国家資格職。陣痛の進行を見極め、異常があれば医師と連携する。分娩の介助はもちろん、産後の体調管理や授乳のサポートまで、母と子の健康を継続的に見守る。病院のほか、助産所や訪問助産として自宅分娩を担う場合もある。分娩の途中で異常が疑われれば、医師や救急の体制と連携して対応する。産後の訪問では、母乳や赤ちゃんの様子を確認して安心につなげる。",
+      "surpriseJa": "助産師は出産の瞬間だけでなく、妊娠から産後のケアまでを継続して担う。産婦の体調の変化を一番早く気づくのは医師ではなく助産師であることが多い。",
+      "howToBecomeJa": "看護師免許を取得したうえで、助産師養成課程を修了し国家試験に合格する。",
+      "tags": [
+        "setting.hospital",
+        "setting.someones-home",
+        "subject.human-body",
+        "subject.deceased",
+        "action.soothe",
+        "action.watch",
+        "action.measure",
+        "sense.hearing",
+        "sense.fingertip",
+        "sense.night-vision",
+        "condition.national-license",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.calm",
+        "temperament.listener",
+        "temperament.unflinching",
+        "industry.medical"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本助産師会",
+          "url": "https://www.midwife.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "optician",
+      "nameJa": "眼鏡作製技能士",
+      "nameEn": "Optician",
+      "aliasesJa": [
+        "オプティシャン",
+        "めがね職人"
+      ],
+      "kanaJa": "めがねさくせいぎのうし",
+      "emoji": "👓",
+      "summaryJa": "処方箋の数値を、その人の目の位置に合わせてレンズに焼く。",
+      "descriptionJa": "眼鏡を作る職。眼科医の処方箋をもとに、その人の顔に合うフレームを選び、レンズを加工する。レンズの度数の中心は瞳孔の位置に合わせる必要があり、わずかなずれで見えにくくなる。測定と加工の精度が求められ、国家技能検定の資格がある。レンズの加工は専用の機械で行うが、最後は度数を測定して装着具合を確かめる。フレームの調整はその人の鼻や耳の形に合わせて丁寧に行う。",
+      "surpriseJa": "眼鏡は処方箋の数値どおりにレンズを入れても、瞳孔の位置が合わなければ見えにくい。レンズの中心を顔の測定値に合わせて作るのが眼鏡職人の仕事になる。",
+      "howToBecomeJa": "眼鏡店や眼鏡レンズ会社に就職し、技能検定の資格を取得する。",
+      "tags": [
+        "setting.workshop",
+        "setting.desk",
+        "setting.hospital",
+        "subject.glass",
+        "subject.human-body",
+        "subject.machine",
+        "action.measure",
+        "action.assemble",
+        "action.polish",
+        "sense.tilt",
+        "sense.color",
+        "sense.fine-motor",
+        "condition.certification",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.medical"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "全日本眼鏡協会",
+          "url": "https://www.zengankyo.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "physiotherapist",
+      "nameJa": "理学療法士",
+      "nameEn": "Physiotherapist",
+      "aliasesJa": [
+        "PT",
+        "リハビリテーション"
+      ],
+      "kanaJa": "りがくりょうほうし",
+      "emoji": "🦵",
+      "summaryJa": "動きを失った体に、また歩くための手順を入れる。",
+      "descriptionJa": "怪我や病気で動きが不自由になった人の機能回復を支援する国家資格職。歩行や動作の評価を行い、それに合わせた訓練を指導する。筋力や可動域の状態を計測し、その人に合わせた運動プログラムを作る。医療現場だけでなく、介護施設や訪問リハビリでも働く。訓練の進み具合を記録し、目標に向けて内容を更新していく。患者本人が自宅で続けられる方法を教えることも、回復には欠かせない。",
+      "surpriseJa": "理学療法士の仕事は「体を動かす」ことではなく、動けなくなった原因を見極める評価に多くの時間を使う。評価が違えば訓練がすべて無駄になる。",
+      "howToBecomeJa": "理学療法士の養成校で学び、国家試験に合格する。",
+      "tags": [
+        "setting.hospital",
+        "setting.someones-home",
+        "subject.human-body",
+        "subject.machine",
+        "action.teach",
+        "action.measure",
+        "action.diagnose",
+        "sense.fingertip",
+        "sense.tilt",
+        "sense.balance",
+        "condition.national-license",
+        "condition.team",
+        "condition.travel",
+        "temperament.listener",
+        "temperament.repeatable",
+        "temperament.planner",
+        "industry.medical"
+      ],
+      "rarity": 2,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "speech-therapist",
+          "kind": "same-site",
+          "noteJa": "運動機能と言語・嚥下を担う二人は、同じリハビリテーション科で患者を分担して診る。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本理学療法士協会",
+          "url": "https://www.japanpt.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "prosthetist",
       "nameJa": "義肢装具士",
       "nameEn": "Prosthetist and Orthotist",
@@ -164,6 +417,13 @@
       "rarity": 4,
       "familiarity": 2,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "physiotherapist",
+          "kind": "same-site",
+          "noteJa": "義肢を作る義肢装具士と、歩行訓練を指導する理学療法士は同じ患者の回復を二人で組み立てる。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "公益社団法人 日本義肢装具士協会",
@@ -171,6 +431,49 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "speech-therapist",
+      "nameJa": "言語聴覚士",
+      "nameEn": "Speech-language Therapist",
+      "aliasesJa": [
+        "ST",
+        "ことばのリハビリテーション"
+      ],
+      "kanaJa": "げんごちょうかくし",
+      "emoji": "🗣️",
+      "summaryJa": "話すことと食べることを、もう一度引き出す。",
+      "descriptionJa": "言葉や発声、嚥下の障害を持つ人の訓練を行う国家資格職。脳卒中で言葉を失った人や、発音が難しい子どものリハビリを担当する。評価として音声の記録や摂食の状況を調べ、訓練プログラムを作る。食べる機能のリハビリも担うため、命に関わる誤嚥の防止にも関わる。言葉の訓練は教材を使ったり、音を聞き分けたりしながら段階的に進める。家族にも方法を伝え、家庭での取り組みが続くようにする。",
+      "surpriseJa": "言語聴覚士は「話す」ことだけでなく「食べる」ことの訓練もする。飲み込む力が弱った人への訓練は、誤嚥性肺炎という命に関わる事故を防ぐ。",
+      "howToBecomeJa": "言語聴覚士の養成校で学び、国家試験に合格する。",
+      "tags": [
+        "setting.hospital",
+        "setting.someones-home",
+        "subject.voice",
+        "subject.text",
+        "subject.human-body",
+        "action.teach",
+        "action.diagnose",
+        "action.record",
+        "sense.hearing",
+        "sense.fingertip",
+        "condition.national-license",
+        "condition.team",
+        "temperament.listener",
+        "temperament.repeatable",
+        "temperament.curious",
+        "industry.medical"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本言語聴覚士協会",
+          "url": "https://www.japanslht.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     }
   ]
 }

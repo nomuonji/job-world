@@ -2,6 +2,62 @@
   "industry": "nature",
   "jobs": [
     {
+      "slug": "aquarium-curator",
+      "nameJa": "水族館飼育員",
+      "nameEn": "Aquarium Curator",
+      "aliasesJa": [
+        "アクアリスト",
+        "水族館の飼育スタッフ"
+      ],
+      "kanaJa": "すいぞくかんしいくいん",
+      "emoji": "🐠",
+      "summaryJa": "水槽の中の温度と水流を、生き物の顔色で調整する。",
+      "descriptionJa": "水族館で海の生き物の飼育と展示を担う職。魚の健康は水質に大きく左右されるため、水槽の水の温度や成分を毎日測定し、装置の状態を確認する。餌の量や種類も種ごとに異なり、観察して体調の変化を見つける。繁殖に取り組む水族館では、飼育技術が研究に近い仕事になる。水槽の掃除やライトの管理も飼育の一部で、魚の健康に直結する。繁殖の成功を目指して、産卵の時期に合わせた水槽の調整も行う。",
+      "surpriseJa": "水族館の飼育員の仕事は「魚を見せること」より水槽の中の水を管理すること。水質が少しでも崩れると魚が死ぬため、測定と装置の点検が毎日のルーチンになる。",
+      "howToBecomeJa": "水族館の採用試験に合格し、飼育スタッフとして経験を積む。生物学や水産の学歴が有利。",
+      "tags": [
+        "setting.sea",
+        "setting.outdoors",
+        "setting.laboratory",
+        "subject.animal",
+        "subject.water",
+        "subject.food",
+        "action.nurture",
+        "action.measure",
+        "action.clean-up",
+        "sense.color",
+        "sense.smell",
+        "sense.fingertip",
+        "condition.team",
+        "condition.night-shift",
+        "temperament.repeatable",
+        "temperament.curious",
+        "industry.nature"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "veterinarian",
+          "kind": "same-site",
+          "noteJa": "水族館の生き物の健康も、飼育スタッフと獣医師の連携で保たれている。"
+        },
+        {
+          "to": "oceanographer",
+          "kind": "confusable",
+          "noteJa": "水槽の生き物を飼うのか、海そのものを調べるのか。水辺を扱うようで向いている対象が違う。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本動物園水族館協会",
+          "url": "https://www.jaza.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "beekeeper",
       "nameJa": "養蜂家",
       "nameEn": "Beekeeper",
@@ -35,6 +91,13 @@
       "rarity": 4,
       "familiarity": 4,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "sericulturist",
+          "kind": "confusable",
+          "noteJa": "小さな生き物を飼う点では似ているが、蜂と蚕では育て方がまったく違う。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "農林水産省 養蜂をめぐる情勢",
@@ -86,6 +149,51 @@
       "updatedAt": "2026-08-06"
     },
     {
+      "slug": "falconer",
+      "nameJa": "鷹匠",
+      "nameEn": "Falconer",
+      "aliasesJa": [
+        "鷹飼い",
+        "タカ使い"
+      ],
+      "kanaJa": "たかじょう",
+      "emoji": "🦅",
+      "summaryJa": "猛禽と一対一で向き合い、狩りの相手として信頼を結ぶ。",
+      "descriptionJa": "タカやハヤブサを飼育・訓練して狩りに使う職。かつては実際の狩猟に使われたが、現在は伝統の継承や猛禽の繁殖・保護が中心になっている。タカは訓練するものではなく、互いに信頼を結ぶ相手とされる。体重管理と毎日の訓練が欠かせず、病院に頼れないため飼育の知識も深く求められる。",
+      "surpriseJa": "鷹匠のタカは「服従させる」のではなく、お腹を空かせた状態で狩りをするパートナーとして信頼を結ぶ。餌の管理で空腹の加減を調整するのが訓練の基本になる。",
+      "howToBecomeJa": "鷹匠に弟子入りするか、猛禽の飼育経験を積んで技術を学ぶ。",
+      "tags": [
+        "setting.outdoors",
+        "setting.mountain",
+        "setting.farm",
+        "subject.animal",
+        "subject.food",
+        "action.nurture",
+        "action.train",
+        "action.catch",
+        "sense.hearing",
+        "sense.night-vision",
+        "sense.fingertip",
+        "condition.apprenticeship",
+        "condition.seasonal",
+        "condition.few-practitioners",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "temperament.solitude",
+        "industry.nature"
+      ],
+      "rarity": 5,
+      "familiarity": 3,
+      "lifecycle": "traditional",
+      "sources": [
+        {
+          "titleJa": "日本鷹匠協会",
+          "url": "https://www.falconry.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "nature-conservation-officer",
       "nameJa": "自然保護官",
       "nameEn": "Nature Conservation Officer",
@@ -128,6 +236,49 @@
       "updatedAt": "2026-08-06"
     },
     {
+      "slug": "service-dog-trainer",
+      "nameJa": "盲導犬訓練士",
+      "nameEn": "Service Dog Trainer",
+      "aliasesJa": [
+        "盲導犬育成士",
+        "介助犬訓練士"
+      ],
+      "kanaJa": "もうどうけんくんれんし",
+      "emoji": "🦮",
+      "summaryJa": "人の命を預かる犬を、子犬の頃から十数年の単位で育てる。",
+      "descriptionJa": "盲導犬や介助犬を育てて目の不自由な人や障害のある人に譲渡する職。子犬の頃から家庭での預かり訓練を経て、専門の訓練所で本格的な訓練を行う。犬の性格を見極め、その犬に合う役割や使用者を選ぶ。犬と使用者の関係がうまくいくように、譲渡後のフォローまで続ける。犬と使用者が初めて会うときの相性確認も訓練士の仕事だ。譲渡後も定期的に訪問し、問題が起きないようにフォローを続ける。",
+      "surpriseJa": "盲導犬の訓練は生まれてから始まり、使用者と合うかどうかを性格の見極めで決める。全頭が盲導犬になるわけではなく、性格が合わない犬は別の仕事に転向する。",
+      "howToBecomeJa": "盲導犬協会などの訓練所に就職し、犬の扱いと訓練技術を学ぶ。",
+      "tags": [
+        "setting.outdoors",
+        "setting.someones-home",
+        "subject.animal",
+        "subject.human-body",
+        "action.train",
+        "action.nurture",
+        "action.teach",
+        "sense.hearing",
+        "sense.fingertip",
+        "sense.stillness",
+        "condition.certification",
+        "condition.travel",
+        "temperament.repeatable",
+        "temperament.listener",
+        "temperament.quiet-pride",
+        "industry.nature"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本盲導犬協会",
+          "url": "https://www.moudouken.net/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "tree-doctor",
       "nameJa": "樹木医",
       "nameEn": "Tree Doctor",
@@ -160,6 +311,13 @@
       "rarity": 4,
       "familiarity": 3,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "forester",
+          "kind": "confusable",
+          "noteJa": "どちらも木を扱うが、樹木医は一本の木の健康を守り、林業作業士は山全体の木を育てて伐る."
+        }
+      ],
       "sources": [
         {
           "titleJa": "一般財団法人 日本緑化センター",
@@ -167,6 +325,97 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "veterinarian",
+      "nameJa": "獣医師",
+      "nameEn": "Veterinarian",
+      "aliasesJa": [
+        "動物のお医者さん",
+        "獣医"
+      ],
+      "kanaJa": "じゅういし",
+      "emoji": "🐕",
+      "summaryJa": "言葉で言えない患者の不調を、観察と検査で突き止める。",
+      "descriptionJa": "動物の診療を担う国家資格職。動物は言葉で症状を伝えられないため、飼い主からの聞き取りと観察、検査で判断する。犬や猫の小動物診療が一般的だが、畜産動物や野生動物を診る獣医師もいる。動物の命に関わる現場なので、手術や投薬も行う。診察では動物の扱い方や保定の技術も必要になる。治療後は飼い主に経過の説明をし、自宅での世話の方法まで伝える。",
+      "surpriseJa": "獣医師が一番苦労するのは動物の診察ではなく、動物の様子を伝える飼い主の言葉を「そのまま受け取らない」こと。観察と検査で情報の裏を取るのが仕事になる。",
+      "howToBecomeJa": "獣医学部を卒業し、国家試験に合格する。",
+      "tags": [
+        "setting.hospital",
+        "setting.outdoors",
+        "setting.farm",
+        "subject.animal",
+        "subject.human-body",
+        "subject.machine",
+        "action.diagnose",
+        "action.restore",
+        "action.measure",
+        "sense.fingertip",
+        "sense.hearing",
+        "sense.smell",
+        "condition.national-license",
+        "condition.night-shift",
+        "condition.on-call",
+        "temperament.improvise",
+        "temperament.unflinching",
+        "industry.nature"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本獣医師会",
+          "url": "https://nichiju.lin.gr.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "wildlife-rehabilitator",
+      "nameJa": "野生動物リハビリテーター",
+      "nameEn": "Wildlife Rehabilitator",
+      "aliasesJa": [
+        "野生動物の救護員",
+        "傷病鳥獣保護"
+      ],
+      "kanaJa": "やせいどうぶつりはびりてーたー",
+      "emoji": "🦉",
+      "summaryJa": "交通事故で傷ついた野生動物を、自然に戻すまで育てる。",
+      "descriptionJa": "怪我をした野生動物を保護し、治療して自然に帰すことを目指す職。動物病院や保護センターで、傷の手当てから餌やり、リハビリまでを担う。野生動物は人に慣らしてはいけないため、できるだけ人との接触を減らして世話する。環境省の指定など、公的な制度のもとで活動する。治療が終わった動物は、自然の中で生きられる力が戻るまで段階的に訓練する。放獣の時期は動物の状態と季節を見て決める。",
+      "surpriseJa": "野生動物のリハビリでは、動物を「なつかせない」ことが大切。人に慣れた動物は自然に帰れないため、餌を与えるときも姿を見せない工夫をする。",
+      "howToBecomeJa": "野生動物の保護センターや動物病院に就職し、救護の経験を積む。獣医師免許が有利な場合も多い。",
+      "tags": [
+        "setting.outdoors",
+        "setting.hospital",
+        "setting.farm",
+        "subject.animal",
+        "subject.waste",
+        "subject.food",
+        "action.nurture",
+        "action.restore",
+        "action.diagnose",
+        "sense.fingertip",
+        "sense.smell",
+        "sense.hearing",
+        "condition.certification",
+        "condition.few-practitioners",
+        "condition.on-call",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "temperament.unflinching",
+        "industry.nature"
+      ],
+      "rarity": 5,
+      "familiarity": 1,
+      "lifecycle": "emerging",
+      "sources": [
+        {
+          "titleJa": "環境省 鳥獣保護",
+          "url": "https://www.env.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "zookeeper",
@@ -202,6 +451,13 @@
       "rarity": 3,
       "familiarity": 5,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "veterinarian",
+          "kind": "same-site",
+          "noteJa": "動物園で飼育員が日々の観察をし、獣医師が診察する。動物の状態は飼育員の記録から獣医師へ渡る。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "公益社団法人 日本動物園水族館協会",

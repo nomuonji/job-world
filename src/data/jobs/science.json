@@ -2,6 +2,189 @@
   "industry": "science",
   "jobs": [
     {
+      "slug": "astronomer",
+      "nameJa": "天文学者",
+      "nameEn": "Astronomer",
+      "aliasesJa": [
+        "研究者",
+        "天文観測"
+      ],
+      "kanaJa": "てんもんがくしゃ",
+      "emoji": "🔭",
+      "summaryJa": "遠くの星の光を集めて、宇宙の歴史を読み解く。",
+      "descriptionJa": "星や銀河を観測・研究する職。大学や研究所に所属し、望遠鏡で観測したデータを解析する。遠くの天体ほど光が届くのに時間がかかるため、今見ている光は何億年も前の姿になる。研究の発表は論文という形で行われ、国際的な学会で共有される。観測データは解析ソフトで処理し、数値の傾向から天体の性質を読み取る。研究成果は論文として発表し、共同研究者と議論を重ねる。",
+      "surpriseJa": "天文学者が見ている星の光は、何億年も前の姿。遠くの銀河ほど昔の光を見ているため、天文学はそのまま宇宙の過去を観察する仕事になる。",
+      "howToBecomeJa": "大学の理学部で学び、大学院で研究を続けて研究者になる。",
+      "tags": [
+        "setting.laboratory",
+        "setting.desk",
+        "setting.remote-island",
+        "subject.sky-body",
+        "subject.data",
+        "subject.light",
+        "action.measure",
+        "action.record",
+        "action.investigate",
+        "sense.night-vision",
+        "sense.stillness",
+        "condition.freelance",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.curious",
+        "temperament.solitude",
+        "temperament.repeatable",
+        "industry.science"
+      ],
+      "rarity": 3,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本天文学会",
+          "url": "https://www.asj.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "forensic-scientist",
+      "nameJa": "法科学者",
+      "nameEn": "Forensic Scientist",
+      "aliasesJa": [
+        "科学捜査研究員",
+        "法科学研究者"
+      ],
+      "kanaJa": "ほうかがくしゃ",
+      "emoji": "🔬",
+      "summaryJa": "指紋や血痕から、現場に何があったかを科学的に復元する。",
+      "descriptionJa": "犯罪現場の証拠を科学の力で分析する職。指紋やDNA、血痕の鑑定を行い、現場に残された手がかりを数値や結果に変える。科捜研や警察の施設、大学の研究室で働く。鑑定結果は裁判の証拠になるため、分析の手順と記録が厳密に管理される。鑑定の記録は証拠として裁判に提出されるため、手順の再現性を重視する。現場から届いた試料は、汚染がないように管理して分析する。",
+      "surpriseJa": "法科学の鑑定で重要なのは「結果」より「手順の正しさ」。鑑定の過程が適切でなければ、結果が正しくても証拠として認められない。",
+      "howToBecomeJa": "大学で化学や生物学を学び、科学捜査研究所や法科学関連の機関に就職する。",
+      "tags": [
+        "setting.laboratory",
+        "setting.hospital",
+        "setting.after-people",
+        "subject.data",
+        "subject.deceased",
+        "subject.machine",
+        "action.investigate",
+        "action.measure",
+        "action.record",
+        "sense.fine-motor",
+        "sense.color",
+        "sense.stillness",
+        "condition.public-service",
+        "condition.few-practitioners",
+        "condition.team",
+        "temperament.detail",
+        "temperament.curious",
+        "temperament.quiet-pride",
+        "industry.science"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本法科学学会",
+          "url": "https://www.jsfs.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "oceanographer",
+      "nameJa": "海洋学者",
+      "nameEn": "Oceanographer",
+      "aliasesJa": [
+        "海洋研究者",
+        "海洋調査"
+      ],
+      "kanaJa": "かいようがくしゃ",
+      "emoji": "🌊",
+      "summaryJa": "船で海に出て、海の温度と流れを数字で記録する。",
+      "descriptionJa": "海の物理や生物、環境を研究する職。調査船に乗って海水や海底の試料を採り、分析して海の仕組みを解明する。気候変動や海の生態系の変化を追跡するため、観測を継続的に行う。研究の結果は論文や報告書になり、海洋政策の基礎資料にもなる。採った海水の試料は船の上で処理し、研究室で成分を分析する。得られたデータは気候の研究や環境の評価に使われる。",
+      "surpriseJa": "海洋学の調査では、水深の深い場所から海水を採るのに長い時間がかかる。船の上での作業は天候に左右され、調査が予定どおり進まないことが日常になる。",
+      "howToBecomeJa": "大学の水産学部や理学部で学び、大学院や研究機関で研究を続ける。",
+      "tags": [
+        "setting.sea",
+        "setting.ship",
+        "setting.laboratory",
+        "subject.water",
+        "subject.animal",
+        "subject.data",
+        "action.measure",
+        "action.investigate",
+        "action.record",
+        "sense.balance",
+        "sense.stamina",
+        "sense.color",
+        "condition.travel",
+        "condition.seasonal",
+        "condition.team",
+        "temperament.curious",
+        "temperament.physical",
+        "temperament.planner",
+        "industry.science"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本海洋学会",
+          "url": "https://www.kaiyogakkai.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "paleontologist",
+      "nameJa": "古生物学者",
+      "nameEn": "Paleontologist",
+      "aliasesJa": [
+        "化石研究者",
+        "恐竜学者"
+      ],
+      "kanaJa": "こせいぶつがくしゃ",
+      "emoji": "🦖",
+      "summaryJa": "岩の切れ目から、絶滅した生き物の姿を復元する。",
+      "descriptionJa": "化石を研究して、絶滅した生物の生態や進化を調べる職。野外で化石を発掘し、その化石が何の生物かを見分けて記録する。研究には地層の年代を調べる知識や、現生生物との比較が必要になる。博物館や大学に所属して研究と展示の両方に携わる。発掘した化石は石膏で固定して運び、研究室で詳しく調べる。地層の年代測定の結果と合わせて、その時代の環境を推定する。",
+      "surpriseJa": "古生物学者は化石を見つけることより、その化石がどの時代のどの生物かを確定する作業に時間を使う。同定が間違うと、その後の研究がすべて無駄になる。",
+      "howToBecomeJa": "大学の地球科学や生物学で学び、大学院で古生物学を研究する。",
+      "tags": [
+        "setting.mountain",
+        "setting.outdoors",
+        "setting.laboratory",
+        "subject.stone",
+        "subject.animal",
+        "subject.antique",
+        "action.investigate",
+        "action.diagnose",
+        "action.record",
+        "sense.color",
+        "sense.fingertip",
+        "sense.stamina",
+        "condition.travel",
+        "condition.seasonal",
+        "condition.team",
+        "temperament.curious",
+        "temperament.physical",
+        "temperament.detail",
+        "industry.science"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本古生物学会",
+          "url": "https://www.palaeo-soc-japan.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "taxonomist",
       "nameJa": "分類学者",
       "nameEn": "Taxonomist",
@@ -80,6 +263,13 @@
       "rarity": 3,
       "familiarity": 5,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "astronomer",
+          "kind": "confusable",
+          "noteJa": "どちらも空を観測するが、気象予報士は大気の今を予測し、天文学者は天体の過去の光を見ている。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "気象庁",

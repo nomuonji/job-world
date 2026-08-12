@@ -1,0 +1,141 @@
+{
+  "industry": "education",
+  "jobs": [
+    {
+      "slug": "career-counselor",
+      "nameJa": "キャリアカウンセラー",
+      "nameEn": "Career Counselor",
+      "aliasesJa": [
+        "進路相談",
+        "キャリアコンサルタント"
+      ],
+      "kanaJa": "きゃりあかうんせらー",
+      "emoji": "🧭",
+      "summaryJa": "将来を決めきれない相手に、自分の選択を選ばせる。",
+      "descriptionJa": "仕事や進路の悩みを相談する相手の話を聞き、選択を支援する職。相談者の価値観や経験を引き出して、自分で選べるように導く。答えを教えるのではなく、本人が自分の進路を決める手助けをするのが基本姿勢になる。企業の人事や学校の進路指導と連携することもある。相談は一度で終わらず、定期的に話を聞きながら方向性の変化を追う。本人が決めた選択に自信を持てるように、次の一歩を具体的に組み立てる支援まで行う。",
+      "surpriseJa": "キャリアカウンセラーは「どの仕事を選べばいいか」を教えない。それどころか、相手が自分で決められるように話を引き出すことが仕事で、答えを出すのは相談者自身になる。",
+      "howToBecomeJa": "キャリアコンサルタントの資格を取得し、企業や支援機関で勤務する。",
+      "tags": [
+        "setting.desk",
+        "setting.someones-home",
+        "subject.text",
+        "subject.human-body",
+        "subject.data",
+        "action.soothe",
+        "action.diagnose",
+        "action.negotiate",
+        "sense.hearing",
+        "sense.stillness",
+        "condition.certification",
+        "condition.freelance",
+        "temperament.listener",
+        "temperament.curious",
+        "temperament.planner",
+        "industry.education"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "キャリアコンサルティング協議会",
+          "url": "https://www.career-cc.org/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "school-nurse",
+      "nameJa": "養護教諭",
+      "nameEn": "School Nurse",
+      "aliasesJa": [
+        "保健室の先生",
+        "養護教員"
+      ],
+      "kanaJa": "ようごきょうゆ",
+      "emoji": "🏥",
+      "summaryJa": "授業中に保健室へ来る子の、様子と話を聞き分ける。",
+      "descriptionJa": "学校の保健室で児童生徒の健康管理を担う職。怪我の手当てや体調不良の児童への対応に加え、健康診断の実施や保健の授業も行う。怪我をした理由や体調の変化を聞き取り、必要なら医療機関や家庭と連絡を取る。児童の心身のサインを読み取る観察力が求められる。緊急時には保護者や医療機関との連絡を素早く取り、状況を伝える。健康診断の結果をまとめ、日々の体調の変化を見逃さないための記録も欠かせない。",
+      "surpriseJa": "保健室に来る子どもの多くは「体の不調」だが、その背景に家庭や友達の悩みが隠れていることがある。養護教諭はそれを聞き分ける、学校で唯一の医療職でもある。",
+      "howToBecomeJa": "看護師免許と教員免許を取得し、養護教諭の採用試験に合格する。",
+      "tags": [
+        "setting.hospital",
+        "setting.someones-home",
+        "subject.human-body",
+        "subject.text",
+        "action.soothe",
+        "action.diagnose",
+        "action.teach",
+        "sense.hearing",
+        "sense.fingertip",
+        "condition.public-service",
+        "condition.team",
+        "temperament.listener",
+        "temperament.improvise",
+        "temperament.calm",
+        "industry.education"
+      ],
+      "rarity": 2,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "special-needs-teacher",
+          "kind": "same-site",
+          "noteJa": "学校の保健室と教室は、同じ子どもの健康と学びを別の角度から見ている。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本養護教諭会",
+          "url": "https://www.yougo.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "special-needs-teacher",
+      "nameJa": "特別支援教育士",
+      "nameEn": "Special Needs Teacher",
+      "aliasesJa": [
+        "特別支援学校教員",
+        "発達支援の先生"
+      ],
+      "kanaJa": "とくべつしえんきょういくし",
+      "emoji": "🧩",
+      "summaryJa": "学び方の違う子どもに、その子に合う伝え方を探す。",
+      "descriptionJa": "障害のある児童生徒に教育を行う職。目に見えにくい障害の特性を見極め、その子に合う教材や教え方を工夫する。個々のペースに合わせた指導が基本で、保護者や専門家と連携して支援計画を作る。言葉で伝わらない場合は、絵や実物、指差しなど別の方法で伝える。クラス全体の授業とは別に、個別の指導計画を立てて進める。教材をその子の興味に合わせて選び直すなど、伝わり方を工夫し続ける仕事でもある。",
+      "surpriseJa": "特別支援の教員は「何を教えるか」より「どう伝えるか」を探す仕事。同じ内容でも、その子が受け取れる形に置き換えて教える。",
+      "howToBecomeJa": "教員免許を取得し、特別支援学校や通常校の支援学級に配属される。",
+      "tags": [
+        "setting.desk",
+        "setting.stage",
+        "setting.someones-home",
+        "subject.human-body",
+        "subject.text",
+        "subject.sound",
+        "action.teach",
+        "action.diagnose",
+        "action.record",
+        "sense.hearing",
+        "sense.fingertip",
+        "condition.public-service",
+        "condition.team",
+        "temperament.listener",
+        "temperament.repeatable",
+        "temperament.planner",
+        "industry.education"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本特別支援教育学会",
+          "url": "https://www.jsex.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    }
+  ]
+}

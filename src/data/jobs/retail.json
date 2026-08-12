@@ -1,0 +1,161 @@
+{
+  "industry": "retail",
+  "jobs": [
+    {
+      "slug": "antique-dealer",
+      "nameJa": "骨董商",
+      "nameEn": "Antique Dealer",
+      "aliasesJa": [
+        "古物商",
+        "骨董品の鑑定"
+      ],
+      "kanaJa": "こっとうしょう",
+      "emoji": "🗿",
+      "summaryJa": "古い物の真贋と価値を見抜いて、次の持ち主に繋ぐ。",
+      "descriptionJa": "骨董品や古美術品を売買する職。家から出てきた古い物が本物かどうか、どの時代のものかを見極める。真贋の判断は見た目だけでなく、作り方や材質、来歴で行う。品物の状態によって価値が大きく変わるため、査定の目を養うことが仕事の基礎になる。仕入れた品物には値段を付け、店に並べるための手入れを行う。買い取りの相談では、品物の状態を見て買取価格を決める。",
+      "surpriseJa": "骨董商の価値判断は「見た目の美しさ」ではなく「真贋と状態」。本物でも傷があると価値が大きく下がるため、修復の有無や経年変化まで見て査定する。",
+      "howToBecomeJa": "骨董店で修行するほか、鑑定や古美術の知識を専門的に学ぶ。",
+      "tags": [
+        "setting.workshop",
+        "setting.someones-home",
+        "setting.desk",
+        "subject.antique",
+        "subject.money",
+        "subject.text",
+        "action.diagnose",
+        "action.negotiate",
+        "action.sort",
+        "sense.color",
+        "sense.fingertip",
+        "sense.tilt",
+        "condition.certification",
+        "condition.solo",
+        "condition.travel",
+        "temperament.curious",
+        "temperament.detail",
+        "temperament.quiet-pride",
+        "industry.retail"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "museum-curator",
+          "kind": "confusable",
+          "noteJa": "どちらも古い物を扱うが、骨董商は売買で、学芸員は保存と展示で価値に接している。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "全国古物商連合会",
+          "url": "https://www.zenkoren.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "department-store-buyer",
+      "nameJa": "百貨店バイヤー",
+      "nameEn": "Department Store Buyer",
+      "aliasesJa": [
+        "仕入れ担当",
+        "買い付け担当"
+      ],
+      "kanaJa": "ひゃっかてんばいやー",
+      "emoji": "🛍️",
+      "summaryJa": "客の未来の好みを予想して、商品を仕入れに回る。",
+      "descriptionJa": "百貨店や小売店で仕入れる商品を決める職。売り場の売れ行きを見て、客が次に買いたいものを予想し、仕入れ先と交渉する。仕入れの判断を間違えると商品が売れ残り、店の在庫と利益に影響する。流行の把握と、売れる価格の感覚が求められる。売り場の担当と相談して、売れ筋と季節のバランスを考えて仕入れる。売上データを確認しながら、次のシーズンの計画を立てる。",
+      "surpriseJa": "バイヤーが仕入れるのは「今売れているもの」ではなく「次に売れるもの」。仕入れから店頭に並ぶまでに時間がかかるため、未来の流行を読むことが仕事になる。",
+      "howToBecomeJa": "百貨店や小売企業の採用試験に合格し、売り場での経験を積んでバイヤーになる。",
+      "tags": [
+        "setting.arena",
+        "setting.desk",
+        "setting.outdoors",
+        "subject.money",
+        "subject.data",
+        "subject.textile",
+        "action.negotiate",
+        "action.diagnose",
+        "action.record",
+        "sense.color",
+        "sense.stillness",
+        "sense.tilt",
+        "condition.travel",
+        "condition.peak-season",
+        "condition.team",
+        "temperament.planner",
+        "temperament.curious",
+        "temperament.aesthetic",
+        "industry.retail"
+      ],
+      "rarity": 2,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本百貨店協会",
+          "url": "https://www.depart.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "fishmonger",
+      "nameJa": "魚屋",
+      "nameEn": "Fishmonger",
+      "aliasesJa": [
+        "鮮魚販売士",
+        "魚市場の仲買"
+      ],
+      "kanaJa": "さかなや",
+      "emoji": "🐟",
+      "summaryJa": "朝の市場で、鮮度を見て値段を付ける。",
+      "descriptionJa": "魚を仕入れて販売する職。朝早く市場で魚を競り落とし、その日のうちにさばいて売る。魚の鮮度は時間で落ちるため、目やえらの状態で見分ける。仕入れ値と売り値を決める価格の判断も仕事で、売れ残れば損になる。その日の天気や魚の入り方で値段が変わる。さばいた魚は切身にして並べ、客の好みに合わせて調理の提案もする。その日の仕入れの状況に応じて、売り場の品揃えを変える。",
+      "surpriseJa": "魚屋の価値は「鮮度を見抜く目」と「売れ残らない値段を付ける判断」。朝の市場で付けた値段が間違えば、その日の損益が決まる。",
+      "howToBecomeJa": "魚市場の仲買や鮮魚店に就職し、目利きの技術を学ぶ。",
+      "tags": [
+        "setting.outdoors",
+        "setting.night-city",
+        "setting.desk",
+        "subject.food",
+        "subject.animal",
+        "subject.water",
+        "action.sort",
+        "action.diagnose",
+        "action.negotiate",
+        "sense.smell",
+        "sense.color",
+        "sense.fingertip",
+        "condition.night-shift",
+        "condition.peak-season",
+        "condition.solo",
+        "temperament.speed",
+        "temperament.quiet-pride",
+        "industry.retail"
+      ],
+      "rarity": 2,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "fisherman",
+          "kind": "supplies",
+          "noteJa": "魚屋が仕入れて売る魚は、漁師が海から水揚げしたものだ。"
+        },
+        {
+          "to": "sushi-chef",
+          "kind": "transitions-to",
+          "noteJa": "かつて寿司職人は魚屋の丁稚から育つことが多く、魚の目利きと仕入れの感覚がそのまま腕になった。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "東京都中央卸売市場",
+          "url": "https://www.shijou.metro.tokyo.lg.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    }
+  ]
+}

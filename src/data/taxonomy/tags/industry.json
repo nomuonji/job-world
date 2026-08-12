@@ -200,6 +200,67 @@
         "文化財の保存"
       ],
       "criteriaJa": "過去のものを残し伝えることを目的とする産業。"
+    },
+    {
+      "id": "industry.finance",
+      "facet": "industry",
+      "slug": "finance",
+      "labelJa": "金融・保険",
+      "aliasesJa": [
+        "金融",
+        "銀行",
+        "保険",
+        "証券"
+      ],
+      "criteriaJa": "金銭や資産の取引・運用・保険を扱う産業。"
+    },
+    {
+      "id": "industry.retail",
+      "facet": "industry",
+      "slug": "retail",
+      "labelJa": "小売・商業",
+      "aliasesJa": [
+        "小売",
+        "百貨店",
+        "商業"
+      ],
+      "criteriaJa": "商品を仕入れて消費者に売る産業。"
+    },
+    {
+      "id": "industry.energy",
+      "facet": "industry",
+      "slug": "energy",
+      "labelJa": "エネルギー・電力",
+      "aliasesJa": [
+        "エネルギー",
+        "燃料",
+        "電力供給"
+      ],
+      "criteriaJa": "電気・ガス・燃料などエネルギーを生み出し届ける産業。"
+    },
+    {
+      "id": "industry.sports",
+      "facet": "industry",
+      "slug": "sports",
+      "labelJa": "スポーツ",
+      "aliasesJa": [
+        "競技",
+        "アスリート",
+        "体育"
+      ],
+      "criteriaJa": "競技の開催・選手の活動・施設運営を支える産業。"
+    },
+    {
+      "id": "industry.education",
+      "facet": "industry",
+      "slug": "education",
+      "labelJa": "教育",
+      "aliasesJa": [
+        "学校教育",
+        "学習支援",
+        "研究教育"
+      ],
+      "criteriaJa": "学びや技能の習得を支援する産業。"
     }
   ]
 }

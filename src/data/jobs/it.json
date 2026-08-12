@@ -1,0 +1,220 @@
+{
+  "industry": "it",
+  "jobs": [
+    {
+      "slug": "ai-annotator",
+      "nameJa": "AIアノテーター",
+      "nameEn": "AI Annotator",
+      "aliasesJa": [
+        "データアノテーション",
+        "教師データ作成"
+      ],
+      "kanaJa": "えーあいあのてーたー",
+      "emoji": "🏷️",
+      "summaryJa": "AIに正解を教えるために、画像の中身を一枚ずつ説明する。",
+      "descriptionJa": "AIの学習に使う「教師データ」を作る職。画像に写るものを枠で囲んだり、文章にラベルを付けたりして、AIが判断するための材料を用意する。単純作業に見えるが、判断の基準が違うとAIの精度が変わるため、決まったルールに従って正確に付けることが求められる。作業の基準はマニュアルで決められており、判断がぶれないように確認を挟む。付け方の質がAIの精度を左右するため、レビューを受けて正確さを高める。",
+      "surpriseJa": "AIが正確に判断できるのは、大量の教師データを人が手作業で作ったから。画像の中身を説明するアノテーションは、単純だがAIの精度を左右する仕事になる。",
+      "howToBecomeJa": "データ作成の業務を請け負う企業に就職する。特別な資格はなく、研修を受けてから始める。",
+      "tags": [
+        "setting.desk",
+        "subject.data",
+        "subject.text",
+        "subject.light",
+        "action.sort",
+        "action.record",
+        "action.diagnose",
+        "sense.color",
+        "sense.stillness",
+        "condition.freelance",
+        "condition.solo",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.it"
+      ],
+      "rarity": 2,
+      "familiarity": 2,
+      "lifecycle": "emerging",
+      "sources": [
+        {
+          "titleJa": "総務省 AI社会",
+          "url": "https://www.soumu.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "data-center-technician",
+      "nameJa": "データセンター技術者",
+      "nameEn": "Data Center Technician",
+      "aliasesJa": [
+        "DC運用",
+        "サーバー運用管理"
+      ],
+      "kanaJa": "でーたせんたーぎじゅつしゃ",
+      "emoji": "🗄️",
+      "summaryJa": "サーバーの温度と電源を、24時間管理体制で見張る。",
+      "descriptionJa": "データセンターでサーバーの設置・運用・保守を行う職。データセンターは膨大な電力を消費し、温度が高くなると機器が故障するため、空調や電源の管理が重要になる。故障が起きれば24時間のいつでも対応する。手順書に従った作業と、障害時の迅速な対応が求められる。機器の増設や交換は手順書に従って行い、作業後の確認まで徹底する。停電や災害に備えた備品の点検も定期的に行われている。",
+      "surpriseJa": "データセンター技術者の仕事は「サーバーを動かすこと」より、温度と電源の管理。機器は熱と電力不足に弱いため、障害の多くは空調や電源の異常から始まる。",
+      "howToBecomeJa": "IT企業やデータセンター運営会社に就職し、サーバー管理の資格を取得する。",
+      "tags": [
+        "setting.sterile-room",
+        "setting.laboratory",
+        "setting.desk",
+        "subject.machine",
+        "subject.data",
+        "subject.energy",
+        "action.watch",
+        "action.measure",
+        "action.restore",
+        "sense.hearing",
+        "sense.temperature",
+        "sense.stillness",
+        "condition.night-shift",
+        "condition.team",
+        "condition.on-call",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.it"
+      ],
+      "rarity": 3,
+      "familiarity": 2,
+      "lifecycle": "emerging",
+      "sources": [
+        {
+          "titleJa": "日本データセンター協会",
+          "url": "https://www.jdcc.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "digital-archivist",
+      "nameJa": "デジタルアーキビスト",
+      "nameEn": "Digital Archivist",
+      "aliasesJa": [
+        "データ保存専門職",
+        "電子記録管理"
+      ],
+      "kanaJa": "でじたるあーきびすと",
+      "emoji": "💾",
+      "summaryJa": "消えていく電子記録を、読める状態で未来に残す。",
+      "descriptionJa": "電子データやデジタル記録を保存・管理する職。古い形式のデータはソフトウェアが変わると読めなくなるため、形式を変換したり、読み出せる状態を維持したりする。写真や文書、行政記録など、将来に残す価値のあるデータを整理して管理する。保存したデータが読めるかを定期的に確認し、必要なら形式を更新する。検索しやすい形で分類することも、後から使う人のために欠かせない。",
+      "surpriseJa": "デジタルアーキビストが扱うのは「保存」だけでなく「読み出し」。データは媒体が壊れるだけでなく、ソフトウェアが古くなると読めなくなる。未来でも読める状態を保つのが仕事になる。",
+      "howToBecomeJa": "図書館情報学やITの知識を学び、アーカイブ機関や企業に就職する。",
+      "tags": [
+        "setting.desk",
+        "setting.museum",
+        "setting.laboratory",
+        "subject.data",
+        "subject.text",
+        "subject.paper",
+        "action.record",
+        "action.sort",
+        "action.restore",
+        "sense.stillness",
+        "sense.color",
+        "condition.freelance",
+        "condition.solo",
+        "temperament.curious",
+        "temperament.quiet-pride",
+        "industry.it"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "emerging",
+      "sources": [
+        {
+          "titleJa": "デジタルアーカイブ学会",
+          "url": "https://www.digsj.org/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "game-programmer",
+      "nameJa": "ゲームプログラマー",
+      "nameEn": "Game Programmer",
+      "aliasesJa": [
+        "ゲーム開発者",
+        "グラフィックエンジニア"
+      ],
+      "kanaJa": "げーむぷろぐらまー",
+      "emoji": "🎮",
+      "summaryJa": "遊びのルールを、機械に伝わる命令の形に翻訳する。",
+      "descriptionJa": "ゲームのソフトウェアを開発する職。キャラクターの動き、物理演算、画面表示など、ゲームが動くためのプログラムを書く。企画やグラフィック、サウンドを作る他の職種と連携し、それぞれの素材を一つのゲームに組み込む。動作が不安定にならないよう、バグの修正と調整を繰り返す。",
+      "surpriseJa": "ゲームプログラマーの仕事は面白いゲームを考えることより、企画をそのまま機械に伝わる形に翻訳すること。遊びのアイデアは企画側のもので、プログラムはそれを実現する手段になる。",
+      "howToBecomeJa": "プログラミングを学び、ゲーム会社やゲーム開発企業に就職する。",
+      "tags": [
+        "setting.desk",
+        "subject.data",
+        "subject.machine",
+        "subject.light",
+        "action.design",
+        "action.assemble",
+        "action.record",
+        "sense.stillness",
+        "sense.color",
+        "condition.peak-season",
+        "condition.team",
+        "condition.night-shift",
+        "temperament.curious",
+        "temperament.quiet-pride",
+        "industry.it"
+      ],
+      "rarity": 2,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "コンピュータエンターテインメント協会",
+          "url": "https://www.cesa.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "penetration-tester",
+      "nameJa": "ペネトレーションテスター",
+      "nameEn": "Penetration Tester",
+      "aliasesJa": [
+        "セキュリティエンジニア",
+        "ホワイトハッカー"
+      ],
+      "kanaJa": "ぺねとれーしょんてすたー",
+      "emoji": "🛡️",
+      "summaryJa": "許可を得たうえで、システムに実際に攻撃してみる。",
+      "descriptionJa": "企業のシステムに、許可を得て実際に攻撃を仕掛ける職。コンピュータの弱点を見つけて報告し、対策を提案する。攻撃の手口は日々進化するため、常に新しい手法を学ぶ必要がある。見つけた脆弱性を悪用するのではなく、報告と修正までを行う点が「ハッカー」との違いになる。攻撃で見つけた弱点は報告書にまとめ、修正の優先度まで提案する。最新の攻撃手法を追い続けることが、新しい弱点を見つける力になる。",
+      "surpriseJa": "ペネトレーションテスターはシステムに実際に攻撃を仕掛けるが、その攻撃は必ず契約で許可されている。許可なく行えば、どんな目的でも犯罪になる。",
+      "howToBecomeJa": "セキュリティの技術を学び、セキュリティ企業や企業の内部組織に就職する。民間資格も多い。",
+      "tags": [
+        "setting.desk",
+        "setting.laboratory",
+        "subject.data",
+        "subject.machine",
+        "subject.text",
+        "action.investigate",
+        "action.diagnose",
+        "action.record",
+        "sense.stillness",
+        "sense.hearing",
+        "condition.freelance",
+        "condition.certification",
+        "condition.solo",
+        "temperament.curious",
+        "temperament.improvise",
+        "temperament.quiet-pride",
+        "industry.it"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "emerging",
+      "sources": [
+        {
+          "titleJa": "情報処理推進機構",
+          "url": "https://www.ipa.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    }
+  ]
+}

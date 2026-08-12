@@ -84,7 +84,8 @@
         "材木",
         "樹"
       ],
-      "criteriaJa": "木材を材料として加工する場合。生きた樹木は subject.plant に付ける。"
+      "criteriaJa": "木材を材料として加工する場合。生きた樹木は subject.plant に付ける。",
+      "parentId": "subject.plant"
     },
     {
       "id": "subject.stone",
@@ -120,7 +121,8 @@
         "織物",
         "糸"
       ],
-      "criteriaJa": "糸・布を織る・縫う・染める・繕う場合。"
+      "criteriaJa": "糸・布を織る・縫う・染める・繕う場合。",
+      "parentId": "subject.plant"
     },
     {
       "id": "subject.paper",
@@ -132,7 +134,8 @@
         "書物",
         "文書"
       ],
-      "criteriaJa": "紙そのものを漉く・貼る・繕う場合。書かれた内容を扱うなら subject.text に付ける。"
+      "criteriaJa": "紙そのものを漉く・貼る・繕う場合。書かれた内容を扱うなら subject.text に付ける。",
+      "parentId": "subject.plant"
     },
     {
       "id": "subject.lacquer",
@@ -180,7 +183,8 @@
         "香り物",
         "芳香"
       ],
-      "criteriaJa": "匂いそのものが商品や成果物である場合。匂いで判断するだけなら sense.smell に付ける。"
+      "criteriaJa": "匂いそのものが商品や成果物である場合。匂いで判断するだけなら sense.smell に付ける。",
+      "parentId": "subject.plant"
     },
     {
       "id": "subject.food",
@@ -263,7 +267,8 @@
         "制度",
         "申請"
       ],
-      "criteriaJa": "法令や公的手続きの適用が仕事の中心にある場合。"
+      "criteriaJa": "法令や公的手続きの適用が仕事の中心にある場合。",
+      "parentId": "subject.text"
     },
     {
       "id": "subject.antique",
@@ -313,6 +318,57 @@
         "大気"
       ],
       "criteriaJa": "大気圏や天体の状態を観測・予測・利用する場合。"
+    },
+    {
+      "id": "subject.voice",
+      "facet": "subject",
+      "slug": "voice",
+      "labelJa": "人の声",
+      "aliasesJa": [
+        "音声",
+        "発声",
+        "喉"
+      ],
+      "criteriaJa": "人の声そのものが成果物や判断対象である場合。",
+      "parentId": "subject.sound"
+    },
+    {
+      "id": "subject.clay",
+      "facet": "subject",
+      "slug": "clay",
+      "labelJa": "土と陶",
+      "aliasesJa": [
+        "粘土",
+        "土器",
+        "陶磁器"
+      ],
+      "criteriaJa": "粘土を成形・焼成して器物をつくる場合。",
+      "parentId": "subject.soil"
+    },
+    {
+      "id": "subject.glass",
+      "facet": "subject",
+      "slug": "glass",
+      "labelJa": "ガラス",
+      "aliasesJa": [
+        "硝子",
+        "窓ガラス",
+        "ガラス製品"
+      ],
+      "criteriaJa": "ガラスを素材として加工・修理・検査する場合。",
+      "parentId": "subject.stone"
+    },
+    {
+      "id": "subject.energy",
+      "facet": "subject",
+      "slug": "energy",
+      "labelJa": "電気・エネルギー",
+      "aliasesJa": [
+        "電力",
+        "発電",
+        "電圧"
+      ],
+      "criteriaJa": "電気や動力の流れ・供給そのものを扱うことが仕事の中心にある場合。"
     }
   ]
 }

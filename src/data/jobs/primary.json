@@ -36,6 +36,13 @@
       "rarity": 5,
       "familiarity": 4,
       "lifecycle": "declining",
+      "edges": [
+        {
+          "to": "fisherman",
+          "kind": "same-site",
+          "noteJa": "素潜りで貝を獲る海女と、船で魚を獲る漁師は同じ海の資源を別のやり方で獲っている。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "水産庁",
@@ -43,6 +50,52 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "fisherman",
+      "nameJa": "漁師",
+      "nameEn": "Fisherman",
+      "aliasesJa": [
+        "漁業者",
+        "海の仕事"
+      ],
+      "kanaJa": "りょうし",
+      "emoji": "🎣",
+      "summaryJa": "海の様子を読んで、今日の漁場と仕掛けを決める。",
+      "descriptionJa": "海や川で魚を獲る仕事。船を出して漁をする人もいれば、沿岸で網や刺し網を使う人もいる。魚の群れがどこにいるかは、水温や潮流、潮の満ち引きで変わるため、海の様子を読む経験が漁獲量を左右する。獲った魚の選別と出荷までを担い、海の天候には常に左右される。船の安全を確認してから出航し、潮と天候を見ながら漁場へ向かう。獲れた魚は種類や大きさで分け、鮮度を保ったまま水揚げする。",
+      "surpriseJa": "漁師の一番の技術は「網を上げる」ことより「どこに網を張るか」。魚の群れは水温と潮流で動くため、海の情報を読むことが漁獲量を決める。",
+      "howToBecomeJa": "漁業を営む家に継ぐほか、漁協の新規就業支援を利用して漁師になる。",
+      "tags": [
+        "setting.sea",
+        "setting.ship",
+        "setting.outdoors",
+        "subject.animal",
+        "subject.water",
+        "subject.machine",
+        "action.catch",
+        "action.sort",
+        "action.operate-vehicle",
+        "sense.stamina",
+        "sense.night-vision",
+        "sense.balance",
+        "condition.seasonal",
+        "condition.danger",
+        "condition.team",
+        "temperament.physical",
+        "temperament.improvise",
+        "temperament.unflinching",
+        "industry.primary"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "水産庁",
+          "url": "https://www.jfa.maff.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "forester",
@@ -89,6 +142,52 @@
       "updatedAt": "2026-08-06"
     },
     {
+      "slug": "mushroom-forager",
+      "nameJa": "山菜きのこ採り",
+      "nameEn": "Wild Mushroom Forager",
+      "aliasesJa": [
+        "きのこ採り",
+        "山採り業"
+      ],
+      "kanaJa": "さんさいきのこどり",
+      "emoji": "🍄",
+      "summaryJa": "毒のあるものを避けて、山の恵みを持ち帰る。",
+      "descriptionJa": "山に入って自然の山菜やきのこを採る仕事。食べられるものと毒のあるものを見分ける知識が生命に関わるため、見た目だけでなく生えている場所や季節も判断材料にする。採れたものは料理店や直売所に卸す。収穫は天候と季節に左右され、生計を立てるには山の全体を把握する必要がある。",
+      "surpriseJa": "きのこの毒を見分けるのに「色や形」だけでは不十分で、生える木の種類や季節も判断材料になる。同じ見た目でも生えた環境で毒の有無が変わることもある。",
+      "howToBecomeJa": "山の地元で採り方を見て覚える。自治体や研修で山菜・きのこの講習を受ける場合もある。",
+      "tags": [
+        "setting.mountain",
+        "setting.outdoors",
+        "setting.remote-island",
+        "subject.plant",
+        "subject.microbe",
+        "subject.food",
+        "action.catch",
+        "action.sort",
+        "action.diagnose",
+        "sense.color",
+        "sense.smell",
+        "sense.fingertip",
+        "condition.seasonal",
+        "condition.solo",
+        "condition.danger",
+        "temperament.curious",
+        "temperament.solitude",
+        "temperament.detail",
+        "industry.primary"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "林野庁 山菜きのこ",
+          "url": "https://www.rinya.maff.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "pearl-culturist",
       "nameJa": "真珠養殖の核入れ職人",
       "nameEn": "Pearl Nucleus Inserter",
@@ -130,6 +229,140 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "rice-farmer",
+      "nameJa": "稲作農家",
+      "nameEn": "Rice Farmer",
+      "aliasesJa": [
+        "米農家",
+        "農業経営者"
+      ],
+      "kanaJa": "いなさくのうか",
+      "emoji": "🌾",
+      "summaryJa": "田んぼの水を張る時期と、水を抜く時期で一年を組む。",
+      "descriptionJa": "米を栽培する農家。種まき、田植え、水の管理、収穫、乾燥と、稲の生育に合わせて一年の工程が決まっている。水は稲の生育の要で、時期によって田んぼの水深を変える。収穫は大型の機械で行われるが、水の管理や品質の判断は経験と観察に頼る部分が多い。機械で田植えや収穫を行うが、苗の状態や生育のばらつきは実際に田んぼを見て判断する。収穫した米は乾燥させ、検査に通る品質を確保する。",
+      "surpriseJa": "稲作で一番重要なのは、水を張る時期と抜く時期の判断。同じ田んぼでも水の管理で品質が大きく変わるため、季節と天候を読むことが技術になる。",
+      "howToBecomeJa": "親の農業を継ぐほか、自治体の就農支援制度を利用して新規就農する。",
+      "tags": [
+        "setting.farm",
+        "setting.outdoors",
+        "subject.plant",
+        "subject.water",
+        "subject.soil",
+        "subject.machine",
+        "action.nurture",
+        "action.catch",
+        "action.measure",
+        "sense.stamina",
+        "sense.temperature",
+        "condition.seasonal",
+        "condition.team",
+        "temperament.physical",
+        "temperament.planner",
+        "temperament.repeatable",
+        "industry.primary"
+      ],
+      "rarity": 1,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "農林水産省 米政策",
+          "url": "https://www.maff.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "salt-maker",
+      "nameJa": "塩田職人",
+      "nameEn": "Salt Maker",
+      "aliasesJa": [
+        "藻塩作り",
+        "塩田作業"
+      ],
+      "kanaJa": "えんでんしょくにん",
+      "emoji": "🧂",
+      "summaryJa": "海水を天日と火で乾かして、塩の結晶を取り出す。",
+      "descriptionJa": "海水から塩を作る仕事。かつては塩田で海水を天日に晒して作る方法が中心だったが、現在は技術が変わり、海水を煮詰める方法で作る。天然塩はミネラルが豊富で、少量生産の塩が料理人に高値で取引される。作る過程の温度管理や結晶の取り出し方が、塩の味と質を左右する。海水を濃縮する工程では、濃度と温度を調整して結晶を作り出す。でき上がった塩の粒の大きさや味を確認して、出荷の基準を満たすようにする。",
+      "surpriseJa": "塩の味は原料の海水ではなく、煮詰める工程の温度と速度で決まる。ゆっくり結晶させると粒子が大きく、その過程で含まれるミネラルの配分が変わる。",
+      "howToBecomeJa": "製塩会社に就職するか、天然塩の工房に弟子入りする。",
+      "tags": [
+        "setting.sea",
+        "setting.outdoors",
+        "setting.workshop",
+        "subject.water",
+        "subject.soil",
+        "subject.food",
+        "action.catch",
+        "action.sort",
+        "action.measure",
+        "sense.taste",
+        "sense.temperature",
+        "sense.color",
+        "condition.seasonal",
+        "condition.few-practitioners",
+        "temperament.repeatable",
+        "temperament.detail",
+        "temperament.quiet-pride",
+        "industry.primary"
+      ],
+      "rarity": 5,
+      "familiarity": 1,
+      "lifecycle": "declining",
+      "sources": [
+        {
+          "titleJa": "全国塩産業組合連合会",
+          "url": "https://www.salt-sangyo.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "sericulturist",
+      "nameJa": "養蚕家",
+      "nameEn": "Silkworm Raiser",
+      "aliasesJa": [
+        "蚕の飼育",
+        "繭生産"
+      ],
+      "kanaJa": "ようさんか",
+      "emoji": "🐛",
+      "summaryJa": "繭を作るまでに、蚕が食べる桑の量を追いかける。",
+      "descriptionJa": "蚕を飼育して繭を生産する仕事。蚕は桑の葉だけを食べ、約一か月で繭を作る。飼育中は温度と湿度の管理が必要で、糞や食べ残しの掃除も欠かせない。養蚕はかつて日本の主要産業だったが、現在は従事者が激減している。近年は国内生産の見直しで、繭から糸を作る伝統技術の継承が注目されている。",
+      "surpriseJa": "養蚕は蚕が繭を作るまでの約一か月、毎日餌を与え続ける重労働。かつては日本の家庭で養蚕が行われ、繭は絹の原料として国内の主要な輸出品だった。",
+      "howToBecomeJa": "養蚕を営む家に継ぐか、自治体や研究機関の指導を受けて新規に始める。",
+      "tags": [
+        "setting.farm",
+        "setting.workshop",
+        "subject.animal",
+        "subject.plant",
+        "subject.textile",
+        "action.nurture",
+        "action.clean-up",
+        "action.sort",
+        "sense.smell",
+        "sense.fingertip",
+        "sense.stamina",
+        "condition.seasonal",
+        "condition.few-practitioners",
+        "condition.apprenticeship",
+        "temperament.repeatable",
+        "temperament.physical",
+        "temperament.quiet-pride",
+        "industry.primary"
+      ],
+      "rarity": 5,
+      "familiarity": 1,
+      "lifecycle": "declining",
+      "sources": [
+        {
+          "titleJa": "農林水産省 養蚕",
+          "url": "https://www.maff.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     }
   ]
 }

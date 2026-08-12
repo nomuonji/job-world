@@ -2,6 +2,57 @@
   "industry": "ceremony",
   "jobs": [
     {
+      "slug": "buddhist-monk",
+      "nameJa": "僧侶",
+      "nameEn": "Buddhist Monk",
+      "aliasesJa": [
+        "お坊さん",
+        "住職",
+        "修行僧"
+      ],
+      "kanaJa": "そうりょ",
+      "emoji": "🕯️",
+      "summaryJa": "読経という反復で、遺された人に祈りのかたちを渡す。",
+      "descriptionJa": "寺院に属して読経や法要を執り行う職。葬儀や法事では、亡くなった人の冥福を祈るためのお経を唱え、遺族の心を落ち着かせる役割を担う。寺の運営や檀家との付き合い、地域行事への参加も仕事に含まれる。宗派によって作法が異なり、修行の内容も異なる。朝のお勤めから檀家の相談、葬儀の導師まで、寺を拠点に地域の生活と深く関わる。お経を唱えるだけでなく、寺の行事や境内の管理も日常の仕事に含まれる。",
+      "surpriseJa": "僧侶のお経は「聞くため」ではなく「行うため」に唱えられている。意味を言葉で説明するより、声と作法の反復によって祈りを成立させる世界があり、読経の正確さが重視される。",
+      "howToBecomeJa": "仏教系の大学や専門道場で修行を積み、所属寺院や宗派の承認を受ける。",
+      "tags": [
+        "setting.temple",
+        "setting.stage",
+        "subject.text",
+        "subject.deceased",
+        "subject.sound",
+        "action.perform",
+        "action.record",
+        "action.soothe",
+        "sense.hearing",
+        "sense.stillness",
+        "condition.public-service",
+        "condition.solo",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "temperament.listener",
+        "industry.ceremony"
+      ],
+      "rarity": 3,
+      "familiarity": 5,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "funeral-director",
+          "kind": "same-site",
+          "noteJa": "葬儀で導師を務める僧侶と、式の運営を担う葬祭ディレクターは同じ斎場で動いている。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "全日本仏教会",
+          "url": "https://www.jbf.ne.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "embalmer",
       "nameJa": "エンバーマー",
       "nameEn": "Embalmer",
@@ -30,7 +81,6 @@
         "condition.night-shift",
         "condition.solo",
         "temperament.unflinching",
-        "temperament.detail",
         "temperament.quiet-pride",
         "industry.ceremony"
       ],
@@ -89,6 +139,48 @@
       "updatedAt": "2026-08-06"
     },
     {
+      "slug": "flower-artist",
+      "nameJa": "生け花師",
+      "nameEn": "Flower Arranger",
+      "aliasesJa": [
+        "華道家",
+        "フラワーアーティスト"
+      ],
+      "kanaJa": "いけばなし",
+      "emoji": "🌸",
+      "summaryJa": "花の命の短さを、かたちに刻み込む。",
+      "descriptionJa": "花を生けること自体を仕事にする職。門下を持つ華道家もいれば、式典や店舗の装花を請け負うプロもいる。花は時間が経つと姿を変えるため、どのように向きを決め、どの枝を残すかが作品になる。生けるという行為は一期一会で、同じ花材でも二度と同じ形にはならない。流派によって花の生け方や思想は異なり、師範となれば門下の指導も行う。式典や催事の装花を請け負う場合は、会場の広さと花の分量を計算して構成を決める。",
+      "surpriseJa": "生け花では同じ花材・同じ花器でも、一度生けたものは二度と同じ形に戻せない。花が枯れることを前提に、その瞬間のかたちを決めるのがこの仕事の本質になっている。",
+      "howToBecomeJa": "華道の流派に入門し、師範の資格を得る。またはフラワーアレンジメントの専門学校を出る。",
+      "tags": [
+        "setting.temple",
+        "setting.stage",
+        "setting.workshop",
+        "subject.plant",
+        "subject.water",
+        "action.design",
+        "action.assemble",
+        "action.sort",
+        "sense.color",
+        "sense.fingertip",
+        "condition.apprenticeship",
+        "condition.seasonal",
+        "temperament.aesthetic",
+        "temperament.quiet-pride",
+        "industry.ceremony"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "華道教授協議会",
+          "url": "https://www.kado.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "funeral-director",
       "nameJa": "葬祭ディレクター",
       "nameEn": "Funeral Director",
@@ -136,6 +228,102 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "memorial-portrait-painter",
+      "nameJa": "遺影画家",
+      "nameEn": "Memorial Portrait Painter",
+      "aliasesJa": [
+        "遺影制作",
+        "肖像画家"
+      ],
+      "kanaJa": "いえいがか",
+      "emoji": "🖼️",
+      "summaryJa": "その人が生きた顔を、写真では足りない分まで描き出す。",
+      "descriptionJa": "故人の遺影を描く職。最近の写真から人物を写し取るのではなく、若い頃の写真や家族の記憶を頼りに、故人らしい表情を一枚にまとめる。写真は光の条件で顔が変わって見えるため、複数の写真から共通する骨格や目鼻立ちを読み取る観察力が要る。描き終えた後も、遺族がその絵を見たときの気持ちを想像して仕上げを調整する。写真が一枚しか残っていない場合は、その一枚から表情の作りを丁寧に読み取る。",
+      "surpriseJa": "遺影画家は似顔絵と違い、その人の最も印象に残る姿を再構成する。数枚の写真から同じ人物の違う表情を見比べて、骨格の共通点を読み取って描く。",
+      "howToBecomeJa": "画家としての技術を身につけたうえで、葬儀会社や遺影制作会社に制作を請け負う。",
+      "tags": [
+        "setting.workshop",
+        "setting.desk",
+        "subject.deceased",
+        "subject.light",
+        "subject.paper",
+        "action.design",
+        "action.record",
+        "action.restore",
+        "sense.color",
+        "sense.fine-motor",
+        "sense.fingertip",
+        "condition.freelance",
+        "condition.solo",
+        "temperament.aesthetic",
+        "temperament.listener",
+        "temperament.quiet-pride",
+        "industry.ceremony"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本遺影画家協会",
+          "url": "https://www.ieika.org/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "wedding-planner",
+      "nameJa": "ウエディングプランナー",
+      "nameEn": "Wedding Planner",
+      "aliasesJa": [
+        "ブライダルコーディネーター",
+        "婚礼プロデューサー"
+      ],
+      "kanaJa": "うえでぃんぐぷらんなー",
+      "emoji": "💍",
+      "summaryJa": "一日限りの本番に、本人が気づかない課題をすべて出す。",
+      "descriptionJa": "結婚式の進行を取り仕切る職。会場の下見、演出の決定、食事や衣装の手配、親族との打ち合わせまでを担当する。本番当日は、新郎新婦や親族に指示を出しながら、進行表どおりに式を動かす。本人たちが気づかない時間配分や移動、金銭面の調整もこの仕事に含まれる。当日の朝から会場の準備を確認し、式の開始時間に向けてすべてを整える。音響や照明、料理の提供時間まで、予定表に従って会場全体を動かす進行役でもある。",
+      "surpriseJa": "結婚式の失敗の多くは演出が豪華なことではなく、移動とタイミング。プランナーの仕事は目立つ演出より、本番のスケジュールを時間どおりに回すことにある。",
+      "howToBecomeJa": "結婚式場やブライダル会社に就職し、現場経験を積む。民間資格もある。",
+      "tags": [
+        "setting.stage",
+        "setting.outdoors",
+        "setting.someones-home",
+        "subject.money",
+        "subject.food",
+        "action.negotiate",
+        "action.design",
+        "action.serve",
+        "action.record",
+        "sense.stillness",
+        "sense.hearing",
+        "condition.peak-season",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.planner",
+        "temperament.improvise",
+        "temperament.listener",
+        "industry.ceremony"
+      ],
+      "rarity": 2,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "flower-artist",
+          "kind": "same-site",
+          "noteJa": "式の進行を組むプランナーと、会場を飾る生け花師は同じ挙式を一緒に作り上げる。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本ブライダル連盟",
+          "url": "https://www.jbf-wed.co.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     }
   ]
 }

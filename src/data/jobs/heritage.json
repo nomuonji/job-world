@@ -27,7 +27,6 @@
         "condition.travel",
         "condition.team",
         "condition.public-service",
-        "temperament.detail",
         "temperament.curious",
         "temperament.physical",
         "industry.heritage"
@@ -35,6 +34,13 @@
       "rarity": 4,
       "familiarity": 3,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "paleontologist",
+          "kind": "confusable",
+          "noteJa": "どちらも地面を掘って過去のものを出すが、発掘調査員は人の遺跡を、古生物学者は化石を扱う。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "文化庁 埋蔵文化財",
@@ -77,6 +83,13 @@
       "rarity": 4,
       "familiarity": 2,
       "lifecycle": "emerging",
+      "edges": [
+        {
+          "to": "digital-archivist",
+          "kind": "modern-successor",
+          "noteJa": "紙の資料を整理して残すアーキビストの仕事が、電子データを扱うデジタルアーキビストという形で現代に続いている。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "国立公文書館 認証アーキビスト",
@@ -84,6 +97,68 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "bookbinder",
+      "nameJa": "製本職人",
+      "nameEn": "Bookbinder",
+      "aliasesJa": [
+        "製本家",
+        "本の装幀"
+      ],
+      "kanaJa": "せいほんしょくにん",
+      "emoji": "📕",
+      "summaryJa": "紙の束を、綴じて背を貼って一冊の本に仕立てる。",
+      "descriptionJa": "紙を綴じて本の形にする職。本文を糸や糊で綴じ、背に布を貼り、表紙を付ける。手製本では一冊ずつ工程を進めるため、同じ本でも材料の状態に合わせて調整する。古い本の修理や、作家の装丁など少量生産の本を作る仕事が中心になりつつある。手製本では本文の用紙選びや綴じ方にもこだわり、長く開いても崩れない構造を作る。修理では元の製本の仕組みを調べて、できるだけ当時の姿に戻す。",
+      "surpriseJa": "本の背は「開いても割れない」ように作る。背の厚みと糊の量、糸の綴じ方が微妙に違うだけで、本を開いたときの開きやすさが変わる。",
+      "howToBecomeJa": "製本会社や製本工房に就職し、綴じと表紙の技術を学ぶ。",
+      "tags": [
+        "setting.workshop",
+        "setting.desk",
+        "subject.paper",
+        "subject.text",
+        "subject.textile",
+        "action.assemble",
+        "action.sew",
+        "action.measure",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "sense.color",
+        "condition.apprenticeship",
+        "condition.solo",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.heritage"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "washi-papermaker",
+          "kind": "supplies",
+          "noteJa": "製本に使う裏打ち用の紙や見返しに、和紙職人の紙が用いられる。"
+        },
+        {
+          "to": "book-editor",
+          "kind": "modern-successor",
+          "noteJa": "紙の束を本に仕立てていた製本職人の役割の一部は、本の形を企画してまとめる編集者の仕事に引き継がれている."
+        },
+        {
+          "to": "scroll-mounter",
+          "kind": "confusable",
+          "noteJa": "どちらも紙と糊を扱うが、製本職人は本を作り、表具師は掛け軸を仕立てる。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "全国製本業協同組合",
+          "url": "https://www.seihon.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "cultural-property-restorer",
@@ -135,6 +210,153 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "document-conservator",
+      "nameJa": "古文書修復士",
+      "nameEn": "Document Conservator",
+      "aliasesJa": [
+        "紙資料修復家",
+        "古文書修理"
+      ],
+      "kanaJa": "こもんじょしゅうふくし",
+      "emoji": "📜",
+      "summaryJa": "虫食いの紙を、新しい紙で裏から補って元に戻す。",
+      "descriptionJa": "古文書や古い書物の劣化を修理する職。紙が破れたり虫に食われたりした箇所を、和紙と糊で裏から補修する。修復は保存を目的とするため、元の状態をできるだけ保つ「最小限の介入」が原則になる。修復前後の状態を写真で記録し、どのような材料を使ったかも残す。修復に使う和紙や糊も保存に適したものを選び、将来の劣化を防ぐ。記録を残すことで、後から調査する人が修復の内容を理解できるようにする。",
+      "surpriseJa": "古文書の修復では、破れた部分を新しい紙で補うが、その紙は古い紙に合わせて漉かれる。色や繊維の向きまで合わせることで、修復した箇所が目立たなくなる。",
+      "howToBecomeJa": "文化財の修復を手がける工房や博物館で技術を学ぶ。保存科学の知識も求められる。",
+      "tags": [
+        "setting.workshop",
+        "setting.museum",
+        "subject.paper",
+        "subject.antique",
+        "subject.text",
+        "subject.lacquer",
+        "action.restore",
+        "action.record",
+        "action.assemble",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "sense.color",
+        "condition.few-practitioners",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.heritage"
+      ],
+      "rarity": 5,
+      "familiarity": 1,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "国文学研究資料館",
+          "url": "https://www.nijl.ac.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "fossil-preparator",
+      "nameJa": "化石復元技術者",
+      "nameEn": "Fossil Preparator",
+      "aliasesJa": [
+        "化石標本作成者",
+        "プレパラトール"
+      ],
+      "kanaJa": "かせきふくげんぎじゅつしゃ",
+      "emoji": "🦴",
+      "summaryJa": "岩に埋まった骨を、削って慎重に浮かび上がらせる。",
+      "descriptionJa": "発掘された化石の周囲の岩を取り除き、研究や展示に使える形にする職。化石は硬い岩の中に埋まっているため、ノミや細い道具で時間をかけて削り出す。骨を傷つけないために、岩の硬さと化石の硬さの違いを触感で見分ける。繊細な作業が多く、一つの標本に数年かかることもある。削り出した骨の表面をそのまま保存するために、補強材で固める作業も行う。研究に使える状態で標本を残すことが、後の研究者への引き継ぎになる。",
+      "surpriseJa": "化石を掘り出す作業は考古学ではなく、岩の中の骨を傷つけないようにする繊細な彫刻作業に近い。削りすぎれば数億年前の標本が台無しになる。",
+      "howToBecomeJa": "大学の研究室や博物館で技術を学ぶ。古生物学の知識と実技訓練の両方が要る。",
+      "tags": [
+        "setting.museum",
+        "setting.laboratory",
+        "setting.workshop",
+        "subject.stone",
+        "subject.animal",
+        "subject.antique",
+        "action.restore",
+        "action.shave",
+        "action.measure",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "sense.tilt",
+        "condition.few-practitioners",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.heritage"
+      ],
+      "rarity": 5,
+      "familiarity": 1,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "国立科学博物館",
+          "url": "https://www.kahaku.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "museum-curator",
+      "nameJa": "学芸員",
+      "nameEn": "Museum Curator",
+      "aliasesJa": [
+        "キュレーター",
+        "博物館研究員"
+      ],
+      "kanaJa": "がくげいいん",
+      "emoji": "🏛️",
+      "summaryJa": "収蔵品を整理し、その意味を展示という形で語る。",
+      "descriptionJa": "博物館や美術館で資料の収集・保存・研究・展示を担う職。収蔵品の状態を調べ、データベースに記録し、安全に保管する。展示を企画する際は、資料の意味を調べて伝え方や順序を考える。学芸員資格を持つ人が務めるが、採用枠は少なく、非常勤や嘱託での勤務が多い。展示の企画では資料の説明文を書き、並べる順序や照明の向きまで考える。館内の案内や講演会の準備など、来館者と資料を結ぶ仕事も担う。",
+      "surpriseJa": "博物館の展示で見えるのは収蔵品のほんの一部で、大半は収蔵庫で保管されている。学芸員の仕事の中心は、見えないところで資料を守り記録を残すことにある。",
+      "howToBecomeJa": "学芸員資格を取得し、博物館や美術館の採用試験に応募する。大学院修了が有利な場合も多い。",
+      "tags": [
+        "setting.museum",
+        "setting.desk",
+        "setting.laboratory",
+        "subject.antique",
+        "subject.text",
+        "subject.paper",
+        "action.record",
+        "action.sort",
+        "action.design",
+        "action.investigate",
+        "sense.stillness",
+        "sense.color",
+        "condition.certification",
+        "condition.team",
+        "condition.public-service",
+        "temperament.curious",
+        "temperament.planner",
+        "industry.heritage"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "fossil-preparator",
+          "kind": "front-and-back",
+          "noteJa": "展示室で化石を見せるのが学芸員、収蔵庫で化石を整えるのが復元技術者。同じ標本の表と裏を担う。"
+        },
+        {
+          "to": "archaeological-excavator",
+          "kind": "front-and-back",
+          "noteJa": "発掘した遺物を展示するまでが学芸員の仕事。掘り出す側と見せる側で、同じ出土品の表裏を分担する。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本博物館協会",
+          "url": "https://www.j-muse.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "scroll-mounter",

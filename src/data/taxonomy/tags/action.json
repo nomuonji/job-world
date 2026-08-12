@@ -49,7 +49,8 @@
         "編む",
         "織る"
       ],
-      "criteriaJa": "糸や紐を通して構造をつくる場合。"
+      "criteriaJa": "糸や紐を通して構造をつくる場合。",
+      "parentId": "action.assemble"
     },
     {
       "id": "action.weld",
@@ -61,7 +62,8 @@
         "接合",
         "つなぐ"
       ],
-      "criteriaJa": "別々のものを永続的に結合する場合。"
+      "criteriaJa": "別々のものを永続的に結合する場合。",
+      "parentId": "action.assemble"
     },
     {
       "id": "action.assemble",
@@ -97,7 +99,8 @@
         "修復",
         "繕う"
       ],
-      "criteriaJa": "壊れた・傷んだものを元の状態に近づける場合。"
+      "criteriaJa": "壊れた・傷んだものを元の状態に近づける場合。",
+      "parentId": "action.assemble"
     },
     {
       "id": "action.sort",
@@ -349,6 +352,54 @@
         "リサーチ"
       ],
       "criteriaJa": "分からないことを手がかりから明らかにする場合。"
+    },
+    {
+      "id": "action.cook",
+      "facet": "action",
+      "slug": "cook",
+      "labelJa": "調理する",
+      "aliasesJa": [
+        "加熱調理",
+        "火を通す",
+        "料理を作る"
+      ],
+      "criteriaJa": "食材を加熱・加工して食べられる状態にする場合。"
+    },
+    {
+      "id": "action.train",
+      "facet": "action",
+      "slug": "train",
+      "labelJa": "訓練する",
+      "aliasesJa": [
+        "調教",
+        "しつけ",
+        "育成"
+      ],
+      "criteriaJa": "人や動物に特定の行動を反復させて身につけさせる場合。"
+    },
+    {
+      "id": "action.serve",
+      "facet": "action",
+      "slug": "serve",
+      "labelJa": "提供する・給仕する",
+      "aliasesJa": [
+        "サービス",
+        "給仕",
+        "案内"
+      ],
+      "criteriaJa": "客・利用者にものを届けたり出したりすることが仕事の中心にある場合。"
+    },
+    {
+      "id": "action.judge",
+      "facet": "action",
+      "slug": "judge",
+      "labelJa": "判定する",
+      "aliasesJa": [
+        "審判",
+        "採点",
+        "判定"
+      ],
+      "criteriaJa": "勝敗・正誤・合否を公の場で最終的に決める場合。"
     }
   ]
 }

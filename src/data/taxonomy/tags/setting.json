@@ -61,7 +61,8 @@
         "坑内",
         "地下空間"
       ],
-      "criteriaJa": "地下坑道・下水道・トンネルなど、地表より下が作業場である場合。"
+      "criteriaJa": "地下坑道・下水道・トンネルなど、地表より下が作業場である場合。",
+      "parentId": "setting.confined"
     },
     {
       "id": "setting.high-place",
@@ -73,7 +74,8 @@
         "高所作業",
         "足場の上"
       ],
-      "criteriaJa": "墜落防止の装備や資格が要る高さで働く場合。ビルの上階で働くだけでは付けない。"
+      "criteriaJa": "墜落防止の装備や資格が要る高さで働く場合。ビルの上階で働くだけでは付けない。",
+      "parentId": "setting.outdoors"
     },
     {
       "id": "setting.confined",
@@ -109,7 +111,8 @@
         "キッチン",
         "台所"
       ],
-      "criteriaJa": "食品を扱う調理空間が主たる作業場である場合。"
+      "criteriaJa": "食品を扱う調理空間が主たる作業場である場合。",
+      "parentId": "setting.workshop"
     },
     {
       "id": "setting.workshop",
@@ -180,7 +183,8 @@
         "航空機内",
         "機内"
       ],
-      "criteriaJa": "飛行中の機体または成層圏以上が職場である場合。"
+      "criteriaJa": "飛行中の機体または成層圏以上が職場である場合。",
+      "parentId": "setting.outdoors"
     },
     {
       "id": "setting.temple",
@@ -204,7 +208,8 @@
         "バックステージ",
         "楽屋"
       ],
-      "criteriaJa": "観客から見えない側で公演を成立させる持ち場である場合。"
+      "criteriaJa": "観客から見えない側で公演を成立させる持ち場である場合。",
+      "parentId": "setting.stage"
     },
     {
       "id": "setting.stage",
@@ -228,7 +233,8 @@
         "辺境",
         "島"
       ],
-      "criteriaJa": "人口が少なく交通が限られる土地に赴くことが前提の場合。"
+      "criteriaJa": "人口が少なく交通が限られる土地に赴くことが前提の場合。",
+      "parentId": "setting.outdoors"
     },
     {
       "id": "setting.someones-home",
@@ -252,7 +258,8 @@
         "事故現場",
         "撤去現場"
       ],
-      "criteriaJa": "住人・利用者が去った後に入る仕事に付ける。"
+      "criteriaJa": "住人・利用者が去った後に入る仕事に付ける。",
+      "parentId": "setting.someones-home"
     },
     {
       "id": "setting.museum",
@@ -288,7 +295,8 @@
         "深夜",
         "夜間"
       ],
-      "criteriaJa": "人が寝ている時間帯の市街が職場である場合。"
+      "criteriaJa": "人が寝ている時間帯の市街が職場である場合。",
+      "parentId": "setting.outdoors"
     },
     {
       "id": "setting.desk",
@@ -301,6 +309,59 @@
         "室内作業"
       ],
       "criteriaJa": "座って手元の紙・画面に向かい続けることが作業の中心である場合。"
+    },
+    {
+      "id": "setting.salon",
+      "facet": "setting",
+      "slug": "salon",
+      "labelJa": "美容院・サロン",
+      "aliasesJa": [
+        "美容室",
+        "理髪店",
+        "施術室"
+      ],
+      "criteriaJa": "美容・理容の施術空間が主たる職場である場合。",
+      "parentId": "setting.workshop"
+    },
+    {
+      "id": "setting.studio",
+      "facet": "setting",
+      "slug": "studio",
+      "labelJa": "録音・撮影スタジオ",
+      "aliasesJa": [
+        "録音室",
+        "スタジオ",
+        "撮影所"
+      ],
+      "criteriaJa": "音や映像を収録・編集するための空間が職場である場合。",
+      "parentId": "setting.workshop"
+    },
+    {
+      "id": "setting.arena",
+      "facet": "setting",
+      "slug": "arena",
+      "labelJa": "競技場・大規模会場",
+      "aliasesJa": [
+        "スタジアム",
+        "競技場",
+        "ライブ会場"
+      ],
+      "criteriaJa": "競技場・ライブ会場など、大規模な催しが開かれる場所が職場である場合。",
+      "parentId": "setting.stage"
+    },
+    {
+      "id": "setting.farm",
+      "facet": "setting",
+      "slug": "farm",
+      "labelJa": "農地・牧場",
+      "aliasesJa": [
+        "畑",
+        "牧場",
+        "農場",
+        "果樹園"
+      ],
+      "criteriaJa": "作物や家畜を育てる農場・牧場が主たる作業場である場合。",
+      "parentId": "setting.outdoors"
     }
   ]
 }

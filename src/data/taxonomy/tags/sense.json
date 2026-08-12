@@ -23,7 +23,8 @@
         "利き",
         "官能評価"
       ],
-      "criteriaJa": "味の判別が業務の判断に直結する場合。調理そのものは action 側に付ける。"
+      "criteriaJa": "味の判別が業務の判断に直結する場合。調理そのものは action 側に付ける。",
+      "parentId": "sense.smell"
     },
     {
       "id": "sense.hearing",
@@ -131,7 +132,21 @@
         "巧緻性",
         "細かい手作業"
       ],
-      "criteriaJa": "ミリ以下の精度で手を動かすことが要る場合。触覚での判断は sense.fingertip に付ける。"
+      "criteriaJa": "ミリ以下の精度で手を動かすことが要る場合。触覚での判断は sense.fingertip に付ける。",
+      "parentId": "sense.fingertip"
+    },
+    {
+      "id": "sense.temperature",
+      "facet": "sense",
+      "slug": "temperature",
+      "labelJa": "温度を見分ける",
+      "aliasesJa": [
+        "温度感覚",
+        "熱さの判断",
+        "温度差"
+      ],
+      "criteriaJa": "温度のわずかな差を手や見た目で判断することが成果を左右する場合。",
+      "parentId": "sense.fingertip"
     }
   ]
 }

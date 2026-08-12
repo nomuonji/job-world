@@ -2,6 +2,112 @@
   "industry": "public",
   "jobs": [
     {
+      "slug": "customs-inspector",
+      "nameJa": "税関職員",
+      "nameEn": "Customs Inspector",
+      "aliasesJa": [
+        "税関調査官",
+        "通関検査官"
+      ],
+      "kanaJa": "ぜいかんしょくいん",
+      "emoji": "🛃",
+      "summaryJa": "大量の荷物の中から、隠された密輸品を見つけ出す。",
+      "descriptionJa": "税関で輸出入される貨物や携行品を検査する公務員職。法律で禁じられている物や、関税を逃れた品物が含まれていないかを確認する。検査は膨大な量の荷物に対して行われるため、機械での検査と、職員による目視と質問を組み合わせる。不審な内容を見抜く観察力が求められる。通関手続きでは申告書と貨物の内容を照合し、不一致があれば確認する。税関の判断が輸出者の手続きに影響するため、根拠を明確にして対応する。",
+      "surpriseJa": "税関の検査は「全部を見る」のではなく、リスクのあるものだけを重点的に見る。大量の貨物の中で、申告内容と中身が違うものを見つける判断が仕事になる。",
+      "howToBecomeJa": "財務専門官の採用試験に合格し、税関に配属される。",
+      "tags": [
+        "setting.outdoors",
+        "setting.ship",
+        "setting.arena",
+        "subject.law",
+        "subject.machine",
+        "subject.metal",
+        "subject.waste",
+        "action.investigate",
+        "action.sort",
+        "action.negotiate",
+        "sense.night-vision",
+        "sense.smell",
+        "sense.color",
+        "condition.public-service",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.improvise",
+        "temperament.unflinching",
+        "industry.public"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "cargo-handler",
+          "kind": "same-site",
+          "noteJa": "港で貨物を検査する税関職員と、それを動かす荷役作業員は同じコンテナヤードで作業する。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "税関",
+          "url": "https://www.customs.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "detective",
+      "nameJa": "刑事",
+      "nameEn": "Detective",
+      "aliasesJa": [
+        "刑事警察",
+        "捜査員"
+      ],
+      "kanaJa": "けいじ",
+      "emoji": "🕵️",
+      "summaryJa": "現場に残った痕跡と、人の話の矛盾から真相に近づく。",
+      "descriptionJa": "警察で犯罪の捜査を担う職。事件の現場に駆けつけ、証拠の保全と関係者への聞き込みを行う。証言には矛盾が含まれるため、複数の話を突き合わせて事実を確定していく。捜査が長期化することも多く、張り込みや尾行など、体力を使う仕事と記録をまとめる事務の仕事の両方が含まれる。",
+      "surpriseJa": "刑事の仕事は事件を解決することより、証言と証拠の矛盾を潰すこと。人の記憶は曖昧なため、複数の証言を突き合わせて事実を確定する地道な作業が中心になる。",
+      "howToBecomeJa": "警察官採用試験に合格し、所轄の署で経験を積んで捜査部署へ配属される。",
+      "tags": [
+        "setting.night-city",
+        "setting.after-people",
+        "setting.outdoors",
+        "subject.law",
+        "subject.text",
+        "subject.machine",
+        "action.investigate",
+        "action.diagnose",
+        "action.negotiate",
+        "sense.hearing",
+        "sense.night-vision",
+        "sense.stillness",
+        "condition.public-service",
+        "condition.night-shift",
+        "condition.on-call",
+        "temperament.curious",
+        "temperament.improvise",
+        "temperament.unflinching",
+        "industry.public"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "forensic-scientist",
+          "kind": "same-site",
+          "noteJa": "現場で証拠を集める刑事と、それを分析する法科学者は、一つの事件を別々の方法で調べている。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "警察庁",
+          "url": "https://www.npa.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "fire-investigator",
       "nameJa": "火災調査官",
       "nameEn": "Fire Investigator",
@@ -38,6 +144,13 @@
       "rarity": 4,
       "familiarity": 2,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "detective",
+          "kind": "same-site",
+          "noteJa": "放火の疑いがある火災では、消防の火災調査官と警察の刑事が同じ現場で合同捜査する。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "総務省消防庁",
@@ -45,6 +158,95 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "judge",
+      "nameJa": "裁判官",
+      "nameEn": "Judge",
+      "aliasesJa": [
+        "判事",
+        "裁判所の裁判官"
+      ],
+      "kanaJa": "さいばんかん",
+      "emoji": "⚖️",
+      "summaryJa": "当事者の言い分を両方聞いて、一本の判決にまとめる。",
+      "descriptionJa": "裁判所で争いを審理し、判決を出す職。両当事者の主張と証拠を検討し、法律に照らして判断を下す。判断の根拠は判決文として書かれ、誰が見ても理由が分かるようにする。事件の種類は民事・刑事・家事と幅広く、判決が社会に与える影響も大きい。審理では双方の主張を聞き、証拠の信頼性を検討する。判決には理由を詳しく書くことで、当事者だけでなく社会に対して判断を示す。",
+      "surpriseJa": "裁判官の仕事は「正しい結論」を出すことより、その結論に至った理由を判決文で説明し尽くすこと。理由が書けなければ判決として成立しない。",
+      "howToBecomeJa": "法科大学院や司法試験を経て、司法修習を修了し裁判官に任官する。",
+      "tags": [
+        "setting.desk",
+        "setting.stage",
+        "subject.law",
+        "subject.text",
+        "subject.data",
+        "action.judge",
+        "action.record",
+        "action.investigate",
+        "sense.hearing",
+        "sense.stillness",
+        "condition.public-service",
+        "condition.team",
+        "temperament.listener",
+        "temperament.curious",
+        "temperament.quiet-pride",
+        "industry.public"
+      ],
+      "rarity": 3,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "裁判所",
+          "url": "https://www.courts.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "mountain-rescue",
+      "nameJa": "山岳救助隊",
+      "nameEn": "Mountain Rescue Team",
+      "aliasesJa": [
+        "山岳レスキュー",
+        "県警山岳救助隊"
+      ],
+      "kanaJa": "さんがくきゅうじょたい",
+      "emoji": "⛰️",
+      "summaryJa": "天候と地形の悪い山で、動けなくなった人を背負って降ろす。",
+      "descriptionJa": "山で遭難した人を救助する職。警察や消防の山岳救助隊が中心で、要請を受けると悪天候の中を山に入る。救助では搬送される本人の安全だけでなく、救助隊員自身の安全も常に考えなければならない。ヘリコプターでの救助や、ロープを使った搬送など、専門技術を要する。救助の要請は急に来るため、装備の確認と訓練の積み重ねが生きる。遭難者を無事に下山させたあとも、現場の状況の記録を残す。",
+      "surpriseJa": "山岳救助で事故の原因になるのは、救助される人より救助隊員の滑落。自分の命を守りながら人を助けるため、救助の手順は安全確認が最優先で組まれている。",
+      "howToBecomeJa": "警察官や消防士として採用され、山岳救助の専門研修を受ける。",
+      "tags": [
+        "setting.mountain",
+        "setting.outdoors",
+        "setting.high-place",
+        "subject.human-body",
+        "subject.deceased",
+        "subject.machine",
+        "action.climb",
+        "action.carry",
+        "action.diagnose",
+        "sense.stamina",
+        "sense.balance",
+        "sense.night-vision",
+        "condition.public-service",
+        "condition.danger",
+        "condition.on-call",
+        "temperament.unflinching",
+        "temperament.calm",
+        "temperament.physical",
+        "industry.public"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "警察庁 山岳遭難対策",
+          "url": "https://www.npa.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     }
   ]
 }

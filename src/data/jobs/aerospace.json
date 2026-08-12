@@ -41,6 +41,11 @@
           "to": "airline-pilot",
           "kind": "front-and-back",
           "noteJa": "同じ一機の飛行を、片方は操縦席から、片方は地上の画面から見ている。互いの声しか知らないまま毎日組んでいる。"
+        },
+        {
+          "to": "airport-ramp-agent",
+          "kind": "same-site",
+          "noteJa": "滑走路の順番を決める管制官と、地上で機体を動かすハンドリングは同じ空港の運用を分担している。"
         }
       ],
       "sources": [
@@ -50,6 +55,104 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "aircraft-maintenance-engineer",
+      "nameJa": "航空整備士",
+      "nameEn": "Aircraft Maintenance Engineer",
+      "aliasesJa": [
+        "整備士",
+        "航空機整備士"
+      ],
+      "kanaJa": "こうくうせいびし",
+      "emoji": "🔧",
+      "summaryJa": "一便一便、寿命が決められた部品の交換と照合を繰り返す。",
+      "descriptionJa": "飛行機の機体・エンジン・装備を整備する国家資格職。部品は飛行時間や離着陸回数で寿命が定められており、その履歴を記録し、指定回数に達した部品を漏れなく交換する。作業は深夜の駐機場や格納庫で行われることが多い。見落としがそのまま事故になるため、作業のあと別の整備士が確認するダブルチェックが制度化されている。",
+      "surpriseJa": "航空整備士の仕事は「壊れたから直す」ではなく「壊れる前に全部交換する」。部品の寿命が飛行時間で管理され、記録と照合が業務の大半を占める。",
+      "howToBecomeJa": "航空整備士養成施設を卒業し、国家試験に合格する。航空会社や整備会社に就職する。",
+      "tags": [
+        "setting.sky",
+        "setting.outdoors",
+        "setting.high-place",
+        "subject.machine",
+        "subject.metal",
+        "subject.data",
+        "action.restore",
+        "action.measure",
+        "action.record",
+        "action.disassemble",
+        "sense.hearing",
+        "sense.fingertip",
+        "sense.tilt",
+        "condition.national-license",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.aerospace"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "airport-ramp-agent",
+          "kind": "same-site",
+          "noteJa": "駐機場で機体を整備する整備士と、地上作業を回すグランドハンドリングは同じ時間帯に同じ機体を相手にする。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "国土交通省 航空整備士",
+          "url": "https://www.mlit.go.jp/koku/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "airport-ramp-agent",
+      "nameJa": "グランドハンドリング",
+      "nameEn": "Ramp Agent",
+      "aliasesJa": [
+        "ランプエージェント",
+        "空港地上支援作業員"
+      ],
+      "kanaJa": "ぐらんどはんどりんぐ",
+      "emoji": "🛬",
+      "summaryJa": "飛行機が止まってから離れるまで、地上のすべてを時計通りに回す。",
+      "descriptionJa": "空港で飛行機の地上作業を請け負う職。到着するとバッテリーや電源を接続し、荷物を降ろし、燃料を入れ、清掃が終われば次の搭乗に間に合うよう再び積み込む。スケジュールは数分単位で決まっており、天候で遅れた分を取り戻すために地上作業が圧縮される。整備・貨物・客室の各部署の進行役も担う。",
+      "surpriseJa": "飛行機の時間を守っているのはパイロットではなく、駐機時間を管理する地上作業員。出発が遅れる原因の多くは空港の混雑で、その回復は地上で行われる。",
+      "howToBecomeJa": "空港の地上業務会社に就職する。未経験から始められる職だが、資格取得で担当範囲が広がる。",
+      "tags": [
+        "setting.outdoors",
+        "setting.sky",
+        "subject.machine",
+        "subject.waste",
+        "action.carry",
+        "action.clean-up",
+        "action.watch",
+        "action.serve",
+        "sense.stamina",
+        "sense.hearing",
+        "condition.night-shift",
+        "condition.team",
+        "condition.seasonal",
+        "temperament.improvise",
+        "temperament.speed",
+        "temperament.physical",
+        "industry.aerospace"
+      ],
+      "rarity": 3,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "国土交通省 空港",
+          "url": "https://www.mlit.go.jp/koku/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "astronaut",
@@ -88,6 +191,13 @@
       "rarity": 5,
       "familiarity": 5,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "rocket-launch-technician",
+          "kind": "front-and-back",
+          "noteJa": "宇宙へ飛ぶ側が宇宙飛行士、地上で打ち上げを支えるのが射場技術者。同じミッションの表と裏の顔になる。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "JAXA 宇宙飛行士",
@@ -95,6 +205,206 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "drone-pilot",
+      "nameJa": "ドローンパイロット",
+      "nameEn": "Drone Pilot",
+      "aliasesJa": [
+        "無人航空機操縦士",
+        "空撮パイロット"
+      ],
+      "kanaJa": "どろーんぱいろっと",
+      "emoji": "🛸",
+      "summaryJa": "空から田んぼや橋を調べる、いま増えている運転の仕事。",
+      "descriptionJa": "無人航空機を操縦して撮影・点検・散布などを行う職。橋の点検や太陽光パネルの保守、農薬散布、測量など、人が入りにくい場所の調査に使われる。操縦そのものより、空域のルール確認と飛行前のリスク評価、そして落としたときの責任を持つことが仕事の中核になってきている。目視外飛行には機体と資格の要件が定められている。",
+      "surpriseJa": "ドローンパイロットの事故の多くは飛行中ではなく、バッテリーと墜落を想定した飛行計画を立てられないことが原因。空を飛ばす技術より地上のルールとリスク管理が本業になりつつある。",
+      "howToBecomeJa": "無人航空機の国家資格を取得し、農薬散布や測量などの専門会社に所属する経路が増えている。",
+      "tags": [
+        "setting.sky",
+        "setting.outdoors",
+        "subject.machine",
+        "subject.data",
+        "subject.plant",
+        "action.operate-vehicle",
+        "action.watch",
+        "action.measure",
+        "action.record",
+        "sense.night-vision",
+        "sense.stillness",
+        "condition.certification",
+        "condition.seasonal",
+        "condition.solo",
+        "temperament.speed",
+        "temperament.quiet-pride",
+        "industry.aerospace"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "emerging",
+      "edges": [
+        {
+          "to": "airline-pilot",
+          "kind": "confusable",
+          "noteJa": "どちらも空を飛ばす操縦だが、ドローンは機体を見ながら地上から飛ばす運転に近い仕事だ。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "国土交通省 無人航空機",
+          "url": "https://www.mlit.go.jp/koku/koku_tk10_000003.html"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "flight-attendant",
+      "nameJa": "客室乗務員",
+      "nameEn": "Flight Attendant",
+      "aliasesJa": [
+        "CA",
+        "キャビンアテンダント",
+        "客室乗務員"
+      ],
+      "kanaJa": "きゃくしつじょうむいん",
+      "emoji": "✈️",
+      "summaryJa": "機内を支配する安全規則を、笑顔の裏で毎便実行する。",
+      "descriptionJa": "機内で乗客の安全と快適を担う職。法規上、客室乗務員の第一の任務は安全管理で、救命胴衣のデモや非常口の確認、離着陸時の確認作業が毎便繰り返される。飲み物のサービスはその後の仕事。不穏な乗客への対応や急病人の処置など、マニュアルの枠外で判断を求められる場面も多く、機長との連絡役としての機能も持つ。",
+      "surpriseJa": "離着陸のたびに行う救命胴衣のデモは、乗客へのお知らせではなく、法律で義務づけられた確認作業。客室乗務員の時間の大半はサービスではなく安全確認に使われている。",
+      "howToBecomeJa": "航空会社の採用試験を受ける。語学力と救護の訓練を要する。",
+      "tags": [
+        "setting.sky",
+        "subject.human-body",
+        "subject.food",
+        "action.serve",
+        "action.watch",
+        "action.soothe",
+        "sense.balance",
+        "condition.national-license",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.listener",
+        "temperament.improvise",
+        "temperament.calm",
+        "industry.aerospace"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "airline-pilot",
+          "kind": "same-site",
+          "noteJa": "同じ機体のなかで、操縦室と客室に分かれて一便の安全を支えている。"
+        },
+        {
+          "to": "aircraft-maintenance-engineer",
+          "kind": "front-and-back",
+          "noteJa": "客に表れるのが客室乗務員、客の見えないところで機体を守るのが整備士。一便の安全はこの表と裏で成り立っている。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "国土交通省 航空運送",
+          "url": "https://www.mlit.go.jp/koku/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "rocket-launch-technician",
+      "nameJa": "ロケット射場技術者",
+      "nameEn": "Rocket Launch Technician",
+      "aliasesJa": [
+        "射場整備技術者",
+        "ロケット打上げ作業員"
+      ],
+      "kanaJa": "ろけっとしゃじょうぎじゅつしゃ",
+      "emoji": "🚀",
+      "summaryJa": "数秒の打ち上げのために、数か月かけて機体と地上を整える。",
+      "descriptionJa": "ロケットの打ち上げを支える射場の技術職。機体の整備、推進薬の充填、地上設備の点検、カウントダウン時の確認作業までを担う。打ち上げの本番は数十秒から数分だが、そのために機体と射場の全設備を何か月もかけて確認し続ける。天候や風の予測に合わせて打ち上げ時刻を決める判断にも関わる。",
+      "surpriseJa": "ロケット射場の仕事は「打ち上げる瞬間」より、そこで起きるすべての失敗を事前に見つけること。本番より射場にいる時間のほうが圧倒的に長い。",
+      "howToBecomeJa": "宇宙機関や射場関連企業に就職し、機体整備や推進系の専門訓練を受ける。",
+      "tags": [
+        "setting.outdoors",
+        "setting.laboratory",
+        "setting.sterile-room",
+        "subject.machine",
+        "subject.metal",
+        "subject.fire",
+        "subject.data",
+        "action.assemble",
+        "action.measure",
+        "action.watch",
+        "action.record",
+        "sense.tilt",
+        "sense.hearing",
+        "sense.stillness",
+        "condition.night-shift",
+        "condition.team",
+        "condition.danger",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.calm",
+        "industry.aerospace"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "JAXA 射場施設",
+          "url": "https://www.jaxa.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "satellite-controller",
+      "nameJa": "人工衛星運用管制官",
+      "nameEn": "Satellite Controller",
+      "aliasesJa": [
+        "衛星運用管制員",
+        "人工衛星管制官"
+      ],
+      "kanaJa": "じんこうえいせいうんようかんせいかん",
+      "emoji": "🛰️",
+      "summaryJa": "宇宙に置いた機械の体調を、地上から交代で見守り続ける。",
+      "descriptionJa": "軌道上の人工衛星を地上から運用・監視する職。衛星は故障しても宇宙に出て修理できないため、届くのはテレメトリという数値の列だけになる。それを常時監視し、不調の兆候を見つけたら姿勢制御や電源の設定を地上から送って対応する。観測や通信の予定を組むスケジューリングも担い、24時間の交代制で運用が続く。",
+      "surpriseJa": "宇宙にいる衛星は、地球との間で行き来する文字列の信号だけで生きている。運用管制官は機体そのものを見たことがなくても、その機体の健康状態を数値から判断する。",
+      "howToBecomeJa": "宇宙機関や衛星運用会社に就職し、衛星運用の訓練を受ける。",
+      "tags": [
+        "setting.desk",
+        "setting.laboratory",
+        "setting.sterile-room",
+        "subject.sky-body",
+        "subject.machine",
+        "subject.data",
+        "action.watch",
+        "action.measure",
+        "action.record",
+        "action.diagnose",
+        "sense.stillness",
+        "sense.hearing",
+        "condition.night-shift",
+        "condition.team",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.calm",
+        "industry.aerospace"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "emerging",
+      "sources": [
+        {
+          "titleJa": "JAXA 衛星運用",
+          "url": "https://www.jaxa.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     }
   ]
 }

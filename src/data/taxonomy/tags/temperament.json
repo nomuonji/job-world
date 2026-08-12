@@ -132,6 +132,31 @@
         "凝り性"
       ],
       "criteriaJa": "分からないことを掘り下げ続ける姿勢が職能である場合。"
+    },
+    {
+      "id": "temperament.speed",
+      "facet": "temperament",
+      "slug": "speed",
+      "labelJa": "速さが身上",
+      "aliasesJa": [
+        "高速",
+        "瞬発力",
+        "素早さ"
+      ],
+      "criteriaJa": "同じ精度を他人より速く出すことがその人の価値になる場合。"
+    },
+    {
+      "id": "temperament.calm",
+      "facet": "temperament",
+      "slug": "calm",
+      "labelJa": "平静でいられる",
+      "aliasesJa": [
+        "冷静",
+        "平常心",
+        "動揺しない"
+      ],
+      "criteriaJa": "周囲が慌てる状況でも手順を変えず進められることが必要な場合。",
+      "parentId": "temperament.unflinching"
     }
   ]
 }

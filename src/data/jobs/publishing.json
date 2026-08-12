@@ -2,6 +2,50 @@
   "industry": "publishing",
   "jobs": [
     {
+      "slug": "book-editor",
+      "nameJa": "編集者",
+      "nameEn": "Book Editor",
+      "aliasesJa": [
+        "本の編集者",
+        "書籍編集"
+      ],
+      "kanaJa": "へんしゅうしゃ",
+      "emoji": "📚",
+      "summaryJa": "作者の原稿を、読者に届くかたちにまで引き上げる。",
+      "descriptionJa": "本や雑誌を作る職。企画を立てて著者を探し、原稿の構成を考え、内容をチェックして本の形に仕上げる。校正や印刷の手配、装丁の依頼まで、本ができるまでの工程を管理する。著者と読者の間に立ち、両者が満足する作品を作ることが仕事の中心になる。著者との打ち合わせでは構成や締切を決め、原稿の進行を管理する。印刷や装丁の見本を確認して、読者の手に届く形を整える。",
+      "surpriseJa": "編集者の仕事は「直すこと」ではなく、著者の意図を壊さずに読者に伝わる形にすること。校正の赤字は少ないほど良いと言われ、編集は添削より企画と調整に時間を使う。",
+      "howToBecomeJa": "出版社の採用試験に合格して入社する。フリーの編集者として独立する人もいる。",
+      "tags": [
+        "setting.desk",
+        "subject.text",
+        "subject.paper",
+        "subject.data",
+        "action.design",
+        "action.negotiate",
+        "action.sort",
+        "action.record",
+        "sense.stillness",
+        "sense.color",
+        "condition.peak-season",
+        "condition.freelance",
+        "condition.team",
+        "temperament.curious",
+        "temperament.planner",
+        "temperament.listener",
+        "industry.publishing"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本出版者協議会",
+          "url": "https://shuppan-kyokai.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
       "slug": "letterpress-printer",
       "nameJa": "活版印刷職人",
       "nameEn": "Letterpress Printer",
@@ -42,6 +86,11 @@
           "to": "typeface-designer",
           "kind": "modern-successor",
           "noteJa": "金属を彫って作られていた文字は、いま画面の上で描かれている。扱うものが鉛からデータに変わっただけで、字の形を決める仕事は続いている。"
+        },
+        {
+          "to": "bookbinder",
+          "kind": "same-site",
+          "noteJa": "印刷した紙を綴じて本にする製本職人と、活字を組んで刷る活版印刷職人は同じ出版の工程に並んでいる."
         }
       ],
       "sources": [
@@ -51,6 +100,99 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "literary-translator",
+      "nameJa": "翻訳者",
+      "nameEn": "Literary Translator",
+      "aliasesJa": [
+        "通訳者",
+        "翻訳家"
+      ],
+      "kanaJa": "ほんやくしゃ",
+      "emoji": "🌐",
+      "summaryJa": "相手の言語を、読み手の言語で再構築する。",
+      "descriptionJa": "外国語の文章や書籍を日本語に、またはその逆に訳す職。翻訳は単語の置き換えではなく、原文の意味とニュアンスを別の言語で作り直す作業になる。文学作品では文体やリズムまで訳に反映させる。書籍の翻訳のほか、映画の字幕やビジネス文書を扱う翻訳者もいる。原文を読み込んで作者の意図を捉え、日本語として自然な文章に直す。誤訳を防ぐため、専門用語や固有名詞の確認も丁寧に行う。",
+      "surpriseJa": "翻訳で一番難しいのは言葉の意味ではなく、原文が持つ「間」と文脈の再現。同じ意味でも、言葉を選ぶ順序で読み手に与える印象が変わる。",
+      "howToBecomeJa": "外国語を専門に学び、翻訳の仕事を請け負う。出版社の翻訳者を目指す場合は、実績を作ることが第一歩になる。",
+      "tags": [
+        "setting.desk",
+        "subject.text",
+        "subject.paper",
+        "subject.voice",
+        "action.translate",
+        "action.investigate",
+        "action.record",
+        "sense.stillness",
+        "sense.hearing",
+        "condition.freelance",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.curious",
+        "temperament.solitude",
+        "industry.publishing"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本翻訳者協会",
+          "url": "https://www.jft.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "manga-assistant",
+      "nameJa": "漫画家アシスタント",
+      "nameEn": "Manga Assistant",
+      "aliasesJa": [
+        "作画アシスタント",
+        "漫画制作"
+      ],
+      "kanaJa": "まんがかあしすたんと",
+      "emoji": "🖊️",
+      "summaryJa": "原作者の頭の中の絵を、締切に合わせて描き起こす。",
+      "descriptionJa": "プロの漫画家の作画を補助する職。背景やベタ、トーンなどの作業を分担し、漫画家が絵を仕上げるのを支える。締切までの作業量をこなすことが仕事で、絵の技術だけでなく、自分の画風を消して原作者の画風に合わせる力が求められる。週刊連載では徹夜が続くこともある。背景や仕上げの作業は締切との戦いで、効率よく進める技術が要る。アシスタントから原作者や漫画家として独立する人も多い。",
+      "surpriseJa": "アシスタントの仕事は「上手い絵を描く」ことより「原作者の絵と揃える」こと。自分の個性を出さず、画面全体のトーンを原作者と合わせるのが技術になる。",
+      "howToBecomeJa": "漫画家のアシスタント募集に応募するか、漫画の専門学校を経て紹介される。",
+      "tags": [
+        "setting.desk",
+        "setting.workshop",
+        "subject.text",
+        "subject.paper",
+        "subject.light",
+        "action.design",
+        "action.record",
+        "action.assemble",
+        "sense.fine-motor",
+        "sense.stillness",
+        "sense.color",
+        "condition.peak-season",
+        "condition.freelance",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "temperament.detail",
+        "industry.publishing"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "animator",
+          "kind": "transitions-to",
+          "noteJa": "漫画家のアシスタントとして線画を描いてきた人が、アニメーションの作画へ転じる例がある。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本漫画家協会",
+          "url": "https://www.nihonmangakakyokai.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "proofreader",
@@ -86,6 +228,13 @@
       "rarity": 3,
       "familiarity": 4,
       "lifecycle": "established",
+      "edges": [
+        {
+          "to": "book-editor",
+          "kind": "transitions-to",
+          "noteJa": "文字と原稿に目が慣れている校正者が、そのまま編集の仕事へ移ることはよくある。"
+        }
+      ],
       "sources": [
         {
           "titleJa": "日本エディタースクール",
@@ -93,6 +242,57 @@
         }
       ],
       "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "subtitle-translator",
+      "nameJa": "字幕翻訳者",
+      "nameEn": "Subtitle Translator",
+      "aliasesJa": [
+        "字幕翻訳",
+        "吹き替え翻訳"
+      ],
+      "kanaJa": "じまくほんやくしゃ",
+      "emoji": "📺",
+      "summaryJa": "聞こえる言葉を、一秒で読める文字数に圧縮する。",
+      "descriptionJa": "映画やドラマの字幕を作る職。聞こえた台詞を翻訳するだけでなく、画面に表示できる文字数を考慮して圧縮する。字幕は一瞬で読める量に限られるため、台詞の要点だけを残し、時間に合わせて表示する。言葉のニュアンスを失わずに短くする判断が技術になる。台詞の長さに合わせて字幕の改行位置も決め、読みやすさを調整する。言葉のニュアンスと文字数のバランスを取るのが技術になる。",
+      "surpriseJa": "字幕は原稿の翻訳ではなく「時間制限のある翻訳」。一秒間に読める文字数が決まっているため、台詞の全部は入らず、本質を残して短くする作業になる。",
+      "howToBecomeJa": "翻訳会社や映像制作会社に就職し、字幕翻訳の実務を学ぶ。",
+      "tags": [
+        "setting.desk",
+        "setting.studio",
+        "subject.text",
+        "subject.voice",
+        "subject.sound",
+        "action.translate",
+        "action.record",
+        "action.sort",
+        "sense.hearing",
+        "sense.stillness",
+        "condition.freelance",
+        "condition.peak-season",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.publishing"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "literary-translator",
+          "kind": "confusable",
+          "noteJa": "どちらも言葉を別の言葉に直すが、字幕は文字数制限との格闘で、翻訳者は文脈を丸ごと移す。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本映像翻訳アカデミー",
+          "url": "https://www.jvta.co.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
     },
     {
       "slug": "typeface-designer",

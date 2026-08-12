@@ -1,0 +1,133 @@
+{
+  "industry": "finance",
+  "jobs": [
+    {
+      "slug": "actuary",
+      "nameJa": "アクチュアリー",
+      "nameEn": "Actuary",
+      "aliasesJa": [
+        "保険数理人",
+        "年金数理人"
+      ],
+      "kanaJa": "あくちゅありー",
+      "emoji": "📊",
+      "summaryJa": "将来の事故や死亡の確率を計算して、保険料を決める。",
+      "descriptionJa": "保険料や年金の計算を数学で行う職。過去のデータをもとに、将来どれだけの保険金を支払うことになるかを確率で見積もる。この計算が間違うと保険会社の経営が傾くため、その正確さが会社の存続を左右する。資格試験は難関で、合格まで長年かかることで知られる。計算の前提が少し変わると保険料全体が動くため、前提の妥当性を常に検討する。新しい保険商品の設計では、収支が成立する水準の検証も担当する。",
+      "surpriseJa": "アクチュアリーが計算しているのは「誰が事故に遭うか」ではなく、集団としてどれだけの支払いになるか。個々の運命ではなく確率の世界を扱う仕事になる。",
+      "howToBecomeJa": "アクチュアリーの資格試験に合格し、保険会社やコンサルティング会社に就職する。",
+      "tags": [
+        "setting.desk",
+        "subject.money",
+        "subject.data",
+        "subject.law",
+        "action.measure",
+        "action.record",
+        "action.investigate",
+        "sense.stillness",
+        "condition.certification",
+        "condition.solo",
+        "condition.team",
+        "temperament.detail",
+        "temperament.curious",
+        "temperament.repeatable",
+        "industry.finance"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本アクチュアリー会",
+          "url": "https://www.actuaries.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "bankruptcy-trustee",
+      "nameJa": "破産管財人",
+      "nameEn": "Bankruptcy Trustee",
+      "aliasesJa": [
+        "破産管理",
+        "管財人"
+      ],
+      "kanaJa": "はさんかんざいにん",
+      "emoji": "🧾",
+      "summaryJa": "破綻した会社の残りを調べ、借金の返済を公平に配分する。",
+      "descriptionJa": "破産した会社や個人の財産を管理して、債権者への返済を進める職。弁護士や公認会計士などの専門家が裁判所から指名され、会社の資産を調査し、それを換金して債権者に配分する。財産を隠していないかの調査も仕事に含まれ、法律の手続きを進める。財産の調査は取引先や銀行への確認を伴い、長期にわたることも多い。換金した財産の配分は法律の定めに従って公平に行い、手続きの記録を残す。",
+      "surpriseJa": "破産管財人は会社が破綻したあとの資産を調査し、債権者への返済を公平に進める。財産の隠し隠れを見つける調査は、会計と法律の両方の知識が要る。",
+      "howToBecomeJa": "弁護士や公認会計士の資格を取得し、裁判所から管財人の指名を受ける。",
+      "tags": [
+        "setting.desk",
+        "subject.money",
+        "subject.law",
+        "subject.data",
+        "subject.text",
+        "action.investigate",
+        "action.negotiate",
+        "action.record",
+        "sense.stillness",
+        "sense.hearing",
+        "condition.national-license",
+        "condition.freelance",
+        "temperament.detail",
+        "temperament.curious",
+        "temperament.quiet-pride",
+        "industry.finance"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本破産実務研究会",
+          "url": "https://www.hasanjimu.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "financial-advisor",
+      "nameJa": "金融商品仲介人",
+      "nameEn": "Financial Advisor",
+      "aliasesJa": [
+        "ファイナンシャルプランナー",
+        "資産運用アドバイザー"
+      ],
+      "kanaJa": "きんゆうしょうひんちゅうかいじん",
+      "emoji": "💹",
+      "summaryJa": "客の資産と人生を聞いて、運用の選択肢を提示する。",
+      "descriptionJa": "顧客の資産運用や保険の相談に乗る職。顧客の年齢や収入、将来の計画を聞き取り、それに合う金融商品を提案する。金融商品の販売には資格が求められ、顧客の利益を最優先する義務がある。相談は対面が中心で、説明が分かりやすいかが信頼につながる。投資のリスクを説明し、顧客が理解したうえで選択できるようにする。相談の内容に応じて、保険や年金など幅広い商品の中から提案を組み立てる。",
+      "surpriseJa": "金融商品の相談は「どの商品が儲かるか」より、顧客が何にお金を使いたいかを聞くことから始まる。目標が聞き取れなければ、適切な提案はできない。",
+      "howToBecomeJa": "証券や銀行、保険会社に就職し、金融商品取引の資格を取得する。",
+      "tags": [
+        "setting.desk",
+        "setting.someones-home",
+        "subject.money",
+        "subject.law",
+        "subject.data",
+        "action.negotiate",
+        "action.diagnose",
+        "action.record",
+        "sense.hearing",
+        "sense.stillness",
+        "condition.national-license",
+        "condition.team",
+        "temperament.listener",
+        "temperament.planner",
+        "temperament.curious",
+        "industry.finance"
+      ],
+      "rarity": 2,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本FP協会",
+          "url": "https://www.jafp.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    }
+  ]
+}
