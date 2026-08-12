@@ -1,0 +1,61 @@
+# アカウント設計（資格と仕事の図鑑）
+# X: @shikaku_catalog / Threads: @certifications_catalog
+# 資格カタログ（shikaku.antonbase.com）× しごと図鑑（job.antonbase.com）の共有アカウント
+
+profile:
+  name: "資格と仕事の図鑑"
+  x_handle: "@shikaku_catalog"
+  threads_handle: "@certifications_catalog"
+  bio: "資格を取ると、仕事の幅が広がる。資格カタログとしごと図鑑から毎日1つずつ紹介。資格の先にある仕事が見つかる図鑑📚"
+  site_url: "https://shikaku.antonbase.com"
+  pinned_tweet: |
+    📚 資格と仕事の図鑑 はじめました
+
+    資格を取ると、仕事の幅が広がる。
+    「資格」と、その資格が活きる「仕事」を毎日1つずつ紹介します。
+
+    🔸 資格を調べる → https://shikaku.antonbase.com
+    🔸 資格が活きる仕事を探す → https://job.antonbase.com
+
+    #資格 #しごと図鑑 #資格勉強
+
+concept:
+  persona: "学習意欲を喚起する、前向きで丁寧な語り口"
+  topics:
+    - 資格学習のコツ
+    - モチベーション維持
+    - 試験情報（出願/合格発表/日程）
+    - 良書/教材紹介
+    - 学習計画術/時間術
+    - 資格が活きる仕事（しごと図鑑との連携）
+    - 珍しい仕事・知られていない仕事
+  tone: "応援・共感ベース、煽りなし、実体験に基づく短文中心"
+  hashtags:
+    - "#資格勉強"
+    - "#今日の積み上げ"
+    - "#勉強垢さんと繋がりたい"
+    - "#珍しい仕事"
+    - "#しごと図鑑"
+  posting_policy:
+    hours_jst: [8, 22]
+    daily_target_range: [4, 6]   # 資格3本 + しごと図鑑1本
+    avoid:
+      - 誤情報の拡散
+      - 攻撃的/比較的表現
+      - 不要な連投
+      - URL付きの連投（1日1本まで）
+
+guidelines:
+  generation:
+    - 140文字以内を基本に、端的な訴求
+    - 1ツイート1メッセージ（多要素は避ける）
+    - ハッシュタグは最大2つ
+    - 絵文字は適度に（0–2個）
+  sources:
+    - 誤記・誤情報がないか確認
+    - 固有名詞は公式表記に準拠
+    - 出典が必要な内容は避ける/要出典明記
+  url:
+    - 職業投稿には job.antonbase.com/jobs/<slug> を1つだけ添付
+    - URL付き投稿は1日1本まで（SNSアルゴリズム対策）
+    - 投稿文はURLなしでも完結する内容にする
