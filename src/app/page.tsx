@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   getAllJobs,
@@ -10,6 +11,12 @@ import { toWorldNodes } from "@/lib/view";
 import { RARITY_LABEL } from "@/lib/labels";
 import { RandomJump } from "@/components/RandomJump";
 import { WorldMap } from "@/components/WorldMap";
+import { SITE_URL } from "./layout";
+
+export const metadata: Metadata = {
+  alternates: { canonical: SITE_URL },
+  openGraph: { url: SITE_URL },
+};
 
 export default function Home() {
   const jobs = getAllJobs();
