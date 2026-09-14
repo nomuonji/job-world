@@ -10,3 +10,7 @@ next-env.d.ts
 sns-bot/.env
 sns-bot/*.local.json
 sns-bot/.credentials.local.json
+
+reports/
+
+.env

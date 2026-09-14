@@ -31,12 +31,12 @@ export async function generateMetadata({
   const job = getJobBySlug(slug);
   if (!job) return {};
   return {
-    title: job.nameJa,
+    title: `${job.nameJa}とは｜仕事内容・なり方ガイド`,
     description: `${job.summaryJa} ${job.surpriseJa}`.slice(0, 120),
     alternates: { canonical: `/jobs/${job.slug}` },
     openGraph: {
       type: "article",
-      title: job.nameJa,
+      title: `${job.nameJa}とは｜仕事内容・なり方ガイド`,
       description: job.summaryJa,
       images: [
         { url: `/og/${job.slug}.png`, width: 1200, height: 630, alt: job.nameJa },
@@ -46,7 +46,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       site: "@shikaku_catalog",
       creator: "@shikaku_catalog",
-      title: job.nameJa,
+      title: `${job.nameJa}とは｜仕事内容・なり方ガイド`,
       description: job.summaryJa,
       images: [`/og/${job.slug}.png`],
     },
