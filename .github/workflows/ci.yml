@@ -5,11 +5,16 @@ on:
     branches: [main]
   pull_request:
 
+permissions:
+  contents: write
+
 jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -35,6 +40,18 @@ jobs:
           name: generated-og
           path: public/og/
           retention-days: 1
+
+      - name: 一時的に生成OGPをPRブランチへ同期
+        if: failure() && github.event_name == 'pull_request'
+        run: |
+          git add public/og/
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sync generated OGP images"
+          git push origin HEAD:${{ github.head_ref }}
 
       - run: npm run lint
 
