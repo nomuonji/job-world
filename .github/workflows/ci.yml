@@ -28,6 +28,14 @@ jobs:
       - name: OGP画像が最新か（ドリフト検出）
         run: npm run og:check
 
+      - name: 一時的に生成OGPを保存
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-og
+          path: public/og/
+          retention-days: 1
+
       - run: npm run lint
 
       - name: 静的エクスポートが通るか
