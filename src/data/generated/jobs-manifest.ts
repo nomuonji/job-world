@@ -21,6 +21,7 @@ import file17 from "../jobs/publishing.json";
 import file18 from "../jobs/retail.json";
 import file19 from "../jobs/science.json";
 import file20 from "../jobs/sports.json";
+import file21 from "../jobs/optician-override.json";
 
 export const JOB_FILES = [
   file0 as unknown as JobFile,
@@ -44,4 +45,5 @@ export const JOB_FILES = [
   file18 as unknown as JobFile,
   file19 as unknown as JobFile,
   file20 as unknown as JobFile,
+  file21 as unknown as JobFile,
 ];

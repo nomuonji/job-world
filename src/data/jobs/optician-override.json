@@ -1,0 +1,59 @@
+{
+  "industry": "medical",
+  "jobs": [
+    {
+      "slug": "optician",
+      "nameJa": "眼鏡技術者",
+      "nameEn": "Optician",
+      "aliasesJa": [
+        "眼鏡作製技能士",
+        "めがね職人",
+        "オプティシャン"
+      ],
+      "kanaJa": "めがねぎじゅつしゃ",
+      "emoji": "👓",
+      "summaryJa": "視力測定とレンズ加工、フィッティングで、使う人の目に眼鏡を合わせる。",
+      "descriptionJa": "眼鏡店などで視力の測定、レンズとフレームの選定、加工、フィッティング、引き渡し、アフターケアを担う職。眼科での診断・治療とは別の店頭工程であり、処方箋がある場合はその数値を、その人の瞳孔位置や顔の形に合わせて仕上げる。令和3年度に技能検定の「眼鏡作製職種」が新設され、学科と実技の両方に合格すると「眼鏡作製技能士」の称号が付与される。技能士は合格者が名乗ることができる名称であり、眼鏡作製の仕事そのものを有資格者だけに限る業務独占ではない。等級は1級と2級がある。",
+      "surpriseJa": "店頭で眼鏡を作る仕事と、「眼鏡作製技能士」という称号は同じではない。技能検定に合格すると技能士と名乗れるが、資格がなくても眼鏡作製の現場に就く経路はある。",
+      "howToBecomeJa": "眼鏡店やレンズ加工の現場で実務を積むのが一般的な入口である。技能の公的な到達度を示すなら、指定試験機関である公益社団法人日本眼鏡技術者協会が実施する眼鏡作製技能検定を受ける。学科試験と実技試験の両方に合格すると1級または2級の眼鏡作製技能士を名乗れる。試験日程や手数料は年によって変わるため、最新情報は試験機関の公式案内で確認する。",
+      "tags": [
+        "setting.workshop",
+        "setting.desk",
+        "setting.hospital",
+        "subject.glass",
+        "subject.human-body",
+        "subject.machine",
+        "action.measure",
+        "action.assemble",
+        "action.polish",
+        "sense.tilt",
+        "sense.color",
+        "sense.fine-motor",
+        "condition.certification",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.medical"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "眼鏡作製技能検定とは（公益社団法人日本眼鏡技術者協会）",
+          "url": "https://www.megane-joa.jp/about/"
+        },
+        {
+          "titleJa": "技能検定制度について（厚生労働省）",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/ability_skill/ginoukentei/index.html"
+        },
+        {
+          "titleJa": "等級別の詳細内容（眼鏡作製技能検定）",
+          "url": "https://www.megane-joa.jp/class/"
+        }
+      ],
+      "updatedAt": "2026-10-01"
+    }
+  ]
+}
