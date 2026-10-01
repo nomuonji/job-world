@@ -1,0 +1,27 @@
+{
+  "industry": "medical",
+  "jobs": [
+    {
+      "slug": "optician",
+      "nameJa": "眼鏡技術者",
+      "nameEn": "Optician",
+      "aliasesJa": ["眼鏡作製技能士", "オプティシャン", "めがね職人"],
+      "kanaJa": "めがねぎじゅつしゃ",
+      "emoji": "👓",
+      "summaryJa": "視力測定とレンズ加工、フィッティングで、その人の顔と目に合う眼鏡をつくる。",
+      "descriptionJa": "眼鏡店などで、使用目的を聞き取り、視力の測定、レンズとフレームの選定、加工、フィッティング、引き渡し、アフターケアまでを担う職。眼科での診断・治療とは役割が分かれ、眼鏡技術者は眼科専門医と連携しつつ視力補正用の眼鏡を店頭で作製する。レンズの光学中心を瞳孔位置に合わせ、フレームを鼻や耳の形に合わせて調整する。この仕事そのものは技能士の称号がなくても従事できる一方、学科試験と実技試験の両方に合格した人だけが「眼鏡作製技能士」を名乗れる。検定は1級と2級があり、令和3年に眼鏡作製職種として国家技能検定に加わった。",
+      "surpriseJa": "眼鏡作製技能士は仕事の独占資格ではなく、合格した人に与えられる称号である。店頭の眼鏡づくりは技能士でなくても行われ、検定は技能の客観的な「ものさし」として導入された。",
+      "howToBecomeJa": "眼鏡店やレンズ加工の現場で実務を積むのが一般的な入り方である。称号を取る場合は、指定試験機関の公益社団法人日本眼鏡技術者協会が実施する眼鏡作製技能検定を受ける。学科と実技の両方に合格すると眼鏡作製技能士の称号が付与される。2級は実務経験や眼鏡専門学校などの経路があり、1級は2級合格後の実務やより長い実務経験、専門学校・大学の経路がある。認定眼鏡士からの特例講習ルートもある。試験日程や手数料は年度ごとに変わるため、公式の受検案内を確認する。",
+      "tags": ["setting.workshop", "setting.desk", "setting.hospital", "subject.glass", "subject.human-body", "subject.machine", "action.measure", "action.assemble", "action.polish", "sense.tilt", "sense.color", "sense.fine-motor", "condition.certification", "condition.solo", "temperament.detail", "temperament.repeatable", "temperament.quiet-pride", "industry.medical"],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {"titleJa": "眼鏡作製技能検定とは", "url": "https://www.megane-joa.jp/about/"},
+        {"titleJa": "等級別の詳細内容", "url": "https://www.megane-joa.jp/class/"},
+        {"titleJa": "技能検定制度", "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/ability_skill/ginoukentei/index.html"}
+      ],
+      "updatedAt": "2026-10-01"
+    }
+  ]
+}
