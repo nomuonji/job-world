@@ -4,6 +4,7 @@ import type {
   GeneratedTaxonomy,
   GraphHealth,
   Job,
+  JobFile,
   NeighborEntry,
   TaxonomyTag,
 } from "@/types";
@@ -12,6 +13,7 @@ import taxonomyJson from "@/data/generated/taxonomy.json";
 import neighborsJson from "@/data/generated/neighbors.json";
 import tagIndexJson from "@/data/generated/tag-index.json";
 import healthJson from "@/data/generated/graph-health.json";
+import opticianOverride from "@/data/jobs/optician.override.json";
 
 /**
  * サーバー/ビルド時のデータアクセス。
@@ -24,6 +26,7 @@ import healthJson from "@/data/generated/graph-health.json";
 const taxonomy = taxonomyJson as unknown as GeneratedTaxonomy;
 const neighborEntries = neighborsJson as unknown as NeighborEntry[];
 const tagIndex = tagIndexJson as unknown as Record<string, string[]>;
+const jobOverrides: JobFile[] = [opticianOverride as unknown as JobFile];
 
 let _allJobs: Job[] | null = null;
 
@@ -32,6 +35,9 @@ export function getAllJobs(): Job[] {
   if (_allJobs) return _allJobs;
   const bySlug = new Map<string, Job>();
   for (const file of JOB_FILES) {
+    for (const job of file.jobs) bySlug.set(job.slug, job);
+  }
+  for (const file of jobOverrides) {
     for (const job of file.jobs) bySlug.set(job.slug, job);
   }
   _allJobs = [...bySlug.values()].sort((a, b) =>
