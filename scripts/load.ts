@@ -41,7 +41,7 @@ function readJson<T>(path: string): T {
 function listJson(dir: string): string[] {
   if (!existsSync(dir)) return [];
   return readdirSync(dir)
-    .filter((f) => f.endsWith(".json"))
+    .filter((f) => f.endsWith(".json") && !f.endsWith(".override.json"))
     .sort();
 }
 
