@@ -30,7 +30,9 @@ export async function generateMetadata({
   const { slug } = await params;
   const job = getJobBySlug(slug);
   if (!job) return {};
-  const commonSearchAlias = job.aliasesJa.find((alias) => alias === "ひよこ鑑定士");
+  const commonSearchAlias = job.aliasesJa.find(
+    (alias) => alias === "ひよこ鑑定士" || alias === "眼鏡作製技能士",
+  );
   const seoName = commonSearchAlias ? `${job.nameJa}（${commonSearchAlias}）` : job.nameJa;
   return {
     title: `${seoName}とは｜仕事内容・なり方ガイド`,
@@ -71,11 +73,8 @@ export default async function JobPage({
   const isEntry = health.entrySlugs.includes(job.slug);
   const shikaku = shikakuLinkForJob(job);
 
-  // クライアントへ渡すのは表示用の最小データだけ（全職業の本文を送らない）。
   const egoCenter = toEgoCenter(job);
   const egoNodes = toEgoNodes(entry);
-  // ?from= の解決に必要な分。相互性が保証されているので、
-  // ここに来られる職業は必ず隣人プールに含まれている。
   const fromCandidates = egoNodes.map((n) => ({
     slug: n.slug,
     nameJa: n.nameJa,
@@ -125,7 +124,6 @@ export default async function JobPage({
         )}
       </header>
 
-      {/* 意外な一点。この図鑑の価値の中心なので、本文より先に出す。 */}
       <section className="mt-8 rounded-lg border-l-4 border-[var(--accent)] bg-[var(--surface)] p-5">
         <h2 className="text-sm font-bold text-[var(--accent)]">
           知られていないこと
@@ -153,10 +151,8 @@ export default async function JobPage({
           方向が同じものは、同じ角度でつながっています。
         </p>
 
-        {/* 図はサーバー側で描かれる（EgoNetwork は useSearchParams を使わない）。 */}
         <EgoNetwork center={egoCenter} nodes={egoNodes} facets={getFacets()} />
 
-        {/* FromNote は useSearchParams を使うので、こちらだけ Suspense に包む。 */}
         <Suspense fallback={null}>
           <FromNote candidates={fromCandidates} />
         </Suspense>
@@ -214,7 +210,6 @@ export default async function JobPage({
         </section>
       )}
 
-      {/* 資格カタログへの導線。資格と仕事を行き来できるようにする。 */}
       <section className="mt-10 rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5">
         <h2 className="text-sm font-bold text-[var(--accent)]">
           🎓 この仕事の資格・試験を調べる
