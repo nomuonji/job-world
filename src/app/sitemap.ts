@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "./layout";
-import { getAllJobs, getAllTags, getFacets } from "@/lib/data";
+import { getAllJobs, getFacets } from "@/lib/data";
 
 // 静的エクスポートでは sitemap も静的に生成する必要がある。
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/jobs", "/facets", "/stats", "/about"];
+  const staticPaths = ["", "/jobs", "/rare-jobs", "/facets", "/stats", "/about"];
 
   return [
     ...staticPaths.map((path) => ({
@@ -24,11 +24,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/facets/${facet.id}`,
       changeFrequency: "monthly" as const,
       priority: 0.6,
-    })),
-    ...getAllTags().map((tag) => ({
-      url: `${SITE_URL}/tags/${tag.facet}/${tag.slug}`,
-      changeFrequency: "monthly" as const,
-      priority: 0.5,
     })),
   ];
 }

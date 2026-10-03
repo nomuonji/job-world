@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run og && next build",
+    "build": "npm run seo:check && npm run og && next build",
     "start": "next start",
     "og": "tsx scripts/generate-og.tsx",
     "lint": "eslint",
@@ -19,7 +19,8 @@
     "bot:post": "node sns-bot/src/tweetSender.mjs && node sns-bot/src/threadsSender.mjs",
     "bot:threads-draft": "node sns-bot/src/threadsSender.mjs --dry-run",
     "bot:threads-refresh": "node sns-bot/src/threads-refresh.mjs",
-    "verify": "npm run data:check && npm run og:check && npm run lint && npm run build"
+    "verify": "npm run data:check && npm run og:check && npm run lint && npm run seo:check && npm run build",
+    "seo:check": "tsx scripts/validate-seo.ts"
   },
   "dependencies": {
     "next": "16.3.0",

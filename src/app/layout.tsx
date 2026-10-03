@@ -56,7 +56,10 @@ export default function RootLayout({
             </Link>
             <nav className="flex gap-4 text-sm text-[var(--muted)]">
               <Link href="/jobs" className="hover:text-[var(--accent)]">
-                すべての仕事
+                職業一覧
+              </Link>
+              <Link href="/rare-jobs" className="hover:text-[var(--accent)]">
+                珍しい仕事
               </Link>
               <Link href="/facets" className="hover:text-[var(--accent)]">
                 7つの角度
