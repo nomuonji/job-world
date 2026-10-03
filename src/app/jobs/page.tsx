@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllJobs } from "@/lib/data";
-import { RARITY_LABEL } from "@/lib/labels";
 
 export const metadata: Metadata = {
   title: "職業一覧｜150の仕事・職業の種類を図鑑で探す",
@@ -69,9 +68,6 @@ export default function JobsPage() {
               </div>
               <p className="mt-1 text-sm text-[var(--muted)]">
                 {job.summaryJa}
-              </p>
-              <p className="mt-2 text-xs text-[var(--muted)]">
-                {RARITY_LABEL[job.rarity]}
               </p>
             </Link>
           </li>
