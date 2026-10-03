@@ -27,6 +27,7 @@ export async function generateMetadata({
     title: `${tag.labelJa}／仕事`,
     description: tag.criteriaJa,
     alternates: { canonical: `/tags/${tag.facet}/${tag.slug}` },
+    robots: { index: false, follow: true },
   };
 }
 
