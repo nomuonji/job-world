@@ -29,7 +29,7 @@ if (!jobsPage.includes("職業一覧・仕事の種類")) {
 if (!rarePage.includes("珍しい仕事・珍しい職業")) {
   fail("/rare-jobs の検索意図が失われています");
 }
-if (!rarePage.includes("編集分類")) {
+if (!rarePage.includes("編集上の珍度")) {
   fail("rarityを公式人数統計と誤認させない注記がありません");
 }
 if (!layout.includes('href="/rare-jobs"')) {
