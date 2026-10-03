@@ -116,7 +116,6 @@
         "sense.temperature",
         "sense.taste",
         "sense.color",
-        "condition.certification",
         "condition.peak-season",
         "temperament.detail",
         "temperament.aesthetic",
@@ -136,7 +135,7 @@
           "url": "https://www.jca.co.jp/"
         }
       ],
-      "updatedAt": "2026-09-29"
+      "updatedAt": "2026-10-03"
     },
     {
       "slug": "coffee-roaster",
