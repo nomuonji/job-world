@@ -45,6 +45,20 @@ export default function Home() {
           件の仕事を、舞台・扱うもの・動作・感覚など7つの角度でつなげた図鑑です。
           知っている仕事からタグを辿っていくと、2〜3歩で名前も知らなかった仕事に行き着きます。
         </p>
+        <div className="mt-5 flex flex-wrap justify-center gap-3 text-sm">
+          <Link
+            href="/jobs"
+            className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 font-semibold hover:border-[var(--accent)]"
+          >
+            150の職業一覧を見る
+          </Link>
+          <Link
+            href="/rare-jobs"
+            className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 font-semibold hover:border-[var(--accent)]"
+          >
+            珍しい仕事から探す
+          </Link>
+        </div>
         <RandomJump slugs={jobs.map((j) => j.slug)} />
       </section>
 
