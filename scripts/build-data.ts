@@ -430,7 +430,12 @@ writeJson(join(GENERATED_DIR, "stats.json"), {
     ]),
   ),
   typedEdgeCount: jobList.reduce((a, j) => a + (j.edges?.length ?? 0), 0),
-  generatedAt: new Date().toISOString().slice(0, 10),
+  // Wall-clock dates fail the CI drift check on the next UTC day. Use the
+  // newest source record date so regeneration is deterministic.
+  generatedAt: jobList.reduce((latest, j) => {
+    const value = (j.updatedAt ?? "").slice(0, 10);
+    return value > latest ? value : latest;
+  }, "1970-01-01"),
 });
 
 // ---------------------------------------------------------------------------
