@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
 import "./globals.css";
+import "./editorial-atlas.css";
 
 // 公開URL: job.antonbase.com（metadataBase・sitemap.ts・robots.ts に反映）
 export const SITE_URL = "https://job.antonbase.com";
@@ -49,12 +50,10 @@ export default function RootLayout({
             }
           `}
         </Script>
-        <header className="border-b border-[var(--border)] bg-[var(--surface)]">
+        <header className="atlas-site-header border-b border-[var(--border)] bg-[var(--surface)]">
           <div className="mx-auto flex max-w-5xl items-center gap-6 px-4 py-3">
-            <Link href="/" className="font-bold tracking-tight">
-              🧭 {SITE_NAME}
-            </Link>
-            <nav className="flex gap-4 text-sm text-[var(--muted)]">
+            <Link href="/" className="atlas-wordmark font-bold tracking-tight"><span aria-hidden="true">◎</span> {SITE_NAME}<small>名前の知らない仕事へ</small></Link>
+            <nav className="atlas-site-nav flex gap-4 text-sm text-[var(--muted)]" aria-label="図鑑のナビゲーション">
               <Link href="/jobs" className="hover:text-[var(--accent)]">
                 職業一覧
               </Link>
@@ -79,9 +78,9 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
+        <main className="atlas-main mx-auto max-w-5xl px-4 py-8">{children}</main>
 
-        <footer className="mt-16 border-t border-[var(--border)] px-4 py-8 text-center text-sm text-[var(--muted)]">
+        <footer className="atlas-site-footer mt-16 border-t border-[var(--border)] px-4 py-8 text-center text-sm text-[var(--muted)]">
           <p>{SITE_NAME} — 資格と仕事の図鑑</p>
           <div className="mt-3 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <a
