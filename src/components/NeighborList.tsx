@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { DerivedNeighbor } from "@/types";
 import { EDGE_KIND_LABEL, EDGE_KIND_REVERSE_LABEL } from "@/lib/graph";
 import { getFacet, getJobBySlug } from "@/lib/data";
@@ -35,7 +36,8 @@ export function NeighborList({
               href={`/jobs/${neighbor.slug}?from=${fromSlug}`}
               className="atlas-neighbor block h-full rounded-lg border border-[var(--border)] bg-[var(--surface)] p-4 transition-colors hover:border-[var(--accent)]"
             >
-              <div className="flex items-baseline gap-2">
+              <div className="atlas-neighbor-thumb"><Image src={`/og/${job.slug}.png`} alt="" width={1200} height={630} loading="lazy" sizes="(max-width: 640px) 110px, 140px"/></div>
+              <div className="atlas-neighbor-description"><div className="flex items-baseline gap-2">
                 <span aria-hidden="true" className="text-xl">
                   {job.emoji}
                 </span>
@@ -59,7 +61,7 @@ export function NeighborList({
                   </span>
                 )}
                 {neighbor.reasonJa}
-              </p>
+              </p></div>
             </Link>
           </li>
         );
