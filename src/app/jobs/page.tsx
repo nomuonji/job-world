@@ -51,14 +51,18 @@ export default function JobsPage() {
           7つの角度から探す
         </Link>
       </div>
-      <p className="mt-6 text-[var(--muted)]">{jobs.length} 件</p>
+      <div className="atlas-index-toolbar">
+        <span>OCCUPATION INDEX / 五十音</span>
+        <strong>{jobs.length} 件</strong>
+        <p>一覧からひとつ選んだら、個別ページで「ここから辿れる仕事」へ進んでみてください。</p>
+      </div>
 
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+      <ul className="mt-6 grid gap-3 sm:grid-cols-2 atlas-index-grid">
         {jobs.map((job) => (
           <li key={job.slug}>
             <Link
               href={`/jobs/${job.slug}`}
-              className="block h-full rounded-lg border border-[var(--border)] bg-[var(--surface)] p-4 transition-colors hover:border-[var(--accent)]"
+              className="atlas-index-card block h-full rounded-lg border border-[var(--border)] bg-[var(--surface)] p-4 transition-colors hover:border-[var(--accent)]"
             >
               <div className="flex items-baseline gap-2">
                 <span aria-hidden="true" className="text-xl">

@@ -104,7 +104,7 @@ export default function Home() {
       <section className="mt-12">
         <h2 className="text-xl font-bold">こんな仕事があります</h2>
         <p className="mt-1 text-sm text-[var(--muted)]">
-          全国で数百人、あるいは数十人しかいない仕事。
+          仕事の名前も働く場所も、ふだん見かけないものから。
         </p>
         <ul className="mt-4 grid gap-3 sm:grid-cols-2">
           {rare.map((job) => (
