@@ -72,6 +72,20 @@ export default async function JobPage({
   const health = getGraphHealth();
   const isEntry = health.entrySlugs.includes(job.slug);
   const shikaku = shikakuLinkForJob(job);
+  // A real two-hop trail, derived from the published graph. Not a fabricated career ladder.
+  const twoHopTrails = neighbors.flatMap(first => {
+    const next = getNeighborEntry(first.slug)?.neighbors.find(second =>
+      second.slug !== job.slug && second.slug !== first.slug &&
+      (getJobBySlug(second.slug)?.rarity ?? 0) >= 4
+    );
+    const via = getJobBySlug(first.slug);
+    const destination = next && getJobBySlug(next.slug);
+    return via && next && destination
+      ? [{ via, destination, firstReason: first.reasonJa, secondReason: next.reasonJa }]
+      : [];
+  }).filter((trail,index,array) =>
+    array.findIndex(other => other.destination.slug === trail.destination.slug) === index
+  ).slice(0,3);
 
   const egoCenter = toEgoCenter(job);
   const egoNodes = toEgoNodes(entry);
@@ -82,8 +96,11 @@ export default async function JobPage({
   }));
 
   return (
-    <article>
-      <header>
+    <article className="occupation-sheet">
+      <nav className="atlas-breadcrumb" aria-label="パンくずリスト">
+        <Link href="/">図鑑の地図</Link><span>／</span><Link href="/jobs">職業一覧</Link><span>／</span><span>{job.nameJa}</span>
+      </nav>
+      <header className="occupation-cover">
         <div className="flex items-center gap-3">
           <span aria-hidden="true" className="text-5xl">
             {job.emoji}
@@ -124,6 +141,27 @@ export default async function JobPage({
         )}
       </header>
 
+      {twoHopTrails.length > 0 && (
+        <section className="atlas-route-panel" aria-labelledby="next-two-hops">
+          <div className="atlas-route-intro">
+            <span>EXPLORATION / 2 STEPS</span>
+            <h2 id="next-two-hops">この仕事から、もう二歩。</h2>
+            <p>同じ業界の仕事とは限りません。図鑑に記録されたつながりを二つ続けてみると、別の仕事に出会えます。</p>
+          </div>
+          <ol className="atlas-route-grid">
+            {twoHopTrails.map((trail,index) => (
+              <li key={trail.destination.slug} className="atlas-route">
+                <span className="atlas-route-id">ROUTE {String(index+1).padStart(2,"0")}</span>
+                <div><span className="atlas-route-number">いま</span><strong>{job.emoji} {job.nameJa}</strong></div>
+                <div><span className="atlas-route-number">1歩目</span><Link href={`/jobs/${trail.via.slug}?from=${job.slug}`}>{trail.via.emoji} {trail.via.nameJa} ↗</Link><small>{trail.firstReason}</small></div>
+                <div><span className="atlas-route-number">2歩目</span><Link href={`/jobs/${trail.destination.slug}?from=${trail.via.slug}`}>{trail.destination.emoji} {trail.destination.nameJa} ↗</Link><small>{trail.secondReason}</small></div>
+              </li>
+            ))}
+          </ol>
+          <p className="atlas-route-disclaimer">この経路は図鑑内のタグと関連づけに基づく探索例で、転職の順番や職業間の優劣を示すものではありません。</p>
+        </section>
+      )}
+
       <section className="mt-8 rounded-lg border-l-4 border-[var(--accent)] bg-[var(--surface)] p-5">
         <h2 className="text-sm font-bold text-[var(--accent)]">
           知られていないこと
@@ -144,7 +182,7 @@ export default async function JobPage({
         </section>
       )}
 
-      <section className="mt-10">
+      <section className="mt-10 atlas-network-section" id="neighbors">
         <h2 className="text-xl font-bold">ここから辿れる仕事</h2>
         <p className="mt-1 text-sm text-[var(--muted)]">
           タグの重なりから自動で導き出した、隣にある仕事。
