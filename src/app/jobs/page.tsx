@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { getAllJobs } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -30,7 +31,7 @@ export default function JobsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <p className="text-sm font-semibold text-[var(--accent)]">OCCUPATION DIRECTORY</p>
+      <section className="atlas-index-cover"><span>INDEX / {jobs.length} OCCUPATIONS</span><p className="text-sm font-semibold">職業名が分かっている人はこちらから。</p>
       <h1 className="mt-1 text-3xl font-bold">職業一覧・仕事の種類</h1>
       <p className="mt-3 max-w-2xl text-[var(--muted)]">
         この図鑑に収録している{jobs.length}件の仕事を一覧で見られます。
@@ -51,6 +52,7 @@ export default function JobsPage() {
           7つの角度から探す
         </Link>
       </div>
+      </section>
       <div className="atlas-index-toolbar">
         <span>OCCUPATION INDEX / 五十音</span>
         <strong>{jobs.length} 件</strong>
@@ -64,15 +66,14 @@ export default function JobsPage() {
               href={`/jobs/${job.slug}`}
               className="atlas-index-card block h-full rounded-lg border border-[var(--border)] bg-[var(--surface)] p-4 transition-colors hover:border-[var(--accent)]"
             >
-              <div className="flex items-baseline gap-2">
+              <div className="atlas-index-image"><Image src={`/og/${job.slug}.png`} alt="" width={1200} height={630} loading="lazy" sizes="(max-width: 640px) 125px, 160px"/></div>
+              <div className="atlas-index-card-copy"><div className="flex items-baseline gap-2">
                 <span aria-hidden="true" className="text-xl">
                   {job.emoji}
                 </span>
                 <span className="font-semibold">{job.nameJa}</span>
               </div>
-              <p className="mt-1 text-sm text-[var(--muted)]">
-                {job.summaryJa}
-              </p>
+              <p className="mt-1 text-sm text-[var(--muted)]">{job.summaryJa}</p></div>
             </Link>
           </li>
         ))}

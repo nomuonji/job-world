@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { getAllJobs } from "@/lib/data";
 import { RARITY_LABEL } from "@/lib/labels";
 
@@ -34,14 +35,15 @@ export default function RareJobsPage() {
   };
 
   const renderJobs = (items: typeof jobs) => (
-    <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+    <ul className="mt-4 grid gap-3 sm:grid-cols-2 atlas-rare-listing">
       {items.map((job) => (
         <li key={job.slug}>
           <Link
             href={`/jobs/${job.slug}`}
-            className="block h-full rounded-lg border border-[var(--border)] bg-[var(--surface)] p-4 transition-colors hover:border-[var(--accent)]"
+            className="atlas-rare-listing-card block h-full rounded-lg border border-[var(--border)] bg-[var(--surface)] p-4 transition-colors hover:border-[var(--accent)]"
           >
-            <div className="flex items-baseline gap-2">
+            <div className="atlas-rare-thumb"><Image src={`/og/${job.slug}.png`} alt="" width={1200} height={630} loading="lazy" sizes="(max-width: 640px) 130px, 180px"/></div>
+            <div className="atlas-rare-description"><div className="flex items-baseline gap-2">
               <span aria-hidden="true" className="text-xl">
                 {job.emoji}
               </span>
@@ -50,7 +52,7 @@ export default function RareJobsPage() {
             <p className="mt-1 text-sm text-[var(--muted)]">{job.summaryJa}</p>
             <p className="mt-2 text-xs text-[var(--muted)]">
               図鑑内の珍度: {RARITY_LABEL[job.rarity]}
-            </p>
+            </p></div>
           </Link>
         </li>
       ))}
@@ -64,7 +66,7 @@ export default function RareJobsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      <p className="text-sm font-semibold text-[var(--accent)]">RARE OCCUPATIONS</p>
+      <header className="atlas-index-cover atlas-rare-cover"><span>THE UNFAMILIAR / OCCUPATION INDEX</span><p className="text-sm font-semibold">知らなかった仕事を、名前から探す。</p>
       <h1 className="mt-1 text-3xl font-bold">珍しい仕事・珍しい職業</h1>
       <p className="mt-3 max-w-2xl text-[var(--muted)]">
         普通に暮らしていると名前を知る機会が少ない仕事を、
@@ -72,6 +74,7 @@ export default function RareJobsPage() {
         「その仕事に就く人の少なさ」を見るための編集上の珍度を使っています。
       </p>
 
+      </header>
       <aside className="mt-5 rounded-lg border border-[var(--border)] bg-[var(--surface-2)] p-4 text-sm text-[var(--muted)]">
         <strong className="text-[var(--foreground)]">珍度について</strong>
         <p className="mt-1">
