@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import {
   getAllJobs,
@@ -100,7 +101,13 @@ export default async function JobPage({
       <nav className="atlas-breadcrumb" aria-label="パンくずリスト">
         <Link href="/">図鑑の地図</Link><span>／</span><Link href="/jobs">職業一覧</Link><span>／</span><span>{job.nameJa}</span>
       </nav>
-      <header className="occupation-cover">
+      <header className="occupation-cover atlas-illustrated-cover">
+        <div className="atlas-profile-heading">
+          <span>FIELD RECORD / {job.slug.toUpperCase().replace(/-/g," ")}</span>
+          <span>しごと図鑑の収録記録</span>
+        </div>
+        <div className="atlas-cover-art"><Image src={`/og/${job.slug}.png`} alt={`${job.nameJa}の図鑑用イラスト・見出し画像`} width={1200} height={630} priority sizes="(max-width: 850px) 100vw, 550px"/></div>
+        <div className="atlas-cover-copy">
         <div className="flex items-center gap-3">
           <span aria-hidden="true" className="text-5xl">
             {job.emoji}
@@ -139,6 +146,13 @@ export default async function JobPage({
             別名: {job.aliasesJa.join(" / ")}
           </p>
         )}
+        </div>
+        <nav className="atlas-profile-tabs" aria-label="この職業の内容">
+          <a href="#occupation-story">仕事の内容 ↓</a>
+          <a href="#neighbors">隣にある仕事 ↓</a>
+          <a href="#occupation-facets">仕事の共通点 ↓</a>
+          <a href="#occupation-sources">参考資料 ↓</a>
+        </nav>
       </header>
 
       {twoHopTrails.length > 0 && (
@@ -162,6 +176,7 @@ export default async function JobPage({
         </section>
       )}
 
+      <div className="atlas-profile-story" id="occupation-story">
       <section className="mt-8 rounded-lg border-l-4 border-[var(--accent)] bg-[var(--surface)] p-5">
         <h2 className="text-sm font-bold text-[var(--accent)]">
           知られていないこと
@@ -182,6 +197,7 @@ export default async function JobPage({
         </section>
       )}
 
+      </div>
       <section className="mt-10 atlas-network-section" id="neighbors">
         <h2 className="text-xl font-bold">ここから辿れる仕事</h2>
         <p className="mt-1 text-sm text-[var(--muted)]">
@@ -198,7 +214,7 @@ export default async function JobPage({
         <NeighborList fromSlug={job.slug} neighbors={neighbors.slice(0, 14)} />
       </section>
 
-      <section className="mt-10">
+      <section className="mt-10 atlas-profile-facets" id="occupation-facets">
         <h2 className="text-xl font-bold">この仕事を作っている要素</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {tagGroups.map(({ facet, tags }) => (
@@ -227,7 +243,7 @@ export default async function JobPage({
       </section>
 
       {job.sources && job.sources.length > 0 && (
-        <section className="mt-10 text-sm text-[var(--muted)]">
+        <section className="mt-10 text-sm text-[var(--muted)] atlas-profile-sources" id="occupation-sources">
           <h2 className="font-bold">参考にしたもの</h2>
           <ul className="mt-2 space-y-1">
             {job.sources.map((source) => (
