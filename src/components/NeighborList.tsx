@@ -18,7 +18,7 @@ export function NeighborList({
   neighbors: DerivedNeighbor[];
 }) {
   return (
-    <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+    <ul className="mt-4 grid gap-3 sm:grid-cols-2 atlas-neighbors">
       {neighbors.map((neighbor) => {
         const job = getJobBySlug(neighbor.slug);
         if (!job) return null;
@@ -33,7 +33,7 @@ export function NeighborList({
           <li key={neighbor.slug}>
             <Link
               href={`/jobs/${neighbor.slug}?from=${fromSlug}`}
-              className="block h-full rounded-lg border border-[var(--border)] bg-[var(--surface)] p-4 transition-colors hover:border-[var(--accent)]"
+              className="atlas-neighbor block h-full rounded-lg border border-[var(--border)] bg-[var(--surface)] p-4 transition-colors hover:border-[var(--accent)]"
             >
               <div className="flex items-baseline gap-2">
                 <span aria-hidden="true" className="text-xl">
