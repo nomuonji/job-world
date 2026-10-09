@@ -44,3 +44,125 @@
 :where(.atlas-main) a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(max-width:850px){.atlas-site-header>div{flex-wrap:wrap;gap:10px}.atlas-site-nav{margin:0;overflow-x:auto;flex-wrap:nowrap;width:100%;padding-bottom:7px}.atlas-site-nav a{white-space:nowrap}.atlas-route-panel{grid-template-columns:1fr}}
 @media(max-width:500px){.atlas-main{padding:20px 14px}.atlas-wordmark{font-size:19px}.atlas-wordmark small{font-size:9px}.occupation-cover{padding:21px}.atlas-route{padding:14px}.atlas-route>div{grid-template-columns:44px minmax(0,1fr)}.atlas-index-toolbar{padding:16px}}
+
+/* Occupation atlas: the map is a working instrument, each job is a visual field record.
+   Existing facet colors remain semantic; real OG art is reused, not invented stock. */
+.explorer-atlas-home{max-width:1200px;margin:0 auto}
+.explorer-cover{position:relative;display:grid;grid-template-columns:minmax(0,1.07fr) minmax(0,.93fr);margin:4px 0 68px;min-height:590px;background:#151f37;color:#f5eee4;overflow:hidden;border-bottom:7px solid #abbaa7}
+.explorer-cover-copy{position:relative;z-index:2;padding:clamp(30px,5vw,64px) clamp(27px,4.5vw,53px);display:flex;flex-direction:column;justify-content:center}
+.explorer-overline{font:800 11px/1.5 ui-monospace,Consolas,monospace;letter-spacing:.1em;color:#afcabe}
+.explorer-cover-copy h1{margin:28px 0 23px;font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(50px,6.3vw,84px);font-weight:650;line-height:1.37;letter-spacing:-.08em}
+.explorer-cover-copy h1 em{font-style:normal;color:#a7d5c2}
+.explorer-cover-copy>p{font-size:14px;line-height:2;color:#d3dbe1;max-width:53ch}
+.explorer-cover-copy nav{display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin-top:35px}
+.explorer-cover-primary,.explorer-cover-secondary{text-decoration:none;font-size:13px;font-weight:800}
+.explorer-cover-primary{background:#d4e9d5;color:#1c3340;padding:14px 18px;display:flex;gap:35px}
+.explorer-cover-secondary{color:#e2ebec;border-bottom:1px solid #c1d7d3;padding:10px 0}
+.explorer-cover-orbit{position:relative;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;min-height:445px;background:radial-gradient(circle at 50% 43%,#354460,#1e2841 61%,#111c32);border-left:1px solid #53657b;padding:35px}
+.explorer-orbit-shell{position:relative;display:grid;place-items:center;width:min(100%,440px);aspect-ratio:1}
+.explorer-orbit-shell:before,.explorer-orbit-shell:after{content:"";position:absolute;width:100%;height:1px;background:#a9c7bf44}
+.explorer-orbit-shell:after{transform:rotate(90deg)}
+.explorer-orbit-shell>i{position:absolute;display:block;border:1px dashed #a7c6b675;border-radius:50%}
+.explorer-orbit-shell .orbit-1{width:90%;height:90%}
+.explorer-orbit-shell .orbit-2{width:65%;height:65%;border-style:solid}
+.explorer-orbit-shell .orbit-3{width:42%;height:42%}
+.explorer-orbit-shell .orbit-4{width:23%;height:23%;border-style:solid}
+.explorer-orbit-center{position:relative;z-index:1;display:grid;place-items:center;border-radius:50%;background:#c3ddd1;color:#12243a;font:700 85px/1 Georgia,serif;width:24%;aspect-ratio:1}
+.explorer-orbit-note{position:absolute;bottom:15%;right:8%;font:800 11px/1.45 ui-monospace,monospace;letter-spacing:.15em;color:#a4bfb6}
+.explorer-cover-orbit>p{font-size:12px;color:#b7cbd0;margin:13px 0}
+.explorer-cover-bottom{grid-column:1/-1;display:flex;justify-content:space-between;background:#a7bfae;color:#1d3745;padding:11px 23px;font:750 10px/1.5 ui-monospace,monospace}
+.explorer-map-station,.explorer-entry-station,.explorer-rare-station,.explorer-facet-station{margin:60px 0}
+.explorer-section-head{padding:0 0 22px;border-bottom:3px solid #253854;margin-bottom:29px}
+.explorer-section-head>span,.explorer-rare-intro>span{font:800 11px/1.5 ui-monospace,monospace;letter-spacing:.09em;color:var(--accent)}
+.explorer-section-head h2,.explorer-rare-intro h2{font:650 clamp(36px,4.2vw,57px)/1.45 "Yu Mincho","Hiragino Mincho ProN",serif;letter-spacing:-.065em;margin:10px 0 8px}
+.explorer-section-head p{max-width:65ch;font-size:14px;line-height:1.85;color:var(--muted);margin:0}
+.explorer-map-layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:0;border:2px solid var(--border);background:var(--surface)}
+.explorer-map-instructions{padding:26px;background:var(--surface-2);border-right:1px solid var(--border)}
+.explorer-map-instructions>span{font:800 10px/1.5 ui-monospace,monospace;letter-spacing:.08em;color:var(--accent)}
+.explorer-map-instructions ol{margin:22px 0;padding:0;list-style:none;display:grid;gap:25px}
+.explorer-map-instructions li{display:grid;gap:8px}
+.explorer-map-instructions li strong{color:var(--accent);font:700 27px/1 Georgia,serif}
+.explorer-map-instructions li span{font-size:13px;line-height:1.8}
+.explorer-map-instructions p{font-size:12px;line-height:1.8;color:var(--muted);margin:17px 0}
+.explorer-text-link{display:block;border-top:1px solid var(--border);padding-top:16px;margin-top:22px;color:var(--accent);font-size:12px;font-weight:850}
+.explorer-map-canvas{min-width:0;overflow:hidden;padding:15px}
+.explorer-map-canvas .world-scroll{min-width:0}
+.explorer-entry-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;list-style:none;padding:1px;background:var(--border)}
+.explorer-entry-grid li{background:var(--surface);min-width:0}
+.explorer-entry-grid a{height:100%;min-height:190px;display:grid;grid-template-rows:auto 1fr auto;gap:14px;padding:17px;text-decoration:none;position:relative}
+.explorer-entry-grid a:hover{background:var(--accent-soft)}
+.explorer-entry-number{color:var(--accent);font:700 12px/1 ui-monospace,monospace}
+.explorer-entry-emoji{font-size:40px;align-self:center;justify-self:center}
+.explorer-entry-grid strong{font-size:16px;line-height:1.5;padding-right:17px}
+.explorer-entry-arrow{position:absolute;bottom:15px;right:14px;color:var(--accent);font-size:17px}
+.explorer-rare-station{display:grid;grid-template-columns:minmax(0,.68fr) minmax(0,1.32fr);background:#15233a;color:#f0f3f5}
+.explorer-rare-intro{padding:clamp(27px,4vw,45px);border-right:1px solid #6a7c8c}
+.explorer-rare-intro>span{color:#a2d6bf}
+.explorer-rare-intro h2{font-size:clamp(35px,4vw,53px)}
+.explorer-rare-intro p{font-size:13px;line-height:1.9;color:#c9d5d9;margin:20px 0}
+.explorer-rare-intro>a{font-size:13px;font-weight:800;color:#d1ebd8;display:inline-block;border-bottom:1px solid #c2e1d1;padding-bottom:5px;text-decoration:none}
+.explorer-rare-list{padding:0;margin:0;list-style:none}
+.explorer-rare-list li{border-bottom:1px solid #65758a}
+.explorer-rare-list li:last-child{border-bottom:0}
+.explorer-rare-list a{display:grid;grid-template-columns:35px 50px minmax(0,1fr) 22px;gap:15px;align-items:center;padding:19px 23px;text-decoration:none}
+.explorer-rare-list a:hover{background:#2c4159}
+.explorer-rare-list a>span:first-child{color:#9fc7b7;font:700 17px/1 Georgia,serif}
+.explorer-rare-emoji{font-size:30px}
+.explorer-rare-list strong{display:block;font-size:17px;line-height:1.5}
+.explorer-rare-list small{display:block;margin-top:4px;font-size:12px;color:#bfd2d2;line-height:1.65}
+.explorer-rare-list b{font-size:23px;color:#9ecfba}
+.explorer-facet-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
+.explorer-facet-grid li a{display:flex;flex-direction:column;gap:25px;padding:20px;border:1px solid var(--border);border-top:4px solid;min-height:165px;background:var(--surface);text-decoration:none}
+.explorer-facet-grid li a:hover{background:var(--accent-soft)}
+.explorer-facet-grid li a>span{font:700 11px/1 ui-monospace,monospace;color:var(--muted)}
+.explorer-facet-grid strong{font-size:clamp(15px,1.9vw,21px)}
+.explorer-facet-grid small{font-size:12px;color:var(--muted);margin-top:auto}
+.atlas-illustrated-cover{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px 38px;overflow:hidden;padding:0!important;border:1px solid var(--border)!important;border-top:5px solid var(--accent)!important}
+.atlas-profile-heading{grid-column:1/-1;padding:16px 28px;display:flex;justify-content:space-between;gap:15px;background:var(--surface-2);border-bottom:1px solid var(--border);font:750 10px/1.5 ui-monospace,monospace;letter-spacing:.08em;color:var(--accent)}
+.atlas-cover-art{grid-column:2;grid-row:2;background:var(--surface-2);display:flex;align-items:center;justify-content:center;min-height:250px;padding:12px;margin-right:23px;border:1px solid var(--border)}
+.atlas-cover-art img{display:block;width:100%;height:auto;object-fit:contain}
+.atlas-cover-copy{grid-column:1;grid-row:2;padding:clamp(16px,3vw,38px) 10px clamp(16px,3vw,38px) clamp(20px,3.3vw,42px)}
+.atlas-cover-copy>div:first-child>span:first-child{font-size:clamp(40px,5vw,70px)}
+.atlas-cover-copy h1{font-size:clamp(33px,4vw,52px)!important;line-height:1.25}
+.atlas-cover-copy>p.mt-4{font-size:clamp(16px,1.8vw,21px)}
+.atlas-profile-tabs{display:flex;flex-wrap:wrap;gap:15px;grid-column:1/-1;background:var(--surface-2);border-top:1px solid var(--border);padding:17px 22px}
+.atlas-profile-tabs a{font-size:12px;font-weight:800;border-bottom:1px solid var(--accent);text-decoration:none;padding-bottom:4px}
+.atlas-profile-story{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:15px 35px;margin-top:43px;border-top:3px solid var(--accent);padding:25px 0}
+.atlas-profile-story>section{margin:0!important}
+.atlas-profile-story>section:first-child{grid-column:1;grid-row:1/4;align-self:start;background:var(--accent-soft);border-radius:1px}
+.atlas-profile-story>section:not(:first-child){grid-column:2;border-bottom:1px solid var(--border);padding:0 8px 24px}
+.atlas-profile-story h2{font-size:clamp(19px,2vw,26px)!important;margin-bottom:12px}
+.atlas-profile-story p{line-height:2}
+.atlas-profile-facets,.atlas-profile-sources{background:var(--surface);border-top:3px solid var(--accent);padding:25px;scroll-margin-top:30px}
+.atlas-profile-facets li a{border-radius:2px!important}
+.atlas-network-section{scroll-margin-top:25px}
+.atlas-index-cover{margin:5px 0 30px;padding:clamp(22px,4.5vw,46px);background:#192842;color:#edf4f2;border-bottom:6px solid #9bc5ae}
+.atlas-index-cover>span{color:#9fc5b8;font:800 11px/1.5 ui-monospace,monospace;letter-spacing:.12em}
+.atlas-index-cover h1{font:600 clamp(40px,4.8vw,65px)/1.4 "Yu Mincho","Hiragino Mincho ProN",serif;letter-spacing:-.055em;margin:13px 0}
+.atlas-index-cover>p{max-width:60ch;line-height:1.9;color:#d5e5dd}
+.atlas-index-cover a{display:inline-block;border-color:#9fc5b8!important;color:#deede5!important;background:transparent!important;border-radius:0!important}
+.atlas-index-cover .text-\[var\(--muted\)\]{color:#d2ddda!important}
+.atlas-index-grid{gap:2px;background:var(--border);padding:2px}
+.atlas-index-grid li{background:var(--surface)}
+.atlas-index-card{display:grid!important;grid-template-columns:145px minmax(0,1fr);align-items:center;gap:18px;padding:13px!important;border:0!important;background:var(--surface)!important;height:100%;text-decoration:none}
+.atlas-index-card:hover{background:var(--accent-soft)!important}
+.atlas-index-image{aspect-ratio:16/9;overflow:hidden;align-self:center;background:var(--surface-2)}
+.atlas-index-image img{width:100%;height:100%;object-fit:cover}
+.atlas-index-card-copy .font-semibold{font-size:18px}
+.atlas-index-card-copy>p{font-size:12px;line-height:1.7}
+.atlas-rare-cover{background:#24352c;border-bottom-color:#a7c9a9}
+.atlas-rare-listing{gap:2px;padding:2px;background:var(--border)}
+.atlas-rare-listing li{background:var(--surface)}
+.atlas-rare-listing-card{display:grid!important;grid-template-columns:140px minmax(0,1fr);gap:16px;align-items:center;border:0!important;padding:12px!important;border-radius:0!important;height:100%}
+.atlas-rare-listing-card:hover{background:var(--accent-soft)!important}
+.atlas-rare-thumb img{width:100%;height:auto}
+.atlas-rare-description{min-width:0}
+.atlas-rare-description .font-semibold{font-size:18px}
+.atlas-neighbors .atlas-neighbor{display:grid!important;grid-template-columns:124px minmax(0,1fr);align-items:center;gap:18px;padding:13px!important;background:var(--surface);border-radius:1px}
+.atlas-neighbor-thumb img{width:100%;height:auto;object-fit:cover}
+.atlas-neighbor-description>div:first-child{flex-wrap:wrap}
+.atlas-neighbor-description p:last-child{font-size:11px;line-height:1.7}
+@media(max-width:1000px){.explorer-map-layout{grid-template-columns:1fr}.explorer-map-instructions{display:grid;grid-template-columns:1fr 2fr;gap:10px 25px;border-right:0;border-bottom:1px solid var(--border)}.explorer-map-instructions>span{grid-column:1/-1}.explorer-map-instructions ol{grid-column:1;grid-row:2/5;margin:0}.explorer-map-instructions p{margin:0}.explorer-facet-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.atlas-cover-art{margin:0 20px 0 0}}
+@media(max-width:750px){.explorer-cover{grid-template-columns:1fr}.explorer-cover-orbit{min-height:300px;border-left:0;border-top:1px solid #53657b}.explorer-orbit-shell{width:min(60%,240px)}.explorer-orbit-center{font-size:47px}.explorer-cover-copy{padding:34px 25px}.explorer-cover-copy h1{font-size:clamp(46px,9vw,65px)}.explorer-entry-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.explorer-rare-station{grid-template-columns:1fr}.explorer-rare-intro{border-right:0;border-bottom:1px solid #6a7c8c}.atlas-illustrated-cover{grid-template-columns:1fr}.atlas-profile-heading{grid-column:1}.atlas-cover-art{grid-column:1;grid-row:2;max-width:500px;margin:0 auto;padding:10px}.atlas-cover-copy{grid-column:1;grid-row:3;padding:10px 25px 24px}.atlas-profile-tabs{grid-column:1}.atlas-profile-story{grid-template-columns:1fr}.atlas-profile-story>section:first-child,.atlas-profile-story>section:not(:first-child){grid-column:1;grid-row:auto}.atlas-index-grid,.atlas-rare-listing{grid-template-columns:1fr}.atlas-index-card,.atlas-rare-listing-card{grid-template-columns:135px minmax(0,1fr)}}
+@media(max-width:520px){.explorer-cover-bottom{font-size:9px}.explorer-cover-bottom span:last-child{display:none}.explorer-map-instructions{display:block}.explorer-map-instructions ol{margin:15px 0}.explorer-map-instructions li{margin-bottom:9px}.explorer-section-head h2{font-size:38px}.explorer-map-canvas{padding:0}.explorer-facet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.explorer-facet-grid li a{padding:13px}.explorer-rare-list a{grid-template-columns:26px 36px minmax(0,1fr) 18px;gap:7px;padding:14px}.explorer-entry-grid a{min-height:165px}.atlas-index-card,.atlas-rare-listing-card{grid-template-columns:100px minmax(0,1fr);gap:9px;padding:9px!important}.atlas-neighbors .atlas-neighbor{grid-template-columns:90px minmax(0,1fr);gap:12px;padding:10px!important}.atlas-profile-tabs{gap:10px;padding:12px}.atlas-profile-heading{padding:12px}.atlas-profile-heading span:last-child{display:none}}
+@media(prefers-reduced-motion:reduce){.explorer-entry-grid a,.explorer-topic-item{transition:none}}
