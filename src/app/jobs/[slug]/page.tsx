@@ -193,7 +193,7 @@ export default async function JobPage({
       {job.howToBecomeJa && (
         <section className="mt-8">
           <h2 className="text-xl font-bold">どうやってなるか</h2>
-          <p className="mt-3">{job.howToBecomeJa}</p>
+          <div className="mt-3 whitespace-pre-line">{job.howToBecomeJa}</div>
         </section>
       )}
 
