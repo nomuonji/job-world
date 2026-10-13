@@ -19,6 +19,25 @@ import { Trail } from "@/components/Trail";
 import { RARITY_LABEL, FAMILIARITY_LABEL } from "@/lib/labels";
 import { shikakuLinkForJob } from "@/lib/shikaku";
 
+/** Structured paragraphs are opt-in via 【section】 markers in a job's existing text. */
+function JobNarrative({ text }: { text: string }) {
+  return (
+    <div className="mt-3 space-y-3">
+      {text.split(/\n{2,}/).map((paragraph, index) => {
+        const section = paragraph.match(/^【([^】]+)】([\s\S]*)$/);
+        return section ? (
+          <section key={index}>
+            <h3 className="font-semibold">{section[1]}</h3>
+            <p className="mt-1 whitespace-pre-line">{section[2]}</p>
+          </section>
+        ) : (
+          <p key={index} className="whitespace-pre-line">{paragraph}</p>
+        );
+      })}
+    </div>
+  );
+}
+
 export function generateStaticParams() {
   return getAllJobs().map((job) => ({ slug: job.slug }));
 }
@@ -186,14 +205,14 @@ export default async function JobPage({
 
       <section className="mt-8">
         <h2 className="text-xl font-bold">どんな仕事か</h2>
-        <p className="mt-3">{job.descriptionJa}</p>
-        {job.aDayJa && <p className="mt-3">{job.aDayJa}</p>}
+        <JobNarrative text={job.descriptionJa} />
+        {job.aDayJa && <JobNarrative text={job.aDayJa} />}
       </section>
 
       {job.howToBecomeJa && (
         <section className="mt-8">
           <h2 className="text-xl font-bold">どうやってなるか</h2>
-          <div className="mt-3 whitespace-pre-line">{job.howToBecomeJa}</div>
+          <JobNarrative text={job.howToBecomeJa} />
         </section>
       )}
 
