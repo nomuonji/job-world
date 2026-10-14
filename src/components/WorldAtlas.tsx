@@ -34,6 +34,11 @@ export function WorldAtlas({
   const [zoom, setZoom] = useState(1);
   const [tilted, setTilted] = useState(true);
   const [hovered, setHovered] = useState<string | null>(null);
+  const [lens, setLens] = useState<"all" | "industry" | "network">("all");
+  // A route is made only of confirmed graph edges, never a fabricated career path.
+  const [route, setRoute] = useState<string[]>(() => [
+    nodes.find((node) => node.familiarity >= 4)?.slug ?? nodes[0]?.slug ?? "",
+  ]);
 
   const current = byS.get(selected)?.node;
   const focus = byS.get(selected);
@@ -41,6 +46,32 @@ export function WorldAtlas({
     .map((edge) => ({ edge, target: byS.get(edge.slug) }))
     .filter((entry) => entry.target !== undefined) ?? [];
   const linked = new Set(edges.map((entry) => entry.edge.slug));
+  const selectedIndustry = current?.industryId;
+  const industryCounts = useMemo(() =>
+    new Map(regions.map((region) => [region.industryId, region.count])),
+    [regions],
+  );
+  const nextSurprise = useMemo(() => {
+    if (!current) return undefined;
+    return current.edges
+      .map((edge) => byS.get(edge.slug)?.node)
+      .filter((node): node is WorldNodeView => Boolean(node))
+      .sort((a, b) =>
+        Number(b.industryId !== current.industryId) - Number(a.industryId !== current.industryId) ||
+        a.familiarity - b.familiarity ||
+        b.rarity - a.rarity ||
+        a.slug.localeCompare(b.slug),
+      )[0];
+  }, [current, byS]);
+  const facetColors: Record<string, string> = {
+    setting: "#78d6bd",
+    subject: "#e2ad7e",
+    action: "#f3a1b8",
+    sense: "#c2a0ef",
+    condition: "#8cbcf5",
+    temperament: "#ead27d",
+    industry: "#c5d2d8",
+  };
 
   const results = useMemo(
     () => query.trim()
@@ -60,10 +91,33 @@ export function WorldAtlas({
     ? Math.max(0, Math.min(WORLD.size - size, focus.y - size / 2))
     : (WORLD.size - size) / 2;
 
-  const select = (slug: string) => {
+  const select = (slug: string, follow = false) => {
+    if (!byS.has(slug)) return;
+    const isNeighbor = current?.edges.some((edge) => edge.slug === slug) ?? false;
+    if (slug !== selected) {
+      setRoute((previous) =>
+        follow && isNeighbor ? [...previous, slug].slice(-6) : [slug],
+      );
+    }
     setSelected(slug);
     setHovered(null);
     setQuery("");
+  };
+  const navigateBack = (index: number) => {
+    const destination = route[index];
+    if (!destination) return;
+    setRoute(route.slice(0, index + 1));
+    setSelected(destination);
+    setHovered(null);
+  };
+  const pickIndustry = (industryId: string) => {
+    const first = nodes
+      .filter((node) => node.industryId === industryId)
+      .sort((a, b) => b.familiarity - a.familiarity || a.slug.localeCompare(b.slug))[0];
+    if (first) {
+      select(first.slug);
+      setLens("industry");
+    }
   };
 
   const displayed = hovered ? byS.get(hovered)?.node : current;
@@ -114,18 +168,46 @@ export function WorldAtlas({
         </div>
       </div>
 
+      <nav className="world-atlas-sectors" aria-label="業界から仕事を探す">
+        <span className="world-atlas-sectors-caption">AREAS / 業界</span>
+        {industryOrder.filter((industryId) => industryCounts.has(industryId)).map((industryId) => (
+          <button
+            type="button"
+            key={industryId}
+            aria-pressed={industryId === selectedIndustry && lens === "industry"}
+            className={industryId === selectedIndustry ? "is-current" : ""}
+            onClick={() => pickIndustry(industryId)}
+          >
+            {labels.get(industryId) ?? industryId}
+            <small>{industryCounts.get(industryId)}</small>
+          </button>
+        ))}
+      </nav>
       <div className="world-atlas-body">
         <div className="world-atlas-stage">
           <div className="world-atlas-stage-heading">
             <span>OCCUPATION UNIVERSE / {nodes.length} POINTS</span>
-            <strong>仕事の世界は、つながっている。</strong>
+<div className="world-atlas-lenses" role="group" aria-label="地図の見せ方">
+              {[
+                ["all", "全体"],
+                ["industry", "この業界"],
+                ["network", "つながり"],
+              ].map(([value, title]) => (
+                <button
+                  type="button"
+                  key={value}
+                  aria-pressed={lens === value}
+                  onClick={() => setLens(value as "all" | "industry" | "network")}
+                >{title}</button>
+              ))}
+            </div>
           </div>
           <div className="world-atlas-scroll">
             <div className={`world-atlas-plane${tilted ? " is-tilted" : ""}`}>
               <svg
                 viewBox={`${x} ${y} ${size} ${size}`}
-                role="img"
-                aria-label="業界ごとに方角が分かれ、中心からの距離が知名度を表す立体的な仕事の地図。職業を選ぶと関係する職業を線で表示します。"
+                role="group"
+                aria-label="150職業を業界と知名度で配置した地図。各職業を選択でき、選択した仕事の関係線が表示されます。"
                 className="world-atlas-svg"
               >
                 <defs>
