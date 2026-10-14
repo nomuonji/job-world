@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   getAllJobs,
   getEntryJobs,
@@ -33,7 +34,7 @@ export default function Home() {
 
   return (
     <div className="explorer-atlas-home">
-      <section className="explorer-cover" aria-labelledby="explorer-cover-title">
+      <section className="explorer-cover edition-cover" aria-labelledby="explorer-cover-title">
         <div className="explorer-cover-copy">
           <span className="explorer-overline">OCCUPATION ATLAS / {jobs.length} FIELD RECORDS</span>
           <h1 id="explorer-cover-title">その仕事を<br />知らないまま、<br /><em>生きていた。</em></h1>
@@ -44,13 +45,20 @@ export default function Home() {
             <Link href="/compare" className="explorer-cover-secondary">仕事を二つ並べて比較する ↗</Link>
           </nav>
         </div>
-        <div className="explorer-cover-orbit" aria-hidden="true">
-          <div className="explorer-orbit-shell"><i className="orbit-1"></i><i className="orbit-2"></i><i className="orbit-3"></i><i className="orbit-4"></i><span className="explorer-orbit-center">?</span><span className="explorer-orbit-note">NEXT<br />OCCUPATION</span></div>
-          <p>同じ業界じゃなくても、仕事はつながる。</p>
+        <div className="edition-feature-gallery" aria-label="収録職業から3つの入口">
+          {[entries[0],rare[0],rare[1]].filter(Boolean).map((job,i)=><Link href={`/jobs/${job.slug}`} key={job.slug}>
+            <Image src={`/og/${job.slug}.png`} alt="" width={1200} height={630} priority={i===0} sizes="(max-width: 750px) 100vw, 45vw"/>
+            <span><small>{i===0?"START HERE / 見覚えのある仕事": "UNKNOWN WORK / 見知らぬ仕事"}</small>{job.nameJa} ↗</span>
+          </Link>)}
         </div>
         <div className="explorer-cover-bottom"><span>仕事に詳しい必要はありません。</span><span>{jobs.length} occupations / 7 connections</span></div>
       </section>
 
+      <nav className="edition-paths" aria-label="探索の入口">
+        <Link href="/jobs"><strong>01 / 名前から探す</strong><span>職業名・働く領域・知名度で絞り込む。知らない仕事もすぐ見つかる。</span><b>職業索引 ↗</b></Link>
+        <a href="#world-map"><strong>02 / 地図を歩く</strong><span>一つの仕事を選び、共通する特徴から別の仕事へ移動する。</span><b>つながりの地図 ↓</b></a>
+        <Link href="/compare"><strong>03 / 並べて比べる</strong><span>違う二つの仕事を7つの角度から分解する。</span><b>比較室 ↗</b></Link>
+      </nav>
       <section className="explorer-map-station" id="world-map" aria-labelledby="world-map-heading">
         <header className="explorer-section-head">
           <span>01 / 地図から探索する</span>

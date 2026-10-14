@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
-import { getAllJobs } from "@/lib/data";
+import { AtlasIndex } from "@/components/AtlasIndex";
+import { getAllJobs, getTagsInDefinitionOrder } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "職業一覧｜150の仕事・職業の種類を図鑑で探す",
@@ -53,31 +53,7 @@ export default function JobsPage() {
         </Link>
       </div>
       </section>
-      <div className="atlas-index-toolbar">
-        <span>OCCUPATION INDEX / 五十音</span>
-        <strong>{jobs.length} 件</strong>
-        <p>一覧からひとつ選んだら、個別ページで「ここから辿れる仕事」へ進んでみてください。</p>
-      </div>
-
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2 atlas-index-grid">
-        {jobs.map((job) => (
-          <li key={job.slug}>
-            <Link
-              href={`/jobs/${job.slug}`}
-              className="atlas-index-card block h-full rounded-lg border border-[var(--border)] bg-[var(--surface)] p-4 transition-colors hover:border-[var(--accent)]"
-            >
-              <div className="atlas-index-image"><Image src={`/og/${job.slug}.png`} alt="" width={1200} height={630} loading="lazy" sizes="(max-width: 640px) 125px, 160px"/></div>
-              <div className="atlas-index-card-copy"><div className="flex items-baseline gap-2">
-                <span aria-hidden="true" className="text-xl">
-                  {job.emoji}
-                </span>
-                <span className="font-semibold">{job.nameJa}</span>
-              </div>
-              <p className="mt-1 text-sm text-[var(--muted)]">{job.summaryJa}</p></div>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <AtlasIndex jobs={jobs.map(j=>({slug:j.slug,name:j.nameJa,summary:j.summaryJa,emoji:j.emoji,industry:j.tags.find(t=>t.startsWith("industry."))??"industry.other",rarity:j.rarity,familiarity:j.familiarity}))} industries={getTagsInDefinitionOrder("industry").map(t=>({id:t.id,name:t.labelJa}))} />
     </div>
   );
 }

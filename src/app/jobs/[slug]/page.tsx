@@ -174,6 +174,12 @@ export default async function JobPage({
         </nav>
       </header>
 
+      {neighbors.length > 0 && (
+        <aside className="edition-job-discovery" aria-label="仕事の比較">
+          <div><h2>この仕事と、何が違う？</h2><p>「{job.nameJa}」と「{getJobBySlug(neighbors[0].slug)?.nameJa}」を7つの視点で見比べられます。分類タグの共通点は、就業適性や転職の保証ではありません。</p></div>
+          <Link href={`/compare?a=${job.slug}&b=${neighbors[0].slug}`}>比較室をひらく ↗</Link>
+        </aside>
+      )}
       {twoHopTrails.length > 0 && (
         <section className="atlas-route-panel" aria-labelledby="next-two-hops">
           <div className="atlas-route-intro">
