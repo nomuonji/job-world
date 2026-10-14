@@ -237,12 +237,34 @@ export function WorldAtlas({
                   const start = angle - half + 0.5;
                   const end = angle + half - 0.5;
                   const path = `M ${point(135, start)} L ${point(443, start)} A 443 443 0 ${end - start > 180 ? 1 : 0} 1 ${point(443, end)} L ${point(135, end)} A 135 135 0 ${end - start > 180 ? 1 : 0} 0 ${point(135, start)} Z`;
+                  const isActive = region.industryId === selectedIndustry;
+                  // Tiny sectors receive their names in the area rail instead of overlapping here.
+                  const showLabel = (region.count / Math.max(nodes.length, 1)) * 360 >= 19
+                    && (lens !== "industry" || isActive);
                   const palette = ["#5daca0", "#6e95bd", "#c49b6d", "#a282b3", "#7899ad", "#b6a781", "#76a99e", "#ab8794"];
                   return (
                     <g key={region.industryId}>
-                      <path d={path} fill={palette[index % palette.length]} opacity=".13" />
+                      <path
+                        d={path}
+                        fill={palette[index % palette.length]}
+                        opacity={isActive ? (lens === "network" ? ".1" : ".32") : lens === "all" ? ".1" : ".035"}
+                        stroke={isActive ? "#a9edcf" : "none"}
+                        strokeWidth={isActive ? 2.5 : 0}
+                        className="world-atlas-sector"
+                        onClick={() => pickIndustry(region.industryId)}
+                      >
+                        <title>{region.labelJa}：{region.count}職業。この領域を探索</title>
+                      </path>
                       <line x1={500} y1={500} x2={500 + Math.cos(rad(start)) * 448} y2={500 + Math.sin(rad(start)) * 448} stroke="#9cb8c1" strokeOpacity=".18" />
-                      <text x={region.labelX} y={region.labelY} className="world-atlas-region" textAnchor="middle" dominantBaseline="central">{region.labelJa}</text>
+                      {showLabel && (
+                        <text
+                          x={500 + (region.labelX - 500) * .87}
+                          y={500 + (region.labelY - 500) * .87}
+                          className={`world-atlas-region${isActive ? " is-active" : ""}`}
+                          textAnchor="middle"
+                          dominantBaseline="central"
+                        >{region.labelJa}</text>
+                      )}
                     </g>
                   );
                 })}
@@ -254,13 +276,27 @@ export function WorldAtlas({
                 <text x={500} y={491} textAnchor="middle" fill="#dbe9e5" fontSize={17} fontWeight={750}>よく知られた</text>
                 <text x={500} y={516} textAnchor="middle" fill="#dbe9e5" fontSize={17} fontWeight={750}>仕事</text>
 
+                {/* The gold path records actual choices only if successive jobs are linked. */}
+                {route.slice(1).map((slug, i) => {
+                  const before = byS.get(route[i]);
+                  const after = byS.get(slug);
+                  if (!before || !after ||
+                    !before.node.edges.some((edge) => edge.slug === slug)) return null;
+                  return <line
+                    key={`route-${i}`}
+                    className="world-atlas-route-line"
+                    x1={before.x} y1={before.y} x2={after.x} y2={after.y}
+                    stroke="#f3d795" strokeWidth={4} strokeDasharray="7 7"
+                    strokeLinecap="round" opacity=".72"
+                  />;
+                })}
                 {edges.map(({ edge, target }) => {
                   if (!focus || !target) return null;
                   const midX = (focus.x + target.x) / 2;
                   const midY = (focus.y + target.y) / 2;
                   return (
                     <g key={edge.slug}>
-                      <path d={`M ${focus.x} ${focus.y} Q ${midX + (500 - midX) * .12} ${midY + (500 - midY) * .12} ${target.x} ${target.y}`} fill="none" stroke="#a5efd1" strokeOpacity=".78" strokeWidth={4} strokeLinecap="round" />
+                      <path d={`M ${focus.x} ${focus.y} Q ${midX + (500 - midX) * .12} ${midY + (500 - midY) * .12} ${target.x} ${target.y}`} fill="none" stroke={facetColors[edge.dominantFacet] ?? "#a5efd1"} strokeOpacity={hovered === edge.slug ? "1" : ".88"} strokeWidth={hovered === edge.slug ? 7 : 4} strokeLinecap="round" />
                       <circle cx={target.x} cy={target.y} r={23} fill="#79dfc4" opacity=".26" filter="url(#world-node-glow)" />
                     </g>
                   );
@@ -270,8 +306,10 @@ export function WorldAtlas({
                   const isCurrent = node.slug === selected;
                   const isLinked = linked.has(node.slug);
                   const isHovered = node.slug === hovered;
-                  const big = isCurrent || isHovered;
-                  const r = isCurrent ? 20 : isLinked ? 12 : 6.2;
+                  const muted = lens === "industry"
+                    ? node.industryId !== selectedIndustry && !isLinked && !isCurrent
+                    : lens === "network" && !isLinked && !isCurrent;
+                  const r = isCurrent ? 20 : isLinked ? 13 : 6.2;
                   const key = (event: KeyboardEvent<SVGGElement>) => {
                     if (event.key === "Enter" || event.key === " ") {
                       event.preventDefault();
@@ -281,13 +319,13 @@ export function WorldAtlas({
                   return (
                     <g
                       key={node.slug}
-                      className={`world-atlas-node${isCurrent ? " is-current" : ""}${isLinked ? " is-linked" : ""}${hovered === node.slug ? " is-hovered" : ""}`}
+                      className={`world-atlas-node${isCurrent ? " is-current" : ""}${isLinked ? " is-linked" : ""}${hovered === node.slug ? " is-hovered" : ""}${muted ? " is-muted" : ""}`}
                       transform={`translate(${px} ${py})`}
                       role="button"
                       tabIndex={isCurrent || isLinked ? 0 : -1}
                       aria-label={`${node.nameJa}。地図で選択する`}
                       aria-pressed={isCurrent}
-                      onClick={() => select(node.slug)}
+                      onClick={() => select(node.slug, isLinked)}
                       onKeyDown={key}
                       onMouseEnter={() => setHovered(node.slug)}
                       onMouseLeave={() => setHovered(null)}
@@ -297,7 +335,10 @@ export function WorldAtlas({
                       <circle cy={7} r={r + 2} fill="#061520" opacity=".9" />
                       {(isCurrent || isHovered) && <circle r={r + 15} fill="#aeefd8" opacity=".17" />}
                       <circle r={r} fill={isCurrent ? "url(#world-node-cap)" : isLinked ? "#87dcc5" : "#7894a5"} stroke={isCurrent ? "#f7f4da" : "#d6e7e7"} strokeOpacity={isCurrent || isLinked ? 1 : .6} strokeWidth={isCurrent ? 4 : 1.6} />
-                      {big && <text x={0} y={-r-13} textAnchor="middle" className="world-atlas-node-label">{node.nameJa}</text>}
+                      {isCurrent && <circle r={r + 10} fill="none" stroke="#f9e9ae" strokeDasharray="3 6" strokeWidth={2.5} />}
+                      {isHovered && !isCurrent && zoom > 1.4 && (
+                        <text x={0} y={-r-16} textAnchor="middle" className="world-atlas-node-label">{node.nameJa}</text>
+                      )}
                       <title>{node.nameJa}</title>
                       <circle r={Math.max(13, r)} fill="transparent" stroke="none" />
                     </g>
@@ -308,7 +349,12 @@ export function WorldAtlas({
           </div>
           <div className="world-atlas-map-bottom">
             <span>中心：よく知られている ／ 外側：あまり知られていない</span>
-            <span>● 全職業　● 関連職業　● 選択中</span>
+            <div className="world-atlas-legend" aria-label="点と線の凡例">
+              <span><i className="is-normal" /> 収録職業</span>
+              <span><i className="is-linked" /> 関連職業</span>
+              <span><i className="is-selected" /> 現在地</span>
+              <span><i className="is-route" /> 歩いた道</span>
+            </div>
           </div>
           <div className="world-atlas-hover" aria-live="polite">
             {displayed ? <><span>{displayed.emoji}</span><strong>{displayed.nameJa}</strong><small>{displayed.summaryJa}</small></> : "点を選ぶと詳細が現れます"}
@@ -317,20 +363,48 @@ export function WorldAtlas({
         <aside className="world-atlas-inspector" aria-live="polite">
           <div className="world-atlas-inspector-top">
             <span>SELECTED RECORD / 現在地</span>
+            <span className="world-atlas-industry-tag">{labels.get(current?.industryId ?? "") ?? "業界未分類"} · {industryCounts.get(current?.industryId ?? "") ?? 0}職業</span>
             <div className="world-atlas-current-emoji" aria-hidden="true">{current?.emoji}</div>
             <h3>{current?.nameJa}</h3>
             <p>{current?.summaryJa}</p>
             {current && <Link href={`/jobs/${current.slug}`} className="world-atlas-read">この仕事を読む ↗</Link>}
+            {nextSurprise && (
+              <button
+                type="button"
+                className="world-atlas-discover"
+                onClick={() => { select(nextSurprise.slug, true); setLens("network"); setZoom((value) => Math.max(value, 1.25)); }}
+              >
+                <span>DISCOVER / 次の一歩</span>
+                <strong>意外な隣へ進む <span aria-hidden="true">↗</span></strong>
+                <small>{nextSurprise.nameJa}とのつながりを見つける</small>
+              </button>
+            )}
           </div>
+          <nav className="world-atlas-route" aria-label="仕事をたどった履歴">
+            <div><span>YOUR JOURNEY / 探索の足あと</span><button type="button" disabled={route.length < 2} onClick={() => navigateBack(route.length - 2)}>← 前に戻る</button></div>
+            <ol>{route.map((slug, index) => {
+              const node = byS.get(slug)?.node;
+              return node && <li key={`${slug}-${index}`}>
+                <button type="button" aria-current={index === route.length - 1 ? "step" : undefined} onClick={() => navigateBack(index)}>{node.nameJa}</button>
+              </li>;
+            })}</ol>
+          </nav>
           <div className="world-atlas-inspector-links">
-            <span>CONNECTED / 6つのつながり</span>
+            <span>CONNECTED / {edges.length}つのつながり</span>
             <p>どこが似ているかを確かめながら、次の仕事へ。</p>
             <ol>
               {edges.map(({ edge, target }, index) => target ? (
                 <li key={edge.slug}>
-                  <button type="button" onClick={() => select(target.node.slug)}>
+                  <button
+                    type="button"
+                    onClick={() => select(target.node.slug, true)}
+                    onMouseEnter={() => setHovered(target.node.slug)}
+                    onMouseLeave={() => setHovered(null)}
+                    onFocus={() => setHovered(target.node.slug)}
+                    onBlur={() => setHovered(null)}
+                  >
                     <span className="world-atlas-inspector-number">{String(index + 1).padStart(2, "0")}</span>
-                    <span><strong>{target.node.emoji} {target.node.nameJa}</strong><small>{edge.sharedLabelJa ?? edge.reasonJa}</small></span>
+                    <span><strong>{target.node.emoji} {target.node.nameJa}</strong><small><i style={{ backgroundColor: facetColors[edge.dominantFacet] ?? "#a5efd1" }} /> {edge.sharedLabelJa ? `共通点：${edge.sharedLabelJa}` : edge.reasonJa}</small></span>
                     <span aria-hidden="true">↗</span>
                   </button>
                 </li>
@@ -339,7 +413,7 @@ export function WorldAtlas({
           </div>
         </aside>
       </div>
-      <p className="world-atlas-disclaimer">この地図の位置とつながりは、図鑑の編集分類によるものです。従事者数の実測値・転職しやすさ・職業の優劣を表すものではありません。スマートフォンでは地図部分を左右にスクロールできます。</p>
+      <p className="world-atlas-disclaimer">この地図の位置とつながりは、図鑑の編集分類によるものです。従事者数の実測値・転職しやすさ・職業の優劣を表すものではありません。スマートフォンでは地図部分を左右にスクロールできます。線の色は共通する特徴の分類を示しています。</p>
     </div>
   );
 }
