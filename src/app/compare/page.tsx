@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/compare" },
 };
 
-export default function ComparePage() {
+export default async function ComparePage({searchParams}:{searchParams:Promise<{a?:string;b?:string}>}) {
+ const requested = await searchParams;
  const jobs = getAllJobs();
  const tags = getAllTags();
  const records = jobs.map(j => ({ slug: j.slug, name: j.nameJa, emoji: j.emoji, summary: j.summaryJa, surprise: j.surpriseJa, tags: j.tags, rarity: j.rarity, familiarity: j.familiarity }));
@@ -19,5 +20,5 @@ export default function ComparePage() {
  const contrasting = jobs.find(j=>j.slug !== first.slug && j.rarity>=4) ?? jobs[1];
  const ordered = [first, contrasting, ...jobs.filter(j=>j.slug !== first.slug && j.slug !== contrasting.slug)];
  const orderedRecords = ordered.map(j=>records.find(r=>r.slug===j.slug)!);
- return <div className="compare-page"><nav className="atlas-breadcrumb"><Link href="/">しごと図鑑</Link><span>/</span><span>比較室</span></nav><header className="compare-intro"><span>OCCUPATION ATLAS / COMPARISON LAB</span><h1>違う仕事の、<br/><em>同じところ。</em></h1><p>名前が違っても、仕事の中身は似ていることがある。二つの職業を台に載せて、7つの角度から分解してみよう。</p><div className="compare-intro-rail"><span>01 / 仕事を2つ選ぶ</span><span>02 / 共通点を見つける</span><span>03 / 違いを読む</span></div></header><OccupationCompare jobs={orderedRecords} facets={facets}/></div>;
+ return <div className="compare-page"><nav className="atlas-breadcrumb"><Link href="/">しごと図鑑</Link><span>/</span><span>比較室</span></nav><header className="compare-intro"><span>OCCUPATION ATLAS / COMPARISON LAB</span><h1>違う仕事の、<br/><em>同じところ。</em></h1><p>名前が違っても、仕事の中身は似ていることがある。二つの職業を台に載せて、7つの角度から分解してみよう。</p><div className="compare-intro-rail"><span>01 / 仕事を2つ選ぶ</span><span>02 / 共通点を見つける</span><span>03 / 違いを読む</span></div></header><OccupationCompare jobs={orderedRecords} facets={facets} initialA={requested.a} initialB={requested.b}/></div>;
 }
