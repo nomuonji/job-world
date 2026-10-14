@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { KeyboardEvent } from "react";
 import Link from "next/link";
 import type { WorldNodeView } from "@/lib/view";
@@ -31,6 +31,7 @@ export function WorldAtlas({
     () => nodes.find((n) => n.familiarity >= 4)?.slug ?? nodes[0]?.slug ?? "",
   );
   const [query, setQuery] = useState("");
+  const scrollRef = useRef<HTMLDivElement | null>(null);
   const [zoom, setZoom] = useState(1);
   const [tilted, setTilted] = useState(true);
   const [hovered, setHovered] = useState<string | null>(null);
@@ -99,6 +100,21 @@ export function WorldAtlas({
   const y = zoom > 1 && focus
     ? Math.max(0, Math.min(WORLD.size - size, focus.y - size / 2))
     : (WORLD.size - size) / 2;
+
+  // When selecting from the inspector/search on narrow screens, show its actual
+  // location on the scrollable terrain rather than leaving it outside the viewport.
+  useEffect(() => {
+    const viewport = scrollRef.current;
+    if (!viewport || !focus || viewport.scrollWidth <= viewport.clientWidth) return;
+    const location = ((focus.x - x) / size) * viewport.scrollWidth;
+    const left = Math.max(0, location - viewport.clientWidth / 2);
+    viewport.scrollTo({
+      left,
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "instant"
+        : "smooth",
+    });
+  }, [selected, zoom, focus, x, size]);
 
   const select = (slug: string, follow = false) => {
     if (!byS.has(slug)) return;
@@ -211,7 +227,7 @@ export function WorldAtlas({
               ))}
             </div>
           </div>
-          <div className="world-atlas-scroll">
+          <div className="world-atlas-scroll" ref={scrollRef}>
             <div className={`world-atlas-plane${tilted ? " is-tilted" : ""}`}>
               <svg
                 viewBox={`${x} ${y} ${size} ${size}`}
