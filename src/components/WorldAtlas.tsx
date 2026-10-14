@@ -5,6 +5,7 @@ import type { KeyboardEvent } from "react";
 import Link from "next/link";
 import type { WorldNodeView } from "@/lib/view";
 import { RelationshipMap } from "@/components/RelationshipMap";
+import { WorldMapLabels } from "@/components/WorldMapLabels";
 import { WORLD, layoutWorldMap } from "@/lib/world-map";
 
 /**
@@ -36,7 +37,7 @@ export function WorldAtlas({
   const [zoom, setZoom] = useState(1);
   const [tilted, setTilted] = useState(true);
   const [hovered, setHovered] = useState<string | null>(null);
-  const [lens, setLens] = useState<"all" | "industry" | "network">("network");
+  const [lens, setLens] = useState<"all" | "industry" | "network">("all");
   // A route is made only of confirmed graph edges, never a fabricated career path.
   const [route, setRoute] = useState<string[]>(() => [
     nodes.find((node) => node.familiarity >= 4)?.slug ?? nodes[0]?.slug ?? "",
@@ -282,8 +283,9 @@ export function WorldAtlas({
                   const path = `M ${point(135, start)} L ${point(443, start)} A 443 443 0 ${end - start > 180 ? 1 : 0} 1 ${point(443, end)} L ${point(135, end)} A 135 135 0 ${end - start > 180 ? 1 : 0} 0 ${point(135, start)} Z`;
                   const isActive = region.industryId === selectedIndustry;
                   // Tiny sectors receive their names in the area rail instead of overlapping here.
-                  const showLabel = (region.count / Math.max(nodes.length, 1)) * 360 >= 19
-                    && (lens !== "industry" || isActive);
+                  // Names on the world map belong primarily to occupations,
+                  // not crowded sector captions. The rail above names every sector.
+                  const showLabel = lens === "industry" && isActive;
                   const palette = ["#5daca0", "#6e95bd", "#c49b6d", "#a282b3", "#7899ad", "#b6a781", "#76a99e", "#ab8794"];
                   return (
                     <g key={region.industryId}>
@@ -322,7 +324,7 @@ export function WorldAtlas({
                 })}
                 {[1, 2, 3, 4, 5].map((f) => {
                   const radius = WORLD.innerRadius + ((5 - f) / 4) * (WORLD.outerRadius - WORLD.innerRadius);
-                  return <circle key={f} cx={500} cy={500} r={radius} fill="none" stroke="#98b8c4" strokeWidth={1.4} strokeOpacity=".28" strokeDasharray={f === 5 ? undefined : "3 7"} />;
+                  return <circle key={f} cx={500} cy={500} r={radius} fill="none" stroke="#98b8c4" strokeWidth={1.4} strokeOpacity=".18" strokeDasharray={f === 5 ? undefined : "3 7"} />;
                 })}
                 <circle cx={500} cy={500} r={85} fill="#132e40" stroke="#8bb5bb" strokeOpacity=".4" />
                 <text x={500} y={491} textAnchor="middle" fill="#dbe9e5" fontSize={17} fontWeight={750}>よく知られた</text>
@@ -396,11 +398,28 @@ export function WorldAtlas({
                     </g>
                   );
                 })}
+                {current && focus && (
+                  <g transform={`translate(${x} ${y}) scale(${size / 1000})`}>
+                    <WorldMapLabels
+                      selected={current}
+                      focus={{ ...focus, x: (focus.x - x) * 1000 / size, y: (focus.y - y) * 1000 / size }}
+                      connections={edges.flatMap(({ edge, target }) => target ? [{
+                        edge,
+                        target: { ...target, x: (target.x - x) * 1000 / size, y: (target.y - y) * 1000 / size },
+                      }] : [])}
+                      facetColors={facetColors}
+                      facetLabels={facetLabels}
+                      hovered={hovered}
+                      onHover={setHovered}
+                      onSelect={(slug) => select(slug, true)}
+                    />
+                  </g>
+                )}
               </svg>
             </div>
           </div>
           <div className="world-atlas-map-bottom">
-            <span>中心：よく知られている ／ 外側：あまり知られていない</span>
+            <span>選んだ仕事と関連6職業を地図に表示中。背景の点も選択できます。</span>
             <div className="world-atlas-legend" aria-label="点と線の凡例">
               <span><i className="is-normal" /> 収録職業</span>
               <span><i className="is-linked" /> 関連職業</span>
@@ -467,7 +486,7 @@ export function WorldAtlas({
           </div>
         </aside>
       </div>
-      <p className="world-atlas-disclaimer">この地図の位置とつながりは、図鑑の編集分類によるものです。従事者数の実測値・転職しやすさ・職業の優劣を表すものではありません。「関係を読む」は選択した仕事と直接つながる職業を示します。「全体地図」では全150職業の位置関係を俯瞰できます。</p>
+      <p className="world-atlas-disclaimer">この地図の位置とつながりは、図鑑の編集分類によるものです。従事者数の実測値・転職しやすさ・職業の優劣を表すものではありません。全体地図では、選択中と関連する職業の名前・共通点を地図上に表示します。背景の点を選ぶと、その職業から探索できます。</p>
     </div>
   );
 }

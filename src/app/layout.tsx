@@ -8,6 +8,7 @@ import "./home-fixes.css";
 import "./world-atlas.css";
 import "./world-atlas-refinement.css";
 import "./relationship-map.css";
+import "./world-map-labels.css";
 
 // 公開URL: job.antonbase.com（metadataBase・sitemap.ts・robots.ts に反映）
 export const SITE_URL = "https://job.antonbase.com";
