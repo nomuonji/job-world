@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import {
   getAllJobs,
   getEntryJobs,
   getFacets,
   getRareJobs,
+  getTagsInDefinitionOrder,
 } from "@/lib/data";
 import { toWorldNodes } from "@/lib/view";
-import { RandomJump } from "@/components/RandomJump";
-import { FocusExplorer } from "@/components/FocusExplorer";
+import { WorldAtlas } from "@/components/WorldAtlas";
 import { SITE_URL } from "./layout";
 
 export const metadata: Metadata = {
@@ -25,56 +24,49 @@ export default function Home() {
 
   // 全体マップ用。業界タグの定義順が、そのまま地図の方角になる。
   const worldNodes = toWorldNodes(jobs);
+  const industries = getTagsInDefinitionOrder("industry");
 
   return (
     <div className="explorer-atlas-home">
-      <section className="explorer-cover edition-cover" aria-labelledby="explorer-cover-title">
-        <div className="explorer-cover-copy">
-          <span className="explorer-overline">OCCUPATION ATLAS / {jobs.length} FIELD RECORDS</span>
-          <h1 id="explorer-cover-title">その仕事を<br />知らないまま、<br /><em>生きていた。</em></h1>
-          <p>知っている仕事をひとつ選ぶ。似た動作、使う道具、働く場所をたどっていく。そこには、名前さえ知らなかった仕事がある。</p>
-          <nav aria-label="探索を開始">
-            <a href="#world-map" className="explorer-cover-primary">仕事のつながりを探す <span>↓</span></a>
-            <Link href="/jobs" className="explorer-cover-secondary">職業を名前から探す ↗</Link>
-            <Link href="/compare" className="explorer-cover-secondary">仕事を二つ並べて比較する ↗</Link>
-          </nav>
+      <section className="atlas-relaunch-cover" aria-labelledby="explorer-cover-title">
+        <div className="atlas-relaunch-topline">
+          <span>SHIGOTO ATLAS — EXPLORING WORK</span>
+          <span>{jobs.length} OCCUPATIONS / 7 CONNECTIONS</span>
         </div>
-        <div className="edition-feature-gallery" aria-label="収録職業から3つの入口">
-          {[entries[0],rare[0],rare[1]].filter(Boolean).map((job,i)=><Link href={`/jobs/${job.slug}`} key={job.slug}>
-            <Image src={`/og/${job.slug}.png`} alt="" width={1200} height={630} priority={i===0} sizes="(max-width: 750px) 100vw, 45vw"/>
-            <span><small>{i===0?"START HERE / 見覚えのある仕事": "UNKNOWN WORK / 見知らぬ仕事"}</small>{job.nameJa} ↗</span>
-          </Link>)}
-        </div>
-        <div className="explorer-cover-bottom"><span>仕事に詳しい必要はありません。</span><span>{jobs.length} occupations / 7 connections</span></div>
-      </section>
-
-      <nav className="edition-paths" aria-label="探索の入口">
-        <Link href="/jobs"><strong>01 / 名前から探す</strong><span>職業名・働く領域・知名度で絞り込む。知らない仕事もすぐ見つかる。</span><b>職業索引 ↗</b></Link>
-        <a href="#world-map"><strong>02 / つながりを辿る</strong><span>一つの仕事を選び、共通する特徴から別の仕事へ移動する。</span><b>仕事の関係を見る ↓</b></a>
-        <Link href="/compare"><strong>03 / 並べて比べる</strong><span>違う二つの仕事を7つの角度から分解する。</span><b>比較室 ↗</b></Link>
-      </nav>
-      <section className="explorer-map-station" id="world-map" aria-labelledby="world-map-heading">
-        <header className="explorer-section-head">
-          <span>01 / 地図から探索する</span>
-          <h2 id="world-map-heading">仕事の地図。</h2>
-          <p>気になる仕事をひとつ選ぶと、共通する特徴を持つ6つの仕事が見つかります。選んだ先から、さらに探索できます。</p>
-        </header>
-        <div className="explorer-map-layout">
-          <aside className="explorer-map-instructions">
-            <span>HOW TO EXPLORE</span>
-            <ol>
-              <li><strong>01</strong><span>名前や仕事内容で職業を検索する。</span></li>
-              <li><strong>02</strong><span>関連する6つの仕事と共通点を読む。</span></li>
-              <li><strong>03</strong><span>気になった仕事を選んで、次に進む。</span></li>
-            </ol>
-            <p>地図の操作が難しければ、下の職業一覧から始められます。</p>
-            <RandomJump slugs={jobs.map(j=>j.slug)} />
-            <Link href="/jobs" className="explorer-text-link">全職業の索引を見る ↗</Link>
-          </aside>
-          <div className="explorer-map-canvas">
-            <FocusExplorer nodes={worldNodes}/>
+        <div className="atlas-relaunch-inner">
+          <div>
+            <p className="atlas-relaunch-eyebrow">仕事の名前を超えて、その先へ。</p>
+            <h1 id="explorer-cover-title">知っている仕事から、<br /><em>知らない世界へ。</em></h1>
+            <p className="atlas-relaunch-description">この世界には、まだ名前も知らない仕事がある。150の職業をつないだ地図を歩いて、思いがけない仕事に出会おう。</p>
+            <div className="atlas-relaunch-actions">
+              <a href="#world-map" className="atlas-relaunch-primary">仕事の地図を歩く <span aria-hidden="true">↓</span></a>
+              <Link href="/jobs">名前から探す ↗</Link>
+              <Link href="/compare">二つの仕事を比べる ↗</Link>
+            </div>
+          </div>
+          <div className="atlas-relaunch-aside">
+            <div><strong>150</strong><span>収録している職業</span></div>
+            <p>同じ業界にいる仕事だけが、似ているとは限らない。使う感覚、動作、扱うもの。つながりの理由が見える地図です。</p>
+            <span className="atlas-relaunch-aside-line">SCROLL TO DISCOVER ↓</span>
           </div>
         </div>
+      </section>
+
+      <section className="atlas-relaunch-map-section" id="world-map" aria-labelledby="world-map-heading">
+        <header className="atlas-relaunch-map-heading">
+          <div><span>THE ATLAS / EXPLORE THE WORLD</span><h2 id="world-map-heading">仕事の地図。</h2></div>
+          <p>点のひとつひとつが仕事。業界ごとに方角が分かれ、中心から遠いほど知られていない仕事です。職業を選ぶと、関係のある仕事が光ってつながります。</p>
+        </header>
+        <WorldAtlas
+          nodes={worldNodes}
+          industryOrder={industries.map((industry) => industry.id)}
+          industryLabels={industries.map((industry) => [industry.id, industry.labelJa] as [string, string])}
+        />
+        <nav className="atlas-relaunch-routes" aria-label="仕事の探し方">
+          <Link href="/jobs"><strong>職業を一覧から探す</strong><span>収録している全職業を検索・絞り込み ↗</span></Link>
+          <Link href="/compare"><strong>仕事を二つ比較する</strong><span>似ているところと違うところを読み解く ↗</span></Link>
+          <Link href="/rare-jobs"><strong>珍しい仕事に出会う</strong><span>ふだん見かけない仕事をもっと知る ↗</span></Link>
+        </nav>
       </section>
 
       <section className="explorer-entry-station" aria-labelledby="explorer-entry-title">
