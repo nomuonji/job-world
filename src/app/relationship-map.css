@@ -1,0 +1,52 @@
+/* An explanation first, an atlas second. Text belongs to the connections themselves. */
+.relationship-map{background:radial-gradient(circle at 50% 46%,#244c59 0%,#112b40 54%,#0b1d2c 100%);border-top:1px solid #355365;color:#f4f6ed;min-width:0}
+.relationship-map-lead{text-align:center;padding:16px 14px 7px;display:grid;gap:4px}
+.relationship-map-lead strong{font-size:17px;font-weight:900;letter-spacing:-.03em}
+.relationship-map-lead span{font-size:12px;color:#bed8d8}
+.relationship-map-orbit{position:relative;min-height:650px;isolation:isolate;overflow:hidden}
+.relationship-map-orbit:before{content:"";position:absolute;inset:7% 6%;border:1px dashed #7aaead35;border-radius:50%;pointer-events:none}
+.relationship-map-lines{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.relationship-map-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:9px;width:29%;min-height:175px;max-width:225px;padding:19px 11px;background:linear-gradient(145deg,#dbead8,#c0e1d2);border:3px solid #ecf7dc;box-shadow:0 9px 0 #0b1c26,0 22px 55px #9cddab38;color:#1c3c44;z-index:1;border-radius:16px}
+.relationship-map-caption{font:800 10px/1.4 ui-monospace,monospace;letter-spacing:.05em;color:#30625b}
+.relationship-map-center-emoji{font-size:35px;line-height:1}
+.relationship-map-center h3{font-size:clamp(15px,1.8vw,23px);font-weight:900;line-height:1.38;overflow-wrap:anywhere;text-wrap:balance}
+.relationship-map-center-description{font-size:10px;line-height:1.4;color:#335c59}
+.relationship-map-job{position:absolute;width:30%;max-width:225px;min-height:116px;display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:6px;transform:translate(-50%,-50%);padding:12px 13px;text-align:left;background:#18394b;border:1px solid #527482;border-top:4px solid var(--relationship-color);color:#e8f4ed;border-radius:9px;box-shadow:0 8px 0 #06182788,0 17px 28px #07152177;z-index:2;transition:background .16s,box-shadow .16s,transform .16s}
+.relationship-map-job:focus-visible,.relationship-map-job:hover,.relationship-map-job.is-hovered{background:#285265;border-color:#b7e6d4;box-shadow:0 8px 0 #05152299,0 0 28px #a9d9ba44;transform:translate(-50%,-53%)}
+.relationship-map-job-top{display:flex;align-items:center;gap:8px;font-size:18px;line-height:1.3}
+.relationship-map-job-top>b{font:850 11px/1 ui-monospace,monospace;color:#b7d4cf}
+.relationship-map-job-top>span:last-child{margin-left:auto;color:#a7e3cd;font-size:18px}
+.relationship-map-job strong{font-weight:900;font-size:clamp(13px,1.65vw,19px);line-height:1.35;overflow-wrap:anywhere}
+.relationship-map-job small{font-size:11px;line-height:1.55;color:#d0e4dc;overflow-wrap:anywhere}
+.relationship-map-job small i{display:inline-block;width:8px;height:8px;margin-right:4px;background:var(--relationship-color);border-radius:50%}
+.relationship-map-job-0{left:26%;top:16%}.relationship-map-job-1{left:74%;top:16%}
+.relationship-map-job-2{left:15%;top:50%}.relationship-map-job-3{left:85%;top:50%}
+.relationship-map-job-4{left:26%;top:84%}.relationship-map-job-5{left:74%;top:84%}
+.relationship-map-footer{display:flex;justify-content:space-between;align-items:center;gap:14px 18px;flex-wrap:wrap;padding:14px 17px;background:#193547;border-top:1px solid #4b6a77}
+.relationship-map-footer span{font-size:11px;line-height:1.6;color:#d0e0da;max-width:52ch}
+.relationship-map-footer button{font-size:12px;font-weight:850;background:#d5eadb;color:#1a4042;padding:10px 14px;border:1px solid #e5f2dc}
+.relationship-map-footer button:hover,.relationship-map-footer button:focus-visible{background:#f3f5de}
+.world-atlas:has(.relationship-map) .world-atlas-stage{background:#10293b}
+.world-atlas:has(.relationship-map) .world-atlas-stage-heading{padding-bottom:12px}
+.world-atlas:has(.relationship-map) .world-atlas-inspector-links>p{margin-top:5px}
+@media(max-width:1070px) and (min-width:621px){
+ .relationship-map-orbit{min-height:615px}
+ .relationship-map-job{padding:10px 9px;min-height:109px}
+ .relationship-map-job strong{font-size:14px}
+ .relationship-map-job small{font-size:10px}
+ .relationship-map-center{min-height:152px;padding:13px 9px}
+}
+@media(max-width:620px){
+ .relationship-map-orbit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:17px;min-height:0}
+ .relationship-map-orbit:before,.relationship-map-lines{display:none}
+ .relationship-map-center{position:static;transform:none;grid-column:1/-1;width:100%;max-width:none;min-height:0;padding:14px;border-radius:9px;box-shadow:0 5px 0 #081c25;margin-bottom:5px}
+ .relationship-map-center-emoji{font-size:29px}
+ .relationship-map-center h3{font-size:23px}
+ .relationship-map-job{position:static;transform:none;width:100%;max-width:none;min-height:123px;padding:12px 9px}
+ .relationship-map-job:hover,.relationship-map-job.is-hovered,.relationship-map-job:focus-visible{transform:none}
+ .relationship-map-job strong{font-size:15px}
+ .relationship-map-job small{font-size:11px}
+ .relationship-map-lead strong{font-size:15px}
+ .relationship-map-footer button{width:100%;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){.relationship-map-job{transition:none}}
