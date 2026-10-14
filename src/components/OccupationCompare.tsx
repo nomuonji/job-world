@@ -16,7 +16,7 @@ export function OccupationCompare({ jobs, facets, initialA, initialB }: { jobs: 
     const params = new URLSearchParams(window.location.search);
     const a = params.get("a");
     const b = params.get("b");
-    if(a && b && a !== b && jobs.some(j=>j.slug===a) && jobs.some(j=>j.slug===b)){setLeft(a);setRight(b);}
+    if(a && b && a !== b && jobs.some(j=>j.slug===a) && jobs.some(j=>j.slug===b)) { const frame = window.requestAnimationFrame(() => { setLeft(a); setRight(b); }); return () => window.cancelAnimationFrame(frame); }
   },[jobs]);
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
