@@ -63,6 +63,15 @@ export function WorldAtlas({
         a.slug.localeCompare(b.slug),
       )[0];
   }, [current, byS]);
+  const facetLabels: Record<string, string> = {
+    setting: "働く場所",
+    subject: "扱うもの",
+    action: "動作",
+    sense: "使う感覚",
+    condition: "働く条件",
+    temperament: "向いている気質",
+    industry: "業界",
+  };
   const facetColors: Record<string, string> = {
     setting: "#78d6bd",
     subject: "#e2ad7e",
@@ -251,7 +260,16 @@ export function WorldAtlas({
                         stroke={isActive ? "#a9edcf" : "none"}
                         strokeWidth={isActive ? 2.5 : 0}
                         className="world-atlas-sector"
+                        role="button"
+                        tabIndex={0}
+                        aria-label={`${region.labelJa}を探索。収録${region.count}職業`}
                         onClick={() => pickIndustry(region.industryId)}
+                        onKeyDown={(event) => {
+                          if (event.key === "Enter" || event.key === " ") {
+                            event.preventDefault();
+                            pickIndustry(region.industryId);
+                          }
+                        }}
                       >
                         <title>{region.labelJa}：{region.count}職業。この領域を探索</title>
                       </path>
@@ -404,7 +422,7 @@ export function WorldAtlas({
                     onBlur={() => setHovered(null)}
                   >
                     <span className="world-atlas-inspector-number">{String(index + 1).padStart(2, "0")}</span>
-                    <span><strong>{target.node.emoji} {target.node.nameJa}</strong><small><i style={{ backgroundColor: facetColors[edge.dominantFacet] ?? "#a5efd1" }} /> {edge.sharedLabelJa ? `共通点：${edge.sharedLabelJa}` : edge.reasonJa}</small></span>
+                    <span><strong>{target.node.emoji} {target.node.nameJa}</strong><small><i style={{ backgroundColor: facetColors[edge.dominantFacet] ?? "#a5efd1" }} /> {facetLabels[edge.dominantFacet] ?? "特徴"}：{edge.sharedLabelJa ?? edge.reasonJa}</small></span>
                     <span aria-hidden="true">↗</span>
                   </button>
                 </li>
