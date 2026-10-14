@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { KeyboardEvent } from "react";
 import Link from "next/link";
 import type { WorldNodeView } from "@/lib/view";
+import { RelationshipMap } from "@/components/RelationshipMap";
 import { WORLD, layoutWorldMap } from "@/lib/world-map";
 
 /**
@@ -35,7 +36,7 @@ export function WorldAtlas({
   const [zoom, setZoom] = useState(1);
   const [tilted, setTilted] = useState(true);
   const [hovered, setHovered] = useState<string | null>(null);
-  const [lens, setLens] = useState<"all" | "industry" | "network">("all");
+  const [lens, setLens] = useState<"all" | "industry" | "network">("network");
   // A route is made only of confirmed graph edges, never a fabricated career path.
   const [route, setRoute] = useState<string[]>(() => [
     nodes.find((node) => node.familiarity >= 4)?.slug ?? nodes[0]?.slug ?? "",
@@ -146,6 +147,12 @@ export function WorldAtlas({
   };
 
   const displayed = hovered ? byS.get(hovered)?.node : current;
+  const relationItems = edges.flatMap(({edge,target}) => target ? [{
+    node:target.node,
+    shared:edge.sharedLabelJa ?? edge.reasonJa,
+    facetLabel:facetLabels[edge.dominantFacet] ?? "共通する特徴",
+    color:facetColors[edge.dominantFacet] ?? "#a5efd1",
+  }] : []);
 
   return (
     <div className="world-atlas">
@@ -184,16 +191,16 @@ export function WorldAtlas({
               <option value={node.slug} key={node.slug}>{node.nameJa}</option>
             ))}
           </select>
-          <div className="world-atlas-tool-buttons" role="group" aria-label="地図の表示操作">
+          {lens !== "network" && <div className="world-atlas-tool-buttons" role="group" aria-label="地図の表示操作">
             <button type="button" onClick={() => setZoom((z) => Math.max(1, Math.round((z - 0.25) * 100) / 100))} disabled={zoom === 1} aria-label="縮小">−</button>
             <span aria-live="polite">{Math.round(zoom * 100)}%</span>
             <button type="button" onClick={() => setZoom((z) => Math.min(2, Math.round((z + 0.25) * 100) / 100))} disabled={zoom === 2} aria-label="拡大">＋</button>
             <button type="button" className="world-atlas-tilt" aria-pressed={tilted} onClick={() => setTilted((value) => !value)}>{tilted ? "俯瞰に戻す" : "立体表示"}</button>
-          </div>
+          </div>}
         </div>
       </div>
 
-      <nav className="world-atlas-sectors" aria-label="業界から仕事を探す">
+      {lens !== "network" && <nav className="world-atlas-sectors" aria-label="業界から仕事を探す">
         <span className="world-atlas-sectors-caption">AREAS / 業界</span>
         {industryOrder.filter((industryId) => industryCounts.has(industryId)).map((industryId) => (
           <button
@@ -207,16 +214,16 @@ export function WorldAtlas({
             <small>{industryCounts.get(industryId)}</small>
           </button>
         ))}
-      </nav>
+      </nav>}
       <div className="world-atlas-body">
         <div className="world-atlas-stage">
           <div className="world-atlas-stage-heading">
-            <span>OCCUPATION UNIVERSE / {nodes.length} POINTS</span>
+            <span>{lens === "network" ? "CONNECTIONS / 仕事のつながりを解く" : `OCCUPATION UNIVERSE / ${nodes.length} POINTS`}</span>
 <div className="world-atlas-lenses" role="group" aria-label="地図の見せ方">
               {[
-                ["all", "全体"],
-                ["industry", "この業界"],
-                ["network", "つながり"],
+                ["network", "関係を読む"],
+                ["all", "全体地図"],
+                ["industry", "業界地図"],
               ].map(([value, title]) => (
                 <button
                   type="button"
@@ -227,6 +234,17 @@ export function WorldAtlas({
               ))}
             </div>
           </div>
+          {lens === "network" && current ? (
+            <RelationshipMap
+              current={current}
+              related={relationItems}
+              hovered={hovered}
+              onHover={setHovered}
+              onSelect={(slug) => select(slug, true)}
+              onOverview={() => {setLens("all"); setZoom(1);}}
+            />
+          ) : (
+          <>
           <div className="world-atlas-scroll" ref={scrollRef}>
             <div className={`world-atlas-plane${tilted ? " is-tilted" : ""}`}>
               <svg
@@ -393,6 +411,8 @@ export function WorldAtlas({
           <div className="world-atlas-hover" aria-live="polite">
             {displayed ? <><span>{displayed.emoji}</span><strong>{displayed.nameJa}</strong><small>{displayed.summaryJa}</small></> : "点を選ぶと詳細が現れます"}
           </div>
+          </>
+          )}
         </div>
         <aside className="world-atlas-inspector" aria-live="polite">
           <div className="world-atlas-inspector-top">
@@ -425,7 +445,7 @@ export function WorldAtlas({
           </nav>
           <div className="world-atlas-inspector-links">
             <span>CONNECTED / {edges.length}つのつながり</span>
-            <p>どこが似ているかを確かめながら、次の仕事へ。</p>
+            <p>共通する特徴を確かめて、次の仕事へ。上の図と番号が対応しています。</p>
             <ol>
               {edges.map(({ edge, target }, index) => target ? (
                 <li key={edge.slug}>
@@ -447,7 +467,7 @@ export function WorldAtlas({
           </div>
         </aside>
       </div>
-      <p className="world-atlas-disclaimer">この地図の位置とつながりは、図鑑の編集分類によるものです。従事者数の実測値・転職しやすさ・職業の優劣を表すものではありません。スマートフォンでは地図部分を左右にスクロールできます。線の色は共通する特徴の分類を示しています。</p>
+      <p className="world-atlas-disclaimer">この地図の位置とつながりは、図鑑の編集分類によるものです。従事者数の実測値・転職しやすさ・職業の優劣を表すものではありません。「関係を読む」は選択した仕事と直接つながる職業を示します。「全体地図」では全150職業の位置関係を俯瞰できます。</p>
     </div>
   );
 }
