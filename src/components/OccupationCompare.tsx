@@ -9,9 +9,9 @@ export type CompareRecord = {
 };
 export type CompareFacet = { id: string; label: string; question: string; tags: { id: string; label: string }[] };
 
-export function OccupationCompare({ jobs, facets }: { jobs: CompareRecord[]; facets: CompareFacet[] }) {
-  const [left, setLeft] = useState(jobs[0]?.slug ?? "");
-  const [right, setRight] = useState(jobs[1]?.slug ?? "");
+export function OccupationCompare({ jobs, facets, initialA, initialB }: { jobs: CompareRecord[]; facets: CompareFacet[]; initialA?: string; initialB?: string }) {
+  const [left, setLeft] = useState(jobs.some(j => j.slug === initialA) ? initialA! : jobs[0]?.slug ?? "");
+  const [right, setRight] = useState(jobs.some(j => j.slug === initialB && j.slug !== initialA) ? initialB! : jobs[1]?.slug ?? "");
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
   const a = jobs.find(j => j.slug === left);
