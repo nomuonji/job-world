@@ -52,7 +52,7 @@ export function WorldAtlas({
     new Map(regions.map((region) => [region.industryId, region.count])),
     [regions],
   );
-  const nextSurprise = useMemo(() => {
+  const nextSurprise = (() => {
     if (!current) return undefined;
     return current.edges
       .map((edge) => byS.get(edge.slug)?.node)
@@ -63,7 +63,7 @@ export function WorldAtlas({
         b.rarity - a.rarity ||
         a.slug.localeCompare(b.slug),
       )[0];
-  }, [current, byS]);
+  })();
   const facetLabels: Record<string, string> = {
     setting: "働く場所",
     subject: "扱うもの",
