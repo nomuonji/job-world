@@ -41,6 +41,7 @@ export default function Home() {
           <nav aria-label="探索を開始">
             <a href="#world-map" className="explorer-cover-primary">仕事の地図を触る <span>↓</span></a>
             <Link href="/jobs" className="explorer-cover-secondary">職業を名前から探す ↗</Link>
+            <Link href="/compare" className="explorer-cover-secondary">仕事を二つ並べて比較する ↗</Link>
           </nav>
         </div>
         <div className="explorer-cover-orbit" aria-hidden="true">
