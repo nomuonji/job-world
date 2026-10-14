@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 export type CompareRecord = {
   slug: string; name: string; emoji: string; summary: string;
@@ -12,6 +12,12 @@ export type CompareFacet = { id: string; label: string; question: string; tags: 
 export function OccupationCompare({ jobs, facets, initialA, initialB }: { jobs: CompareRecord[]; facets: CompareFacet[]; initialA?: string; initialB?: string }) {
   const [left, setLeft] = useState(jobs.some(j => j.slug === initialA) ? initialA! : jobs[0]?.slug ?? "");
   const [right, setRight] = useState(jobs.some(j => j.slug === initialB && j.slug !== initialA) ? initialB! : jobs[1]?.slug ?? "");
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const a = params.get("a");
+    const b = params.get("b");
+    if(a && b && a !== b && jobs.some(j=>j.slug===a) && jobs.some(j=>j.slug===b)){setLeft(a);setRight(b);}
+  },[jobs]);
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
   const a = jobs.find(j => j.slug === left);
