@@ -55,7 +55,7 @@ export default function Home() {
       <section className="atlas-relaunch-map-section" id="world-map" aria-labelledby="world-map-heading">
         <header className="atlas-relaunch-map-heading">
           <div><span>THE ATLAS / EXPLORE THE WORLD</span><h2 id="world-map-heading">仕事の地図。</h2></div>
-          <p>点のひとつひとつが仕事。業界ごとに方角が分かれ、中心から遠いほど知られていない仕事です。職業を選ぶと、関係のある仕事が光ってつながります。</p>
+          <p>まず、選んだ仕事と似ている6つの仕事を見比べてください。名前と共通点がその場で読めます。「全体地図」に切り替えると150職業の位置関係も探索できます。</p>
         </header>
         <WorldAtlas
           nodes={worldNodes}
