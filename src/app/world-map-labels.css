@@ -1,0 +1,25 @@
+/* Named destinations: this is an annotation layer on the actual 150-job world map.
+   Fixed SVG slots prevent annotation-to-annotation collisions for every selection. */
+.world-atlas-body{grid-template-columns:minmax(0,2.2fr) minmax(270px,.78fr)}
+.world-atlas-plane{min-width:810px}
+.world-map-labels{isolation:isolate}
+.world-map-label-connection{cursor:pointer}
+.world-map-label-foreign{width:100%;height:100%;box-sizing:border-box;display:block;overflow:visible}
+.world-map-label-card{display:flex;flex-direction:column;justify-content:center;gap:5px;width:100%;height:100%;padding:10px 13px;background:#102d40;color:#f4f7f0;border:1px solid #688c94;border-left:6px solid var(--label-accent);border-radius:10px;box-shadow:0 6px 0 #071723,0 14px 23px #030b15ae;text-align:left;cursor:pointer;font-family:ui-sans-serif,system-ui,"Noto Sans JP",sans-serif;transition:background .14s ease,border-color .14s ease;overflow:hidden}
+.world-map-label-card:hover,.world-map-label-card:focus-visible,.world-map-label-connection.is-active .world-map-label-card{background:#234a59;border-color:#e3f5e8;outline:none}
+.world-map-label-card:focus-visible{box-shadow:0 0 0 4px #ecf0ad,0 6px 0 #071723}
+.world-map-label-number{display:flex;align-items:center;justify-content:space-between;color:#c6d8d6;font:800 15px/1.1 ui-monospace,monospace;letter-spacing:.07em}
+.world-map-label-number span{font-size:18px;color:var(--label-accent)}
+.world-map-label-card strong{font:850 21px/1.32 ui-sans-serif,system-ui,"Noto Sans JP",sans-serif;letter-spacing:-.03em;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.world-map-label-card small{font:700 14px/1.3 ui-sans-serif,system-ui,"Noto Sans JP",sans-serif;color:#d0e1df;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.world-map-current-label{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;gap:4px;text-align:center;background:#e4ebd9;color:#1d3942;border:3px solid #fff1ca;border-radius:12px;box-shadow:0 8px 0 #071a2c,0 0 19px #d9e6ac88;padding:10px 15px;overflow:hidden;box-sizing:border-box}
+.world-map-current-kicker{font:900 14px/1.15 ui-monospace,monospace;color:#356459;letter-spacing:.08em}
+.world-map-current-label strong{font:900 27px/1.2 ui-sans-serif,system-ui,"Noto Sans JP",sans-serif;letter-spacing:-.04em;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.world-map-current-label small{font:650 13px/1.3 ui-sans-serif,system-ui,"Noto Sans JP",sans-serif;color:#416265}
+.world-atlas-node:not(.is-current):not(.is-linked){opacity:.19}
+.world-atlas-node.is-current,.world-atlas-node.is-linked{opacity:1}
+.world-atlas-node-label{display:none}
+@media(max-width:1100px){.world-atlas-body{grid-template-columns:minmax(0,1.8fr) minmax(260px,.75fr)}.world-atlas-plane{min-width:760px}}
+@media(max-width:820px){.world-atlas-body{grid-template-columns:1fr}.world-atlas-plane{min-width:800px}}
+@media(max-width:600px){.world-atlas-plane{min-width:780px}.world-atlas-map-bottom{align-items:start}.world-atlas-legend{gap:8px 10px}}
+@media(prefers-reduced-motion:reduce){.world-map-label-card{transition:none}}
