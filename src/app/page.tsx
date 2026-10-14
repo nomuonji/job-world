@@ -6,11 +6,10 @@ import {
   getEntryJobs,
   getFacets,
   getRareJobs,
-  getTagsInDefinitionOrder,
 } from "@/lib/data";
 import { toWorldNodes } from "@/lib/view";
 import { RandomJump } from "@/components/RandomJump";
-import { WorldMap } from "@/components/WorldMap";
+import { FocusExplorer } from "@/components/FocusExplorer";
 import { SITE_URL } from "./layout";
 
 export const metadata: Metadata = {
@@ -25,12 +24,7 @@ export default function Home() {
   const facets = getFacets();
 
   // 全体マップ用。業界タグの定義順が、そのまま地図の方角になる。
-  const industryTags = getTagsInDefinitionOrder("industry");
   const worldNodes = toWorldNodes(jobs);
-  const industryOrder = industryTags.map((t) => t.id);
-  const industryLabels = industryTags.map(
-    (t) => [t.id, t.labelJa] as [string, string],
-  );
 
   return (
     <div className="explorer-atlas-home">
@@ -40,7 +34,7 @@ export default function Home() {
           <h1 id="explorer-cover-title">その仕事を<br />知らないまま、<br /><em>生きていた。</em></h1>
           <p>知っている仕事をひとつ選ぶ。似た動作、使う道具、働く場所をたどっていく。そこには、名前さえ知らなかった仕事がある。</p>
           <nav aria-label="探索を開始">
-            <a href="#world-map" className="explorer-cover-primary">仕事の地図を触る <span>↓</span></a>
+            <a href="#world-map" className="explorer-cover-primary">仕事のつながりを探す <span>↓</span></a>
             <Link href="/jobs" className="explorer-cover-secondary">職業を名前から探す ↗</Link>
             <Link href="/compare" className="explorer-cover-secondary">仕事を二つ並べて比較する ↗</Link>
           </nav>
@@ -56,29 +50,29 @@ export default function Home() {
 
       <nav className="edition-paths" aria-label="探索の入口">
         <Link href="/jobs"><strong>01 / 名前から探す</strong><span>職業名・働く領域・知名度で絞り込む。知らない仕事もすぐ見つかる。</span><b>職業索引 ↗</b></Link>
-        <a href="#world-map"><strong>02 / 地図を歩く</strong><span>一つの仕事を選び、共通する特徴から別の仕事へ移動する。</span><b>つながりの地図 ↓</b></a>
+        <a href="#world-map"><strong>02 / つながりを辿る</strong><span>一つの仕事を選び、共通する特徴から別の仕事へ移動する。</span><b>仕事の関係を見る ↓</b></a>
         <Link href="/compare"><strong>03 / 並べて比べる</strong><span>違う二つの仕事を7つの角度から分解する。</span><b>比較室 ↗</b></Link>
       </nav>
       <section className="explorer-map-station" id="world-map" aria-labelledby="world-map-heading">
         <header className="explorer-section-head">
           <span>01 / 地図から探索する</span>
           <h2 id="world-map-heading">仕事の地図。</h2>
-          <p>ひとつの点を選ぶと、周囲の仕事が現れます。業界は方角、知られ方は中心からの距離。線は選んだ仕事からだけ伸びます。</p>
+          <p>気になる仕事をひとつ選ぶと、共通する特徴を持つ6つの仕事が見つかります。選んだ先から、さらに探索できます。</p>
         </header>
         <div className="explorer-map-layout">
           <aside className="explorer-map-instructions">
             <span>HOW TO EXPLORE</span>
             <ol>
-              <li><strong>01</strong><span>見覚えのある職業をひとつ選ぶ。</span></li>
-              <li><strong>02</strong><span>選んだ仕事のまわりに現れるつながりを見る。</span></li>
-              <li><strong>03</strong><span>気になった隣の仕事へ移る。</span></li>
+              <li><strong>01</strong><span>名前や仕事内容で職業を検索する。</span></li>
+              <li><strong>02</strong><span>関連する6つの仕事と共通点を読む。</span></li>
+              <li><strong>03</strong><span>気になった仕事を選んで、次に進む。</span></li>
             </ol>
             <p>地図の操作が難しければ、下の職業一覧から始められます。</p>
             <RandomJump slugs={jobs.map(j=>j.slug)} />
             <Link href="/jobs" className="explorer-text-link">全職業の索引を見る ↗</Link>
           </aside>
           <div className="explorer-map-canvas">
-            <WorldMap nodes={worldNodes} industryOrder={industryOrder} industryLabels={industryLabels}/>
+            <FocusExplorer nodes={worldNodes}/>
           </div>
         </div>
       </section>

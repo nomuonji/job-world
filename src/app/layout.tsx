@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import "./editorial-atlas.css";
 import "./edition-two.css";
+import "./home-fixes.css";
 
 // 公開URL: job.antonbase.com（metadataBase・sitemap.ts・robots.ts に反映）
 export const SITE_URL = "https://job.antonbase.com";
