@@ -236,7 +236,7 @@
       "summaryJa": "国立公園の中で、開発と保護の線引きを実際に引く。",
       "descriptionJa": "環境省に所属し、国立公園の管理や野生生物の保護にあたる職員。自然の中を歩いて状況を把握する業務がある一方、実務の多くは、施設をどこまで建ててよいかの許認可、地元との調整、外来種対策の計画づくりといった事務と交渉で占められる。担当地域は広く、数人で県をまたぐ範囲を受け持つこともある。",
       "surpriseJa": "レンジャーという呼び名から自然の中を歩く仕事と思われがちだが、実際の時間の多くは開発の許認可と地元との調整に使われる。保護は現場ではなく書類と会議で決まる場面が多い。",
-      "howToBecomeJa": "国家公務員試験を経て環境省に採用される経路が主。",
+      "howToBecomeJa": "環境省の自然系職員（自然保護官）を目指す場合、国家公務員の総合職・一般職採用試験の該当区分を受験し、官庁訪問などの採用選考を経る。採用試験への合格は、業務独占の国家資格免許の取得とは異なる。自然保護官を補佐するアクティブ・レンジャーは別枠で募集される期間業務職員などであり、正規の自然系職員の採用経路とは区別する。最新の試験区分と募集要項は環境省の公式採用情報を確認する。",
       "tags": [
         "setting.mountain",
         "setting.outdoors",
@@ -249,7 +249,6 @@
         "sense.stamina",
         "condition.public-service",
         "condition.travel",
-        "condition.national-license",
         "temperament.planner",
         "temperament.physical",
         "industry.nature"
@@ -259,11 +258,15 @@
       "lifecycle": "established",
       "sources": [
         {
-          "titleJa": "環境省 自然保護官",
-          "url": "https://www.env.go.jp/"
+          "titleJa": "環境省 自然系（総合職・一般職）採用案内（2026-10-17確認）",
+          "url": "https://www.env.go.jp/guide/saiyo/cat_3all/index.html"
+        },
+        {
+          "titleJa": "環境省 アクティブ・レンジャー採用案内（補佐職の別採用・2026-10-17確認）",
+          "url": "https://www.env.go.jp/guide/saiyo/cat_x1/index.html"
         }
       ],
-      "updatedAt": "2026-08-06"
+      "updatedAt": "2026-10-17"
     },
     {
       "slug": "service-dog-trainer",
