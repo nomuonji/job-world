@@ -1,1 +1,445 @@
-{"industry":"aerospace","jobs":[{"slug":"air-traffic-controller","nameJa":"航空管制官","nameEn":"Air Traffic Controller","aliasesJa":["管制官"],"kanaJa":"こうくうかんせいかん","emoji":"🗼","summaryJa":"見えない空に道を引き、機体同士を離しておく。","descriptionJa":"航空機の離着陸と航路を無線で指示する国家公務員。画面上の光点と高度の数字だけを見て、機体同士の間隔を保ち続ける。指示は決められた言い回しで行われ、復唱によって聞き間違いを検出する仕組みになっている。天候の急変や緊急事態が起きれば、進行中の全機の順番を組み直す判断がその場で求められる。年収は人事院の令和7年実態調査で平均約769万円と公務員のなかでも高水準で、24時間体制の交代勤務と緊張の持続が特徴。航空需要の回復で採用は堅調に続いている。","surpriseJa":"管制の交信で使う言葉は世界共通の決まった言い回しに限定されている。自由な表現を禁じることで、聞き間違いと解釈の食い違いを構造的に減らしている。","aDayJa":"出勤してブリーフィングで天候と交通量を確認し、ポジションに就く。レーダー席とグランド席を交代で担当し、離着陸の順番づけと高度指示を無線で出し続ける。休憩を挿みながら数時間ごとに席を替わり、勤務終了時に引き継ぎをして退勤する。","howToBecomeJa":"航空管制官採用試験に合格し、航空保安大学校で約8か月の基礎研修を受ける。研修中も給与が支給され、修了後は全国の空港や航空交通管制部に配属される。無線従事者（航空無線通信士）の資格も取得する。","tags":["setting.desk","setting.sky","subject.data","subject.machine","subject.sky-body","action.watch","action.negotiate","action.measure","sense.hearing","sense.stillness","condition.national-license","condition.night-shift","condition.public-service","condition.team","temperament.improvise","temperament.planner","industry.aerospace"],"rarity":4,"familiarity":4,"lifecycle":"established","edges":[{"to":"airline-pilot","kind":"front-and-back","noteJa":"同じ一機の飛行を、片方は操縦席から、片方は地上の画面から見ている。互いの声しか知らないまま毎日組んでいる。"},{"to":"airport-ramp-agent","kind":"same-site","noteJa":"滑走路の順番を決める管制官と、地上で機体を動かすハンドリングは同じ空港の運用を分担している。"}],"sources":[{"titleJa":"国土交通省 航空管制官","url":"https://www.mlit.go.jp/koku/"},{"titleJa":"航空保安大学校","url":"https://www.cab.mlit.go.jp/asc/"}],"updatedAt":"2026-09-04"},{"slug":"aircraft-maintenance-engineer","nameJa":"航空整備士","nameEn":"Aircraft Maintenance Engineer","aliasesJa":["整備士","航空機整備士"],"kanaJa":"こうくうせいびし","emoji":"🔧","summaryJa":"飛行機の整備は、出発前の点検から格納庫での重整備、部品工場まで分かれる。","descriptionJa":"【ライン整備｜駐機場】到着機を次便へ送り出すまでに、乗員から不具合情報を受け、外部・機内を点検し、必要な処置・記録・引渡しを行う。ANAの現場例では日中の運航整備と最終便後の夜間整備を区別する。短い折返し時間で判断する仕事。\n\n【ドック整備｜格納庫】機体を一定期間預かり、構造・配線・客室設備などを分担して点検・修復する。ANAベース整備の公表例ではC整備は約10日、重整備は約1か月。これは同社の工程例であり、すべての会社の勤務日数を示す数字ではない。\n\n【ショップ整備｜部品工場】機体から取り外したエンジンや装備品を分解・検査・修理し、再組立や品質確認を行う。飛行機のそばで働くとは限らない。配属先・交替制・夜勤の有無は会社と担当工程によって変わる。","surpriseJa":"航空整備士が毎日格納庫で部品を交換しているわけではない。次便までの短時間を相手にする人、機体を長期間預かる人、取り外した部品を工場で扱う人がいる。","aDayJa":"【ラインの一例】次便の準備情報を確認→到着機の乗員から状態を聞く→外部・機内点検と不具合への対応→整備記録・引渡し。ANAライン整備の紹介に基づく例。最終便後の夜間整備は別の工程で、全員が夜勤専従という意味ではない。\n\n【ドックの一例】格納庫で工程表・担当区画を確認→構造・装備・客室の各担当が点検・修復→記録・工程間の確認→整備完了へ引き継ぐ。ANAベース整備の工程例では作業は複数日から数週間に及ぶが、一人が同じ作業を毎日続けるわけではない。\n\n【ショップの一例】取り外されたエンジン・装備品の受入→分解・検査→修理や部品交換→組立・品質確認→機体側の整備工程へ戻す。JALの工場整備の紹介に基づく作業の流れで、勤務時間は工場・配属先ごとに要確認。","howToBecomeJa":"【進路を選ぶ】航空系専門学校・大学などで学び、整備会社・航空会社の採用へ進む経路がある。採用時に必要な資格、入社後の訓練・取得支援は募集要項ごとに異なる。学校を出ただけで整備後の確認権限が自動的に付くわけではない。\n\n【国家資格と確認責任】国土交通省の業務範囲資料では、一等・二等航空整備士と一等・二等航空運航整備士を区別する。運航整備士は主に日常点検や一定の交換・軽微修理後の確認、航空整備士はより広い整備後の確認を担う。航空機の種類・等級・型式の限定もあるため、資格名だけで担当できる確認行為は決まらない。作業担当と整備後の確認権限を混同しない。\n\n【応募前の確認順】①ライン／ドック／ショップの配属と異動・兼務→②早朝・深夜・交替制・休日の実例→③勤務地・転勤・出張→④採用時の資格要件・機種訓練・社内育成・確認業務の担当範囲→⑤給与は職種区分・年・勤務地・手当・経験年数が明示された求人票や一次統計で比較。出典不明の平均年収や一律の将来性は判断材料にしない。\n\n【空港で隣にいる仕事】グランドハンドリングは荷物や機体の地上支援、航空整備は機体の点検・修復と整備後の確認工程を担う。下の「ここから辿れる仕事」でグランドハンドリングも比較できる。","tags":["setting.sky","setting.outdoors","setting.high-place","subject.machine","subject.metal","subject.data","action.restore","action.measure","action.record","action.disassemble","sense.hearing","sense.fingertip","sense.tilt","condition.national-license","condition.night-shift","condition.team","temperament.detail","temperament.repeatable","temperament.quiet-pride","industry.aerospace"],"rarity":3,"familiarity":3,"lifecycle":"established","edges":[{"to":"airport-ramp-agent","kind":"same-site","noteJa":"駐機場で機体を整備する整備士と、地上作業を回すグランドハンドリングは同じ時間帯に同じ機体を相手にする。"}],"sources":[{"titleJa":"ANAラインメンテナンステクニクス｜運航整備・夜間整備（2026-10-13確認）","url":"https://www.ltc.ana-g.com/service.html"},{"titleJa":"ANAベースメンテナンステクニクス｜ドック整備の工程（2026-10-13確認）","url":"https://www.btc.ana-g.com/service.html"},{"titleJa":"JAL｜整備士の運航整備・機体整備・工場整備（2026-10-13確認）","url":"https://www.jal.com/ja/philosophy-vision/brand/baton/sp/01/"},{"titleJa":"国土交通省｜航空従事者の業務範囲・資格限定（2026-10-13確認）","url":"https://www.mlit.go.jp/common/000011265.pdf"}],"updatedAt":"2026-10-13"},{"slug":"airport-ramp-agent","nameJa":"グランドハンドリング","nameEn":"Ramp Agent","aliasesJa":["ランプエージェント","空港地上支援作業員"],"kanaJa":"ぐらんどはんどりんぐ","emoji":"🛬","summaryJa":"飛行機が止まってから離れるまで、地上のすべてを時計通りに回す。","descriptionJa":"空港で飛行機の地上作業を請け負う職。到着するとバッテリーや電源を接続し、荷物を降ろし、燃料を入れ、清掃が終われば次の搭乗に間に合うよう再び積み込む。スケジュールは数分単位で決まっており、天候で遅れた分を取り戻すために地上作業が圧縮される。整備・貨物・客室の各部署の進行役も担う。","surpriseJa":"飛行機の時間を守っているのはパイロットではなく、駐機時間を管理する地上作業員。出発が遅れる原因の多くは空港の混雑で、その回復は地上で行われる。","howToBecomeJa":"空港の地上業務会社に就職する。未経験から始められる職だが、資格取得で担当範囲が広がる。","tags":["setting.outdoors","setting.sky","subject.machine","subject.waste","action.carry","action.clean-up","action.watch","action.serve","sense.stamina","sense.hearing","condition.night-shift","condition.team","condition.seasonal","temperament.improvise","temperament.speed","temperament.physical","industry.aerospace"],"rarity":3,"familiarity":2,"lifecycle":"established","sources":[{"titleJa":"国土交通省 空港","url":"https://www.mlit.go.jp/koku/"}],"updatedAt":"2026-08-12"},{"slug":"astronaut","nameJa":"宇宙飛行士","nameEn":"Astronaut","aliasesJa":["飛行士"],"kanaJa":"うちゅうひこうし","emoji":"🧑‍🚀","summaryJa":"選ばれてから飛ぶまで、何年も地上で訓練し続ける。","descriptionJa":"宇宙機に搭乗し、実験、機器の保守、場合によっては船外活動を行う職業。どの作業を担うかは任務と担当によって変わる。選ばれてから初飛行までに何年もかかり、その間は任務に応じた訓練が続く。ISS長期滞在のような国際任務では、ロボットアーム、水中での船外活動訓練、ロシア語や英語が課されることがあるが、すべての飛行士・すべての任務に共通する固定の仕事ではない。軌道上の業務の多くは、地上の研究者が組んだ実験の実行と装置の手入れという地味な作業で占められている。","surpriseJa":"宇宙飛行士の仕事の大半は地上にある。選ばれてから飛ぶまでに何年も訓練が続き、飛行そのものより待つ時間と練習の時間の方が圧倒的に長い。","howToBecomeJa":"日本でJAXA宇宙飛行士になる直近の完了済み公募は、2021年11月19日発表の2021年度募集（受付は2021年12月20日から2022年3月4日）。JAXAのFAQによると、その募集要項は2022年3月末時点で3年以上の実務経験（修士号は1年、博士号は3年の実務経験とみなす）と、身長149.5〜190.5cm、矯正視力1.0以上、正常な色覚・聴力などの医学的特性を求めた。同じFAQは、平成20年度募集にあった「自然科学系大学卒業以上」の学歴条件が令和3年度募集では外れたと説明している。理工系や医学系の学位が現在の一般要件だとは書かれていない。日本国籍がない者など応募できない場合もある。これは2021年度募集の条件であり、次回募集では変わる可能性がある。応募するときは、必ずJAXAの次の公式募集要項を確認する。","tags":["setting.sky","setting.confined","subject.machine","subject.sky-body","subject.data","action.measure","action.restore","action.record","sense.balance","sense.stamina","sense.fine-motor","condition.danger","condition.team","condition.few-practitioners","condition.live-in","temperament.planner","temperament.improvise","temperament.curious","industry.aerospace"],"rarity":5,"familiarity":5,"lifecycle":"established","edges":[{"to":"rocket-launch-technician","kind":"front-and-back","noteJa":"宇宙へ飛ぶ側が宇宙飛行士、地上で打ち上げを支えるのが射場技術者。同じミッションの表と裏の顔になる。"}],"sources":[{"titleJa":"JAXA FAQ 宇宙飛行士になるには（2021年度募集）","url":"https://humans-in-space.jaxa.jp/faq/detail/000431.html"},{"titleJa":"JAXA FAQ 自然科学系の学歴条件は2021年度募集で外れた","url":"https://humans-in-space.jaxa.jp/faq/detail/000433.html"},{"titleJa":"JAXA 2021年度宇宙飛行士候補者の募集について","url":"https://www.jaxa.jp/press/2021/11/20211119-1_j.html"}],"updatedAt":"2026-10-01"},{"slug":"drone-pilot","nameJa":"ドローンパイロット","nameEn":"Drone Pilot","aliasesJa":["無人航空機操縦士","空撮パイロット"],"kanaJa":"どろーんぱいろっと","emoji":"🛸","summaryJa":"空から田んぼや橋を調べる、いま増えている運転の仕事。","descriptionJa":"無人航空機を操縦して撮影・点検・散布などを行う職。橋の点検や太陽光パネルの保守、農薬散布、測量など、人が入りにくい場所の調査に使われる。操縦そのものより、空域のルール確認と飛行前のリスク評価、そして落としたときの責任を持つことが仕事の中核になってきている。目視外飛行には機体と資格の要件が定められている。","surpriseJa":"ドローンパイロットの事故の多くは飛行中ではなく、バッテリーと墜落を想定した飛行計画を立てられないことが原因。空を飛ばす技術より地上のルールとリスク管理が本業になりつつある。","howToBecomeJa":"無人航空機の国家資格を取得し、農薬散布や測量などの専門会社に所属する経路が増えている。","tags":["setting.sky","setting.outdoors","subject.machine","subject.data","subject.plant","action.operate-vehicle","action.watch","action.measure","action.record","sense.night-vision","sense.stillness","condition.certification","condition.seasonal","condition.solo","temperament.speed","temperament.quiet-pride","industry.aerospace"],"rarity":3,"familiarity":4,"lifecycle":"emerging","edges":[{"to":"airline-pilot","kind":"confusable","noteJa":"どちらも空を飛ばす操縦だが、ドローンは機体を見ながら地上から飛ばす運転に近い仕事だ。"}],"sources":[{"titleJa":"国土交通省 無人航空機","url":"https://www.mlit.go.jp/koku/koku_tk10_000003.html"}],"updatedAt":"2026-08-12"},{"slug":"flight-attendant","nameJa":"客室乗務員","nameEn":"Flight Attendant","aliasesJa":["CA","キャビンアテンダント","客室乗務員"],"kanaJa":"きゃくしつじょうむいん","emoji":"✈️","summaryJa":"機内を支配する安全規則を、笑顔の裏で毎便実行する。","descriptionJa":"機内で乗客の安全と快適を担う職。法規上、第一の任務は安全管理で、救命胴衣のデモや非常口の確認、離着陸時の確認作業が毎便繰り返される。年収は賃金構造基本統計で平均約596万円が目安で、大手ではANAが約711万円・JALが約633万円（有価証券報告書ベース）とされる。乗務手当の比重が大きく、国際線や役職で上がる。不規則勤務だが、採用は需要回復で積極化している。","surpriseJa":"離着陸のたびに行う救命胴衣のデモは、乗客へのお知らせではなく、法律で義務づけられた確認作業。客室乗務員の時間の大半はサービスではなく安全確認に使われている。","aDayJa":"ブリーフィングで便の情報と役割分担を確認し、機内で非常用装備を点検する。搭乗が始まれば案内と安全デモを行い、巡航中はサービスと見回りを繰り返す。到着後は機内点検と報告をして、次の便か退勤へ向かう。","howToBecomeJa":"客室乗務員になるために国家資格は必要ない。ANAの採用FAQでは「入社に際して特別な資格や知識は必要ありません」と明記されている。航空会社の採用試験に合格し、入社後に社内で救命・保安などの訓練を受け、国内線・国際線の乗務資格を取得する。機種ごとの訓練や乗務資格は会社が付与するもので、法令上の国家資格とは異なる。応募条件（語学・視力・身長など）は会社ごとに異なる。","tags":["setting.sky","subject.human-body","subject.food","action.serve","action.watch","action.soothe","sense.balance","condition.night-shift","condition.team","temperament.listener","temperament.improvise","temperament.calm","industry.aerospace"],"rarity":2,"familiarity":5,"lifecycle":"established","edges":[{"to":"airline-pilot","kind":"same-site","noteJa":"同じ機体のなかで、操縦室と客室に分かれて一便の安全を支えている。"},{"to":"aircraft-maintenance-engineer","kind":"front-and-back","noteJa":"客に表れるのが客室乗務員、客の見えないところで機体を守るのが整備士。一便の安全はこの表と裏で成り立っている。"}],"sources":[{"titleJa":"ANA 客室乗務職 一般採用FAQ（入社に特別な資格不要・入社時に乗務資格取得）（2026-10-16確認）","url":"https://www.ana.co.jp/group/recruit/ana-recruit/career/ca/qa/"},{"titleJa":"国土交通省 航空運送","url":"https://www.mlit.go.jp/koku/"}],"updatedAt":"2026-10-16"}]}
+{
+  "industry": "aerospace",
+  "jobs": [
+    {
+      "slug": "air-traffic-controller",
+      "nameJa": "航空管制官",
+      "nameEn": "Air Traffic Controller",
+      "aliasesJa": [
+        "管制官"
+      ],
+      "kanaJa": "こうくうかんせいかん",
+      "emoji": "🗼",
+      "summaryJa": "見えない空に道を引き、機体同士を離しておく。",
+      "descriptionJa": "航空機の離着陸と航路を無線で指示する国家公務員。画面上の光点と高度の数字だけを見て、機体同士の間隔を保ち続ける。指示は決められた言い回しで行われ、復唱によって聞き間違いを検出する仕組みになっている。天候の急変や緊急事態が起きれば、進行中の全機の順番を組み直す判断がその場で求められる。年収は人事院の令和7年実態調査で平均約769万円と公務員のなかでも高水準で、24時間体制の交代勤務と緊張の持続が特徴。航空需要の回復で採用は堅調に続いている。",
+      "surpriseJa": "管制の交信で使う言葉は世界共通の決まった言い回しに限定されている。自由な表現を禁じることで、聞き間違いと解釈の食い違いを構造的に減らしている。",
+      "aDayJa": "出勤してブリーフィングで天候と交通量を確認し、ポジションに就く。レーダー席とグランド席を交代で担当し、離着陸の順番づけと高度指示を無線で出し続ける。休憩を挟みながら数時間ごとに席を替わり、勤務終了時に引き継ぎをして退勤する。",
+      "howToBecomeJa": "航空管制官採用試験に合格し、航空保安大学校で約8か月の基礎研修を受ける。研修中も給与が支給され、修了後は全国の空港や航空交通管制部に配属される。無線従事者（航空無線通信士）の資格も取得する。",
+      "tags": [
+        "setting.desk",
+        "setting.sky",
+        "subject.data",
+        "subject.machine",
+        "subject.sky-body",
+        "action.watch",
+        "action.negotiate",
+        "action.measure",
+        "sense.hearing",
+        "sense.stillness",
+        "condition.national-license",
+        "condition.night-shift",
+        "condition.public-service",
+        "condition.team",
+        "temperament.improvise",
+        "temperament.planner",
+        "industry.aerospace"
+      ],
+      "rarity": 4,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "airline-pilot",
+          "kind": "front-and-back",
+          "noteJa": "同じ一機の飛行を、片方は操縦席から、片方は地上の画面から見ている。互いの声しか知らないまま毎日組んでいる。"
+        },
+        {
+          "to": "airport-ramp-agent",
+          "kind": "same-site",
+          "noteJa": "滑走路の順番を決める管制官と、地上で機体を動かすハンドリングは同じ空港の運用を分担している。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "国土交通省 航空管制官",
+          "url": "https://www.mlit.go.jp/koku/"
+        },
+        {
+          "titleJa": "航空保安大学校",
+          "url": "https://www.cab.mlit.go.jp/asc/"
+        }
+      ],
+      "updatedAt": "2026-09-04"
+    },
+    {
+      "slug": "aircraft-maintenance-engineer",
+      "nameJa": "航空整備士",
+      "nameEn": "Aircraft Maintenance Engineer",
+      "aliasesJa": [
+        "整備士",
+        "航空機整備士"
+      ],
+      "kanaJa": "こうくうせいびし",
+      "emoji": "🔧",
+      "summaryJa": "飛行機の整備は、出発前の点検から格納庫での重整備、部品工場まで分かれる。",
+      "descriptionJa": "【ライン整備｜駐機場】到着機を次便へ送り出すまでに、乗員から不具合情報を受け、外部・機内を点検し、必要な処置・記録・引渡しを行う。ANAの現場例では日中の運航整備と最終便後の夜間整備を区別する。短い折返し時間で判断する仕事。\n\n【ドック整備｜格納庫】機体を一定期間預かり、構造・配線・客室設備などを分担して点検・修復する。ANAベース整備の公表例ではC整備は約10日、重整備は約1か月。これは同社の工程例であり、すべての会社の勤務日数を示す数字ではない。\n\n【ショップ整備｜部品工場】機体から取り外したエンジンや装備品を分解・検査・修理し、再組立や品質確認を行う。飛行機のそばで働くとは限らない。配属先・交替制・夜勤の有無は会社と担当工程によって変わる。",
+      "surpriseJa": "航空整備士が毎日格納庫で部品を交換しているわけではない。次便までの短時間を相手にする人、機体を長期間預かる人、取り外した部品を工場で扱う人がいる。",
+      "aDayJa": "【ラインの一例】次便の準備情報を確認→到着機の乗員から状態を聞く→外部・機内点検と不具合への対応→整備記録・引渡し。ANAライン整備の紹介に基づく例。最終便後の夜間整備は別の工程で、全員が夜勤専従という意味ではない。\n\n【ドックの一例】格納庫で工程表・担当区画を確認→構造・装備・客室の各担当が点検・修復→記録・工程間の確認→整備完了へ引き継ぐ。ANAベース整備の工程例では作業は複数日から数週間に及ぶが、一人が同じ作業を毎日続けるわけではない。\n\n【ショップの一例】取り外されたエンジン・装備品の受入→分解・検査→修理や部品交換→組立・品質確認→機体側の整備工程へ戻す。JALの工場整備の紹介に基づく作業の流れで、勤務時間は工場・配属先ごとに要確認。",
+      "howToBecomeJa": "【進路を選ぶ】航空系専門学校・大学などで学び、整備会社・航空会社の採用へ進む経路がある。採用時に必要な資格、入社後の訓練・取得支援は募集要項ごとに異なる。学校を出ただけで整備後の確認権限が自動的に付くわけではない。\n\n【国家資格と確認責任】国土交通省の業務範囲資料では、一等・二等航空整備士と一等・二等航空運航整備士を区別する。運航整備士は主に日常点検や一定の交換・軽微修理後の確認、航空整備士はより広い整備後の確認を担う。航空機の種類・等級・型式の限定もあるため、資格名だけで担当できる確認行為は決まらない。作業担当と整備後の確認権限を混同しない。\n\n【応募前の確認順】①ライン／ドック／ショップの配属と異動・兼務→②早朝・深夜・交替制・休日の実例→③勤務地・転勤・出張→④採用時の資格要件・機種訓練・社内育成・確認業務の担当範囲→⑤給与は職種区分・年・勤務地・手当・経験年数が明示された求人票や一次統計で比較。出典不明の平均年収や一律の将来性は判断材料にしない。\n\n【空港で隣にいる仕事】グランドハンドリングは荷物や機体の地上支援、航空整備は機体の点検・修復と整備後の確認工程を担う。下の「ここから辿れる仕事」でグランドハンドリングも比較できる。",
+      "tags": [
+        "setting.sky",
+        "setting.outdoors",
+        "setting.high-place",
+        "subject.machine",
+        "subject.metal",
+        "subject.data",
+        "action.restore",
+        "action.measure",
+        "action.record",
+        "action.disassemble",
+        "sense.hearing",
+        "sense.fingertip",
+        "sense.tilt",
+        "condition.national-license",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.aerospace"
+      ],
+      "rarity": 3,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "airport-ramp-agent",
+          "kind": "same-site",
+          "noteJa": "駐機場で機体を整備する整備士と、地上作業を回すグランドハンドリングは同じ時間帯に同じ機体を相手にする。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "ANAラインメンテナンステクニクス｜運航整備・夜間整備（2026-10-13確認）",
+          "url": "https://www.ltc.ana-g.com/service.html"
+        },
+        {
+          "titleJa": "ANAベースメンテナンステクニクス｜ドック整備の工程（2026-10-13確認）",
+          "url": "https://www.btc.ana-g.com/service.html"
+        },
+        {
+          "titleJa": "JAL｜整備士の運航整備・機体整備・工場整備（2026-10-13確認）",
+          "url": "https://www.jal.com/ja/philosophy-vision/brand/baton/sp/01/"
+        },
+        {
+          "titleJa": "国土交通省｜航空従事者の業務範囲・資格限定（2026-10-13確認）",
+          "url": "https://www.mlit.go.jp/common/000011265.pdf"
+        }
+      ],
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "slug": "airport-ramp-agent",
+      "nameJa": "グランドハンドリング",
+      "nameEn": "Ramp Agent",
+      "aliasesJa": [
+        "ランプエージェント",
+        "空港地上支援作業員"
+      ],
+      "kanaJa": "ぐらんどはんどりんぐ",
+      "emoji": "🛬",
+      "summaryJa": "飛行機が止まってから離れるまで、地上のすべてを時計通りに回す。",
+      "descriptionJa": "空港で飛行機の地上作業を請け負う職。到着するとバッテリーや電源を接続し、荷物を降ろし、燃料を入れ、清掃が終われば次の搭乗に間に合うよう再び積み込む。スケジュールは数分単位で決まっており、天候で遅れた分を取り戻すために地上作業が圧縮される。整備・貨物・客室の各部署の進行役も担う。",
+      "surpriseJa": "飛行機の時間を守っているのはパイロットではなく、駐機時間を管理する地上作業員。出発が遅れる原因の多くは空港の混雑で、その回復は地上で行われる。",
+      "howToBecomeJa": "空港の地上業務会社に就職する。未経験から始められる職だが、資格取得で担当範囲が広がる。",
+      "tags": [
+        "setting.outdoors",
+        "setting.sky",
+        "subject.machine",
+        "subject.waste",
+        "action.carry",
+        "action.clean-up",
+        "action.watch",
+        "action.serve",
+        "sense.stamina",
+        "sense.hearing",
+        "condition.night-shift",
+        "condition.team",
+        "condition.seasonal",
+        "temperament.improvise",
+        "temperament.speed",
+        "temperament.physical",
+        "industry.aerospace"
+      ],
+      "rarity": 3,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "国土交通省 空港",
+          "url": "https://www.mlit.go.jp/koku/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "astronaut",
+      "nameJa": "宇宙飛行士",
+      "nameEn": "Astronaut",
+      "aliasesJa": [
+        "飛行士"
+      ],
+      "kanaJa": "うちゅうひこうし",
+      "emoji": "🧑‍🚀",
+      "summaryJa": "選ばれてから飛ぶまで、何年も地上で訓練し続ける。",
+      "descriptionJa": "宇宙機に搭乗し、実験、機器の保守、場合によっては船外活動を行う職業。どの作業を担うかは任務と担当によって変わる。選ばれてから初飛行までに何年もかかり、その間は任務に応じた訓練が続く。ISS長期滞在のような国際任務では、ロボットアーム、水中での船外活動訓練、ロシア語や英語が課されることがあるが、すべての飛行士・すべての任務に共通する固定の仕事ではない。軌道上の業務の多くは、地上の研究者が組んだ実験の実行と装置の手入れという地味な作業で占められている。",
+      "surpriseJa": "宇宙飛行士の仕事の大半は地上にある。選ばれてから飛ぶまでに何年も訓練が続き、飛行そのものより待つ時間と練習の時間の方が圧倒的に長い。",
+      "howToBecomeJa": "日本でJAXA宇宙飛行士になる直近の完了済み公募は、2021年11月19日発表の2021年度募集（受付は2021年12月20日から2022年3月4日）。JAXAのFAQによると、その募集要項は2022年3月末時点で3年以上の実務経験（修士号は1年、博士号は3年の実務経験とみなす）と、身長149.5〜190.5cm、矯正視力1.0以上、正常な色覚・聴力などの医学的特性を求めた。同じFAQは、平成20年度募集にあった「自然科学系大学卒業以上」の学歴条件が令和3年度募集では外れたと説明している。理工系や医学系の学位が現在の一般要件だとは書かれていない。日本国籍がない者など応募できない場合もある。これは2021年度募集の条件であり、次回募集では変わる可能性がある。応募するときは、必ずJAXAの次の公式募集要項を確認する。",
+      "tags": [
+        "setting.sky",
+        "setting.confined",
+        "subject.machine",
+        "subject.sky-body",
+        "subject.data",
+        "action.measure",
+        "action.restore",
+        "action.record",
+        "sense.balance",
+        "sense.stamina",
+        "sense.fine-motor",
+        "condition.danger",
+        "condition.team",
+        "condition.few-practitioners",
+        "condition.live-in",
+        "temperament.planner",
+        "temperament.improvise",
+        "temperament.curious",
+        "industry.aerospace"
+      ],
+      "rarity": 5,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "rocket-launch-technician",
+          "kind": "front-and-back",
+          "noteJa": "宇宙へ飛ぶ側が宇宙飛行士、地上で打ち上げを支えるのが射場技術者。同じミッションの表と裏の顔になる。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "JAXA FAQ 宇宙飛行士になるには（2021年度募集）",
+          "url": "https://humans-in-space.jaxa.jp/faq/detail/000431.html"
+        },
+        {
+          "titleJa": "JAXA FAQ 自然科学系の学歴条件は2021年度募集で外れた",
+          "url": "https://humans-in-space.jaxa.jp/faq/detail/000433.html"
+        },
+        {
+          "titleJa": "JAXA 2021年度宇宙飛行士候補者の募集について",
+          "url": "https://www.jaxa.jp/press/2021/11/20211119-1_j.html"
+        }
+      ],
+      "updatedAt": "2026-10-01"
+    },
+    {
+      "slug": "drone-pilot",
+      "nameJa": "ドローンパイロット",
+      "nameEn": "Drone Pilot",
+      "aliasesJa": [
+        "無人航空機操縦士",
+        "空撮パイロット"
+      ],
+      "kanaJa": "どろーんぱいろっと",
+      "emoji": "🛸",
+      "summaryJa": "空から田んぼや橋を調べる、いま増えている運転の仕事。",
+      "descriptionJa": "無人航空機を操縦して撮影・点検・散布などを行う職。橋の点検や太陽光パネルの保守、農薬散布、測量など、人が入りにくい場所の調査に使われる。操縦そのものより、空域のルール確認と飛行前のリスク評価、そして落としたときの責任を持つことが仕事の中核になってきている。目視外飛行には機体と資格の要件が定められている。",
+      "surpriseJa": "ドローンパイロットの事故の多くは飛行中ではなく、バッテリーと墜落を想定した飛行計画を立てられないことが原因。空を飛ばす技術より地上のルールとリスク管理が本業になりつつある。",
+      "howToBecomeJa": "無人航空機の国家資格を取得し、農薬散布や測量などの専門会社に所属する経路が増えている。",
+      "tags": [
+        "setting.sky",
+        "setting.outdoors",
+        "subject.machine",
+        "subject.data",
+        "subject.plant",
+        "action.operate-vehicle",
+        "action.watch",
+        "action.measure",
+        "action.record",
+        "sense.night-vision",
+        "sense.stillness",
+        "condition.certification",
+        "condition.seasonal",
+        "condition.solo",
+        "temperament.speed",
+        "temperament.quiet-pride",
+        "industry.aerospace"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "emerging",
+      "edges": [
+        {
+          "to": "airline-pilot",
+          "kind": "confusable",
+          "noteJa": "どちらも空を飛ばす操縦だが、ドローンは機体を見ながら地上から飛ばす運転に近い仕事だ。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "国土交通省 無人航空機",
+          "url": "https://www.mlit.go.jp/koku/koku_tk10_000003.html"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "flight-attendant",
+      "nameJa": "客室乗務員",
+      "nameEn": "Flight Attendant",
+      "aliasesJa": [
+        "CA",
+        "キャビンアテンダント",
+        "客室乗務員"
+      ],
+      "kanaJa": "きゃくしつじょうむいん",
+      "emoji": "✈️",
+      "summaryJa": "機内を支配する安全規則を、笑顔の裏で毎便実行する。",
+      "descriptionJa": "機内で乗客の安全と快適を担う職。法規上、第一の任務は安全管理で、救命胴衣のデモや非常口の確認、離着陸時の確認作業が毎便繰り返される。年収は賃金構造基本統計で平均約596万円が目安で、大手ではANAが約711万円・JALが約633万円（有価証券報告書ベース）とされる。乗務手当の比重が大きく、国際線や役職で上がる。不規則勤務だが、採用は需要回復で積極化している。",
+      "surpriseJa": "離着陸のたびに行う救命胴衣のデモは、乗客へのお知らせではなく、法律で義務づけられた確認作業。客室乗務員の時間の大半はサービスではなく安全確認に使われている。",
+      "aDayJa": "ブリーフィングで便の情報と役割分担を確認し、機内で非常用装備を点検する。搭乗が始まれば案内と安全デモを行い、巡航中はサービスと見回りを繰り返す。到着後は機内点検と報告をして、次の便か退勤へ向かう。",
+      "howToBecomeJa": "客室乗務員の採用に国家資格は必要ない。ANAの公式採用FAQでは入社時の特別な資格・知識は不要とされる。航空会社の採用選考を経た後、入社時・入社後に保安や救護などの訓練を受け、会社の国内線・国際線乗務資格を取得する。これらの乗務資格は入社前に取得する業務独占の国家資格とは異なる。語学力などの応募条件は航空会社や募集時期により異なるため、各社の募集要項を確認する。",
+      "tags": [
+        "setting.sky",
+        "subject.human-body",
+        "subject.food",
+        "action.serve",
+        "action.watch",
+        "action.soothe",
+        "sense.balance",
+        "condition.night-shift",
+        "condition.team",
+        "temperament.listener",
+        "temperament.improvise",
+        "temperament.calm",
+        "industry.aerospace"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "airline-pilot",
+          "kind": "same-site",
+          "noteJa": "同じ機体のなかで、操縦室と客室に分かれて一便の安全を支えている。"
+        },
+        {
+          "to": "aircraft-maintenance-engineer",
+          "kind": "front-and-back",
+          "noteJa": "客に表れるのが客室乗務員、客の見えないところで機体を守るのが整備士。一便の安全はこの表と裏で成り立っている。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "ANA 客室乗務職 一般採用FAQ（2026-10-17確認）",
+          "url": "https://www.ana.co.jp/group/recruit/ana-recruit/career/ca/qa/"
+        },
+        {
+          "titleJa": "国土交通省 航空運送",
+          "url": "https://www.mlit.go.jp/koku/"
+        }
+      ],
+      "updatedAt": "2026-10-17"
+    },
+    {
+      "slug": "rocket-launch-technician",
+      "nameJa": "ロケット射場技術者",
+      "nameEn": "Rocket Launch Technician",
+      "aliasesJa": [
+        "射場整備技術者",
+        "ロケット打上げ作業員"
+      ],
+      "kanaJa": "ろけっとしゃじょうぎじゅつしゃ",
+      "emoji": "🚀",
+      "summaryJa": "数秒の打ち上げのために、数か月かけて機体と地上を整える。",
+      "descriptionJa": "ロケットの打ち上げを支える射場の技術職。機体の整備、推進薬の充填、地上設備の点検、カウントダウン時の確認作業までを担う。打ち上げの本番は数十秒から数分だが、そのために機体と射場の全設備を何か月もかけて確認し続ける。天候や風の予測に合わせて打ち上げ時刻を決める判断にも関わる。",
+      "surpriseJa": "ロケット射場の仕事は「打ち上げる瞬間」より、そこで起きるすべての失敗を事前に見つけること。本番より射場にいる時間のほうが圧倒的に長い。",
+      "howToBecomeJa": "宇宙機関や射場関連企業に就職し、機体整備や推進系の専門訓練を受ける。",
+      "tags": [
+        "setting.outdoors",
+        "setting.laboratory",
+        "setting.sterile-room",
+        "subject.machine",
+        "subject.metal",
+        "subject.fire",
+        "subject.data",
+        "action.assemble",
+        "action.measure",
+        "action.watch",
+        "action.record",
+        "sense.tilt",
+        "sense.hearing",
+        "sense.stillness",
+        "condition.night-shift",
+        "condition.team",
+        "condition.danger",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.calm",
+        "industry.aerospace"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "JAXA 射場施設",
+          "url": "https://www.jaxa.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "satellite-controller",
+      "nameJa": "人工衛星運用管制官",
+      "nameEn": "Satellite Controller",
+      "aliasesJa": [
+        "衛星運用管制員",
+        "人工衛星管制官"
+      ],
+      "kanaJa": "じんこうえいせいうんようかんせいかん",
+      "emoji": "🛰️",
+      "summaryJa": "宇宙に置いた機械の体調を、地上から交代で見守り続ける。",
+      "descriptionJa": "軌道上の人工衛星を地上から運用・監視する職。衛星は故障しても宇宙に出て修理できないため、届くのはテレメトリという数値の列だけになる。年収はJAXA関連の運用求人で300〜400万円台から、スカパーJSATなど民間衛星運用では600〜950万円の提示例もあり、経験と英語力で上がる。24時間交代制で、衛星コンステレーションの拡大により需要は増加傾向にある。",
+      "surpriseJa": "宇宙にいる衛星は、地球との間で行き来する文字列の信号だけで生きている。運用管制官は機体そのものを見たことがなくても、その機体の健康状態を数値から判断する。",
+      "aDayJa": "管制室に出勤し、前任者から衛星の状態を引き継ぐ。テレメトリを監視しながら予定の運用（姿勢変更・観測スケジュール）を送り、異常があれば手順書に沿って対応する。記録を残して次のシフトへ引き継ぐ。",
+      "howToBecomeJa": "JAXA・衛星運用会社（スカパーJSATなど）・衛星メーカー・運用受託会社に就職する。未経験可の運用求人もあり、理工系の素養と英語力が評価される。無線やITの資格があると有利。",
+      "tags": [
+        "setting.desk",
+        "setting.laboratory",
+        "setting.sterile-room",
+        "subject.sky-body",
+        "subject.machine",
+        "subject.data",
+        "action.watch",
+        "action.measure",
+        "action.record",
+        "action.diagnose",
+        "sense.stillness",
+        "sense.hearing",
+        "condition.night-shift",
+        "condition.team",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.calm",
+        "industry.aerospace"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "emerging",
+      "sources": [
+        {
+          "titleJa": "JAXA 衛星運用",
+          "url": "https://www.jaxa.jp/"
+        },
+        {
+          "titleJa": "スカパーJSAT",
+          "url": "https://www.skyperfectjsat.space/"
+        }
+      ],
+      "updatedAt": "2026-09-04"
+    }
+  ]
+}
