@@ -298,7 +298,7 @@
       "descriptionJa": "機内で乗客の安全と快適を担う職。法規上、第一の任務は安全管理で、救命胴衣のデモや非常口の確認、離着陸時の確認作業が毎便繰り返される。年収は賃金構造基本統計で平均約596万円が目安で、大手ではANAが約711万円・JALが約633万円（有価証券報告書ベース）とされる。乗務手当の比重が大きく、国際線や役職で上がる。不規則勤務だが、採用は需要回復で積極化している。",
       "surpriseJa": "離着陸のたびに行う救命胴衣のデモは、乗客へのお知らせではなく、法律で義務づけられた確認作業。客室乗務員の時間の大半はサービスではなく安全確認に使われている。",
       "aDayJa": "ブリーフィングで便の情報と役割分担を確認し、機内で非常用装備を点検する。搭乗が始まれば案内と安全デモを行い、巡航中はサービスと見回りを繰り返す。到着後は機内点検と報告をして、次の便か退勤へ向かう。",
-      "howToBecomeJa": "ANA・JALなど航空会社の客室乗務職採用試験を受ける。TOEICなどの語学力と、救護・保安の社内訓練が必須で、身長や視力などの応募条件は会社ごとに定められている。",
+      "howToBecomeJa": "客室乗務員の採用に国家資格は必要ない。ANAの公式採用FAQでは入社時の特別な資格・知識は不要とされる。航空会社の採用選考を経た後、入社時・入社後に保安や救護などの訓練を受け、会社の国内線・国際線乗務資格を取得する。これらの乗務資格は入社前に取得する業務独占の国家資格とは異なる。語学力などの応募条件は航空会社や募集時期により異なるため、各社の募集要項を確認する。",
       "tags": [
         "setting.sky",
         "subject.human-body",
@@ -307,7 +307,6 @@
         "action.watch",
         "action.soothe",
         "sense.balance",
-        "condition.national-license",
         "condition.night-shift",
         "condition.team",
         "temperament.listener",
@@ -332,15 +331,15 @@
       ],
       "sources": [
         {
-          "titleJa": "国土交通省 航空運送",
-          "url": "https://www.mlit.go.jp/koku/"
+          "titleJa": "ANA 客室乗務職 一般採用FAQ（2026-10-17確認）",
+          "url": "https://www.ana.co.jp/group/recruit/ana-recruit/career/ca/qa/"
         },
         {
-          "titleJa": "e-Stat 賃金構造基本統計調査",
-          "url": "https://www.e-stat.go.jp/"
+          "titleJa": "国土交通省 航空運送",
+          "url": "https://www.mlit.go.jp/koku/"
         }
       ],
-      "updatedAt": "2026-09-04"
+      "updatedAt": "2026-10-17"
     },
     {
       "slug": "rocket-launch-technician",
