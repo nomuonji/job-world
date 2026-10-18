@@ -14,7 +14,7 @@
       "summaryJa": "大量の荷物の中から、隠された密輸品を見つけ出す。",
       "descriptionJa": "税関で輸出入される貨物や携行品を検査する公務員職。法律で禁じられている物や、関税を逃れた品物が含まれていないかを確認する。検査は膨大な量の荷物に対して行われるため、機械での検査と、職員による目視と質問を組み合わせる。不審な内容を見抜く観察力が求められる。通関手続きでは申告書と貨物の内容を照合し、不一致があれば確認する。税関の判断が輸出者の手続きに影響するため、根拠を明確にして対応する。",
       "surpriseJa": "税関の検査は「全部を見る」のではなく、リスクのあるものだけを重点的に見る。大量の貨物の中で、申告内容と中身が違うものを見つける判断が仕事になる。",
-      "howToBecomeJa": "財務専門官の採用試験に合格し、税関に配属される。",
+      "howToBecomeJa": "税関職員の採用では、国家公務員採用総合職試験、一般職試験（大卒程度・高卒者）など、希望する採用区分の対象試験を確認する。試験合格だけで採用が決まるわけではなく、総合職は財務省税関、一般職は各税関等が案内する官庁訪問・採用面接などの選考に進む。社会人経験者向けの選考採用が行われる年度もあるため、募集区分・資格・日程は必ず最新の公式採用情報を確認する。財務専門官試験は財務局の職員を採用する試験であり、税関職員の必須ルートではない。",
       "tags": [
         "setting.outdoors",
         "setting.ship",
@@ -48,11 +48,23 @@
       ],
       "sources": [
         {
-          "titleJa": "税関",
-          "url": "https://www.customs.go.jp/"
+          "titleJa": "財務省税関｜総合職採用・官庁訪問",
+          "url": "https://www.customs.go.jp/saiyou/sogosaiyo.html"
+        },
+        {
+          "titleJa": "横浜税関｜一般職（大卒程度）官庁訪問・採用面接",
+          "url": "https://www.customs.go.jp/yokohama/saiyou/kanchohoumon_daisotsu.html"
+        },
+        {
+          "titleJa": "財務省税関｜社会人経験者向け選考採用（2026年度例）",
+          "url": "https://www.customs.go.jp/saiyou/kakarityou/2026/2026yoko.html"
+        },
+        {
+          "titleJa": "人事院｜財務専門官採用試験（財務局の業務）",
+          "url": "https://www.jinji.go.jp/saiyo/siken/sennmonnsyoku_daisotsu/zaimu/zaimu_daisotu.html"
         }
       ],
-      "updatedAt": "2026-08-12"
+      "updatedAt": "2026-10-19"
     },
     {
       "slug": "detective",
