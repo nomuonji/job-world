@@ -1,1 +1,9 @@
-FULL_CONTENT_HERE
+{
+  "industry": "infrastructure",
+  "jobs": [
+    {
+      "slug": "bridge-inspector",
+      "nameJa": "橋梁点検技術者"
+    }
+  ]
+}
