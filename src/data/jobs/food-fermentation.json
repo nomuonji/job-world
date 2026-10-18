@@ -1,1 +1,457 @@
-PLACEHOLDER
+{
+  "industry": "food-fermentation",
+  "jobs": [
+    {
+      "slug": "bread-baker",
+      "nameJa": "パン職人",
+      "nameEn": "Bread Baker",
+      "aliasesJa": [
+        "ベーカリー職人",
+        "製パン職人"
+      ],
+      "kanaJa": "ぱんしょくにん",
+      "emoji": "🥖",
+      "summaryJa": "夜のうちに仕込んだ生地が、朝に焼き上がるように組む。",
+      "descriptionJa": "パンを作る職。小麦粉と水と酵母という単純な材料から、発酵と焼成で風味を作り出す。発酵は温度と時間で進み、その状態によって味と形が変わるため、夜のうちに仕込んで朝に焼き上げる逆算のスケジュールで動く。湿度の高い夏と乾燥する冬では、同じレシピでも水の量を調整する。",
+      "surpriseJa": "パン職人の朝は夜の仕込みから始まる。発酵は待てば進むが止められないため、生地が最も美味しい状態で焼くことを逆算して工程を組む。",
+      "howToBecomeJa": "製パン専門学校で学ぶか、ベーカリーに就職して技術を身につける。",
+      "tags": [
+        "setting.kitchen",
+        "setting.factory-line",
+        "subject.food",
+        "subject.fire",
+        "subject.microbe",
+        "action.cook",
+        "action.blend",
+        "action.measure",
+        "sense.temperature",
+        "sense.taste",
+        "sense.fingertip",
+        "condition.night-shift",
+        "condition.peak-season",
+        "temperament.detail",
+        "temperament.planner",
+        "temperament.repeatable",
+        "industry.food-fermentation"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本パン技術研究所",
+          "url": "https://www.pan-k.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "cheese-maker",
+      "nameJa": "チーズ職人",
+      "nameEn": "Cheesemaker",
+      "aliasesJa": [
+        "チーズ製造者",
+        "カードハンドラー"
+      ],
+      "kanaJa": "ちーずしょくにん",
+      "emoji": "🧀",
+      "summaryJa": "牛乳に菌と時間を仕込んで、チーズという別物に変える。",
+      "descriptionJa": "牛乳からチーズを製造する職。牛乳に乳酸菌と酵素を加え、固まったカードを切って水を切り、塩をして熟成させる。熟成中は表面のカビや水分を管理しながら、定期的にひっくり返す。原料の牛乳は季節や牛の状態で変わるため、同じチーズを常に作る方が難しいとされる。熟成の過程で定期的にチーズの水分を測り、必要な手入れを行う。でき上がりの味を確認するため、試食と記録を積み重ねて品質を安定させる。",
+      "surpriseJa": "チーズ職人の仕事は牛乳を固めることより、熟成庫でチーズを「育てる」こと。水分と温度を日々調整し、カビを抑えながら風味を時間で作る。",
+      "howToBecomeJa": "チーズ工房や酪農場で製造の技術を学ぶ。専門の研修や留学もある。",
+      "tags": [
+        "setting.kitchen",
+        "setting.factory-line",
+        "setting.farm",
+        "subject.food",
+        "subject.microbe",
+        "subject.animal",
+        "action.ferment",
+        "action.sort",
+        "action.measure",
+        "sense.smell",
+        "sense.taste",
+        "sense.temperature",
+        "condition.seasonal",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.curious",
+        "industry.food-fermentation"
+      ],
+      "rarity": 4,
+      "familiarity": 3,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本チーズ普及協会",
+          "url": "https://www.cheese-japan.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "chocolate-maker",
+      "nameJa": "ショコラティエ",
+      "nameEn": "Chocolatier",
+      "aliasesJa": [
+        "チョコレート職人",
+        "製菓チョコレート職"
+      ],
+      "kanaJa": "しょこらてぃえ",
+      "emoji": "🍫",
+      "summaryJa": "チョコレート菓子を専門に、製造・仕上げや商品づくりを担う。",
+      "descriptionJa": "ショコラティエは、チョコレートを使う菓子を専門に扱う職人。仕込み、溶解・テンパリングなどの温度管理、成形、ガナッシュ等の製造、デコレーションや仕上げのほか、職場によってはレシピ開発、材料選定、商品企画、販売まで担う。すべてのショコラティエがカカオ豆の焙煎から板チョコ製造まで一貫して行うわけではなく、専門店、パティスリー、ホテル・レストラン、食品メーカーなどで担当工程は異なる。",
+      "surpriseJa": "パティシエが洋菓子全般を扱うのに対し、ショコラティエはチョコレート菓子への専門性を持つ。ただし実際の職場では、パティシエがチョコレート工程を兼ねることもあり、肩書きと担当範囲は店や企業によって変わる。",
+      "howToBecomeJa": "製菓を学べる学校から専門店・洋菓子店・ホテル・メーカーなどへ進む方法のほか、店舗の見習い・製造職として現場経験を積む経路もある。ショコラティエになるための一律の必須資格はない。職場ごとに求める経験や技術が異なるため、専門学校だけを唯一の入口とは考えない。",
+      "tags": [
+        "setting.kitchen",
+        "setting.workshop",
+        "subject.food",
+        "subject.fire",
+        "subject.smell-matter",
+        "action.cook",
+        "action.blend",
+        "action.measure",
+        "sense.temperature",
+        "sense.taste",
+        "sense.color",
+        "condition.peak-season",
+        "temperament.detail",
+        "temperament.aesthetic",
+        "temperament.repeatable",
+        "industry.food-fermentation"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "レコールバンタン「ショコラティエになるには？仕事内容や資格」",
+          "url": "https://www.lecole.jp/occupation/detail/131.php"
+        },
+        {
+          "titleJa": "全日本洋菓子工業会",
+          "url": "https://www.jca.co.jp/"
+        }
+      ],
+      "updatedAt": "2026-10-03"
+    },
+    {
+      "slug": "coffee-roaster",
+      "nameJa": "コーヒー焙煎士",
+      "nameEn": "Coffee Roaster",
+      "aliasesJa": [
+        "ロースター",
+        "焙煎職人"
+      ],
+      "kanaJa": "こーひーばいせんし",
+      "emoji": "☕",
+      "summaryJa": "生豆の青臭さを、火加減と時間で香りに変える。",
+      "descriptionJa": "コーヒー豆を焙煎する職。生の豆は青臭く、これに熱を加えることで香りと味が作られる。豆の種類や産地、収穫年で最適な焙煎は変わり、その日の気温や湿度によっても調整する。焙煎が進むと豆がはじけて色が変わり、その音と香りを頼りに火を止めるタイミングを決める。焙煎した豆の状態を記録し、同じ豆を再現できるようにする。店では淹れ方の提案や器具のアドバイスまで、豆を買った客に合わせて行う。",
+      "surpriseJa": "コーヒー豆が焙煎されると「はぜる」音がし、その音と香りで火を止めるタイミングが決まる。同じ豆でも焙煎の深さで味がまったく変わる。",
+      "howToBecomeJa": "コーヒー店や焙煎会社に就職し、焙煎機の操作を学ぶ。民間の資格もある。",
+      "tags": [
+        "setting.workshop",
+        "setting.factory-line",
+        "subject.food",
+        "subject.fire",
+        "subject.smell-matter",
+        "action.cook",
+        "action.measure",
+        "action.blend",
+        "sense.smell",
+        "sense.hearing",
+        "sense.temperature",
+        "condition.certification",
+        "condition.solo",
+        "temperament.curious",
+        "temperament.detail",
+        "temperament.repeatable",
+        "industry.food-fermentation"
+      ],
+      "rarity": 3,
+      "familiarity": 4,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "全日本コーヒー協会",
+          "url": "https://coffee.ajca.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "katsuobushi-maker",
+      "nameJa": "鰹節職人",
+      "nameEn": "Katsuobushi Maker",
+      "aliasesJa": [
+        "節屋",
+        "本枯節職人"
+      ],
+      "kanaJa": "かつおぶししょくにん",
+      "emoji": "🐟",
+      "summaryJa": "魚に何度もカビを付け、半年かけて石のように乾かす。",
+      "descriptionJa": "鰹を煮て骨を抜き、薪で燻し、乾かして鰹節に仕上げる職人。最上級の本枯節では、燻したあとに専用のカビを繰り返し付けて生やし、そのたびに天日に干す工程を数か月続ける。カビが内部の水分と脂を抜いていくことで、香りが澄み、日持ちする。完成した節は木のように硬く、削らなければ食べられない。",
+      "surpriseJa": "本枯節は世界でも有数の硬さの食品とされる。カビを生やす工程は腐敗ではなく、狙ったカビを付けて他の菌を寄せ付けないための管理でもある。",
+      "howToBecomeJa": "産地の製造元に入り、工程ごとに現場で覚えるのが主な経路。",
+      "tags": [
+        "setting.workshop",
+        "subject.food",
+        "subject.microbe",
+        "subject.fire",
+        "action.ferment",
+        "action.sort",
+        "sense.smell",
+        "sense.fingertip",
+        "condition.seasonal",
+        "condition.apprenticeship",
+        "condition.few-practitioners",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.planner",
+        "industry.food-fermentation"
+      ],
+      "rarity": 5,
+      "familiarity": 2,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "salt-maker",
+          "kind": "supplies",
+          "noteJa": "鰹を煮る工程には塩田職人が作る塩が欠かせない。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "農林水産省 水産加工",
+          "url": "https://www.maff.go.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "koji-maker",
+      "nameJa": "種麹屋",
+      "nameEn": "Koji Starter Producer",
+      "aliasesJa": [
+        "もやし屋",
+        "種麹製造者"
+      ],
+      "kanaJa": "たねこうじや",
+      "emoji": "🦠",
+      "summaryJa": "味噌も醤油も酒も、この店の菌から始まっている。",
+      "descriptionJa": "麹菌そのものを培養し、酒蔵や味噌蔵に供給する専門業。日本の発酵食品はほぼすべて麹菌から作られるため、種麹屋の菌が全国の醸造現場の出発点になっている。用途ごとに性質の違う菌株を長年にわたって選抜・維持し、雑菌が混入しないよう厳格に管理された室で増やす。国内でこの業を営む会社は十社に満たないとされる。",
+      "surpriseJa": "日本の味噌・醤油・酒のほとんどは、全国でも十社に満たない種麹屋が供給する菌から始まっている。業界では「もやし屋」と呼ばれてきた。",
+      "howToBecomeJa": "種麹製造会社に就職し、微生物の扱いを現場で学ぶ。醸造や農芸化学の素養が求められることが多い。",
+      "tags": [
+        "setting.sterile-room",
+        "setting.laboratory",
+        "subject.microbe",
+        "subject.food",
+        "action.nurture",
+        "action.sort",
+        "action.measure",
+        "sense.smell",
+        "sense.color",
+        "condition.few-practitioners",
+        "condition.team",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.curious",
+        "industry.food-fermentation"
+      ],
+      "rarity": 5,
+      "familiarity": 1,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "sake-brewmaster",
+          "kind": "supplies",
+          "noteJa": "表に出るのは酒の名前だが、その味を左右する麹菌そのものを作って蔵へ納めているのが種麹屋。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本醸造協会",
+          "url": "https://www.jozo.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "pastry-chef",
+      "nameJa": "パティシエ",
+      "nameEn": "Pastry Chef",
+      "aliasesJa": [
+        "洋菓子職人",
+        "製菓職人"
+      ],
+      "kanaJa": "ぱてぃしえ",
+      "emoji": "🍰",
+      "summaryJa": "計量と焼成のあと、仕上げは手で整える。",
+      "descriptionJa": "洋菓子店、菓子工場、レストランで生菓子、焼き菓子、チョコレート、氷菓などを作る。job tagは、材料を計量して生地を作り焼き上げ、最後の仕上げは機械ではできない手作業だと説明する。店は手造りが中心で、工場は機械の操作や監視が中心になる。製菓衛生師は都道府県知事の免許による名称独占資格で、菓子製造への従事自体を義務づけない。有資格者は講習なしで食品衛生責任者になれるが、責任者は施設ごとの選任で、講習修了者でも足りる。",
+      "surpriseJa": "製菓衛生師は名称を独占する資格で、パティシエとして働く必須条件ではない。",
+      "howToBecomeJa": "高校後に製菓・調理系の専門学校で基礎を学んで入る例や、店で工程を順に覚える例がある。製菓衛生師は入職後の実務と試験で取れる任意資格で、菓子製造技能士も関連資格。独立する人はいるが、人数や典型年数は断定しない。",
+      "tags": [
+        "setting.kitchen",
+        "subject.food",
+        "subject.fire",
+        "action.measure",
+        "action.assemble",
+        "action.blend",
+        "sense.taste",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "condition.peak-season",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.food-fermentation"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "beekeeper",
+          "kind": "supplies",
+          "noteJa": "洋菓子に使う蜂蜜は、養蜂家が巣箱から採ったものだ。"
+        },
+        {
+          "to": "chocolate-maker",
+          "kind": "transitions-to",
+          "noteJa": "製菓の経験を活かして、ケーキからチョコレート菓子の専門へ転じる職人は珍しくない。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "洋菓子製造、パティシエ（職業詳細）",
+          "url": "https://shigoto.mhlw.go.jp/User/Occupation/Detail/3",
+          "publisherJa": "厚生労働省 job tag"
+        },
+        {
+          "titleJa": "製菓衛生師",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000065164.html",
+          "publisherJa": "厚生労働省"
+        }
+      ],
+      "updatedAt": "2026-10-05"
+    },
+    {
+      "slug": "sake-brewmaster",
+      "nameJa": "杜氏",
+      "nameEn": "Sake Brewmaster (Toji)",
+      "aliasesJa": [
+        "酒造りの親方",
+        "蔵人頭"
+      ],
+      "kanaJa": "とうじ",
+      "emoji": "🍶",
+      "summaryJa": "冬のあいだ蔵に住み込み、目に見えない菌の機嫌をうかがう。",
+      "descriptionJa": "日本酒の製造現場の最高責任者。麹菌と酵母という生き物を相手にするため、温度・湿度・時間の管理がそのまま味になる。仕込みは気温の低い冬に集中し、多くの蔵で杜氏と蔵人は期間中そこに住み込む。麹室では手のひらの感触と匂いで麹の出来を判断する場面が今も残っており、数値化された計測と職人の感覚が同居している珍しい現場でもある。",
+      "surpriseJa": "杜氏はもともと季節労働の親方で、農閑期に同じ郷から蔵へ集団で出稼ぎに行く仕組みだった。南部杜氏・越後杜氏のように、出身地の名前がそのまま流派の名前になっている。",
+      "howToBecomeJa": "蔵人として入り、現場で経験を積んで杜氏になるのが主流。国家資格はないが、技能検定に酒造の区分がある。",
+      "tags": [
+        "setting.workshop",
+        "subject.microbe",
+        "subject.water",
+        "subject.food",
+        "action.ferment",
+        "action.measure",
+        "action.blend",
+        "sense.smell",
+        "sense.taste",
+        "sense.fingertip",
+        "condition.live-in",
+        "condition.seasonal",
+        "condition.apprenticeship",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.planner",
+        "industry.food-fermentation"
+      ],
+      "rarity": 4,
+      "familiarity": 4,
+      "lifecycle": "traditional",
+      "edges": [
+        {
+          "to": "perfumer",
+          "kind": "supplies",
+          "noteJa": "酒の香りは、調香師が扱う香料の世界とは別の、微生物と時間の産物だ。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "日本酒造組合中央会",
+          "url": "https://www.japansake.or.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "sushi-chef",
+      "nameJa": "寿司職人",
+      "nameEn": "Sushi Chef",
+      "aliasesJa": [
+        "板前",
+        "すし処の料理人"
+      ],
+      "kanaJa": "すししょくにん",
+      "emoji": "🍣",
+      "summaryJa": "魚の鮮度を見て、今日の仕入れの良し悪しを決める。",
+      "descriptionJa": "魚介類と米飯などを調理してすしを作る職。魚の仕入れ・下ごしらえ、酢飯の準備、つけ場での握りや巻物づくりを担う。店の業態（一般店・高級店・回転寿司など）によって担当範囲は異なる。年収の目安としてjob tagが掲載する379.1万円は、令和7年賃金構造基本統計調査に基づく日本料理調理人等の広い職業分類の全国平均であり、すし職人個人の実収入を保証するものではない。働き方や店の形態で大きく変わる。",
+      "surpriseJa": "多くの場合、最初の1〜2年は店内の清掃・食器洗い・雑用などの見習いから始まり、その後包丁を持って材料の選び方や仕込み・にぎりを学ぶ。修業年数に公的な一律基準はない。",
+      "aDayJa": "朝早く市場で魚を選び、店に戻って下ごしらえとシャリの仕込みを行う。昼の営業でカウンターに立ち、合間に仕込みを足す。夜の営業後は片付けと翌日の仕込みをして退勤する。独立後は仕入れ・原価・集客の管理も担う。",
+      "howToBecomeJa": "入職に特に学歴や資格は必要とされない。寿司店で見習いから始め、仕込みや握りを段階的に学ぶ経路が一般的。調理師専門学校や回転寿司チェーンの研修から入る道もある。調理師免許は必須ではないが、取得すると就職に有利になることがある。一人前までの年数は店と本人により異なり、固定の目安年数は規定されていない。",
+      "tags": [
+        "setting.kitchen",
+        "setting.stage",
+        "subject.food",
+        "subject.animal",
+        "subject.water",
+        "action.cook",
+        "action.sort",
+        "action.assemble",
+        "sense.taste",
+        "sense.fingertip",
+        "sense.fine-motor",
+        "condition.apprenticeship",
+        "condition.night-shift",
+        "condition.peak-season",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.aesthetic",
+        "industry.food-fermentation"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "edges": [
+        {
+          "to": "katsuobushi-maker",
+          "kind": "supplies",
+          "noteJa": "寿司屋のだしには鰹節職人が仕上げた本枯節が使われる。"
+        },
+        {
+          "to": "rice-farmer",
+          "kind": "supplies",
+          "noteJa": "寿司のシャリになる米は、稲作農家が作った米だ。"
+        }
+      ],
+      "sources": [
+        {
+          "titleJa": "厚生労働省 職業情報提供サイト job tag「すし職人」職業詳細",
+          "url": "https://shigoto.mhlw.go.jp/User/Occupation/Detail/101",
+          "publisherJa": "厚生労働省"
+        },
+        {
+          "titleJa": "厚生労働省 調理師関係",
+          "url": "https://www.mhlw.go.jp/stf/newpage_11843.html",
+          "publisherJa": "厚生労働省"
+        }
+      ],
+      "updatedAt": "2026-10-18"
+    }
+  ]
+}
