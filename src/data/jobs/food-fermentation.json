@@ -5,45 +5,38 @@
       "slug": "bread-baker",
       "nameJa": "パン職人",
       "nameEn": "Bread Baker",
-      "aliasesJa": [
-        "ベーカリー職人",
-        "製パン職人"
-      ],
+      "aliasesJa": ["ベーカリー職人", "製パン職人"],
       "kanaJa": "ぱんしょくにん",
       "emoji": "🥖",
       "summaryJa": "夜のうちに仕込んだ生地が、朝に焼き上がるように組む。",
       "descriptionJa": "パンを作る職。小麦粉と水と酵母という単純な材料から、発酵と焼成で風味を作り出す。発酵は温度と時間で進み、その状態によって味と形が変わるため、夜のうちに仕込んで朝に焼き上げる逆算のスケジュールで動く。湿度の高い夏と乾燥する冬では、同じレシピでも水の量を調整する。",
       "surpriseJa": "パン職人の朝は夜の仕込みから始まる。発酵は待てば進むが止められないため、生地が最も美味しい状態で焼くことを逆算して工程を組む。",
       "howToBecomeJa": "製パン専門学校で学ぶか、ベーカリーに就職して技術を身につける。",
-      "tags": [
-        "setting.kitchen",
-        "setting.factory-line",
-        "subject.food",
-        "subject.fire",
-        "subject.microbe",
-        "action.cook",
-        "action.blend",
-        "action.measure",
-        "sense.temperature",
-        "sense.taste",
-        "sense.fingertip",
-        "condition.night-shift",
-        "condition.peak-season",
-        "temperament.detail",
-        "temperament.planner",
-        "temperament.repeatable",
-        "industry.food-fermentation"
-      ],
+      "tags": ["setting.kitchen", "setting.factory-line", "subject.food", "subject.fire", "subject.microbe", "action.cook", "action.blend", "action.measure", "sense.temperature", "sense.taste", "sense.fingertip", "condition.night-shift", "condition.peak-season", "temperament.detail", "temperament.planner", "temperament.repeatable", "industry.food-fermentation"],
       "rarity": 2,
       "familiarity": 5,
       "lifecycle": "established",
-      "sources": [
-        {
-          "titleJa": "日本パン技術研究所",
-          "url": "https://www.pan-k.jp/"
-        }
-      ],
+      "sources": [{"titleJa": "日本パン技術研究所", "url": "https://www.pan-k.jp/"}],
       "updatedAt": "2026-08-12"
+    },
+    {
+      "slug": "sommelier",
+      "nameJa": "ソムリエ",
+      "nameEn": "Sommelier",
+      "aliasesJa": ["ワイン専門給仕人"],
+      "kanaJa": "そむりえ",
+      "emoji": "🍷",
+      "summaryJa": "ワインの選定・サービス・仕入・保管を担い、客の好みに合わせて提案する。",
+      "descriptionJa": "レストランやホテルでワインを選定し、客に合わせて提供する専門職。味の判別だけでなく、予算・料理・その日の気分から客の望むものを推定して提案することが中心。仕入れ・在庫管理、保管温度の管理、開栓のタイミング判断まで含め、店の利益にも関わる。J.S.A.（日本ソムリエ協会）のソムリエ呼称資格は任意の認定で、就職や実務の必須条件ではない。職務未経験でも受験できるワインエキスパートとは異なり、ソムリエは本職として全収入の60%以上を得、月90時間以上の勤務で通算3年（会員歴2年以上の会員は2年）などの経験を満たした現職者が対象。",
+      "surpriseJa": "ソムリエの仕事とJ.S.A.の認定資格は別物。飲食店でワインサービスに就くこと自体に資格は必須ではなく、資格取得は職務経験を積んだ後の任意のステップ。ワインエキスパートは愛好家向けで職務経験不問。",
+      "howToBecomeJa": "飲食店・ホテルなどのワインサービス職に就職し、実務経験を積むのが主な入口。J.S.A.ソムリエ呼称資格は、ソムリエの職務が本職で全収入の60%以上を得、月90時間以上の勤務で通算3年（会員歴2年以上の正会員・賛助会員は2年）かつ現職であることを要件とする任意の認定試験。職務未経験者や経験不足の人は、職務経験不問のJ.S.A.ワインエキスパートを目指す選択肢もある。2026年度の受験申込は終了済み。次年度の日程は公式サイトで確認。資格取得を法定必須と断定せず、すべての採用条件と一般化しない。",
+      "tags": ["setting.stage", "subject.food", "subject.water", "action.diagnose", "action.negotiate", "action.sort", "sense.taste", "sense.smell", "sense.color", "condition.certification", "condition.night-shift", "temperament.listener", "temperament.improvise", "temperament.curious", "industry.food-fermentation"],
+      "rarity": 3,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "edges": [{"to": "winemaker", "kind": "front-and-back", "noteJa": "客の前でワインを選ぶのがソムリエ、蔵でそれを造るのが醸造家。同じワインの表と裏の担い手になる。"}],
+      "sources": [{"titleJa": "J.S.A.ソムリエ呼称資格認定試験（受験資格）", "url": "https://www.sommelier.jp/exam/sommelier"}, {"titleJa": "J.S.A.ワインエキスパート呼称資格認定試験", "url": "https://www.sommelier.jp/exam/wine-expert"}, {"titleJa": "日本ソムリエ協会 初めての方へ（呼称資格一覧）", "url": "https://www.sommelier.jp/guidance/beginner"}],
+      "updatedAt": "2026-10-19"
     }
   ]
 }
