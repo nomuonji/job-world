@@ -1,1 +1,18 @@
-FULL_CONTENT_FROM_FILE
+{
+  "industry": "medical",
+  "jobs": [
+    {
+      "slug": "medical-illustrator",
+      "nameJa": "メディカルイラストレーター",
+      "nameEn": "Medical Illustrator",
+      "howToBecomeJa": "進路は大きく3つ。①美術・イラスト背景＋解剖・生物医学の学習：ポートフォリオを作りながら解剖学を学び、制作会社や医療系出版社・研究機関で実務経験を積む例が多い。②医学・科学背景＋デザイン・可視化スキル：医療従事者や研究者が視覚化技術を習得し、患者教育や論文図版を制作する。③海外の認定修士課程（任意・非日本前提）：AMI関連のCAAHEP認定大学院（米国・カナダ）で解剖実習と専門制作を学ぶ経路。ポートフォリオと面接が必要で、日本での採用を保証するものではない。いずれも職業と任意認定（CMIなど）と法的免許を区別すること。出典は各学会公式（as of 2026-10）。",
+      "descriptionJa": "手術手技・解剖構造・疾患のしくみ・患者説明など、写真では正確に示せない部分を図やアニメーションで視覚化する専門職。制作分野は解剖学的図版、3D医療アニメーション、患者教育資料などに分かれる。医学的正確さが前提で、医師や研究者と構造を確認しながら進める。日本では国家資格や医療免許は不要で、職業としての実践に法的ライセンスは求められない。AMI（米国）のCertified Medical Illustrator（CMI）は任意の専門認定であり、実践の前提条件ではない（2026年4月時点のAMI公式）。日本メディカルイラストレーション学会は養成と分野の発展を目的とする。",
+      "sources": [
+        {"titleJa": "日本メディカルイラストレーション学会 設立主旨", "url": "https://www.medical-illustration.jp/about.html"},
+        {"titleJa": "AMI Education: pathways and accredited master's", "url": "https://ami.org/medical-illustration/enter-the-profession/education/"},
+        {"titleJa": "AMI Board Certification: CMI is voluntary", "url": "https://ami.org/medical-illustration/board-certification/"}
+      ],
+      "updatedAt": "2026-10-20"
+    }
+  ]
+}
