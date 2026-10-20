@@ -271,17 +271,16 @@
     {
       "slug": "service-dog-trainer",
       "nameJa": "盲導犬訓練士",
-      "nameEn": "Service Dog Trainer",
+      "nameEn": "Guide Dog Trainer",
       "aliasesJa": [
-        "盲導犬育成士",
-        "介助犬訓練士"
+        "盲導犬育成士"
       ],
       "kanaJa": "もうどうけんくんれんし",
       "emoji": "🦮",
-      "summaryJa": "人の命を預かる犬を、子犬の頃から十数年の単位で育てる。",
-      "descriptionJa": "盲導犬や介助犬を育てて目の不自由な人や障害のある人に譲渡する職。子犬の頃から家庭での預かり訓練を経て、専門の訓練所で本格的な訓練を行う。犬の性格を見極め、その犬に合う役割や使用者を選ぶ。犬と使用者の関係がうまくいくように、譲渡後のフォローまで続ける。犬と使用者が初めて会うときの相性確認も訓練士の仕事だ。譲渡後も定期的に訪問し、問題が起きないようにフォローを続ける。",
-      "surpriseJa": "盲導犬の訓練は生まれてから始まり、使用者と合うかどうかを性格の見極めで決める。全頭が盲導犬になるわけではなく、性格が合わない犬は別の仕事に転向する。",
-      "howToBecomeJa": "盲導犬協会などの訓練所に就職し、犬の扱いと訓練技術を学ぶ。",
+      "summaryJa": "目の見えない・見えにくい人の安全な歩行を支える盲導犬を訓練する。",
+      "descriptionJa": "盲導犬訓練士は、視覚障害のある人が安全に歩けるよう、犬に障害物の回避、段差・曲がり角で止まること、交通機関での移動などを教える。犬の適性を評価し、使用者との組合せを考え、使用者と犬が一緒に歩く共同訓練や貸与後のフォローにも関わる。子犬の時期はパピーウォーカーなどのボランティア家庭で育つため、訓練士が出生から十数年間一頭を担当するわけではない。身体障害者補助犬には盲導犬・介助犬・聴導犬の3種類がある。盲導犬は視覚障害者の歩行を支援し、介助犬は肢体不自由者の物の拾い上げなど日常生活動作を補助し、聴導犬は聴覚障害者に必要な音を知らせる。3種は支援対象・訓練内容・認定制度や相談先が異なるため、介助犬訓練士や聴導犬訓練士を盲導犬訓練士の同義語として扱わない。",
+      "surpriseJa": "盲導犬の訓練は犬への指示だけで完結しない。使用者と一緒に歩く共同訓練や貸与後のフォローにも関わる。すべての候補犬が盲導犬になるわけではない。",
+      "howToBecomeJa": "【盲導犬訓練士】日本盲導犬協会の採用情報（https://www.moudouken.net/recruit/）を確認する。同協会では職員として採用された後、盲導犬訓練士学校で働きながら学び、内部審査や全国盲導犬施設連合会の試験を経て、合格者が同連合会認定の訓練士資格を取得する。採用と資格取得は別段階で、募集要項・応募条件・募集時期は公式ページで確認する（https://www.moudouken.net/guide-dog-trainer/school/）。【介助犬・聴導犬の訓練】盲導犬の採用窓口と混同せず、厚生労働省の身体障害者補助犬情報（https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/hojoken/index.html）に掲載された訓練事業所を調べ、各団体の採用・研修条件を確認する。【資格】盲導犬訓練士の仕事に全国一律の国家資格が必須と断定せず、採用先ごとの養成・認定経路を確認する。",
       "tags": [
         "setting.outdoors",
         "setting.someones-home",
@@ -305,11 +304,23 @@
       "lifecycle": "established",
       "sources": [
         {
-          "titleJa": "日本盲導犬協会",
-          "url": "https://www.moudouken.net/"
+          "titleJa": "厚生労働省「身体障害者補助犬の概要・利用方法」（3種類の役割）",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/hojoken/gaiyo.html"
+        },
+        {
+          "titleJa": "厚生労働省「身体障害者補助犬」（訓練事業所・指定法人の一覧）",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/hojoken/index.html"
+        },
+        {
+          "titleJa": "日本盲導犬協会「採用情報」（協会職員・訓練士の養成）",
+          "url": "https://www.moudouken.net/recruit/"
+        },
+        {
+          "titleJa": "日本盲導犬協会「盲導犬訓練士学校」（働きながら学ぶ資格取得経路）",
+          "url": "https://www.moudouken.net/guide-dog-trainer/school/"
         }
       ],
-      "updatedAt": "2026-08-12"
+      "updatedAt": "2026-10-21"
     },
     {
       "slug": "tree-doctor",
