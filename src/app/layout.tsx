@@ -63,6 +63,7 @@ export default function RootLayout({
               <Link href="/jobs" className="hover:text-[var(--accent)]">
                 職業一覧
               </Link>
+              <Link href="/guides" className="hover:text-[var(--accent)]">仕事のガイド</Link>
               <Link href="/compare" className="hover:text-[var(--accent)]">仕事の比較室</Link>
               <Link href="/rare-jobs" className="hover:text-[var(--accent)]">
                 珍しい仕事

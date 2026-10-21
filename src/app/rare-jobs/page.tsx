@@ -85,6 +85,7 @@ export default function RareJobsPage() {
         </p>
       </aside>
 
+      <p className="mt-5 text-sm">伝統工芸の職人に関心がある人へ：<Link href="/guides/traditional-crafts" className="underline">職人になる道筋と産地の調べ方 ↗</Link></p>
       <div className="mt-5 flex flex-wrap gap-3 text-sm">
         <Link
           href="/jobs"

@@ -6,7 +6,7 @@ import { getAllJobs, getFacets } from "@/lib/data";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/jobs", "/rare-jobs", "/facets", "/stats", "/about"];
+  const staticPaths = ["", "/jobs", "/rare-jobs", "/facets", "/stats", "/about", "/compare", "/guides", "/guides/airport-jobs", "/guides/traditional-crafts", "/guides/ground-handling-vs-maintenance"];
 
   return [
     ...staticPaths.map((path) => ({
