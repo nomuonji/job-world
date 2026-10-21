@@ -48,7 +48,7 @@ const guidePaths = [
 ];
 for (const path of guidePaths) {
   const page = read(path);
-  if (!page.includes("alternates: { canonical:") || !page.includes("<h1") || page.length < 1200) {
+  if (!/alternates\s*:\s*\{\s*canonical\s*:/.test(page) || !page.includes("<h1") || page.length < 1200) {
     fail(`検索ガイドの独立タイトル・本文・canonicalが不足: ${path}`);
   }
   if (path !== "src/app/guides/page.tsx" && !page.includes("https://")) {
