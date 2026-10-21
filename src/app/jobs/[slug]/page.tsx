@@ -201,6 +201,16 @@ export default async function JobPage({
         </section>
       )}
 
+      {(["air-traffic-controller","aircraft-maintenance-engineer","airport-ramp-agent","flight-attendant","airline-pilot","bamboo-artisan","barrel-maker","brush-maker","urushi-lacquerer","washi-papermaker","swordsmith"].includes(job.slug)) && (
+        <aside className="mt-8 rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5">
+          <h2 className="font-bold">この仕事を、ほかの仕事と比べる</h2>
+          <ul className="mt-2 space-y-2">
+            {["air-traffic-controller","aircraft-maintenance-engineer","airport-ramp-agent","flight-attendant","airline-pilot"].includes(job.slug) && <li><Link className="underline" href="/guides/airport-jobs">空港で働く仕事の種類と担当の違い ↗</Link></li>}
+            {["aircraft-maintenance-engineer","airport-ramp-agent"].includes(job.slug) && <li><Link className="underline" href="/guides/ground-handling-vs-maintenance">航空整備士とグランドハンドリングの違い ↗</Link></li>}
+            {["bamboo-artisan","barrel-maker","brush-maker","urushi-lacquerer","washi-papermaker","swordsmith"].includes(job.slug) && <li><Link className="underline" href="/guides/traditional-crafts">伝統工芸の職人になるまでの調べ方 ↗</Link></li>}
+          </ul>
+        </aside>
+      )}
       <div className="atlas-profile-story" id="occupation-story">
       <section className="mt-8 rounded-lg border-l-4 border-[var(--accent)] bg-[var(--surface)] p-5">
         <h2 className="text-sm font-bold text-[var(--accent)]">

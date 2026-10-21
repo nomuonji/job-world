@@ -53,6 +53,15 @@ export default function JobsPage() {
         </Link>
       </div>
       </section>
+      <section aria-labelledby="guided-exploration" className="my-8 rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5">
+        <h2 id="guided-exploration" className="text-xl font-bold">仕事内容だけでなく、違い・なり方まで調べる</h2>
+        <p className="mt-2 text-[var(--muted)]">職業を横断したガイド。似た仕事の境界、同じ現場の分担、実際の進路を調べられます。</p>
+        <ul className="mt-3 grid gap-2 md:grid-cols-3">
+          <li><Link className="underline" href="/guides/airport-jobs">空港で働く仕事の種類 ↗</Link></li>
+          <li><Link className="underline" href="/guides/traditional-crafts">伝統工芸の職人になるには ↗</Link></li>
+          <li><Link className="underline" href="/guides/ground-handling-vs-maintenance">整備士とグラハンの違い ↗</Link></li>
+        </ul>
+      </section>
       <AtlasIndex jobs={jobs.map(j=>({slug:j.slug,name:j.nameJa,summary:j.summaryJa,emoji:j.emoji,industry:j.tags.find(t=>t.startsWith("industry."))??"industry.other",rarity:j.rarity,familiarity:j.familiarity}))} industries={getTagsInDefinitionOrder("industry").map(t=>({id:t.id,name:t.labelJa}))} />
     </div>
   );
