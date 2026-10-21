@@ -1,0 +1,79 @@
+name: Production SEO smoke
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-public-routes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Verify Cloudflare production HTML and canonical URLs
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="https://job.antonbase.com"
+          ready=0
+          for n in $(seq 1 20); do
+            if curl -fsSL --max-time 20 "$base/guides/space-jobs" -o /tmp/space.html &&
+               grep -Fq "打ち上げる人と、その先を見守る人" /tmp/space.html; then
+              ready=1
+              break
+            fi
+            sleep 15
+          done
+          if [[ "$ready" != "1" ]]; then
+            echo "::error::Cloudflare production did not expose the expected space-jobs HTML"
+            exit 1
+          fi
+
+          pages=(
+            guides
+            guides/airport-jobs
+            guides/traditional-crafts
+            guides/ground-handling-vs-maintenance
+            guides/space-jobs
+            guides/pilot-vs-controller
+            guides/rocket-vs-satellite
+            jobs/air-traffic-controller
+            jobs/airport-ramp-agent
+            jobs/drone-pilot
+            jobs/bamboo-artisan
+            jobs/flight-attendant
+            jobs/rocket-launch-technician
+            jobs/satellite-controller
+            jobs/barrel-maker
+            jobs/brush-maker
+            jobs/urushi-lacquerer
+            jobs/washi-papermaker
+            jobs/swordsmith
+          )
+          for route in "${pages[@]}"; do
+            echo "Checking: $route"
+            curl -fsSL --max-time 20 "$base/$route" -o /tmp/page.html
+            grep -Fq 'rel="canonical"' /tmp/page.html || {
+              echo "::error::Missing canonical: $route"
+              exit 1
+            }
+            if grep -Eiq '<meta name="robots" content="noindex' /tmp/page.html; then
+              echo "::error::Unexpected noindex: $route"
+              exit 1
+            fi
+          done
+          curl -fsSL --max-time 20 "$base/" -o /tmp/root.html
+          grep -Fq "仕事内容と職業の種類を、疑問から調べる" /tmp/root.html
+          curl -fsSL --max-time 20 "$base/sitemap.xml" -o /tmp/sitemap.xml
+          for route in guides/airport-jobs guides/space-jobs guides/pilot-vs-controller guides/rocket-vs-satellite; do
+            grep -Fq "$base/$route" /tmp/sitemap.xml || {
+              echo "::error::Not in production sitemap: $route"
+              exit 1
+            }
+          done
+          curl -fsSL --max-time 20 "$base/robots.txt" -o /tmp/robots.txt
+          grep -Fq "$base/sitemap.xml" /tmp/robots.txt
+          echo "Production smoke: 19 indexable pages, home, sitemap, robots OK"
