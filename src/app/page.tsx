@@ -69,6 +69,16 @@ export default function Home() {
         </nav>
       </section>
 
+      <section className="mx-auto max-w-5xl px-4 py-10" aria-labelledby="guides-entry">
+        <h2 id="guides-entry" className="text-2xl font-bold">仕事内容と職業の種類を、疑問から調べる</h2>
+        <p className="mt-2 leading-8">150の仕事を辿れる職業図鑑。現場や進路を比べるガイドも用意しています。</p>
+        <ul className="mt-4 grid gap-3 md:grid-cols-3">
+          <li><Link className="underline" href="/guides/airport-jobs">空港で働く仕事の種類 ↗</Link></li>
+          <li><Link className="underline" href="/guides/traditional-crafts">伝統工芸の職人になるには ↗</Link></li>
+          <li><Link className="underline" href="/guides/space-jobs">宇宙に関わる仕事 ↗</Link></li>
+        </ul>
+        <p className="mt-4"><Link href="/guides" className="underline">職業比較ガイド一覧へ →</Link></p>
+      </section>
       <section className="explorer-entry-station" aria-labelledby="explorer-entry-title">
         <header className="explorer-section-head">
           <span>02 / 知っている仕事から</span>

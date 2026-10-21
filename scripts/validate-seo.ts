@@ -42,6 +42,9 @@ const guidePaths = [
   "src/app/guides/airport-jobs/page.tsx",
   "src/app/guides/traditional-crafts/page.tsx",
   "src/app/guides/ground-handling-vs-maintenance/page.tsx",
+  "src/app/guides/space-jobs/page.tsx",
+  "src/app/guides/pilot-vs-controller/page.tsx",
+  "src/app/guides/rocket-vs-satellite/page.tsx",
 ];
 for (const path of guidePaths) {
   const page = read(path);
@@ -72,7 +75,36 @@ if (!sitemap.includes('"/guides/airport-jobs"') ||
 if (guidePaths.some((path) => read(path).includes('"@type": "JobPosting"'))) {
   fail("職業解説ページを求人票として構造化してはいけません");
 }
-console.log("- 4 expanded occupation records and 3 source-backed indexable guides verified");
+const newlyRevised = [
+  "flight-attendant", "rocket-launch-technician", "satellite-controller",
+  "barrel-maker", "brush-maker", "swordsmith",
+  "urushi-lacquerer", "washi-papermaker",
+];
+for (const slug of newlyRevised) {
+  const job = jobsData.find((item) => item.slug === slug);
+  if (!job || job.descriptionJa.length < 250 || job.howToBecomeJa.length < 170 ||
+      !job.aDayJa || job.aDayJa.length < 75 || (job.sources?.length ?? 0) < 2 ||
+      job.sources!.some((source) => !source.titleJa || !source.url.startsWith("https://"))) {
+    fail(`改稿した職業の本文・実務例・一次情報が不足: ${slug}`);
+  }
+}
+for (const path of [
+  "/guides/space-jobs", "/guides/pilot-vs-controller", "/guides/rocket-vs-satellite"
+]) {
+  if (!sitemap.includes('"' + path + '"')) fail(`新ガイドがsitemapにない: ${path}`);
+}
+const home = read("src/app/page.tsx");
+if (!home.includes('href="/guides/airport-jobs"') ||
+    !home.includes('href="/guides/traditional-crafts"') ||
+    !home.includes('href="/guides/space-jobs"')) {
+  fail("ホームに検索用横断ガイドへの導線がない");
+}
+const detailPage = read("src/app/jobs/[slug]/page.tsx");
+if (!detailPage.includes('href="/guides/rocket-vs-satellite"') ||
+    !detailPage.includes('href="/guides/pilot-vs-controller"')) {
+  fail("職業詳細から横断比較への内部リンクがない");
+}
+console.log("- 12 expanded occupation records and 6 sourced indexable guides verified");
 
 console.log("SEO boundary check: OK");
 console.log("- 154 tag URLs remain exploration-only (noindex,follow + sitemap excluded)");
