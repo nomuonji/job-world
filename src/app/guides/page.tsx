@@ -11,6 +11,9 @@ const guides = [
   { href: "/guides/airport-jobs", title: "空港で働く仕事の種類", description: "管制官・整備士・地上支援・客室乗務員。それぞれ誰が何を担当するのか。" },
   { href: "/guides/traditional-crafts", title: "伝統工芸の職人になるには", description: "技法・産地・修業先の探し方と、伝統工芸士認定との違い。" },
   { href: "/guides/ground-handling-vs-maintenance", title: "航空整備士とグランドハンドリングの違い", description: "同じ飛行機を支える二つの仕事を、作業・資格・進路で比較。" },
+  { href: "/guides/space-jobs", title: "宇宙に関わる仕事の種類", description: "打上げ前の地上設備と打上げ後の衛星運用、宇宙飛行士の役割を比較。" },
+  { href: "/guides/pilot-vs-controller", title: "パイロットと航空管制官の違い", description: "飛行機を操縦する側と、航空交通を調整する側の仕事内容と進路。" },
+  { href: "/guides/rocket-vs-satellite", title: "ロケット射場と人工衛星運用の違い", description: "ロケット打上げの設備担当と、衛星の地上運用担当を比較。" },
 ];
 
 export default function GuidesPage() {

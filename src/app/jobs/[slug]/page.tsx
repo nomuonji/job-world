@@ -201,12 +201,15 @@ export default async function JobPage({
         </section>
       )}
 
-      {(["air-traffic-controller","aircraft-maintenance-engineer","airport-ramp-agent","flight-attendant","airline-pilot","bamboo-artisan","barrel-maker","brush-maker","urushi-lacquerer","washi-papermaker","swordsmith"].includes(job.slug)) && (
+      {(["air-traffic-controller","aircraft-maintenance-engineer","airport-ramp-agent","flight-attendant","airline-pilot","rocket-launch-technician","satellite-controller","astronaut","bamboo-artisan","barrel-maker","brush-maker","urushi-lacquerer","washi-papermaker","swordsmith"].includes(job.slug)) && (
         <aside className="mt-8 rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5">
           <h2 className="font-bold">この仕事を、ほかの仕事と比べる</h2>
           <ul className="mt-2 space-y-2">
             {["air-traffic-controller","aircraft-maintenance-engineer","airport-ramp-agent","flight-attendant","airline-pilot"].includes(job.slug) && <li><Link className="underline" href="/guides/airport-jobs">空港で働く仕事の種類と担当の違い ↗</Link></li>}
             {["aircraft-maintenance-engineer","airport-ramp-agent"].includes(job.slug) && <li><Link className="underline" href="/guides/ground-handling-vs-maintenance">航空整備士とグランドハンドリングの違い ↗</Link></li>}
+            {["air-traffic-controller","airline-pilot"].includes(job.slug) && <li><Link className="underline" href="/guides/pilot-vs-controller">パイロットと航空管制官の違い ↗</Link></li>}
+            {["rocket-launch-technician","satellite-controller","astronaut"].includes(job.slug) && <li><Link className="underline" href="/guides/space-jobs">宇宙に関わる仕事の種類 ↗</Link></li>}
+            {["rocket-launch-technician","satellite-controller"].includes(job.slug) && <li><Link className="underline" href="/guides/rocket-vs-satellite">ロケット射場と衛星運用の違い ↗</Link></li>}
             {["bamboo-artisan","barrel-maker","brush-maker","urushi-lacquerer","washi-papermaker","swordsmith"].includes(job.slug) && <li><Link className="underline" href="/guides/traditional-crafts">伝統工芸の職人になるまでの調べ方 ↗</Link></li>}
           </ul>
         </aside>

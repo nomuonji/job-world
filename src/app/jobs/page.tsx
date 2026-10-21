@@ -60,6 +60,7 @@ export default function JobsPage() {
           <li><Link className="underline" href="/guides/airport-jobs">空港で働く仕事の種類 ↗</Link></li>
           <li><Link className="underline" href="/guides/traditional-crafts">伝統工芸の職人になるには ↗</Link></li>
           <li><Link className="underline" href="/guides/ground-handling-vs-maintenance">整備士とグラハンの違い ↗</Link></li>
+          <li><Link className="underline" href="/guides/space-jobs">宇宙に関わる仕事 ↗</Link></li>
         </ul>
       </section>
       <AtlasIndex jobs={jobs.map(j=>({slug:j.slug,name:j.nameJa,summary:j.summaryJa,emoji:j.emoji,industry:j.tags.find(t=>t.startsWith("industry."))??"industry.other",rarity:j.rarity,familiarity:j.familiarity}))} industries={getTagsInDefinitionOrder("industry").map(t=>({id:t.id,name:t.labelJa}))} />
