@@ -1,1 +1,47 @@
-PLACEHOLDER
+{
+  "industry": "food-fermentation",
+  "jobs": [
+    {
+      "slug": "bread-baker",
+      "nameJa": "パン職人",
+      "nameEn": "Bread Baker",
+      "aliasesJa": [
+        "ベーカリー職人",
+        "製パン職人"
+      ],
+      "kanaJa": "ぱんしょくにん",
+      "emoji": "🥖",
+      "summaryJa": "夜のうちに仕込んだ生地が、朝に焼き上がるように組む。",
+      "descriptionJa": "パンを作る職。小麦粉と水と酵母という単純な材料から、発酵と焼成で風味を作り出す。発酵は温度と時間で進み、その状態によって味と形が変わるため、夜のうちに仕込んで朝に焼き上げる逆算のスケジュールで動く。湿度の高い夏と乾燥する冬では、同じレシピでも水の量を調整する。",
+      "surpriseJa": "パン職人の朝は夜の仕込みから始まる。発酵は待てば進むが止められないため、生地が最も美味しい状態で焼くことを逆算して工程を組む。",
+      "howToBecomeJa": "製パン専門学校で学ぶか、ベーカリーに就職して技術を身につける。",
+      "tags": [
+        "setting.kitchen",
+        "setting.factory-line",
+        "subject.food",
+        "subject.fire",
+        "subject.microbe",
+        "action.cook",
+        "action.blend",
+        "action.measure",
+        "sense.temperature",
+        "sense.taste",
+        "sense.fingertip",
+        "condition.night-shift",
+        "condition.peak-season",
+        "temperament.detail",
+        "temperament.planner",
+        "temperament.repeatable",
+        "industry.food-fermentation"
+      ],
+      "rarity": 2,
+      "familiarity": 5,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "日本パン技術研究所",
+          "url": "https://www.pan-k.jp/"
+        }
+      ],
+      "updatedAt": "2026-08-12"
+    }
