@@ -60,6 +60,24 @@ const { facets, tags, jobs, jobFiles, tagFiles } = loadSourceData();
 const tagList: Tag[] = tags.map((t) => t.tag);
 const jobList: Job[] = jobs.map((j) => j.job);
 
+/**
+ * ロケール（ICU）に依存しない slug 比較。
+ * `localeCompare` は環境によって並びが変わりうるため、生成物の並びには使わない。
+ */
+function compareSlug(a: string, b: string): number {
+  return a < b ? -1 : a > b ? 1 : 0;
+}
+
+/**
+ * 読み込み順を slug 昇順に固定する。
+ *
+ * 派生データ（隣人・タグ索引・健全性）は jobList の走査順で並ぶ。ソースJSONの
+ * 追記位置のまま走査すると、職業を1件追記した直後の1回目の生成だけ並びが変わり、
+ * 2回目で初めて安定する（＝ `data:check` の1回の生成では差分0にならない）。
+ * ここで正規化しておくと、1回の生成で必ず不動点に到達する。
+ */
+jobList.sort((a, b) => compareSlug(a.slug, b.slug));
+
 // ---------------------------------------------------------------------------
 // 2. ソースJSONをキー順固定で整形して書き戻す（フォーマッタ兼務）
 // ---------------------------------------------------------------------------
@@ -119,7 +137,7 @@ for (const [name, file] of jobFiles) {
     industry: file.industry,
     // slug順に並べる。手で追記した位置に依存せず diff が安定する。
     jobs: [...file.jobs]
-      .sort((a, b) => a.slug.localeCompare(b.slug))
+      .sort((a, b) => compareSlug(a.slug, b.slug))
       .map((j) => orderKeys(j, JOB_KEY_ORDER)),
   };
   writeJson(join(JOBS_DIR, name), formatted);
@@ -401,8 +419,12 @@ for (const job of jobList) {
     (tagIndex[tagId] ??= []).push(job.slug);
   }
 }
-for (const key of Object.keys(tagIndex)) tagIndex[key].sort();
-writeJson(join(GENERATED_DIR, "tag-index.json"), tagIndex);
+// キー順も固定する（職業の走査順に依存させると、追記直後の生成で差分が出る）。
+const sortedTagIndex: Record<string, string[]> = {};
+for (const key of Object.keys(tagIndex).sort(compareSlug)) {
+  sortedTagIndex[key] = tagIndex[key].sort(compareSlug);
+}
+writeJson(join(GENERATED_DIR, "tag-index.json"), sortedTagIndex);
 
 writeJson(join(GENERATED_DIR, "neighbors.json"), neighborEntries);
 writeJson(join(GENERATED_DIR, "graph-health.json"), health);

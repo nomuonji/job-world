@@ -509,7 +509,7 @@
         "業務独占"
       ],
       "criteriaJa": "法令上、資格がなければその業務を行えない場合。",
-      "df": 26
+      "df": 23
     },
     {
       "id": "condition.certification",
@@ -522,7 +522,7 @@
         "検定"
       ],
       "criteriaJa": "業界団体などの認定が実質的な参入条件になっている場合。",
-      "df": 24
+      "df": 25
     },
     {
       "id": "condition.apprenticeship",
