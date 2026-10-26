@@ -13,9 +13,14 @@ import { JsonLd } from "@/components/JsonLd";
 import { homeGraph } from "@/lib/schema";
 import { SITE_URL } from "./layout";
 
+// ページ側で openGraph を指定すると layout の openGraph は置き換わる（deep merge されない）。
+// そのため images を書かないとトップだけ og:image が消える（2026-10-27 に実測）。
 export const metadata: Metadata = {
   alternates: { canonical: SITE_URL },
-  openGraph: { url: SITE_URL },
+  openGraph: {
+    url: SITE_URL,
+    images: [{ url: "/og/default.png", width: 1200, height: 630 }],
+  },
 };
 
 export default function Home() {
