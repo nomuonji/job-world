@@ -19,8 +19,9 @@
     "bot:post": "node sns-bot/src/tweetSender.mjs && node sns-bot/src/threadsSender.mjs",
     "bot:threads-draft": "node sns-bot/src/threadsSender.mjs --dry-run",
     "bot:threads-refresh": "node sns-bot/src/threads-refresh.mjs",
-    "verify": "npm run data:check && npm run og:check && npm run lint && npm run seo:check && npm run build",
-    "seo:check": "tsx scripts/validate-seo.ts"
+    "verify": "npm run data:check && npm run og:check && npm run lint && npm run seo:check && npm run build && npm run seo:verify",
+    "seo:check": "tsx scripts/validate-seo.ts",
+    "seo:verify": "tsx scripts/verify-structured-data.ts"
   },
   "dependencies": {
     "next": "16.3.0",

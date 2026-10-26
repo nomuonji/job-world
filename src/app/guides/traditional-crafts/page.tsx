@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import { pageGraph } from "@/lib/schema";
+
+const GUIDE_TITLE = "伝統工芸の職人になるには｜産地・修業先の調べ方";
+const GUIDE_DESCRIPTION =
+  "竹細工、桶、筆、漆、和紙、刀剣の職人を比較。産地の調べ方、工房・研修先の探し方、伝統工芸士認定との違いを整理し、修業に入る前に確認すべき契約・報酬・期間もまとめています。工房・学校・自治体の研修情報の探し方も扱います。";
 
 export const metadata: Metadata = {
-  title: "伝統工芸の職人になるには｜産地・修業先の調べ方",
-  description: "竹細工、桶、筆、漆、和紙などの職人を比較。産地の調べ方、工房・研修先の探し方、伝統工芸士認定との違いを整理。",
+  title: GUIDE_TITLE,
+  description: GUIDE_DESCRIPTION,
   alternates: { canonical: "/guides/traditional-crafts" },
 };
 
@@ -18,6 +24,7 @@ const crafts = [
 
 export default function CraftsGuide() {
   return <article className="max-w-4xl space-y-9 leading-8">
+    <JsonLd data={pageGraph({path:"/guides/traditional-crafts",name:GUIDE_TITLE,description:GUIDE_DESCRIPTION,trail:[{name:"しごと図鑑",path:""},{name:"仕事のガイド",path:"/guides"},{name:"伝統工芸の職人になるには",path:"/guides/traditional-crafts"}]})} />
     <nav className="text-sm text-[var(--muted)]"><Link className="underline" href="/guides">仕事のガイド</Link> / 伝統工芸の職人</nav>
     <header className="space-y-3"><p className="text-sm font-bold text-[var(--accent)]">CRAFT / PATHS INTO WORK</p>
       <h1 className="text-3xl font-bold">伝統工芸の職人になるには。まず何を探す？</h1>

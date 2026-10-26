@@ -1,36 +1,43 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AtlasIndex } from "@/components/AtlasIndex";
+import { JsonLd } from "@/components/JsonLd";
+import { itemListNode, pageGraph } from "@/lib/schema";
 import { getAllJobs, getTagsInDefinitionOrder } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "職業一覧｜150の仕事・職業の種類を図鑑で探す",
   description:
-    "しごと図鑑に収録した150の仕事・職業を一覧で紹介。仕事内容の一言要約から、知っている仕事も珍しい仕事も辿って探せます。",
+    "しごと図鑑に収録した150の仕事・職業を一覧で紹介。仕事内容の一言要約から、知っている仕事も珍しい仕事も辿って探せます。業界や珍しさで絞り込み、気になる仕事から隣の仕事へ移れます。",
   alternates: { canonical: "/jobs" },
 };
 
 export default function JobsPage() {
   const jobs = getAllJobs();
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
+  const itemList = itemListNode({
+    path: "/jobs",
     name: "職業一覧",
-    numberOfItems: jobs.length,
-    itemListElement: jobs.map((job, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
+    items: jobs.map((job) => ({
       name: job.nameJa,
-      url: `https://job.antonbase.com/jobs/${job.slug}`,
+      path: `/jobs/${job.slug}`,
     })),
-  };
+  });
+  const structuredData = pageGraph({
+    path: "/jobs",
+    name: "職業一覧｜150の仕事・職業の種類を図鑑で探す",
+    description:
+      "しごと図鑑に収録した150の仕事・職業を一覧で紹介。仕事内容の一言要約から、知っている仕事も珍しい仕事も辿って探せます。業界や珍しさで絞り込み、気になる仕事から隣の仕事へ移れます。",
+    type: "CollectionPage",
+    trail: [
+      { name: "しごと図鑑", path: "" },
+      { name: "職業一覧", path: "/jobs" },
+    ],
+    itemList,
+  });
 
   return (
     <div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+      <JsonLd data={structuredData} />
       <section className="atlas-index-cover"><span>INDEX / {jobs.length} OCCUPATIONS</span><p className="text-sm font-semibold">職業名が分かっている人はこちらから。</p>
       <h1 className="mt-1 text-3xl font-bold">職業一覧・仕事の種類</h1>
       <p className="mt-3 max-w-2xl text-[var(--muted)]">

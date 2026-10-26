@@ -13,6 +13,9 @@ import "./world-map-labels.css";
 // 公開URL: job.antonbase.com（metadataBase・sitemap.ts・robots.ts に反映）
 export const SITE_URL = "https://job.antonbase.com";
 export const SITE_NAME = "しごと図鑑";
+// サイト全体の説明。metadata と構造化データ（Organization/WebSite）で同じ文を使う。
+export const SITE_DESCRIPTION =
+  "世の中にある仕事を、舞台・扱うもの・動作・感覚など7つの角度でつないだ職業図鑑。知っている仕事から辿っていくと、名前も知らなかった仕事に行き着きます。150職業を収録し、仕事の比較ガイドも用意しています。";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -20,8 +23,7 @@ export const metadata: Metadata = {
     default: `${SITE_NAME} — 普通に生きていたら出会わない仕事に出会う`,
     template: `%s | ${SITE_NAME}`,
   },
-  description:
-    "世の中にある仕事を、舞台・扱うもの・動作・感覚など7つの角度でつなげた図鑑。知っている仕事から辿っていくと、名前も知らなかった仕事に行き着きます。",
+  description: SITE_DESCRIPTION,
   openGraph: {
     type: "website",
     siteName: SITE_NAME,

@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { JsonLd } from "@/components/JsonLd";
+import { itemListNode, pageGraph } from "@/lib/schema";
 import { getAllJobs } from "@/lib/data";
 import { RARITY_LABEL } from "@/lib/labels";
 
 export const metadata: Metadata = {
   title: "珍しい仕事・珍しい職業一覧｜知らなかった仕事を探す",
   description:
-    "しごと図鑑の150職業から、珍度4〜5に分類した珍しい仕事・珍しい職業を一覧で紹介。伝統職、専門職、特殊な現場の仕事など、普通に暮らしていると出会いにくい仕事を探せます。",
+    "しごと図鑑の150職業から、珍度4〜5に分類した珍しい仕事・珍しい職業を一覧で紹介。伝統職、専門職、特殊な現場の仕事など、普通に暮らしていると出会いにくい仕事を探せます。「珍度」は探索のための編集分類で、人数の統計ではありません。",
   alternates: { canonical: "/rare-jobs" },
 };
 
@@ -21,18 +23,25 @@ export default function RareJobsPage() {
     .sort((a, b) => a.nameJa.localeCompare(b.nameJa, "ja"));
   const listed = [...veryRare, ...rare];
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "珍しい仕事・珍しい職業一覧",
-    numberOfItems: listed.length,
-    itemListElement: listed.map((job, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: job.nameJa,
-      url: `https://job.antonbase.com/jobs/${job.slug}`,
-    })),
-  };
+  const structuredData = pageGraph({
+    path: "/rare-jobs",
+    name: "珍しい仕事・珍しい職業一覧｜知らなかった仕事を探す",
+    description:
+      "しごと図鑑の150職業から、珍度4〜5に分類した珍しい仕事・珍しい職業を一覧で紹介。伝統職、専門職、特殊な現場の仕事など、普通に暮らしていると出会いにくい仕事を探せます。「珍度」は探索のための編集分類で、人数の統計ではありません。",
+    type: "CollectionPage",
+    trail: [
+      { name: "しごと図鑑", path: "" },
+      { name: "珍しい仕事", path: "/rare-jobs" },
+    ],
+    itemList: itemListNode({
+      path: "/rare-jobs",
+      name: "珍しい仕事・珍しい職業一覧",
+      items: listed.map((job) => ({
+        name: job.nameJa,
+        path: `/jobs/${job.slug}`,
+      })),
+    }),
+  });
 
   const renderJobs = (items: typeof jobs) => (
     <ul className="mt-4 grid gap-3 sm:grid-cols-2 atlas-rare-listing">
@@ -61,10 +70,7 @@ export default function RareJobsPage() {
 
   return (
     <div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+      <JsonLd data={structuredData} />
 
       <header className="atlas-index-cover atlas-rare-cover"><span>THE UNFAMILIAR / OCCUPATION INDEX</span><p className="text-sm font-semibold">知らなかった仕事を、名前から探す。</p>
       <h1 className="mt-1 text-3xl font-bold">珍しい仕事・珍しい職業</h1>

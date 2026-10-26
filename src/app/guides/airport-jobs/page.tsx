@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import { pageGraph } from "@/lib/schema";
+
+const GUIDE_TITLE = "空港で働く仕事の種類｜仕事内容・なり方・役割の違い";
+const GUIDE_DESCRIPTION =
+  "航空管制官、航空整備士、グランドハンドリング、パイロット、客室乗務員など。空港に関わる仕事を、1便の流れに沿って担当工程と就職の入口で比べる。客室と地上の分担、混同しやすい整備と地上支援の違いも整理します。";
 
 export const metadata: Metadata = {
-  title: "空港で働く仕事の種類｜仕事内容・なり方・役割の違い",
-  description: "航空管制官、航空整備士、グランドハンドリング、パイロット、客室乗務員など。空港に関わる仕事を、担当工程と就職の入口で比べる。",
+  title: GUIDE_TITLE,
+  description: GUIDE_DESCRIPTION,
   alternates: { canonical: "/guides/airport-jobs" },
 };
 
@@ -17,6 +23,7 @@ const occupations = [
 
 export default function AirportJobsGuide() {
   return <article className="max-w-4xl space-y-9 leading-8">
+    <JsonLd data={pageGraph({path:"/guides/airport-jobs",name:GUIDE_TITLE,description:GUIDE_DESCRIPTION,trail:[{name:"しごと図鑑",path:""},{name:"仕事のガイド",path:"/guides"},{name:"空港で働く仕事",path:"/guides/airport-jobs"}]})} />
     <nav className="text-sm text-[var(--muted)]"><Link className="underline" href="/guides">仕事のガイド</Link> / 空港で働く仕事</nav>
     <header className="space-y-3"><p className="text-sm font-bold text-[var(--accent)]">AIRPORT / WHO DOES WHAT</p>
       <h1 className="text-3xl font-bold">空港で働く仕事の種類。誰が何をしている？</h1>

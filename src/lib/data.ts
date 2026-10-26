@@ -110,6 +110,40 @@ export function getJobsWithTag(tagId: string): Job[] {
     .filter((j): j is Job => !!j);
 }
 
+/** その軸のタグを1つ以上持つ職業。ファセットページの件数表示に使う。 */
+export function getJobsWithFacet(facet: FacetId): Job[] {
+  const tagIds = new Set(getTagsByFacet(facet).map((tag) => tag.id));
+  return getAllJobs().filter((job) => job.tags.some((id) => tagIds.has(id)));
+}
+
+/** 1職業あたりのタグ数。軸の網羅性を語るための実測値。 */
+export function getTagCountStats(): {
+  average: number;
+  min: number;
+  max: number;
+} {
+  const counts = getAllJobs().map((job) => job.tags.length);
+  const average =
+    counts.reduce((sum, count) => sum + count, 0) / Math.max(counts.length, 1);
+  return {
+    average: Math.round(average * 10) / 10,
+    min: Math.min(...counts),
+    max: Math.max(...counts),
+  };
+}
+
+/** 2つの職業が共有するタグ。比較ガイドの「図鑑上の共通点」に使う。 */
+export function getSharedTags(aSlug: string, bSlug: string): TaxonomyTag[] {
+  const a = getJobBySlug(aSlug);
+  const b = getJobBySlug(bSlug);
+  if (!a || !b) return [];
+  const inB = new Set(b.tags);
+  return a.tags
+    .filter((id) => inB.has(id))
+    .map((id) => getTag(id))
+    .filter((tag): tag is TaxonomyTag => !!tag);
+}
+
 // --- 隣人 -------------------------------------------------------------------
 
 let _neighborMap: Map<string, NeighborEntry> | null = null;

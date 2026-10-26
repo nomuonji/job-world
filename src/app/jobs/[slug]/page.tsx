@@ -15,9 +15,34 @@ import { toEgoCenter, toEgoNodes } from "@/lib/view";
 import { NeighborList } from "@/components/NeighborList";
 import { EgoNetwork } from "@/components/EgoNetwork";
 import { FromNote } from "@/components/FromNote";
+import { JsonLd } from "@/components/JsonLd";
 import { Trail } from "@/components/Trail";
 import { RARITY_LABEL, FAMILIARITY_LABEL } from "@/lib/labels";
 import { shikakuLinkForJob } from "@/lib/shikaku";
+import { jobGraph } from "@/lib/schema";
+import { plainText } from "@/lib/text";
+import type { Job } from "@/types";
+
+/** 検索結果でよく引かれる別名は、タイトル側にも併記する。 */
+function jobHeadline(job: Job): string {
+  const commonSearchAlias = job.aliasesJa.find(
+    (alias) => alias === "ひよこ鑑定士" || alias === "眼鏡作製技能士",
+  );
+  const seoName = commonSearchAlias
+    ? `${job.nameJa}（${commonSearchAlias}）`
+    : job.nameJa;
+  return `${seoName}とは｜仕事内容・なり方ガイド`;
+}
+
+/**
+ * 一行要約と「知られていないこと」で90字に満たない職業だけ、本文冒頭で補う。
+ * 足すのはページに書いてある説明文だけで、数値や条件は新しく作らない。
+ */
+function jobDescription(job: Job): string {
+  const base = `${job.summaryJa} ${job.surpriseJa}`;
+  if (base.length >= 90) return base.slice(0, 120);
+  return `${base} ${plainText(job.descriptionJa)}`.slice(0, 135);
+}
 
 /** Structured paragraphs are opt-in via 【section】 markers in a job's existing text. */
 function JobNarrative({ text }: { text: string }) {
@@ -50,17 +75,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const job = getJobBySlug(slug);
   if (!job) return {};
-  const commonSearchAlias = job.aliasesJa.find(
-    (alias) => alias === "ひよこ鑑定士" || alias === "眼鏡作製技能士",
-  );
-  const seoName = commonSearchAlias ? `${job.nameJa}（${commonSearchAlias}）` : job.nameJa;
+  const title = jobHeadline(job);
   return {
-    title: `${seoName}とは｜仕事内容・なり方ガイド`,
-    description: `${job.summaryJa} ${job.surpriseJa}`.slice(0, 120),
+    title,
+    description: jobDescription(job),
     alternates: { canonical: `/jobs/${job.slug}` },
     openGraph: {
       type: "article",
-      title: `${seoName}とは｜仕事内容・なり方ガイド`,
+      title,
       description: job.summaryJa,
       images: [
         { url: `/og/${job.slug}.png`, width: 1200, height: 630, alt: job.nameJa },
@@ -70,7 +92,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       site: "@shikaku_catalog",
       creator: "@shikaku_catalog",
-      title: `${seoName}とは｜仕事内容・なり方ガイド`,
+      title,
       description: job.summaryJa,
       images: [`/og/${job.slug}.png`],
     },
@@ -117,6 +139,13 @@ export default async function JobPage({
 
   return (
     <article className="occupation-sheet">
+      <JsonLd
+        data={jobGraph(job, {
+          title: jobHeadline(job),
+          description: jobDescription(job),
+          keywords: tagGroups.flatMap(({ tags }) => tags.map((tag) => tag.labelJa)),
+        })}
+      />
       <nav className="atlas-breadcrumb" aria-label="パンくずリスト">
         <Link href="/">図鑑の地図</Link><span>／</span><Link href="/jobs">職業一覧</Link><span>／</span><span>{job.nameJa}</span>
       </nav>

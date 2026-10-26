@@ -9,6 +9,8 @@ import {
 } from "@/lib/data";
 import { toWorldNodes } from "@/lib/view";
 import { WorldAtlas } from "@/components/WorldAtlas";
+import { JsonLd } from "@/components/JsonLd";
+import { homeGraph } from "@/lib/schema";
 import { SITE_URL } from "./layout";
 
 export const metadata: Metadata = {
@@ -28,6 +30,7 @@ export default function Home() {
 
   return (
     <div className="explorer-atlas-home">
+      <JsonLd data={homeGraph()} />
       <section className="atlas-relaunch-cover" aria-labelledby="explorer-cover-title">
         <div className="atlas-relaunch-topline">
           <span>SHIGOTO ATLAS — EXPLORING WORK</span>

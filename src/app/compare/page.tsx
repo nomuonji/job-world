@@ -2,11 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllJobs, getFacets, getAllTags } from "@/lib/data";
 import { OccupationCompare } from "@/components/OccupationCompare";
+import { JsonLd } from "@/components/JsonLd";
+import { pageGraph } from "@/lib/schema";
 import "./compare.css";
 
+const PAGE_TITLE = "仕事の比較室｜2つの職業の共通点と違いを発見する";
+const PAGE_DESCRIPTION =
+  "二つの職業を7つの視点で比較。働く場所、扱うもの、動作、感覚などから、意外な共通点や違いを発見できるしごと図鑑の比較室。任意の2つを選んで並べ替えられ、共通点は適性の判定ではありません。";
+
 export const metadata: Metadata = {
-  title: "仕事の比較室｜2つの職業の共通点と違いを発見する",
-  description: "二つの職業を7つの視点で比較。働く場所、扱うもの、動作、感覚などから、意外な共通点や違いを発見できるしごと図鑑の比較室。",
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
   alternates: { canonical: "/compare" },
 };
 
@@ -19,5 +25,5 @@ export default function ComparePage() {
  const contrasting = jobs.find(j=>j.slug !== first.slug && j.rarity>=4) ?? jobs[1];
  const ordered = [first, contrasting, ...jobs.filter(j=>j.slug !== first.slug && j.slug !== contrasting.slug)];
  const orderedRecords = ordered.map(j=>records.find(r=>r.slug===j.slug)!);
- return <div className="compare-page"><nav className="atlas-breadcrumb"><Link href="/">しごと図鑑</Link><span>/</span><span>比較室</span></nav><header className="compare-intro"><span>OCCUPATION ATLAS / COMPARISON LAB</span><h1>違う仕事の、<br/><em>同じところ。</em></h1><p>名前が違っても、仕事の中身は似ていることがある。二つの職業を台に載せて、7つの角度から分解してみよう。</p><div className="compare-intro-rail"><span>01 / 仕事を2つ選ぶ</span><span>02 / 共通点を見つける</span><span>03 / 違いを読む</span></div></header><OccupationCompare jobs={orderedRecords} facets={facets}/></div>;
+ return <div className="compare-page"><JsonLd data={pageGraph({path:"/compare",name:PAGE_TITLE,description:PAGE_DESCRIPTION,trail:[{name:"しごと図鑑",path:""},{name:"比較室",path:"/compare"}]})} /><nav className="atlas-breadcrumb"><Link href="/">しごと図鑑</Link><span>/</span><span>比較室</span></nav><header className="compare-intro"><span>OCCUPATION ATLAS / COMPARISON LAB</span><h1>違う仕事の、<br/><em>同じところ。</em></h1><p>名前が違っても、仕事の中身は似ていることがある。二つの職業を台に載せて、7つの角度から分解してみよう。</p><div className="compare-intro-rail"><span>01 / 仕事を2つ選ぶ</span><span>02 / 共通点を見つける</span><span>03 / 違いを読む</span></div></header><OccupationCompare jobs={orderedRecords} facets={facets}/></div>;
 }

@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import { pageGraph } from "@/lib/schema";
+
+const GUIDE_TITLE =
+  "グランドハンドリングと航空整備士の違い｜仕事内容・資格・就職";
+const GUIDE_DESCRIPTION =
+  "グランドハンドリングと航空整備士は、何を担当し、どうやってなる？ 空港の同じ機体に関わる二つの職業を役割・資格・働き方から比較。作業・資格・応募先の3点で並べ、求人票のどこを見るかを整理します。";
 
 export const metadata: Metadata = {
-  title: "グランドハンドリングと航空整備士の違い｜仕事内容・資格・就職",
-  description: "グランドハンドリングと航空整備士は、何を担当し、どうやってなる？ 空港の同じ機体に関わる二つの職業を役割・資格・働き方から比較。",
+  title: GUIDE_TITLE,
+  description: GUIDE_DESCRIPTION,
   alternates: { canonical: "/guides/ground-handling-vs-maintenance" },
 };
 
@@ -16,6 +23,7 @@ const rows = [
 
 export default function DifferenceGuide() {
   return <article className="max-w-4xl space-y-9 leading-8">
+    <JsonLd data={pageGraph({path:"/guides/ground-handling-vs-maintenance",name:GUIDE_TITLE,description:GUIDE_DESCRIPTION,trail:[{name:"しごと図鑑",path:""},{name:"仕事のガイド",path:"/guides"},{name:"航空整備士とグランドハンドリング",path:"/guides/ground-handling-vs-maintenance"}]})} />
     <nav className="text-sm text-[var(--muted)]"><Link className="underline" href="/guides">仕事のガイド</Link> / 航空整備士とグランドハンドリング</nav>
     <header className="space-y-3"><p className="text-sm font-bold text-[var(--accent)]">ONE AIRCRAFT / TWO ROLES</p>
       <h1 className="text-3xl font-bold">グランドハンドリングと航空整備士、何が違う？</h1>
