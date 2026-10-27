@@ -1,1 +1,51 @@
-PLACEHOLDER_WILL_BE_REPLACED
+{
+  "industry": "medical",
+  "jobs": [
+    {
+      "slug": "braille-transcriber",
+      "nameJa": "点訳者",
+      "nameEn": "Braille Transcriber",
+      "aliasesJa": [
+        "点字翻訳者",
+        "点訳校正者"
+      ],
+      "kanaJa": "てんやくしゃ",
+      "emoji": "⠿",
+      "summaryJa": "図や表を、指でたどれる一本の線に置き換える。",
+      "descriptionJa": "墨字の資料を点字に置き換える仕事。単純な文字変換ではなく、点字には独自の分かち書きの規則があり、漢字の読みも文脈から確定させる必要がある。難しいのは図表やレイアウトで、二次元に配置された情報を、指で順にたどれる一次元の並びに組み替えなければならない。教科書や試験問題では、原本と同じ理解に至れるかが問われる。\n\n【養成の場】点訳ボランティアを養成する講習は、自治体や点字図書館が開いている。初級の講習では、点字の基礎から点訳の実際までを学ぶ。",
+      "surpriseJa": "点訳で最も難しいのは文字ではなく図表。地図やグラフのように目で一望する情報を、指で順番にたどる形へ組み替える作業は、翻訳というより設計に近い。",
+      "howToBecomeJa": "【講習で学ぶ】都道府県や市区町村の福祉部門、点字図書館が、点訳奉仕員の養成講習を開いている。初心者向けの初級講習のほか、点訳経験者向けに英語・理数・楽譜などの専門講習もある。\n\n【経験を積む】講習の後、ボランティア団体や点字図書館で、実際の依頼を点訳しながら技術を磨く。\n\n【確認すること】講習の日程・費用・教材費は主催者ごとに異なる。まずは住んでいる地域の点字図書館や社会福祉協議会に問い合わせる。",
+      "tags": [
+        "setting.desk",
+        "subject.text",
+        "subject.paper",
+        "action.translate",
+        "action.design",
+        "action.record",
+        "sense.stillness",
+        "sense.fingertip",
+        "condition.certification",
+        "condition.solo",
+        "temperament.detail",
+        "temperament.repeatable",
+        "temperament.quiet-pride",
+        "industry.medical"
+      ],
+      "rarity": 4,
+      "familiarity": 2,
+      "lifecycle": "established",
+      "sources": [
+        {
+          "titleJa": "社会福祉法人 日本点字図書館",
+          "url": "https://www.nittento.or.jp/"
+        },
+        {
+          "titleJa": "東京都福祉局｜専門点訳奉仕員養成講習",
+          "url": "https://www.fukushi.metro.tokyo.lg.jp/shougai/koza/tenyaku"
+        }
+      ],
+      "updatedAt": "2026-10-21",
+      "aDayJa": "【点訳の一日の例】原本を読んで分かち書きや読みを確認→点訳→校正→図表の配置の検討→仕上げ。団体や依頼によって配分は異なり、ボランティアとして行う人が多い。特定の点訳者の記録ではない。"
+    }
+  ]
+}
